@@ -4,59 +4,50 @@ description: "DevOpsDays Switzerland 2025 program and schedule"
 type: "program"
 ---
 
-# Program
+---
 
-DevOpsDays Switzerland 2025 features a diverse program of keynotes, talks, ignites, and workshops across two days.
+title: "Program"
+description: "DevOpsDays Switzerland 2025 program and schedule"
+type: "program"
+---
 
-## Schedule Overview
+DevOpsDays Switzerland 2025 features a diverse program of keynotes, talks, ignites, and workshops across two days in March 2025.
 
-### Day 1 - June 15, 2025
-- **09:00-09:45** - Keynote
-- **10:00-10:30** - Talk Track
-- **10:45-11:15** - Talk Track
-- **11:30-12:00** - Talk Track
-- **12:00-13:30** - Lunch & Networking
-- **13:30-14:00** - Talk Track
-- **14:15-14:45** - Talk Track
-- **15:00-15:40** - Ignites (8 talks, 5 min each)
-- **16:00-17:00** - Open Spaces
-- **17:00-18:00** - Workshops Session 1
-- **18:30-21:00** - Evening Networking Event
+## Event Details
 
-### Day 2 - June 16, 2025
-- **09:00-09:45** - Keynote
-- **10:00-10:30** - Talk Track
-- **10:45-11:15** - Talk Track
-- **11:30-12:00** - Talk Track
-- **12:00-13:30** - Lunch & Networking
-- **13:30-14:00** - Talk Track
-- **14:15-14:45** - Talk Track
-- **15:00-15:40** - Ignites (8 talks, 5 min each)
-- **16:00-17:00** - Open Spaces
-- **17:00-18:00** - Workshops Session 2
-- **18:00-18:30** - Closing & Thank You
+🗓️ **Dates:** March 12-13, 2025  
+🕐 **Time:** 8:00 AM - 6:00 PM both days  
+📍 **Location:** Event Location TBD  
 
-## Call for Proposals
+## Program Highlights
 
-We're currently accepting proposals for:
-- **Keynotes** (45 minutes)
-- **Talks** (30 minutes)
-- **Ignites** (5 minutes)
-- **Workshops** (60-120 minutes)
+Our program includes:
 
-### Important Dates
-- **Proposal Deadline:** March 1, 2025
-- **Speaker Notification:** April 1, 2025
-- **Final Program:** May 1, 2025
+- **🎯 Keynote Talks** - Inspiring presentations from industry leaders
+- **💬 Technical Talks** - 30-45 minute deep dives into DevOps practices
+- **⚡ Ignite Talks** - Fast-paced 5-minute lightning talks
+- **🛠️ Hands-on Workshops** - Interactive learning sessions
+- **🌐 Open Spaces** - Community-driven discussions
+- **🤝 Networking** - Connect with fellow DevOps practitioners
 
-### What We're Looking For
-- DevOps culture and practices
-- Automation and tooling
-- Infrastructure as Code
-- Monitoring and observability
-- Security in DevOps
-- Team collaboration
-- Organizational transformation
-- Lessons learned and war stories
+## Session Types
 
-[Submit Your Proposal](https://cfp.devopsdays.ch)
+### Talks
+
+In-depth presentations covering DevOps culture, practices, tools, and real-world experiences.
+
+### Ignites
+
+High-energy 5-minute talks with auto-advancing slides - perfect for sharing quick insights and tips.
+
+### Workshops
+
+Hands-on learning experiences where you can dive deep into specific tools and practices.
+
+### Open Spaces
+
+Self-organizing sessions where the community decides what to discuss - bring your questions and ideas!
+
+---
+
+*The detailed schedule with all sessions, speakers, and times is displayed below.*

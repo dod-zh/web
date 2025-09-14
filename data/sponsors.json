@@ -1,39 +1,255 @@
 {
   "sponsors": [
     {
-      "id": "sponsor-1",
-      "name": "TechCorp",
-      "level": "platinum",
-      "logo": "/images/sponsors/techcorp.svg",
-      "website": "https://techcorp.com",
-      "description": "Leading cloud infrastructure provider enabling modern DevOps practices.",
-      "featured": true
-    },
-    {
-      "id": "sponsor-2",
-      "name": "CloudScale",
+      "id": "sponsor-5",
+      "name": "infomaniak",
       "level": "gold",
-      "logo": "/images/sponsors/cloudscale.svg",
-      "website": "https://cloudscale.com",
-      "description": "Scalable cloud solutions for enterprise applications.",
+      "logo": "/images/sponsors/infomaniak.webp",
+      "website": "https://www.infomaniak.com/",
+      "description": "Gold Sponsor",
       "featured": true
     },
     {
-      "id": "sponsor-3",
-      "name": "AutoFlow",
+      "id": "sponsor-6",
+      "name": "VSHN AG",
+      "level": "gold",
+      "logo": "/images/sponsors/vshn.webp",
+      "website": "https://vshn.ch/",
+      "description": "Gold Sponsor",
+      "featured": true
+    },
+    {
+      "id": "sponsor-7",
+      "name": "BIT",
+      "level": "gold",
+      "logo": "/images/sponsors/bit.webp",
+      "website": "https://www.bit.admin.ch/",
+      "description": "Gold Sponsor",
+      "featured": true
+    },
+    {
+      "id": "sponsor-8",
+      "name": "Redgate",
+      "level": "gold",
+      "logo": "/images/sponsors/redgate.webp",
+      "website": "https://www.red-gate.com/",
+      "description": "Gold Sponsor",
+      "featured": true
+    },
+    {
+      "id": "sponsor-9",
+      "name": "Elastic",
+      "level": "gold",
+      "logo": "/images/sponsors/elastic.webp",
+      "website": "https://www.elastic.co/",
+      "description": "Gold Sponsor",
+      "featured": true
+    },
+    {
+      "id": "sponsor-10",
+      "name": "Infometis",
       "level": "silver",
-      "logo": "/images/sponsors/autoflow.svg",
-      "website": "https://autoflow.io",
-      "description": "Automation tools for modern development workflows.",
+      "logo": "/images/sponsors/infometis.webp",
+      "website": "https://www.infometis.ch/",
+      "description": "Silver Sponsor",
       "featured": false
     },
     {
-      "id": "sponsor-4",
-      "name": "DevTools Inc",
+      "id": "sponsor-11",
+      "name": "Zürcher Kantonalbank",
+      "level": "silver",
+      "logo": "/images/sponsors/zkb.webp",
+      "website": "https://www.zkb.ch/",
+      "description": "Silver Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-12",
+      "name": "4data",
+      "level": "silver",
+      "logo": "/images/sponsors/4data.webp",
+      "website": "https://www.4data.ch/",
+      "description": "Silver Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-13",
+      "name": "Cloudscale.ch",
+      "level": "event",
+      "logo": "/images/sponsors/cloudscalech.webp",
+      "website": "https://www.cloudscale.ch/",
+      "description": "Evening Event, Coffee, Meal Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-14",
+      "name": "Exoscale",
+      "level": "event",
+      "logo": "/images/sponsors/exoscale.webp",
+      "website": "https://www.exoscale.com/",
+      "description": "Evening Event, Coffee, Meal Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-15",
+      "name": "Eficode",
+      "level": "event",
+      "logo": "/images/sponsors/eficode.webp",
+      "website": "https://www.eficode.com/",
+      "description": "Evening Event, Coffee, Meal Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-16",
+      "name": "Amanox",
       "level": "bronze",
-      "logo": "/images/sponsors/devtools.svg",
-      "website": "https://devtools.com",
-      "description": "Developer productivity tools and platforms.",
+      "logo": "/images/sponsors/amanox.webp",
+      "website": "https://www.amanox.ch/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-17",
+      "name": "cognizant",
+      "level": "bronze",
+      "logo": "/images/sponsors/cognizant.webp",
+      "website": "https://www.cognizant.com/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-18",
+      "name": "dbi services",
+      "level": "bronze",
+      "logo": "/images/sponsors/dbi-services.webp",
+      "website": "https://www.dbi-services.com/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-19",
+      "name": "Checkmarx",
+      "level": "bronze",
+      "logo": "/images/sponsors/checkmarx.webp",
+      "website": "https://www.checkmarx.com/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-20",
+      "name": "Infiniroot",
+      "level": "bronze",
+      "logo": "/images/sponsors/infiniroot.webp",
+      "website": "https://www.infiniroot.com/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-21",
+      "name": "Ciklum",
+      "level": "bronze",
+      "logo": "/images/sponsors/ciklum.webp",
+      "website": "https://www.ciklum.com/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-22",
+      "name": "cloudbees",
+      "level": "bronze",
+      "logo": "/images/sponsors/cloudbees.webp",
+      "website": "https://www.cloudbees.com/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-23",
+      "name": "datastore",
+      "level": "bronze",
+      "logo": "/images/sponsors/datastore.webp",
+      "website": "https://www.datastore.ch/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-24",
+      "name": "Zesty",
+      "level": "bronze",
+      "logo": "/images/sponsors/zesty.webp",
+      "website": "https://zesty.co/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-25",
+      "name": "Couchbase",
+      "level": "bronze",
+      "logo": "/images/sponsors/couchbase.webp",
+      "website": "https://www.couchbase.com/",
+      "description": "Bronze Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-26",
+      "name": "Powercoders",
+      "level": "community",
+      "logo": "/images/sponsors/powercoders.webp",
+      "website": "https://powercoders.org/",
+      "description": "Community Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-27",
+      "name": "belikegrace",
+      "level": "community",
+      "logo": "/images/sponsors/belikegrace.webp",
+      "website": "https://belikegrace.com/",
+      "description": "Community Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-28",
+      "name": "girlscodetoo",
+      "level": "community",
+      "logo": "/images/sponsors/girlscodetoo.webp",
+      "website": "https://girlscodetoo.ch/",
+      "description": "Community Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-29",
+      "name": "businessmap",
+      "level": "partner",
+      "logo": "/images/sponsors/businessmap.webp",
+      "website": "https://businessmap.io/",
+      "description": "Partner Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-30",
+      "name": "Hostpoint",
+      "level": "partner",
+      "logo": "/images/sponsors/hostpoint.webp",
+      "website": "https://www.hostpoint.ch/",
+      "description": "Partner Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-31",
+      "name": "Digicomp",
+      "level": "partner",
+      "logo": "/images/sponsors/digicomp.webp",
+      "website": "https://www.digicomp.ch/",
+      "description": "Partner Sponsor",
+      "featured": false
+    },
+    {
+      "id": "sponsor-32",
+      "name": "puresivefilms",
+      "level": "partner",
+      "logo": "/images/sponsors/puresivefilms.webp",
+      "website": "https://puresivefilms.com/",
+      "description": "Partner Sponsor",
       "featured": false
     }
   ]

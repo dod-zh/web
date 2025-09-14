@@ -1,52 +1,368 @@
 {
   "sessions": [
     {
-      "id": "keynote-2025-day1",
-      "title": "The Future of DevOps Culture",
-      "type": "keynote",
-      "day": 1,
-      "time": "09:00",
-      "duration": 45,
-      "speaker": "speaker-1",
-      "description": "Exploring how DevOps culture continues to evolve in modern organizations.",
-      "abstract": "This keynote will examine the current state of DevOps culture and where it's heading in the next decade.",
-      "room": "Main Hall"
+      "id": "registration-day1-morning",
+      "title": "Registration & Welcome Coffee",
+      "type": "other",
+      "day": "2025-03-12",
+      "time": "8:00 - 9:00",
+      "speakers": []
     },
     {
-      "id": "talk-2025-monitoring",
-      "title": "Observability at Scale",
+      "id": "opening-day1-morning",
+      "title": "Opening",
+      "type": "other",
+      "day": "2025-03-12",
+      "time": "9:00 - 9:15",
+      "speakers": []
+    },
+    {
+      "id": "talk-marc-schuh",
+      "title": "From Athlete to Algorithm: Transforming Canoe Technique Analysis with AI",
       "type": "talk",
-      "day": 1,
-      "time": "10:15",
-      "duration": 30,
-      "speaker": "speaker-2",
-      "description": "Building robust monitoring and observability systems for large-scale applications.",
-      "abstract": "Learn practical approaches to implementing observability in microservices architectures.",
-      "room": "Main Hall"
+      "day": "2025-03-12",
+      "time": "9:15 - 10:00",
+      "speakers": [
+        "marc-schuh"
+      ]
     },
     {
-      "id": "ignite-automation",
-      "title": "5 Minutes to Better Automation",
+      "id": "talk-lena-fuhrimann",
+      "title": "Level Up Your Serverless Game",
+      "type": "talk",
+      "day": "2025-03-12",
+      "time": "10:00 - 10:30",
+      "speakers": [
+        "lena-fuhrimann"
+      ]
+    },
+    {
+      "id": "break-day1-morning",
+      "title": "Break",
+      "type": "other",
+      "day": "2025-03-12",
+      "time": "10:30 - 11:00",
+      "speakers": []
+    },
+    {
+      "id": "talk-christina-kraus",
+      "title": "Building Internal Platforms to Enhance Developer Experience",
+      "type": "talk",
+      "day": "2025-03-12",
+      "time": "11:00 - 11:30",
+      "speakers": [
+        "christina-kraus"
+      ]
+    },
+    {
+      "id": "talk-daniel-raniz-raneland",
+      "title": "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do",
+      "type": "talk",
+      "day": "2025-03-12",
+      "time": "11:30 - 12:00",
+      "speakers": [
+        "daniel-raniz-raneland"
+      ]
+    },
+    {
+      "id": "talk-robert-lehmann",
+      "title": "Planet-Scale Dashboards",
+      "type": "talk",
+      "day": "2025-03-12",
+      "time": "12:00 - 12:30",
+      "speakers": [
+        "robert-lehmann"
+      ]
+    },
+    {
+      "id": "lunch-day1",
+      "title": "Lunch",
+      "type": "other",
+      "day": "2025-03-12",
+      "time": "12:30 - 14:00",
+      "speakers": []
+    },
+    {
+      "id": "opening-day1-afternoon",
+      "title": "Opening Afternoon",
+      "type": "other",
+      "day": "2025-03-12",
+      "time": "14:00 - 14:10",
+      "speakers": []
+    },
+    {
+      "id": "ignites-day1",
+      "title": "Ignites",
       "type": "ignite",
-      "day": 1,
-      "time": "14:30",
-      "duration": 5,
-      "speaker": "speaker-3",
-      "description": "Quick tips for improving your automation workflows.",
-      "abstract": "Fast-paced presentation covering automation best practices.",
-      "room": "Main Hall"
+      "day": "2025-03-12",
+      "time": "14:10 - 14:45",
+      "speakers": [
+        "carmine-vassallo",
+        "marc-sallin",
+        "verena-traub",
+        "marcelo-ancelmo",
+        "alexander-ptakhin",
+        "sandra-czopek",
+        "peter-farkas"
+      ]
     },
     {
-      "id": "workshop-k8s",
-      "title": "Kubernetes Hands-on Workshop",
+      "id": "openspace-voting-day1",
+      "title": "Open Space Voting",
+      "type": "other",
+      "day": "2025-03-12",
+      "time": "14:45 - 15:15",
+      "speakers": []
+    },
+    {
+      "id": "openspace-track1-day1",
+      "title": "Open Space Track 1",
+      "type": "openspace",
+      "day": "2025-03-12",
+      "time": "15:15 - 15:55",
+      "speakers": []
+    },
+    {
+      "id": "openspace-track2-day1",
+      "title": "Open Space Track 2",
+      "type": "openspace",
+      "day": "2025-03-12",
+      "time": "16:00 - 16:40",
+      "speakers": []
+    },
+    {
+      "id": "openspace-track3-day1",
+      "title": "Open Space Track 3",
+      "type": "openspace",
+      "day": "2025-03-12",
+      "time": "16:45 - 17:25",
+      "speakers": []
+    },
+    {
+      "id": "workshop-domain-driven-refactoring",
+      "title": "Untangle Your Legacy Code with Domain-Driven Refactoring",
       "type": "workshop",
-      "day": 2,
-      "time": "10:00",
-      "duration": 120,
-      "speaker": "speaker-4",
-      "description": "Practical workshop covering Kubernetes deployment and management.",
-      "abstract": "Hands-on experience with Kubernetes concepts and real-world scenarios.",
-      "room": "Workshop Room A"
+      "day": "2025-03-12",
+      "time": "15:15 - 17:25",
+      "speakers": [
+        "alina-liburkina",
+        "oliver-zihler"
+      ]
+    },
+    {
+      "id": "workshop-user-needs-mapping",
+      "title": "Enabling aligned decentralised architecture decisions through user needs mapping",
+      "type": "workshop",
+      "day": "2025-03-12",
+      "time": "15:15 - 17:25",
+      "speakers": [
+        "thomas-krag",
+        "kenny-baas-schwegler"
+      ]
+    },
+    {
+      "id": "workshop-secure-containers",
+      "title": "Building Secure Container Images",
+      "type": "workshop",
+      "day": "2025-03-12",
+      "time": "15:15 - 17:25",
+      "speakers": [
+        "alvaro-revuelta-m"
+      ]
+    },
+    {
+      "id": "closing-day1",
+      "title": "Closing Day 1",
+      "type": "other",
+      "day": "2025-03-12",
+      "time": "17:30 - 17:40",
+      "speakers": []
+    },
+    {
+      "id": "evening-event",
+      "title": "Evening Event",
+      "type": "other",
+      "day": "2025-03-12",
+      "time": "17:40 - 23:00",
+      "speakers": []
+    },
+    {
+      "id": "registration-day2-morning",
+      "title": "Registration & Welcome Coffee",
+      "type": "other",
+      "day": "2025-03-13",
+      "time": "8:00 - 9:00",
+      "speakers": []
+    },
+    {
+      "id": "opening-day2-morning",
+      "title": "Opening",
+      "type": "other",
+      "day": "2025-03-13",
+      "time": "9:00 - 9:15",
+      "speakers": []
+    },
+    {
+      "id": "talk-dorota-parad",
+      "title": "Unintended consequences of well-meaning changes",
+      "type": "talk",
+      "day": "2025-03-13",
+      "time": "9:15 - 10:00",
+      "speakers": [
+        "dorota-parad"
+      ]
+    },
+    {
+      "id": "talk-darko-fabijan",
+      "title": "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore",
+      "type": "talk",
+      "day": "2025-03-13",
+      "time": "10:00 - 10:30",
+      "speakers": [
+        "darko-fabijan"
+      ]
+    },
+    {
+      "id": "break-day2-morning",
+      "title": "Break",
+      "type": "other",
+      "day": "2025-03-13",
+      "time": "10:30 - 11:00",
+      "speakers": []
+    },
+    {
+      "id": "talk-pia-wiedermayer",
+      "title": "Human-Driven Intelligence: Where AI & Automation Fall Short",
+      "type": "talk",
+      "day": "2025-03-13",
+      "time": "11:00 - 11:30",
+      "speakers": [
+        "pia-wiedermayer"
+      ]
+    },
+    {
+      "id": "talk-manisha-marco",
+      "title": "Empowering SRE with GitOps: Automating Kubernetes Deployments with GitLab CI and Flux CD",
+      "type": "talk",
+      "day": "2025-03-13",
+      "time": "11:30 - 12:00",
+      "speakers": [
+        "manisha-de",
+        "marco-goncalves"
+      ]
+    },
+    {
+      "id": "talk-bertrand-delacretaz",
+      "title": "The Power of Simplicity: Crafting Durable Software Systems",
+      "type": "talk",
+      "day": "2025-03-13",
+      "time": "12:00 - 12:30",
+      "speakers": [
+        "bertrand-delacretaz"
+      ]
+    },
+    {
+      "id": "lunch-day2",
+      "title": "Lunch",
+      "type": "other",
+      "day": "2025-03-13",
+      "time": "12:30 - 14:00",
+      "speakers": []
+    },
+    {
+      "id": "opening-day2-afternoon",
+      "title": "Opening Afternoon",
+      "type": "other",
+      "day": "2025-03-13",
+      "time": "14:00 - 14:10",
+      "speakers": []
+    },
+    {
+      "id": "ignites-day2",
+      "title": "Ignites",
+      "type": "ignite",
+      "day": "2025-03-13",
+      "time": "14:10 - 14:45",
+      "speakers": [
+        "rasmus-lystrom",
+        "antonio-alvino",
+        "daiany-palacios",
+        "jonas-alder",
+        "marcel-britsch",
+        "kamali-wickramage",
+        "adam-zieba"
+      ]
+    },
+    {
+      "id": "openspace-voting-day2",
+      "title": "Open Space Voting",
+      "type": "other",
+      "day": "2025-03-13",
+      "time": "14:45 - 15:15",
+      "speakers": []
+    },
+    {
+      "id": "openspace-track1-day2",
+      "title": "Open Space Track 1",
+      "type": "openspace",
+      "day": "2025-03-13",
+      "time": "15:15 - 15:55",
+      "speakers": []
+    },
+    {
+      "id": "openspace-track2-day2",
+      "title": "Open Space Track 2",
+      "type": "openspace",
+      "day": "2025-03-13",
+      "time": "16:00 - 16:40",
+      "speakers": []
+    },
+    {
+      "id": "openspace-track3-day2",
+      "title": "Open Space Track 3",
+      "type": "openspace",
+      "day": "2025-03-13",
+      "time": "16:45 - 17:25",
+      "speakers": []
+    },
+    {
+      "id": "workshop-kubernetes-operators",
+      "title": "Building Infrastructure Tools with Kubernetes Operators and Go",
+      "type": "workshop",
+      "day": "2025-03-13",
+      "time": "15:15 - 17:25",
+      "speakers": [
+        "rabieh-fashwall"
+      ]
+    },
+    {
+      "id": "workshop-opentelemetry",
+      "title": "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry",
+      "type": "workshop",
+      "day": "2025-03-13",
+      "time": "15:15 - 17:25",
+      "speakers": [
+        "stefan-pezzei",
+        "philipp-moser"
+      ]
+    },
+    {
+      "id": "talk-marc-herren",
+      "title": "Streamlining DevSecOps with Purposeful AI Integration",
+      "type": "talk",
+      "day": "2025-03-13",
+      "time": "15:15 - 17:25",
+      "speakers": [
+        "marc-herren"
+      ]
+    },
+    {
+      "id": "closing-day2",
+      "title": "Raffle & Closing Day 2",
+      "type": "other",
+      "day": "2025-03-13",
+      "time": "17:30 - 17:40",
+      "speakers": []
     }
   ]
 }
