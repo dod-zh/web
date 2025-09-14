@@ -49,26 +49,30 @@ menu:
       url: "/about/"
       weight: 30
       identifier: "about"
+    - name: "Team"
+      url: "/about/team/"
+      parent: "about"
+      weight: 31
     - name: "Code of Conduct"
       url: "/about/conduct/"
       parent: "about"
-      weight: 31
+      weight: 32
     - name: "Diversity"
       url: "/about/diversity/"
       parent: "about"
-      weight: 32
+      weight: 33
     - name: "Sustainability"
       url: "/about/sustainability/"
       parent: "about"
-      weight: 33
+      weight: 34
     - name: "FAQ"
       url: "/about/faq/"
       parent: "about"
-      weight: 34
+      weight: 35
     - name: "Contact"
       url: "/about/contact/"
       parent: "about"
-      weight: 35
+      weight: 36
 
 outputFormats:
   RSS:
