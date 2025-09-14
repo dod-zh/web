@@ -3,10 +3,6 @@ title: "Diversity & Inclusion"
 description: "Our commitment to diversity and inclusion at DevOpsDays Switzerland"
 ---
 
-# Diversity & Inclusion
-
-DevOpsDays Switzerland is committed to creating an inclusive environment where everyone feels welcome, valued, and able to participate fully.
-
 ## Our Commitment
 
 We believe that diverse perspectives make our community stronger and our conversations richer. We actively work to:
@@ -28,15 +24,18 @@ We offer scholarship tickets to increase participation from underrepresented gro
 - Individuals from lower socioeconomic backgrounds
 
 ### What's Included
+
 - Free conference ticket (2-day pass)
 - Lunch and refreshments
 - Access to all sessions and networking events
 - Mentorship opportunities
 
 ### How to Apply
+
 Applications for diversity scholarships are reviewed on a rolling basis.
 
 **Application Requirements:**
+
 - Brief description of your background and interest in DevOps
 - Explanation of how attending would benefit you
 - Optional: Letter of recommendation
@@ -57,18 +56,21 @@ We actively seek speakers from diverse backgrounds and experiences. Our speaker 
 We strive to make our event accessible to all participants:
 
 ### Venue Accessibility
+
 - Wheelchair accessible venue
 - Accessible restrooms
 - Reserved seating areas
 - Assistance animals welcome
 
 ### Communication Accessibility
+
 - Live captioning for all sessions
 - Sign language interpretation (upon request)
 - Large print materials available
 - Audio loops in presentation rooms
 
 ### Dietary Accommodations
+
 - Vegetarian and vegan meal options
 - Gluten-free options
 - Halal and kosher meals (upon request)
