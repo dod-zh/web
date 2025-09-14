@@ -2,29 +2,29 @@
 
 /* Prose styling for content pages */
 .prose {
-    color: #374151;
+    color: #222;
     max-width: none;
 }
 
 .prose h1 {
-    color: #1f2937;
+    color: #009FE3;
     font-weight: 800;
     font-size: 2.25rem;
     margin-bottom: 1rem;
 }
 
 .prose h2 {
-    color: #1f2937;
+    color: #009FE3;
     font-weight: 700;
     font-size: 1.875rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #e5e7eb;
+    border-bottom: 2px solid #009FE3;
     padding-bottom: 0.5rem;
 }
 
 .prose h3 {
-    color: #1f2937;
+    color: #009FE3;
     font-weight: 600;
     font-size: 1.5rem;
     margin-top: 1.5rem;
@@ -36,7 +36,8 @@
     line-height: 1.75;
 }
 
-.prose ul, .prose ol {
+.prose ul,
+.prose ol {
     margin-bottom: 1.25rem;
     padding-left: 1.75rem;
 }
@@ -46,21 +47,21 @@
 }
 
 .prose a {
-    color: #2563eb;
+    color: #009FE3;
     text-decoration: none;
 }
 
 .prose a:hover {
-    color: #1d4ed8;
+    color: #0077b3;
     text-decoration: underline;
 }
 
 .prose blockquote {
-    border-left: 4px solid #3b82f6;
+    border-left: 4px solid #009FE3;
     padding-left: 1rem;
     margin: 1.5rem 0;
     font-style: italic;
-    color: #6b7280;
+    color: #555;
 }
 
 .prose code {
@@ -91,7 +92,8 @@
     margin: 1.5rem 0;
 }
 
-.prose th, .prose td {
+.prose th,
+.prose td {
     border: 1px solid #e5e7eb;
     padding: 0.75rem;
     text-align: left;
@@ -107,11 +109,11 @@
     .prose h1 {
         font-size: 1.875rem;
     }
-    
+
     .prose h2 {
         font-size: 1.5rem;
     }
-    
+
     .prose h3 {
         font-size: 1.25rem;
     }
@@ -133,20 +135,24 @@
 
 /* Print styles */
 @media print {
-    .no-print, header, footer, nav {
+
+    .no-print,
+    header,
+    footer,
+    nav {
         display: none !important;
     }
-    
+
     .prose {
         font-size: 12pt;
         line-height: 1.5;
     }
-    
+
     .prose a {
         color: inherit;
         text-decoration: none;
     }
-    
+
     .prose a:after {
         content: " (" attr(href) ")";
         font-size: 10pt;
@@ -155,8 +161,12 @@
 }
 
 /* Focus styles for accessibility */
-a:focus, button:focus, input:focus, textarea:focus, select:focus {
-    outline: 2px solid #3b82f6;
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #009FE3;
     outline-offset: 2px;
 }
 
@@ -181,11 +191,13 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
     .prose {
         color: #000;
     }
-    
-    .prose h1, .prose h2, .prose h3 {
+
+    .prose h1,
+    .prose h2,
+    .prose h3 {
         color: #000;
     }
-    
+
     .prose a {
         color: #0000ee;
         text-decoration: underline;
@@ -199,4 +211,15 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+/* CTA Button (override if needed) */
+.bg-blue-600,
+.hover\:bg-blue-700:hover {
+    background-color: #009FE3 !important;
+}
+
+.text-blue-600,
+.hover\:text-blue-800:hover {
+    color: #009FE3 !important;
 }
