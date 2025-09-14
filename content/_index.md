@@ -7,7 +7,7 @@ description: "Join the Swiss DevOps community for two days of learning, networki
 # Impressions from DevOpsDays Zurich 2025
 
 <div class="video-container">
-  <iframe src="https://player.vimeo.com/video/1068553160?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+  <iframe src="https://player.vimeo.com/video/1068553160?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1"
           frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
           title="DevOpsDays Zurich">
   </iframe>
