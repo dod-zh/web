@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
     <meta name="author" content="{{ .Site.Params.author }}">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}">
-    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="og:image" content="{{ .Site.BaseURL }}/images/devopsdays-ch-og.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ .Permalink }}">
     <meta property="twitter:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}">
-    <meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="twitter:description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="twitter:image" content="{{ .Site.BaseURL }}/images/devopsdays-ch-og.jpg">
 
     <!-- Favicon -->
@@ -32,16 +36,16 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/custom.css">
-    
+
     <!-- GDPR Cookie Consent -->
     <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.9.2/dist/cookieconsent.js"></script>
-    
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Event",
-        "name": "DevOpsDays Switzerland 2025",
+        "name": "DevOpsDays Zurich 2025",
         "startDate": "2025-06-15",
         "endDate": "2025-06-16",
         "location": {
@@ -57,22 +61,23 @@
         },
         "organizer": {
             "@type": "Organization",
-            "name": "DevOpsDays Switzerland",
+            "name": "DevOpsDays Zurich",
             "url": "https://devopsdays.ch"
         },
         "url": "https://devopsdays.ch"
     }
     </script>
 </head>
+
 <body class="bg-gray-50">
     {{ partial "header.html" . }}
-    
+
     <main class="min-h-screen">
         {{ block "main" . }}{{ end }}
     </main>
-    
+
     {{ partial "footer.html" . }}
-    
+
     <!-- Cookie Consent Script -->
     <script>
         window.addEventListener('load', function () {
@@ -85,9 +90,10 @@
                 "notice_banner_reject_button_hide": false,
                 "preferences_center_close_button_hide": false,
                 "page_refresh_confirmation_buttons": false,
-                "website_name": "DevOpsDays Switzerland"
+                "website_name": "DevOpsDays Zurich"
             });
         });
     </script>
 </body>
+
 </html>

@@ -1,10 +1,11 @@
-# DevOpsDays Switzerland Website
+# DevOpsDays Zurich Website
 
-This repository contains the source code for the DevOpsDays Switzerland website, built with Hugo static site generator.
+This repository contains the source code for the DevOpsDays Zurich website, built with Hugo static site generator.
 
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - [Hugo](https://gohugo.io/installation/) (extended version)
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/) (for development tools)
@@ -12,12 +13,14 @@ This repository contains the source code for the DevOpsDays Switzerland website,
 ### Local Development
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/tweinmann/devopsdays_ch-web.git
    cd devopsdays_ch-web
    ```
 
 2. **Start the development server**
+
    ```bash
    hugo server -D
    ```
@@ -35,6 +38,7 @@ For a consistent development environment:
    - Click "Reopen in Container" when prompted
 
 2. **Start Hugo server inside container**
+
    ```bash
    hugo server -D --bind 0.0.0.0
    ```
@@ -77,12 +81,15 @@ devopsdays_ch-web/
 ### Adding Content
 
 #### New Page
+
 ```bash
 hugo new content/section/page-name.md
 ```
 
 #### Session Information
+
 Edit `data/sessions.json`:
+
 ```json
 {
   "id": "session-id",
@@ -99,7 +106,9 @@ Edit `data/sessions.json`:
 ```
 
 #### Speaker Profiles
+
 Edit `data/speakers.json`:
+
 ```json
 {
   "id": "speaker-id",
@@ -119,6 +128,7 @@ Edit `data/speakers.json`:
 ### Front Matter
 
 All content pages support these front matter fields:
+
 ```yaml
 ---
 title: "Page Title"
@@ -131,20 +141,24 @@ type: "custom-layout-type"
 ## 🎯 Special Pages
 
 ### Program Page
+
 - Automatically generates schedule from `data/sessions.json`
 - Links sessions to speaker profiles
 - Color-coded by session type
 
 ### Sponsors Page
+
 - Displays sponsors by tier (Platinum, Gold, Silver, Bronze)
 - Pulls data from `data/sponsors.json`
 - Featured sponsors appear in header
 
 ### Contact Page
+
 - Shows team member cards from `data/team.json`
 - Contact forms and information
 
 ### Past Events
+
 - Historical event information from `data/events.json`
 - Archives and links to previous content
 
@@ -153,6 +167,7 @@ type: "custom-layout-type"
 ### Automatic Deployment (Recommended)
 
 The site automatically deploys when you:
+
 1. Push to `main` branch → Production deployment
 2. Create a pull request → Preview deployment at `/preview-[PR-number]/`
 
@@ -171,6 +186,7 @@ hugo --minify
 ### Site Configuration (`config.yaml`)
 
 Key configuration options:
+
 - **baseURL**: Your domain
 - **title**: Site title
 - **params**: Custom parameters
@@ -180,6 +196,7 @@ Key configuration options:
 ### Environment Variables
 
 For production deployment:
+
 - `HUGO_ENV=production`
 - `HUGO_VERSION=latest`
 
@@ -192,6 +209,7 @@ The site uses Tailwind CSS with custom overrides in `/static/css/custom.css`.
 ### Templates
 
 Hugo templates are in `themes/devopsdays/layouts/`:
+
 - `_default/baseof.html`: Base template
 - `_default/single.html`: Single page template
 - `index.html`: Homepage template
@@ -205,6 +223,7 @@ Hugo templates are in `themes/devopsdays/layouts/`:
 ## 🧪 Testing
 
 ### Content Validation
+
 ```bash
 # Check for broken links
 hugo --printI18nWarnings --printPathWarnings
@@ -215,6 +234,7 @@ html-validate public/**/*.html
 ```
 
 ### Performance Testing
+
 ```bash
 # Lighthouse CI (configured in .lighthouserc.json)
 npm install -g @lhci/cli
@@ -224,6 +244,7 @@ lhci autorun
 ## 📊 Analytics & SEO
 
 ### Built-in Features
+
 - **Structured Data**: Event schema markup
 - **Open Graph**: Social media previews
 - **Meta Tags**: SEO optimization
@@ -231,7 +252,9 @@ lhci autorun
 - **RSS Feed**: Content syndication
 
 ### Analytics Setup
+
 Configure in `config.yaml`:
+
 ```yaml
 privacy:
   googleAnalytics:
@@ -246,14 +269,18 @@ privacy:
 
 1. **Fork the repository**
 2. **Create a feature branch**
+
    ```bash
    git checkout -b feature/new-content
    ```
+
 3. **Make your changes**
 4. **Test locally**
+
    ```bash
    hugo server -D
    ```
+
 5. **Submit a pull request**
 
 ### Code Contributions
@@ -276,6 +303,7 @@ privacy:
 ### Common Issues
 
 **Hugo not found**
+
 ```bash
 # Install Hugo extended
 brew install hugo
@@ -284,18 +312,21 @@ snap install hugo --channel=extended
 ```
 
 **Dev container issues**
+
 ```bash
 # Rebuild container
 Ctrl+Shift+P → "Dev Containers: Rebuild Container"
 ```
 
 **Build errors**
+
 ```bash
 # Clear Hugo cache
 hugo mod clean
 ```
 
 **Template errors**
+
 ```bash
 # Check Hugo version compatibility
 hugo version

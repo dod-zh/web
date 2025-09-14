@@ -1,12 +1,12 @@
 ---
 title: "Contact"
-description: "Get in touch with the DevOpsDays Switzerland team"
+description: "Get in touch with the DevOpsDays Zurich team"
 type: "contact"
 ---
 
 # Contact Us
 
-Have questions about DevOpsDays Switzerland? We'd love to hear from you!
+Have questions about DevOpsDays Zurich? We'd love to hear from you!
 
 ## General Information
 
@@ -14,7 +14,7 @@ Have questions about DevOpsDays Switzerland? We'd love to hear from you!
 **Phone**: +41 79 123 4567
 
 **Mailing Address**:  
-DevOpsDays Switzerland  
+DevOpsDays Zurich  
 c/o Swiss DevOps Association  
 Bahnhofstrasse 123  
 8001 Zurich, Switzerland
@@ -22,16 +22,19 @@ Bahnhofstrasse 123
 ## Team Contacts
 
 ### Event Organization
+
 **Sarah Miller** - Event Organizer  
 [sarah@devopsdays.ch](mailto:sarah@devopsdays.ch)  
 Responsible for: Overall event coordination, logistics, venue
 
 ### Program & Speakers
+
 **Mike Chen** - Program Chair  
 [mike@devopsdays.ch](mailto:mike@devopsdays.ch)  
 Responsible for: Call for proposals, speaker selection, program scheduling
 
 ### Sponsorship
+
 **Lisa Brown** - Sponsorship Coordinator  
 [lisa@devopsdays.ch](mailto:lisa@devopsdays.ch)  
 Responsible for: Sponsor relations, partnerships, exhibitor coordination
@@ -49,10 +52,10 @@ Responsible for: Sponsor relations, partnerships, exhibitor coordination
 
 Stay connected with our community:
 
-- **LinkedIn**: [DevOpsDays Switzerland](https://linkedin.com/company/devopsdays-switzerland)
+- **LinkedIn**: [DevOpsDays Zurich](https://linkedin.com/company/devopsdays-switzerland)
 - **Twitter**: [@devopsdaysch](https://twitter.com/devopsdaysch)
 - **Mastodon**: [@devopsdaysch@mastodon.social](https://mastodon.social/@devopsdaysch)
-- **YouTube**: [DevOpsDays Switzerland](https://youtube.com/devopsdaysch)
+- **YouTube**: [DevOpsDays Zurich](https://youtube.com/devopsdaysch)
 
 ## Community Channels
 
@@ -69,11 +72,12 @@ The organizing team holds virtual office hours every second Tuesday of the month
 
 ## Volunteer
 
-Interested in helping make DevOpsDays Switzerland amazing? We're always looking for volunteers!
+Interested in helping make DevOpsDays Zurich amazing? We're always looking for volunteers!
 
 **Volunteer Coordinator**: [volunteers@devopsdays.ch](mailto:volunteers@devopsdays.ch)
 
 Volunteer opportunities include:
+
 - Registration and check-in
 - Session room assistance
 - Photography and video
@@ -83,6 +87,7 @@ Volunteer opportunities include:
 ## Partnership Opportunities
 
 Beyond sponsorship, we welcome partnerships with:
+
 - Educational institutions
 - Professional associations
 - User groups and meetups
@@ -93,6 +98,7 @@ Contact us at [partnerships@devopsdays.ch](mailto:partnerships@devopsdays.ch)
 ## Press Kit
 
 Media representatives can download our press kit including:
+
 - High-resolution logos
 - Event photos
 - Speaker headshots

@@ -5,11 +5,12 @@ description: "Our commitment to environmental sustainability"
 
 # Sustainability
 
-DevOpsDays Switzerland is committed to minimizing our environmental impact and promoting sustainable practices in the tech community.
+DevOpsDays Zurich is committed to minimizing our environmental impact and promoting sustainable practices in the tech community.
 
 ## Our Green Initiatives
 
 ### Digital-First Approach
+
 - Digital tickets and registration
 - QR codes for session feedback
 - Mobile app instead of printed programs
@@ -17,6 +18,7 @@ DevOpsDays Switzerland is committed to minimizing our environmental impact and p
 - Paperless sponsor materials
 
 ### Sustainable Venue
+
 - LEED-certified Swiss Tech Convention Center
 - Energy-efficient lighting and climate control
 - Public transportation accessibility
@@ -24,6 +26,7 @@ DevOpsDays Switzerland is committed to minimizing our environmental impact and p
 - Recycling stations throughout venue
 
 ### Catering & Materials
+
 - Locally sourced, seasonal food
 - Vegetarian and vegan meal options as default
 - Reusable or compostable serving materials
@@ -31,6 +34,7 @@ DevOpsDays Switzerland is committed to minimizing our environmental impact and p
 - Minimal single-use items
 
 ### Travel & Transportation
+
 - Central location accessible by public transport
 - Partnerships with Swiss Federal Railways for discounted travel
 - Encouraging carpooling through community channels
@@ -38,6 +42,7 @@ DevOpsDays Switzerland is committed to minimizing our environmental impact and p
 - Bike-friendly venue with secure parking
 
 ### Waste Reduction
+
 - Comprehensive recycling program
 - Compost bins for organic waste
 - Donation of leftover food to local charities
@@ -49,6 +54,7 @@ DevOpsDays Switzerland is committed to minimizing our environmental impact and p
 We track and work to minimize our event's carbon footprint:
 
 ### 2024 Impact Assessment
+
 - **Venue energy**: 2.1 tons CO₂
 - **Catering**: 1.8 tons CO₂
 - **Participant travel**: 28.5 tons CO₂
@@ -56,6 +62,7 @@ We track and work to minimize our event's carbon footprint:
 - **Total**: 33 tons CO₂
 
 ### 2025 Goals
+
 - Reduce overall footprint by 15%
 - Increase public transport usage to 70%
 - Achieve 80% waste diversion from landfills
@@ -63,15 +70,17 @@ We track and work to minimize our event's carbon footprint:
 
 ## Green Practices for Participants
 
-Help us make DevOpsDays Switzerland more sustainable:
+Help us make DevOpsDays Zurich more sustainable:
 
 ### Getting There
+
 - Use public transportation (SBB day passes available)
 - Consider train travel instead of flying for shorter distances
 - Share rides with other attendees
 - Stay in eco-certified accommodations
 
 ### During the Event
+
 - Bring a reusable water bottle
 - Use digital materials instead of printing
 - Choose vegetarian meal options
@@ -79,6 +88,7 @@ Help us make DevOpsDays Switzerland more sustainable:
 - Join group transportation to evening events
 
 ### After the Event
+
 - Share digital resources instead of printed materials
 - Implement sustainable practices in your workplace
 - Support green initiatives in your local tech community
@@ -95,6 +105,7 @@ We work with organizations committed to sustainability:
 ## Tech for Sustainability
 
 Sessions and discussions often cover:
+
 - Green software development practices
 - Energy-efficient infrastructure
 - Sustainable DevOps practices
@@ -104,6 +115,7 @@ Sessions and discussions often cover:
 ## Measuring Success
 
 We track our progress through:
+
 - Annual sustainability reports
 - Participant feedback and surveys
 - Waste audits and energy monitoring
@@ -113,6 +125,7 @@ We track our progress through:
 ## Community Impact
 
 Beyond our event, we support:
+
 - Local environmental organizations
 - Green tech initiatives in Switzerland
 - Open source projects focused on sustainability

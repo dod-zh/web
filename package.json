@@ -1,7 +1,7 @@
 {
   "name": "devopsdays-switzerland-website",
   "version": "1.0.0",
-  "description": "DevOpsDays Switzerland website built with Hugo",
+  "description": "DevOpsDays Zurich website built with Hugo",
   "scripts": {
     "dev": "hugo server -D --bind 0.0.0.0",
     "build": "hugo --minify",
@@ -21,7 +21,7 @@
     "hugo",
     "static-site"
   ],
-  "author": "DevOpsDays Switzerland Team",
+  "author": "DevOpsDays Zurich Team",
   "license": "MIT",
   "devDependencies": {
     "@lhci/cli": "^0.12.0",

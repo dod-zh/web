@@ -1,15 +1,15 @@
 {
-    "name": "DevOpsDays Switzerland Hugo Development",
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
-	"features": {
-		"ghcr.io/devcontainers/features/git:1": {},
-		"ghcr.io/devcontainers/features/go:1": {},
-		"ghcr.io/devcontainers/features/hugo:1": {},
+    "name": "DevOpsDays Zurich Hugo Development",
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/go:1": {},
+        "ghcr.io/devcontainers/features/hugo:1": {},
         "ghcr.io/devcontainers/features/node:1": {
             "version": "18"
         },
         "ghcr.io/devcontainers/features/github-cli:1": {}
-	}
+    }
     "customizations": {
         "vscode": {
             "extensions": [
@@ -29,7 +29,9 @@
             }
         }
     },
-    "forwardPorts": [1313],
+    "forwardPorts": [
+        1313
+    ],
     "portsAttributes": {
         "1313": {
             "label": "Hugo Dev Server",

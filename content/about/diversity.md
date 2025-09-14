@@ -1,6 +1,6 @@
 ---
 title: "Diversity & Inclusion"
-description: "Our commitment to diversity and inclusion at DevOpsDays Switzerland"
+description: "Our commitment to diversity and inclusion at DevOpsDays Zurich"
 ---
 
 ## Our Commitment
@@ -116,4 +116,4 @@ We welcome your feedback and suggestions on how we can improve our diversity and
 
 ---
 
-*DevOpsDays Switzerland is proud to be part of a global movement working toward more inclusive technology communities.*
+*DevOpsDays Zurich is proud to be part of a global movement working toward more inclusive technology communities.*

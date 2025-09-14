@@ -1,11 +1,11 @@
 baseURL: 'https://devopsdays.ch'
 languageCode: 'en-us'
-title: 'DevOpsDays Switzerland'
+title: 'DevOpsDays Zurich'
 theme: 'devopsdays'
 
 params:
-  description: 'DevOpsDays Switzerland - Annual community event for DevOps practitioners'
-  author: 'DevOpsDays Switzerland Team'
+  description: 'DevOpsDays Zurich - Annual community event for DevOps practitioners'
+  author: 'DevOpsDays Zurich Team'
   keywords: 'devops, switzerland, conference, community, automation, culture'
   
 markup:
