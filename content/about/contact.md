@@ -10,7 +10,7 @@ Have questions about DevOpsDays Zurich? We'd love to hear from you!
 
 ## General Information
 
-**Email**: [info@devopsdays.ch](mailto:info@devopsdays.ch)  
+**Email**: [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch)  
 **Phone**: +41 79 123 4567
 
 **Mailing Address**:  
@@ -61,7 +61,7 @@ Stay connected with our community:
 
 - **Slack**: Join our [community workspace](https://devopsdayscommunity.slack.com/messages/switzerland)
 - **GitHub**: [github.com/devopsdays-ch](https://github.com/devopsdays-ch)
-- **Newsletter**: [Subscribe to updates](mailto:info@devopsdays.ch?subject=Newsletter%20Subscription)
+- **Newsletter**: [Subscribe to updates](mailto:organizer@devopsdays.ch?subject=Newsletter%20Subscription)
 
 ## Office Hours
 

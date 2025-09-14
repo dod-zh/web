@@ -337,7 +337,7 @@ hugo version
 - **Documentation**: [Hugo Documentation](https://gohugo.io/documentation/)
 - **Issues**: Create a GitHub issue
 - **Community**: [DevOpsDays Slack](https://devopsdayscommunity.slack.com/)
-- **Email**: [info@devopsdays.ch](mailto:info@devopsdays.ch)
+- **Email**: [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch)
 
 ## 📄 License
 

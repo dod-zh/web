@@ -3,90 +3,38 @@ title: "Location"
 description: "DevOpsDays Zurich 2025 venue and travel information"
 ---
 
-# Location
+![Location Plan](/images/location.avif)
 
-DevOpsDays Zurich 2025 will be held at the Swiss Tech Convention Center in Lausanne.
+DevOpsDays Zurich 2025 will be held at the Alte Kaserne in Winterthur.
 
 ## Venue
 
-**Swiss Tech Convention Center**  
-Quartier Nord de l'EPFL  
-Route Louis-Favre 2  
-1024 Ecublens, Switzerland
+**Alte Kaserne Winterthur**  
+Technikumstrasse 8  
+8400 Winterthur, Switzerland
 
-The Swiss Tech Convention Center is a state-of-the-art venue located on the EPFL campus, offering modern facilities and easy accessibility.
+[View on Google Maps](https://www.google.com/maps?q=Alte+Kaserne,+Technikumstrasse+8,+8400+Winterthur,+Switzerland)
 
-### Facilities
-
-- Main auditorium (300 seats)
-- Workshop rooms
-- Networking spaces
-- Exhibition area
-- Full AV equipment
-- Wi-Fi throughout
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.4797688202353!2d8.724134715724164!3d47.498504679177385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a997f41b4f7d3%3A0x54d6f50e39c82eaf!2sAlte%20Kaserne%20Kulturzentrum!5e0!3m2!1sen!2sch!4v1697000000000!5m2!1sen!2sch"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 
 ## Getting There
 
-### By Train
+### By Public Transport
 
-- From Geneva Airport: 45 minutes to Lausanne, then metro M1 to EPFL
-- From Zurich Airport: 2.5 hours to Lausanne, then metro M1 to EPFL
-- From Lausanne Central Station: Metro M1 to EPFL (15 minutes)
+The Alte Kaserne in Winterthur is very well accessible by public transport. We recommend using public transport.
 
 ### By Car
 
-- From Geneva: A1 motorway towards Lausanne (45 minutes)
-- From Zurich: A1 motorway towards Lausanne (2.5 hours)
-- Parking available on campus (limited spaces)
+Parking is available but not validated. We strongly recommend using public transport instead.
 
-### By Metro
+## Contact
 
-Metro M1 connects Lausanne city center to EPFL campus. Get off at "EPFL" station.
-
-## Accommodation
-
-### Recommended Hotels
-
-#### In Lausanne City Center
-
-- **Hotel des Voyageurs** - Budget friendly, near train station
-- **Hotel Elite** - Mid-range, city center
-- **Beau-Rivage Palace** - Luxury option with lake views
-
-#### Near EPFL Campus
-
-- **SwissTech Hotel** - On campus, walking distance to venue
-- **Hotel Alpha-Palmiers** - 10 minutes by metro
-
-### Booking
-
-We recommend booking early as June is peak season in Switzerland. Group rates may be available - contact us for details.
-
-## Lausanne
-
-Lausanne is a beautiful city on the shores of Lake Geneva, offering:
-
-- Olympic Museum
-- Beautiful lakefront promenades
-- Historic old town
-- Excellent restaurants and cafes
-- Easy access to Swiss Alps and vineyards
-
-## Getting Around
-
-- **Metro M1**: Connects city center to EPFL
-- **Public transport**: Excellent bus and metro network
-- **Walking**: Lausanne is very walkable
-- **Bike sharing**: PubliBike stations throughout the city
-
-## Conference App
-
-Download our mobile app for:
-
-- Interactive venue maps
-- Session schedules
-- Speaker information
-- Networking features
-- Real-time updates
-
-[Download for iOS](https://apps.apple.com/devopsdays-ch) | [Download for Android](https://play.google.com/store/apps/devopsdays-ch)
+For venue-specific questions, please contact us at [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch).
