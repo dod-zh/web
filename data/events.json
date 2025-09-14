@@ -15,8 +15,8 @@
       "date": "2025-06-15",
       "endDate": "2025-06-16",
       "status": "past",
-      "venue": "Swiss Tech Convention Center",
-      "city": "Lausanne",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
       "attendees": 300,
       "theme": "Building Resilient Systems"
     },
@@ -25,8 +25,8 @@
       "date": "2024-06-10",
       "endDate": "2024-06-11",
       "status": "past",
-      "venue": "Campus Biotech",
-      "city": "Geneva",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
       "attendees": 280,
       "theme": "DevOps at Scale"
     },
@@ -35,8 +35,68 @@
       "date": "2023-06-12",
       "endDate": "2023-06-13",
       "status": "past",
-      "venue": "ETH Zurich",
-      "city": "Zurich",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2022,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2022,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2021,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2019,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2018,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2017,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
       "attendees": 250,
       "theme": "Culture & Automation"
     }
