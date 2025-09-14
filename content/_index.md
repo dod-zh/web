@@ -12,3 +12,32 @@ description: "Join the Swiss DevOps community for two days of learning, networki
           title="DevOpsDays Zurich">
   </iframe>
 </div>
+
+<h2 class="stats-title">What to expect</h2>
+
+<div class="stats-container">
+  <div class="stat-item">
+    <div class="stat-number">250</div>
+    <div class="stat-label">up to Attendees</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">2</div>
+    <div class="stat-label">Keynote-Speakers</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">8</div>
+    <div class="stat-label">Talks</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">10</div>
+    <div class="stat-label">Ignites</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">6</div>
+    <div class="stat-label">Workshops</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">16</div>
+    <div class="stat-label">Open Spaces</div>
+  </div>
+</div>
