@@ -3,117 +3,21 @@ title: "Diversity & Inclusion"
 description: "Our commitment to diversity and inclusion at DevOpsDays Zurich"
 ---
 
-## Our Commitment
+At DevOpsDays Zürich we don't want to be a tech-conference only — instead we want to be a conference focusing on knowledge, networking and a connecting atmospheric vibe, welcoming a range of backgrounds, experiences and opinions.
 
-We believe that diverse perspectives make our community stronger and our conversations richer. We actively work to:
+Wether you are a speaker or a participant, maybe something's missing for you? Would you be happy to have some mentoring on your first conference talk? Would you need some assistance in getting to Winterthur? Would you need childcare to be at the conference? Whatever it is, please do not hesitate to contact us.
 
-- Create a welcoming environment for all participants
-- Ensure diverse representation in our speaker lineup
-- Remove barriers to participation
-- Foster an inclusive community culture
+We might not have a solution in every case or right away – but you can be sure that we are passionate and eager to find one! Here's among others what we already thought of:
 
-## Diversity Scholarship Program
+- trying some sort of "diversity in tech"-stream or talk at the conference itself
+- have gender neutral toilets (if feasable with the location)
+- check the location with zugangsmonitor.ch
+- have reserved seating for people with mobility issues
 
-We offer scholarship tickets to increase participation from underrepresented groups in technology, including but not limited to:
+The access monitor documents the accessibility of cultural institutions for people with a visual, mobility or hearing impairment. Here you can find the accessibility of the Alte Kaserne Winterthur.
 
-- Women and non-binary individuals
-- People of color
-- LGBTQ+ individuals
-- People with disabilities
-- Students and early-career professionals
-- Individuals from lower socioeconomic backgrounds
+We believe in promoting equal opportunities for diverse talents in the IT industry. DevOpsDays Zurich supports the empowering of refugees & migrants for an IT career with a partnership with powercoders.
 
-### What's Included
+We encourage girls to discover coding and explore a career in tech. DevOpsDays Zurich supports GirlsCodeToo, a non-profit organization, sparking talent and curiosity by introducing girls to software tools, different coding languages and processes that are used to build apps, games, websites, and robots.
 
-- Free conference ticket (2-day pass)
-- Lunch and refreshments
-- Access to all sessions and networking events
-- Mentorship opportunities
-
-### How to Apply
-
-Applications for diversity scholarships are reviewed on a rolling basis.
-
-**Application Requirements:**
-
-- Brief description of your background and interest in DevOps
-- Explanation of how attending would benefit you
-- Optional: Letter of recommendation
-
-[Apply for Scholarship](mailto:diversity@devopsdays.ch?subject=Scholarship%20Application)
-
-## Speaker Diversity
-
-We actively seek speakers from diverse backgrounds and experiences. Our speaker selection process includes:
-
-- Diverse review committee
-- Blind review process for initial screening
-- Outreach to underrepresented communities
-- Mentorship for first-time speakers
-
-## Accessibility
-
-We strive to make our event accessible to all participants:
-
-### Venue Accessibility
-
-- Wheelchair accessible venue
-- Accessible restrooms
-- Reserved seating areas
-- Assistance animals welcome
-
-### Communication Accessibility
-
-- Live captioning for all sessions
-- Sign language interpretation (upon request)
-- Large print materials available
-- Audio loops in presentation rooms
-
-### Dietary Accommodations
-
-- Vegetarian and vegan meal options
-- Gluten-free options
-- Halal and kosher meals (upon request)
-- Clear labeling of all food items
-
-## Family-Friendly Policies
-
-- Nursing/pumping rooms available
-- Children welcome at all events
-- Quiet spaces available
-- Family tickets at reduced rates
-
-## Community Guidelines
-
-- Use inclusive language in all communications
-- Respect people's pronouns and identities
-- Be mindful of different cultural backgrounds
-- Create space for all voices in discussions
-
-## Get Involved
-
-Help us build a more inclusive community:
-
-- **Volunteer**: Join our diversity committee
-- **Mentor**: Support scholarship recipients
-- **Spread the word**: Share opportunities with your networks
-- **Feedback**: Help us improve our efforts
-
-## Resources
-
-- [Diversity in Tech Resources](https://diversityintech.ch)
-- [Women in Tech Switzerland](https://womenintechswitzerland.ch)
-- [Code.org Diversity Resources](https://code.org/diversity)
-
-## Contact
-
-For questions about diversity, inclusion, or accessibility:
-
-**Diversity Committee**  
-[diversity@devopsdays.ch](mailto:diversity@devopsdays.ch)
-
-We welcome your feedback and suggestions on how we can improve our diversity and inclusion efforts.
-
----
-
-*DevOpsDays Zurich is proud to be part of a global movement working toward more inclusive technology communities.*
+We are committed for the integration of diverse perspectives in tech and innovation. DevOpsDays Zurich is proud to collaborate with Be Like Grace, a network dedicated to fostering inclusion and diversity in Bern's tech scene. By empowering women and embracing varied backgrounds, languages, and cultures, we support Be Like Grace's commitment to enriching workplace discussions, enhancing decision-making, and creating more enjoyable work environments. This partnership reflects our shared belief that diversity not only brings more excitement and fun to our daily work but also drives the creation of superior products and services.

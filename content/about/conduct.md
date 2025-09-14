@@ -3,69 +3,24 @@ title: "Code of Conduct"
 description: "DevOpsDays Zurich Code of Conduct"
 ---
 
-# Code of Conduct
+All attendees, speakers, sponsors, and volunteers at DevopsDays Zürich 2025 are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
 
-DevOpsDays Zurich is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or technical choices.
+## The Quick Version
 
-## Our Standards
+Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter, and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.
 
-We expect all participants to:
+## The Less Quick Version
 
-- Be respectful and inclusive in speech and actions
-- Refrain from demeaning, discriminatory, or harassing behavior
-- Be mindful of your surroundings and fellow participants
-- Alert conference organizers if you notice someone in distress or violations of this Code of Conduct
+Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately.
 
-## Unacceptable Behavior
+Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.
 
-The following behaviors are considered harassment and are unacceptable:
-
-- Offensive comments related to gender, gender identity, sexual orientation, disability, physical appearance, body size, race, age, religion, or technical choices
-- Sexual language and imagery in public spaces
-- Deliberate intimidation, stalking, or following
-- Harassing photography or recording
-- Sustained disruption of talks or other events
-- Inappropriate physical contact
-- Unwelcome sexual attention or advances
-
-## Consequences
-
-Participants asked to stop any harassing behavior are expected to comply immediately.
-
-If a participant engages in harassing behavior, conference organizers may take any action they deem appropriate, including:
-
-- Warning the offender
-- Expulsion from the conference without refund
-- Reporting to appropriate authorities
-
-## Reporting
+If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.
 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately.
 
-### How to Report
+Conference staff can be identified by distinct staff t-shirts. Conference staff will be happy to help participants contact local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
-- **In person**: Find any organizer (they'll be wearing special badges)
-- **Email**: [conduct@devopsdays.ch](mailto:conduct@devopsdays.ch)
-- **Phone**: +41 79 123 4567 (available during event hours)
+We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
-All reports will be handled confidentially.
-
-## Scope
-
-This Code of Conduct applies to all DevOpsDays Zurich spaces, including:
-
-- Conference sessions and workshops
-- Networking events and social gatherings
-- Online spaces (website, social media, Slack)
-- Any other event-related activities
-
-## Contact Information
-
-Conference organizers can be reached at:
-
-- [conduct@devopsdays.ch](mailto:conduct@devopsdays.ch)
-- +41 79 123 4567
-
-This Code of Conduct is based on the [DevOpsDays Global Code of Conduct](https://devopsdays.org/conduct/) and the [Conference Code of Conduct](https://confcodeofconduct.com/).
-
-Last updated: September 2025
+The DevopsDays Zürich 2025 Code of Conduct is based on confcodeofconduct.com.

@@ -3,185 +3,41 @@ title: "FAQ"
 description: "Frequently asked questions about DevOpsDays Zurich"
 ---
 
-# Frequently Asked Questions
+**Q: How do I register and how do I get my ticket?**
+A: Registration can be done online. A ticket can be purchased by clicking on *Event → Ticket*. Following payment, a digital ticket will be sent by email. This can be brought along digitally or printed out. ([DevOpsDaysZurich][1])
 
-## General Questions
+---
 
-### What is DevOpsDays?
+**Q: I would like to speak at DevOpsDays. How do I go about it?**
+A: Prior to each DevOpsDays, there is a Call for Papers (CFP). It is distributed via social media, websites and personal network. The CFP is open to anyone. Submissions can include Talks, Ignites, and Workshops. When the CFP is over, the organizing team will put together a program. Outside the period of an open CFP, you can contact the organizers by email if you are interested. ([DevOpsDaysZurich][1])
 
-DevOpsDays is a worldwide series of technical conferences covering topics of software development, IT infrastructure operations, and the intersection between them. It's a grassroots event organized by local communities.
+---
 
-### Who should attend?
+**Q: Can I cancel my participation spontaneously and will my ticket be refunded?**
+A: You can cancel your participation up to one week before the event and the costs will be refunded, provided that a small handling fee is paid. Be aware that there are only limited places and the tickets are very popular. ([DevOpsDaysZurich][1])
 
-DevOpsDays Zurich is for anyone interested in DevOps, including:
+---
 
-- Software developers and engineers
-- System administrators and SREs
-- DevOps engineers and platform engineers
-- Team leads and engineering managers
-- CTOs and technical decision makers
-- Students and career changers
+**Q: Is parking validated?**
+A: As the Alte Kaserne in Winterthur is very well accessible by public transport, they recommend using public transport. They do not validate parking. ([DevOpsDaysZurich][1])
 
-### What is the format?
+---
 
-Our 2-day event features:
+**Q: I would like to become a sponsor. How do I go about it?**
+A: On the website under *Event → Sponsor*, more information about sponsorship packages is available. To get started, you can send an email to the organizers. Together you will clarify what would suit and then take the next steps. ([DevOpsDaysZurich][1])
 
-- Keynote presentations (45 minutes)
-- Technical talks (30 minutes)
-- Ignite talks (5 minutes)
-- Hands-on workshops (60-120 minutes)
-- Open spaces (self-organized discussions)
-- Networking opportunities
+---
 
-## Registration & Tickets
+**Q: Can I share my ticket with a colleague?**
+A: It is possible if the badge is returned on the evening of the first day. Exchanges within one day are not possible. ([DevOpsDaysZurich][1])
 
-### When do tickets go on sale?
+---
 
-Tickets are available now! Early bird pricing is available until April 1, 2025.
+**Q: What is an Ignite Talk?**
+A: An Ignite talk is a fast-paced, 5-minute presentation with 20 slides that auto-advance every 15 seconds, designed to share compelling ideas, insights, or stories in an engaging and dynamic format. More info: devopsdays.org's Ignite talks format. ([DevOpsDaysZurich][1])
 
-### What's included in my ticket?
+---
 
-Your ticket includes:
+If you want, I can format these for printing or extract them into a PDF.
 
-- Access to all sessions and workshops
-- Welcome reception
-- Lunch and coffee breaks both days
-- Evening networking event
-- Conference swag
-- Access to online resources
-
-### Can I get a refund?
-
-Full refunds are available until May 1, 2025. After that, 50% refunds until May 31, 2025. No refunds after May 31.
-
-### Do you offer group discounts?
-
-Yes! 10% off for 5+ tickets, 15% off for 10+ tickets. Contact us for corporate packages.
-
-### Are there student discounts?
-
-Yes, student tickets are available at a significant discount. Valid student ID required.
-
-## Program & Content
-
-### How are speakers selected?
-
-We use a blind review process with a diverse selection committee. All proposals are evaluated based on content quality, relevance, and community value.
-
-### Can I propose a talk?
-
-Yes! Our Call for Proposals is open until March 1, 2025. We welcome talks, ignites, and workshop proposals.
-
-### What are Open Spaces?
-
-Open Spaces are self-organized discussion sessions proposed by attendees on the day of the event. Topics are chosen by the community and can cover anything related to DevOps.
-
-### Will sessions be recorded?
-
-Yes, with speaker permission. Videos are published on our YouTube channel after the event.
-
-## Logistics
-
-### Where is the event held?
-
-Swiss Tech Convention Center, EPFL Campus, Lausanne, Switzerland.
-
-### How do I get there?
-
-The venue is easily accessible by public transport. Metro M1 connects Lausanne city center to EPFL campus. See our [location page](/event/location/) for detailed directions.
-
-### Is the venue accessible?
-
-Yes, the venue is fully wheelchair accessible with accessible restrooms, reserved seating, and assistance available. Contact us for specific accessibility needs.
-
-### What about parking?
-
-Limited parking is available on campus. We strongly recommend using public transportation.
-
-### Where should I stay?
-
-We recommend hotels in Lausanne city center or near EPFL campus. See our [location page](/event/location/) for recommendations.
-
-## Food & Dietary Requirements
-
-### What meals are included?
-
-Lunch and coffee breaks both days, plus welcome reception and evening networking event.
-
-### Can you accommodate dietary restrictions?
-
-Yes! We provide vegetarian, vegan, gluten-free, and other dietary options. Please specify requirements during registration.
-
-### Is there a place to store food?
-
-Refrigerators are available for medications and special dietary items.
-
-## Technology & Networking
-
-### Is there Wi-Fi?
-
-Yes, high-speed Wi-Fi is available throughout the venue.
-
-### Will there be power outlets?
-
-Power outlets are available in all session rooms and networking areas.
-
-### Is there a conference app?
-
-Yes! Our mobile app includes schedules, speaker info, networking features, and real-time updates.
-
-### How can I connect with other attendees?
-
-- Conference app networking features
-- Slack workspace (invite sent with ticket confirmation)
-- Networking breaks and social events
-- Open Spaces discussions
-
-## Diversity & Inclusion
-
-### Do you offer diversity scholarships?
-
-Yes! We provide free tickets for underrepresented groups in tech. [Apply here](/about/diversity/).
-
-### Is childcare available?
-
-While we don't provide formal childcare, children are welcome at all events. Quiet spaces and nursing rooms are available.
-
-### What languages are used?
-
-Sessions are primarily in English, though some may be in German or French. This will be clearly indicated in the program.
-
-## Health & Safety
-
-### What are your COVID-19 policies?
-
-We follow current Swiss health guidelines. Check our website for the latest updates before attending.
-
-### Is there medical assistance available?
-
-Basic first aid is available on-site. The venue is located near medical facilities.
-
-## Sponsorship & Partnerships
-
-### How can my company sponsor the event?
-
-Check out our [sponsorship page](/event/sponsors/) or contact <sponsors@devopsdays.ch> for opportunities.
-
-### Can I distribute materials at the event?
-
-Sponsors can distribute materials in designated areas. All attendees can participate in job fair sessions.
-
-## Still Have Questions?
-
-Contact us:
-
-- **General inquiries**: [info@devopsdays.ch](mailto:info@devopsdays.ch)
-- **Registration**: [registration@devopsdays.ch](mailto:registration@devopsdays.ch)
-- **Program**: [program@devopsdays.ch](mailto:program@devopsdays.ch)
-- **Sponsors**: [sponsors@devopsdays.ch](mailto:sponsors@devopsdays.ch)
-
-Or find us on:
-
-- [Slack workspace](https://devopsdayscommunity.slack.com/messages/switzerland)
-- [LinkedIn](https://linkedin.com/company/devopsdays-switzerland)
-- [Twitter](https://twitter.com/devopsdaysch)
+[1]: https://www.devopsdays.ch/faq "FAQ | DevOpsDays Zurich"
