@@ -1,0 +1,33 @@
+{
+  "name": "devopsdays-switzerland-website",
+  "version": "1.0.0",
+  "description": "DevOpsDays Switzerland website built with Hugo",
+  "scripts": {
+    "dev": "hugo server -D --bind 0.0.0.0",
+    "build": "hugo --minify",
+    "build:preview": "hugo --minify --baseURL=/preview/",
+    "validate": "html-validate public/**/*.html",
+    "lighthouse": "lhci autorun",
+    "clean": "rm -rf public resources"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tweinmann/devopsdays_ch-web.git"
+  },
+  "keywords": [
+    "devops",
+    "conference",
+    "switzerland",
+    "hugo",
+    "static-site"
+  ],
+  "author": "DevOpsDays Switzerland Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@lhci/cli": "^0.12.0",
+    "html-validate": "^8.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

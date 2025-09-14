@@ -1,0 +1,91 @@
+{{ define "main" }}
+<div class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold">{{ .Title }}</h1>
+        {{ if .Description }}
+        <p class="text-xl text-gray-600 mt-4">{{ .Description }}</p>
+        {{ end }}
+    </div>
+</div>
+
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        {{ .Content }}
+        
+        {{ if .Site.Data.sponsors }}
+        <div class="mt-12">
+            <!-- Platinum Sponsors -->
+            {{ $platinum := where .Site.Data.sponsors.sponsors "level" "platinum" }}
+            {{ if $platinum }}
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-8">Platinum Sponsors</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {{ range $platinum }}
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                        <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                            <img src="{{ .logo }}" alt="{{ .name }}" class="h-20 w-auto mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-2">{{ .name }}</h3>
+                            <p class="text-gray-600">{{ .description }}</p>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+            
+            <!-- Gold Sponsors -->
+            {{ $gold := where .Site.Data.sponsors.sponsors "level" "gold" }}
+            {{ if $gold }}
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-center mb-8">Gold Sponsors</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {{ range $gold }}
+                    <div class="bg-white rounded-lg shadow p-6 text-center">
+                        <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                            <img src="{{ .logo }}" alt="{{ .name }}" class="h-16 w-auto mx-auto mb-3">
+                            <h3 class="text-lg font-semibold mb-2">{{ .name }}</h3>
+                            <p class="text-gray-600 text-sm">{{ .description }}</p>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+            
+            <!-- Silver Sponsors -->
+            {{ $silver := where .Site.Data.sponsors.sponsors "level" "silver" }}
+            {{ if $silver }}
+            <div class="mb-12">
+                <h2 class="text-xl font-bold text-center mb-6">Silver Sponsors</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {{ range $silver }}
+                    <div class="bg-white rounded-lg shadow p-4 text-center">
+                        <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                            <img src="{{ .logo }}" alt="{{ .name }}" class="h-12 w-auto mx-auto mb-2">
+                            <h3 class="text-sm font-semibold">{{ .name }}</h3>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+            
+            <!-- Bronze Sponsors -->
+            {{ $bronze := where .Site.Data.sponsors.sponsors "level" "bronze" }}
+            {{ if $bronze }}
+            <div>
+                <h2 class="text-lg font-bold text-center mb-6">Bronze Sponsors</h2>
+                <div class="flex flex-wrap justify-center items-center gap-4">
+                    {{ range $bronze }}
+                    <a href="{{ .website }}" target="_blank" rel="noopener" class="block bg-white rounded p-3 shadow">
+                        <img src="{{ .logo }}" alt="{{ .name }}" class="h-8 w-auto">
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

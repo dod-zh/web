@@ -1,0 +1,72 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
+        fetch-depth: 0
+    
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+    
+    - name: Build Hugo site
+      run: hugo --minify
+    
+    - name: Deploy to GitHub Pages (main branch)
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        cname: devopsdays.ch
+    
+    - name: Deploy Preview (PR)
+      if: github.event_name == 'pull_request'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        destination_dir: preview-${{ github.event.number }}
+        keep_files: false
+    
+    - name: Comment PR with preview link
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '🚀 Preview deployed! View at: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/preview-${{ github.event.number }}/'
+          })
+
+  lighthouse:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Run Lighthouse CI
+      uses: treosh/lighthouse-ci-action@v9
+      with:
+        urls: |
+          https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/preview-${{ github.event.number }}/
+        configPath: ./.lighthouserc.json
+        uploadArtifacts: true
+        temporaryPublicStorage: true

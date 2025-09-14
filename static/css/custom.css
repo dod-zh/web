@@ -1,0 +1,202 @@
+/* Custom CSS for DevOpsDays Switzerland */
+
+/* Prose styling for content pages */
+.prose {
+    color: #374151;
+    max-width: none;
+}
+
+.prose h1 {
+    color: #1f2937;
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.prose h2 {
+    color: #1f2937;
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.prose h3 {
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+}
+
+.prose ul, .prose ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.75rem;
+}
+
+.prose li {
+    margin-bottom: 0.5rem;
+}
+
+.prose a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.prose a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.prose blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #6b7280;
+}
+
+.prose code {
+    background-color: #f3f4f6;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.prose pre {
+    background-color: #1f2937;
+    color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.prose pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+.prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.prose th, .prose td {
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.prose th {
+    background-color: #f9fafb;
+    font-weight: 600;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .prose h1 {
+        font-size: 1.875rem;
+    }
+    
+    .prose h2 {
+        font-size: 1.5rem;
+    }
+    
+    .prose h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Navigation dropdown improvements */
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+}
+
+.group:hover .group-hover\:visible {
+    visibility: visible;
+}
+
+/* Cookie consent styling */
+#cc-main {
+    z-index: 9999 !important;
+}
+
+/* Print styles */
+@media print {
+    .no-print, header, footer, nav {
+        display: none !important;
+    }
+    
+    .prose {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .prose a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .prose a:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        color: #666;
+    }
+}
+
+/* Focus styles for accessibility */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .prose {
+        color: #000;
+    }
+    
+    .prose h1, .prose h2, .prose h3 {
+        color: #000;
+    }
+    
+    .prose a {
+        color: #0000ee;
+        text-decoration: underline;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,101 @@
+{{ define "main" }}
+<div class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold">{{ .Title }}</h1>
+        {{ if .Description }}
+        <p class="text-xl text-gray-600 mt-4">{{ .Description }}</p>
+        {{ end }}
+    </div>
+</div>
+
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        {{ .Content }}
+        
+        <!-- Program Schedule -->
+        {{ if .Site.Data.sessions }}
+        <div class="mt-12">
+            <h2 class="text-3xl font-bold mb-8">Program Schedule</h2>
+            
+            <!-- Day 1 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6 bg-blue-600 text-white px-4 py-2 rounded">Day 1 - June 15, 2025</h3>
+                <div class="space-y-4">
+                    {{ range where .Site.Data.sessions.sessions "day" 1 }}
+                    <div class="bg-white p-6 rounded-lg shadow border-l-4 border-{{ if eq .type "keynote" }}blue{{ else if eq .type "talk" }}green{{ else if eq .type "ignite" }}yellow{{ else }}purple{{ end }}-500">
+                        <div class="flex flex-col md:flex-row md:items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="text-lg font-semibold text-gray-800">{{ .time }}</span>
+                                    <span class="ml-3 px-2 py-1 text-xs rounded bg-{{ if eq .type "keynote" }}blue{{ else if eq .type "talk" }}green{{ else if eq .type "ignite" }}yellow{{ else }}purple{{ end }}-100 text-{{ if eq .type "keynote" }}blue{{ else if eq .type "talk" }}green{{ else if eq .type "ignite" }}yellow{{ else }}purple{{ end }}-800">
+                                        {{ .type }}
+                                    </span>
+                                    <span class="ml-2 text-sm text-gray-600">({{ .duration }}min)</span>
+                                </div>
+                                <h4 class="text-xl font-semibold mb-2">{{ .title }}</h4>
+                                <p class="text-gray-600 mb-2">{{ .description }}</p>
+                                {{ if .room }}
+                                <p class="text-sm text-gray-500">📍 {{ .room }}</p>
+                                {{ end }}
+                            </div>
+                            {{ if .speaker }}
+                            {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .speaker) 0 }}
+                            {{ if $speaker }}
+                            <div class="flex items-center mt-4 md:mt-0 md:ml-6">
+                                <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}" class="w-12 h-12 rounded-full">
+                                <div class="ml-3">
+                                    <p class="font-semibold">{{ $speaker.name }}</p>
+                                    <p class="text-sm text-gray-600">{{ $speaker.company }}</p>
+                                </div>
+                            </div>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            
+            <!-- Day 2 -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 bg-blue-600 text-white px-4 py-2 rounded">Day 2 - June 16, 2025</h3>
+                <div class="space-y-4">
+                    {{ range where .Site.Data.sessions.sessions "day" 2 }}
+                    <div class="bg-white p-6 rounded-lg shadow border-l-4 border-{{ if eq .type "keynote" }}blue{{ else if eq .type "talk" }}green{{ else if eq .type "ignite" }}yellow{{ else }}purple{{ end }}-500">
+                        <div class="flex flex-col md:flex-row md:items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="text-lg font-semibold text-gray-800">{{ .time }}</span>
+                                    <span class="ml-3 px-2 py-1 text-xs rounded bg-{{ if eq .type "keynote" }}blue{{ else if eq .type "talk" }}green{{ else if eq .type "ignite" }}yellow{{ else }}purple{{ end }}-100 text-{{ if eq .type "keynote" }}blue{{ else if eq .type "talk" }}green{{ else if eq .type "ignite" }}yellow{{ else }}purple{{ end }}-800">
+                                        {{ .type }}
+                                    </span>
+                                    <span class="ml-2 text-sm text-gray-600">({{ .duration }}min)</span>
+                                </div>
+                                <h4 class="text-xl font-semibold mb-2">{{ .title }}</h4>
+                                <p class="text-gray-600 mb-2">{{ .description }}</p>
+                                {{ if .room }}
+                                <p class="text-sm text-gray-500">📍 {{ .room }}</p>
+                                {{ end }}
+                            </div>
+                            {{ if .speaker }}
+                            {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .speaker) 0 }}
+                            {{ if $speaker }}
+                            <div class="flex items-center mt-4 md:mt-0 md:ml-6">
+                                <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}" class="w-12 h-12 rounded-full">
+                                <div class="ml-3">
+                                    <p class="font-semibold">{{ $speaker.name }}</p>
+                                    <p class="text-sm text-gray-600">{{ $speaker.company }}</p>
+                                </div>
+                            </div>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

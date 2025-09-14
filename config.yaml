@@ -1,0 +1,82 @@
+baseURL: 'https://devopsdays.ch'
+languageCode: 'en-us'
+title: 'DevOpsDays Switzerland'
+theme: 'devopsdays'
+
+params:
+  description: 'DevOpsDays Switzerland - Annual community event for DevOps practitioners'
+  author: 'DevOpsDays Switzerland Team'
+  keywords: 'devops, switzerland, conference, community, automation, culture'
+  
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+    lineNos: true
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+    - name: "Event"
+      url: "/event/"
+      weight: 20
+      identifier: "event"
+    - name: "Tickets"
+      url: "/event/tickets/"
+      parent: "event"
+      weight: 21
+    - name: "Program"
+      url: "/event/program/"
+      parent: "event"
+      weight: 22
+    - name: "Sponsors"
+      url: "/event/sponsors/"
+      parent: "event"
+      weight: 23
+    - name: "Location"
+      url: "/event/location/"
+      parent: "event"
+      weight: 24
+    - name: "Past Events"
+      url: "/event/past-events/"
+      parent: "event"
+      weight: 25
+    - name: "About"
+      url: "/about/"
+      weight: 30
+      identifier: "about"
+    - name: "Code of Conduct"
+      url: "/about/conduct/"
+      parent: "about"
+      weight: 31
+    - name: "Diversity"
+      url: "/about/diversity/"
+      parent: "about"
+      weight: 32
+    - name: "Sustainability"
+      url: "/about/sustainability/"
+      parent: "about"
+      weight: 33
+    - name: "FAQ"
+      url: "/about/faq/"
+      parent: "about"
+      weight: 34
+    - name: "Contact"
+      url: "/about/contact/"
+      parent: "about"
+      weight: 35
+
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+
+privacy:
+  googleAnalytics:
+    disable: false
+    anonymizeIP: true
+    respectDoNotTrack: true

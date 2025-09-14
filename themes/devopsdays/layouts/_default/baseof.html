@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="keywords" content="{{ .Site.Params.keywords }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/devopsdays-ch-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}">
+    <meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}/images/devopsdays-ch-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    
+    <!-- GDPR Cookie Consent -->
+    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.9.2/dist/cookieconsent.js"></script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "DevOpsDays Switzerland 2025",
+        "startDate": "2025-06-15",
+        "endDate": "2025-06-16",
+        "location": {
+            "@type": "Place",
+            "name": "Swiss Tech Convention Center",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Route Louis-Favre 2",
+                "addressLocality": "Ecublens",
+                "postalCode": "1024",
+                "addressCountry": "CH"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "DevOpsDays Switzerland",
+            "url": "https://devopsdays.ch"
+        },
+        "url": "https://devopsdays.ch"
+    }
+    </script>
+</head>
+<body class="bg-gray-50">
+    {{ partial "header.html" . }}
+    
+    <main class="min-h-screen">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    {{ partial "footer.html" . }}
+    
+    <!-- Cookie Consent Script -->
+    <script>
+        window.addEventListener('load', function () {
+            cookieconsent.run({
+                "notice_banner_type": "simple",
+                "consent_type": "express",
+                "palette": "light",
+                "language": "en",
+                "page_load_consent_levels": ["strictly-necessary"],
+                "notice_banner_reject_button_hide": false,
+                "preferences_center_close_button_hide": false,
+                "page_refresh_confirmation_buttons": false,
+                "website_name": "DevOpsDays Switzerland"
+            });
+        });
+    </script>
+</body>
+</html>

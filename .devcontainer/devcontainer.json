@@ -1,0 +1,41 @@
+{
+    "name": "DevOpsDays Switzerland Hugo Development",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/go:1": {},
+		"ghcr.io/devcontainers/features/hugo:1": {},
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "18"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+	}
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bungcip.better-toml",
+                "davidanson.vscode-markdownlint",
+                "budparr.language-hugo-vscode",
+                "eliostruyf.vscode-front-matter",
+                "ms-vscode.vscode-json"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "editor.formatOnSave": true,
+                "files.associations": {
+                    "*.html": "html",
+                    "*.md": "markdown"
+                }
+            }
+        }
+    },
+    "forwardPorts": [1313],
+    "portsAttributes": {
+        "1313": {
+            "label": "Hugo Dev Server",
+            "onAutoForward": "notify"
+        }
+    },
+    "postCreateCommand": "hugo version",
+    "remoteUser": "vscode"
+}

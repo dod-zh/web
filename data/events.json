@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "year": 2025,
+      "date": "2025-06-15",
+      "endDate": "2025-06-16",
+      "status": "upcoming",
+      "venue": "Swiss Tech Convention Center",
+      "city": "Lausanne",
+      "attendees": 300,
+      "theme": "Building Resilient Systems"
+    },
+    {
+      "year": 2024,
+      "date": "2024-06-10",
+      "endDate": "2024-06-11",
+      "status": "past",
+      "venue": "Campus Biotech",
+      "city": "Geneva",
+      "attendees": 280,
+      "theme": "DevOps at Scale"
+    },
+    {
+      "year": 2023,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "ETH Zurich",
+      "city": "Zurich",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    }
+  ]
+}

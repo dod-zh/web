@@ -1,0 +1,52 @@
+{
+  "sessions": [
+    {
+      "id": "keynote-2025-day1",
+      "title": "The Future of DevOps Culture",
+      "type": "keynote",
+      "day": 1,
+      "time": "09:00",
+      "duration": 45,
+      "speaker": "speaker-1",
+      "description": "Exploring how DevOps culture continues to evolve in modern organizations.",
+      "abstract": "This keynote will examine the current state of DevOps culture and where it's heading in the next decade.",
+      "room": "Main Hall"
+    },
+    {
+      "id": "talk-2025-monitoring",
+      "title": "Observability at Scale",
+      "type": "talk",
+      "day": 1,
+      "time": "10:15",
+      "duration": 30,
+      "speaker": "speaker-2",
+      "description": "Building robust monitoring and observability systems for large-scale applications.",
+      "abstract": "Learn practical approaches to implementing observability in microservices architectures.",
+      "room": "Main Hall"
+    },
+    {
+      "id": "ignite-automation",
+      "title": "5 Minutes to Better Automation",
+      "type": "ignite",
+      "day": 1,
+      "time": "14:30",
+      "duration": 5,
+      "speaker": "speaker-3",
+      "description": "Quick tips for improving your automation workflows.",
+      "abstract": "Fast-paced presentation covering automation best practices.",
+      "room": "Main Hall"
+    },
+    {
+      "id": "workshop-k8s",
+      "title": "Kubernetes Hands-on Workshop",
+      "type": "workshop",
+      "day": 2,
+      "time": "10:00",
+      "duration": 120,
+      "speaker": "speaker-4",
+      "description": "Practical workshop covering Kubernetes deployment and management.",
+      "abstract": "Hands-on experience with Kubernetes concepts and real-world scenarios.",
+      "room": "Workshop Room A"
+    }
+  ]
+}

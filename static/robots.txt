@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://devopsdays.ch/sitemap.xml
+
+# Archive and admin areas
+Disallow: /admin/
+Disallow: /_old/
+Disallow: /temp/
+
+# Development and preview paths
+Disallow: /preview-*/
+Disallow: /dev/
+Disallow: /test/
+
+# Common files to exclude
+Disallow: /*.json$
+Disallow: /*.xml$ 
+Disallow: /*.txt$
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Cache friendly
+Crawl-delay: 1

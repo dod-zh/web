@@ -1,0 +1,40 @@
+{
+  "sponsors": [
+    {
+      "id": "sponsor-1",
+      "name": "TechCorp",
+      "level": "platinum",
+      "logo": "/images/sponsors/techcorp.svg",
+      "website": "https://techcorp.com",
+      "description": "Leading cloud infrastructure provider enabling modern DevOps practices.",
+      "featured": true
+    },
+    {
+      "id": "sponsor-2",
+      "name": "CloudScale",
+      "level": "gold",
+      "logo": "/images/sponsors/cloudscale.svg",
+      "website": "https://cloudscale.com",
+      "description": "Scalable cloud solutions for enterprise applications.",
+      "featured": true
+    },
+    {
+      "id": "sponsor-3",
+      "name": "AutoFlow",
+      "level": "silver",
+      "logo": "/images/sponsors/autoflow.svg",
+      "website": "https://autoflow.io",
+      "description": "Automation tools for modern development workflows.",
+      "featured": false
+    },
+    {
+      "id": "sponsor-4",
+      "name": "DevTools Inc",
+      "level": "bronze",
+      "logo": "/images/sponsors/devtools.svg",
+      "website": "https://devtools.com",
+      "description": "Developer productivity tools and platforms.",
+      "featured": false
+    }
+  ]
+}

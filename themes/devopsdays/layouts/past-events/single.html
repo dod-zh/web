@@ -1,0 +1,90 @@
+{{ define "main" }}
+<div class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold">{{ .Title }}</h1>
+        {{ if .Description }}
+        <p class="text-xl text-gray-600 mt-4">{{ .Description }}</p>
+        {{ end }}
+    </div>
+</div>
+
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        {{ .Content }}
+        
+        {{ if .Site.Data.events }}
+        <div class="mt-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {{ range where .Site.Data.events.events "status" "past" }}
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600">DevOpsDays Switzerland {{ .year }}</h3>
+                            <p class="text-gray-600">{{ dateFormat "January 2-" .date }}{{ dateFormat "2, 2006" .endDate }}</p>
+                            <p class="text-gray-600">{{ .venue }}, {{ .city }}</p>
+                        </div>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">{{ .attendees }} attendees</span>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Theme: {{ .theme }}</h4>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <a href="/events/{{ .year }}/" class="text-blue-600 hover:text-blue-800 text-sm">View Program</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="/events/{{ .year }}/photos/" class="text-blue-600 hover:text-blue-800 text-sm">Photo Gallery</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="/events/{{ .year }}/videos/" class="text-blue-600 hover:text-blue-800 text-sm">Videos</a>
+                    </div>
+                    
+                    <div class="border-t pt-4">
+                        <h5 class="font-medium mb-2">Event Highlights:</h5>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• 2 keynotes</li>
+                            <li>• {{ if eq .year 2024 }}10 talks{{ else }}8 talks{{ end }}</li>
+                            <li>• {{ if eq .year 2024 }}16 ignites{{ else }}12 ignites{{ end }}</li>
+                            <li>• {{ if eq .year 2024 }}6 workshops{{ else }}4 workshops{{ end }}</li>
+                            <li>• {{ if eq .year 2024 }}12 open spaces{{ else }}10 open spaces{{ end }}</li>
+                        </ul>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            
+            <div class="mt-12 text-center">
+                <h2 class="text-2xl font-bold mb-6">Community Archive</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="https://youtube.com/devopsdaysch" target="_blank" rel="noopener" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                        <div class="text-red-600 text-3xl mb-3">🎥</div>
+                        <h3 class="font-semibold mb-2">Video Archive</h3>
+                        <p class="text-gray-600 text-sm">Watch all past sessions on our YouTube channel</p>
+                    </a>
+                    <a href="https://github.com/devopsdays-ch/slides" target="_blank" rel="noopener" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                        <div class="text-gray-800 text-3xl mb-3">📊</div>
+                        <h3 class="font-semibold mb-2">Slide Repository</h3>
+                        <p class="text-gray-600 text-sm">Access presentation slides from all speakers</p>
+                    </a>
+                    <a href="https://photos.devopsdays.ch" target="_blank" rel="noopener" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                        <div class="text-blue-600 text-3xl mb-3">📸</div>
+                        <h3 class="font-semibold mb-2">Photo Gallery</h3>
+                        <p class="text-gray-600 text-sm">Browse community photos from past events</p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 rounded-lg p-8 text-center">
+                <h2 class="text-2xl font-bold mb-4">Join Us in 2025!</h2>
+                <p class="text-gray-600 mb-6">
+                    Since 2023, DevOpsDays Switzerland has welcomed 530+ attendees, featured 50+ speakers, 
+                    and facilitated 22+ open spaces, building a vibrant Swiss DevOps community.
+                </p>
+                <a href="/event/tickets/" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    Get Your 2025 Tickets
+                </a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

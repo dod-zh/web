@@ -1,0 +1,52 @@
+{
+  "speakers": [
+    {
+      "id": "speaker-1",
+      "name": "Jane Smith",
+      "title": "DevOps Evangelist",
+      "company": "TechCorp",
+      "bio": "Jane is a passionate DevOps evangelist with over 10 years of experience in building scalable systems and fostering collaborative culture.",
+      "image": "/images/speakers/jane-smith.jpg",
+      "social": {
+        "twitter": "@janesmith",
+        "linkedin": "janesmith",
+        "website": "https://janesmith.dev"
+      }
+    },
+    {
+      "id": "speaker-2",
+      "name": "John Doe",
+      "title": "Site Reliability Engineer",
+      "company": "CloudScale",
+      "bio": "John specializes in observability and monitoring systems for large-scale distributed applications.",
+      "image": "/images/speakers/john-doe.jpg",
+      "social": {
+        "twitter": "@johndoe",
+        "github": "johndoe"
+      }
+    },
+    {
+      "id": "speaker-3",
+      "name": "Alice Johnson",
+      "title": "Automation Architect",
+      "company": "AutoFlow",
+      "bio": "Alice helps organizations streamline their development and deployment processes through intelligent automation.",
+      "image": "/images/speakers/alice-johnson.jpg",
+      "social": {
+        "linkedin": "alicejohnson"
+      }
+    },
+    {
+      "id": "speaker-4",
+      "name": "Bob Wilson",
+      "title": "Kubernetes Expert",
+      "company": "Container Solutions",
+      "bio": "Bob is a certified Kubernetes administrator and trainer with extensive experience in container orchestration.",
+      "image": "/images/speakers/bob-wilson.jpg",
+      "social": {
+        "twitter": "@bobwilson",
+        "github": "bobwilson"
+      }
+    }
+  ]
+}

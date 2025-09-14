@@ -1,0 +1,37 @@
+{
+  "team": [
+    {
+      "id": "team-1",
+      "name": "Sarah Miller",
+      "role": "Event Organizer",
+      "bio": "Sarah coordinates the overall event planning and execution.",
+      "image": "/images/team/sarah-miller.jpg",
+      "email": "sarah@devopsdays.ch",
+      "social": {
+        "linkedin": "sarahmiller"
+      }
+    },
+    {
+      "id": "team-2",
+      "name": "Mike Chen",
+      "role": "Program Chair",
+      "bio": "Mike oversees the conference program and speaker selection.",
+      "image": "/images/team/mike-chen.jpg",
+      "email": "mike@devopsdays.ch",
+      "social": {
+        "twitter": "@mikechen"
+      }
+    },
+    {
+      "id": "team-3",
+      "name": "Lisa Brown",
+      "role": "Sponsorship Coordinator",
+      "bio": "Lisa manages sponsor relationships and partnerships.",
+      "image": "/images/team/lisa-brown.jpg",
+      "email": "lisa@devopsdays.ch",
+      "social": {
+        "linkedin": "lisabrown"
+      }
+    }
+  ]
+}

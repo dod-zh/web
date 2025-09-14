@@ -1,0 +1,127 @@
+{{ define "main" }}
+<div class="bg-gradient-to-b from-blue-600 to-blue-800 text-white">
+    <div class="container mx-auto px-4 py-16">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">{{ .Title }}</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                {{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Summary }}{{ end }}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/event/tickets/" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Get Your Tickets
+                </a>
+                <a href="/event/program/" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    View Program
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Event Details -->
+{{ if .Site.Data.events }}
+{{ $currentEvent := index (where .Site.Data.events.events "status" "upcoming") 0 }}
+{{ if $currentEvent }}
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold text-blue-600 mb-2">
+                    {{ dateFormat "January 2-" $currentEvent.date }}{{ dateFormat "2, 2006" $currentEvent.endDate }}
+                </div>
+                <div class="text-gray-600">Two Days of Learning</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-blue-600 mb-2">{{ $currentEvent.venue }}</div>
+                <div class="text-gray-600">{{ $currentEvent.city }}, Switzerland</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-blue-600 mb-2">{{ $currentEvent.attendees }}+</div>
+                <div class="text-gray-600">Expected Attendees</div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Main Content -->
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        <div class="prose prose-lg max-w-4xl mx-auto">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+
+<!-- Featured Speakers -->
+{{ if .Site.Data.speakers }}
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Featured Speakers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {{ range first 4 .Site.Data.speakers.speakers }}
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="{{ .image }}" alt="{{ .name }}" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">{{ .name }}</h3>
+                    <p class="text-blue-600 mb-2">{{ .title }}</p>
+                    <p class="text-gray-600 text-sm">{{ .company }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="text-center mt-8">
+            <a href="/event/program/" class="text-blue-600 hover:text-blue-800 font-semibold">
+                View Full Speaker Lineup →
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Sponsors -->
+{{ if .Site.Data.sponsors }}
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Amazing Sponsors</h2>
+        
+        <!-- Platinum Sponsors -->
+        {{ $platinum := where .Site.Data.sponsors.sponsors "level" "platinum" }}
+        {{ if $platinum }}
+        <div class="mb-8">
+            <h3 class="text-xl font-semibold text-center mb-6 text-gray-600">Platinum Sponsors</h3>
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                {{ range $platinum }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                    <img src="{{ .logo }}" alt="{{ .name }}" class="h-16 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        <!-- Gold Sponsors -->
+        {{ $gold := where .Site.Data.sponsors.sponsors "level" "gold" }}
+        {{ if $gold }}
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-center mb-6 text-gray-600">Gold Sponsors</h3>
+            <div class="flex flex-wrap justify-center items-center gap-6">
+                {{ range $gold }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                    <img src="{{ .logo }}" alt="{{ .name }}" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        <div class="text-center">
+            <a href="/event/sponsors/" class="text-blue-600 hover:text-blue-800 font-semibold">
+                View All Sponsors →
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
