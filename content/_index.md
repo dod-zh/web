@@ -12,15 +12,3 @@ description: "Join the Swiss DevOps community for two days of learning, networki
           title="DevOpsDays Zurich">
   </iframe>
 </div>
-
-## Call for Proposals
-
-We're currently accepting proposals for talks, ignites, and workshops. Share your experiences, lessons learned, and innovative approaches with the community.
-
-[Submit Your Proposal →](/event/program/)
-
-## Get Your Tickets
-
-Early bird tickets are now available. Join us for two days of learning and networking in beautiful Lausanne.
-
-[Buy Tickets →](/event/tickets/)
