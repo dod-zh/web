@@ -35,7 +35,7 @@
 {{ if $currentEvent }}
 <section class="py-12 bg-white">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div>
                 <div class="text-3xl font-bold mb-2" style="color: var(--cerulean);">
                     {{ dateFormat "January 2-" $currentEvent.date }}{{ dateFormat "2, 2006" $currentEvent.endDate }}
@@ -46,11 +46,6 @@
                 <div class="text-3xl font-bold mb-2" style="color: var(--cerulean);">{{ $currentEvent.venue }}</div>
                 <div class="text-gray-600">{{ $currentEvent.city }}, Switzerland</div>
             </div>
-            <div>
-                <div class="text-3xl font-bold mb-2" style="color: var(--cerulean);">{{ $currentEvent.attendees }}+
-                </div>
-                <div class="text-gray-600">Expected Attendees</div>
-            </div>
         </div>
     </div>
 </section>
@@ -58,7 +53,7 @@
 {{ end }}
 
 <!-- Main Content -->
-<section class="py-12">
+<section class="py-2">
     <div class="container mx-auto px-4">
         <div class="prose prose-lg max-w-4xl mx-auto">
             {{ .Content }}
