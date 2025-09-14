@@ -8,85 +8,85 @@
     </div>
 </div>
 
-<section class="py-12">
+<section class="py-2">
     <div class="container mx-auto px-4">
         {{ .Content }}
-
         <!-- Program Schedule -->
         {{ if .Site.Data.sessions }}
         <div class="mt-12">
-            <h2 class="text-3xl font-bold mb-8 text-center">🗓️ Program Schedule</h2>
 
-            <!-- Day 1 -->
-            <div class="mb-12">
-                <div class="flex items-center justify-center mb-6">
-                    <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-4 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-semibold flex items-center">
-                            <span class="mr-3">📅</span>
-                            Day 1 - March 12, 2025
-                        </h3>
+            <!-- Two Column Layout for Days -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Day 1 Column -->
+                <div class="order-1">
+                    <div class="flex items-center justify-center mb-6">
+                        <div
+                            class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-semibold flex items-center">
+                                <span class="mr-3">📅</span>
+                                Day 1 - March 12, 2025
+                            </h3>
+                        </div>
                     </div>
-                </div>
-                <div class="grid gap-4">
-                    {{ range where .Site.Data.sessions.sessions "day" "2025-03-12" }}
-                    {{ $borderColor := "gray" }}
-                    {{ $bgColor := "gray" }}
-                    {{ $textColor := "gray" }}
-                    {{ $icon := "📋" }}
-                    {{ $typeName := title .type }}
+                    <div class="grid gap-3">
+                        {{ range where .Site.Data.sessions.sessions "day" "2025-03-12" }}
+                        {{ $borderColor := "gray" }}
+                        {{ $bgColor := "gray" }}
+                        {{ $textColor := "gray" }}
+                        {{ $icon := "📋" }}
+                        {{ $typeName := title .type }}
 
-                    {{ if eq .type "talk" }}
-                    {{ $borderColor = "green" }}
-                    {{ $bgColor = "green" }}
-                    {{ $textColor = "green" }}
-                    {{ $icon = "💬" }}
-                    {{ $typeName = "Talk" }}
-                    {{ else if eq .type "ignite" }}
-                    {{ $borderColor = "yellow" }}
-                    {{ $bgColor = "yellow" }}
-                    {{ $textColor = "yellow" }}
-                    {{ $icon = "⚡" }}
-                    {{ $typeName = "Ignite" }}
-                    {{ else if eq .type "workshop" }}
-                    {{ $borderColor = "purple" }}
-                    {{ $bgColor = "purple" }}
-                    {{ $textColor = "purple" }}
-                    {{ $icon = "🛠️" }}
-                    {{ $typeName = "Workshop" }}
-                    {{ else if eq .type "openspace" }}
-                    {{ $borderColor = "orange" }}
-                    {{ $bgColor = "orange" }}
-                    {{ $textColor = "orange" }}
-                    {{ $icon = "🌐" }}
-                    {{ $typeName = "Open Space" }}
-                    {{ end }}
+                        {{ if eq .type "talk" }}
+                        {{ $borderColor = "green" }}
+                        {{ $bgColor = "green" }}
+                        {{ $textColor = "green" }}
+                        {{ $icon = "💬" }}
+                        {{ $typeName = "Talk" }}
+                        {{ else if eq .type "ignite" }}
+                        {{ $borderColor = "yellow" }}
+                        {{ $bgColor = "yellow" }}
+                        {{ $textColor = "yellow" }}
+                        {{ $icon = "⚡" }}
+                        {{ $typeName = "Ignite" }}
+                        {{ else if eq .type "workshop" }}
+                        {{ $borderColor = "purple" }}
+                        {{ $bgColor = "purple" }}
+                        {{ $textColor = "purple" }}
+                        {{ $icon = "🛠️" }}
+                        {{ $typeName = "Workshop" }}
+                        {{ else if eq .type "openspace" }}
+                        {{ $borderColor = "orange" }}
+                        {{ $bgColor = "orange" }}
+                        {{ $textColor = "orange" }}
+                        {{ $icon = "🌐" }}
+                        {{ $typeName = "Open Space" }}
+                        {{ end }}
 
-                    <div
-                        class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500">
-                        <div class="p-6">
-                            <div class="flex flex-col lg:flex-row lg:items-start justify-between">
-                                <div class="flex-1">
-                                    <div class="flex flex-wrap items-center mb-3">
-                                        <span class="text-lg font-bold text-gray-800 mr-4">🕐 {{ .time }}</span>
+                        <div
+                            class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500">
+                            <div class="p-4">
+                                <div class="flex flex-col">
+                                    <div class="flex flex-wrap items-center mb-2">
+                                        <span class="text-sm font-bold text-gray-800 mr-3">🕐 {{ .time }}</span>
                                         <span
-                                            class="px-3 py-1 text-sm font-medium rounded-full bg-{{ $bgColor }}-100 text-{{ $textColor }}-800">
+                                            class="px-2 py-1 text-xs font-medium rounded-full bg-{{ $bgColor }}-100 text-{{ $textColor }}-800">
                                             {{ $icon }} {{ $typeName }}
                                         </span>
                                     </div>
-                                    <h4 class="text-xl font-bold mb-3 text-gray-900 leading-tight">{{ .title }}</h4>
+                                    <h4 class="text-lg font-bold mb-2 text-gray-900 leading-tight">{{ .title }}</h4>
 
                                     <!-- Speakers -->
                                     {{ if .speakers }}
-                                    <div class="flex flex-wrap items-center gap-4 mt-4">
+                                    <div class="flex flex-wrap items-center gap-2 mt-2">
                                         {{ range .speakers }}
                                         {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
                                         {{ if $speaker }}
                                         <div
-                                            class="flex items-center bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-colors">
+                                            class="flex items-center bg-gray-50 rounded-lg p-2 hover:bg-gray-100 transition-colors">
                                             <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
-                                                class="w-10 h-10 rounded-full object-cover border-2 border-white shadow-sm">
-                                            <div class="ml-3">
-                                                <p class="font-semibold text-gray-900 text-sm">{{ $speaker.name }}</p>
+                                                class="w-8 h-8 rounded-full object-cover border-2 border-white shadow-sm">
+                                            <div class="ml-2">
+                                                <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}</p>
                                             </div>
                                         </div>
                                         {{ end }}
@@ -96,82 +96,80 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
-
-            <!-- Day 2 -->
-            <div>
-                <div class="flex items-center justify-center mb-6">
-                    <div
-                        class="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-8 py-4 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-semibold flex items-center">
-                            <span class="mr-3">📅</span>
-                            Day 2 - March 13, 2025
-                        </h3>
+                        {{ end }}
                     </div>
                 </div>
-                <div class="grid gap-4">
-                    {{ range where .Site.Data.sessions.sessions "day" "2025-03-13" }}
-                    {{ $borderColor := "gray" }}
-                    {{ $bgColor := "gray" }}
-                    {{ $textColor := "gray" }}
-                    {{ $icon := "📋" }}
-                    {{ $typeName := title .type }}
 
-                    {{ if eq .type "talk" }}
-                    {{ $borderColor = "green" }}
-                    {{ $bgColor = "green" }}
-                    {{ $textColor = "green" }}
-                    {{ $icon = "💬" }}
-                    {{ $typeName = "Talk" }}
-                    {{ else if eq .type "ignite" }}
-                    {{ $borderColor = "yellow" }}
-                    {{ $bgColor = "yellow" }}
-                    {{ $textColor = "yellow" }}
-                    {{ $icon = "⚡" }}
-                    {{ $typeName = "Ignite" }}
-                    {{ else if eq .type "workshop" }}
-                    {{ $borderColor = "purple" }}
-                    {{ $bgColor = "purple" }}
-                    {{ $textColor = "purple" }}
-                    {{ $icon = "🛠️" }}
-                    {{ $typeName = "Workshop" }}
-                    {{ else if eq .type "openspace" }}
-                    {{ $borderColor = "orange" }}
-                    {{ $bgColor = "orange" }}
-                    {{ $textColor = "orange" }}
-                    {{ $icon = "🌐" }}
-                    {{ $typeName = "Open Space" }}
-                    {{ end }}
+                <!-- Day 2 Column -->
+                <div class="order-2">
+                    <div class="flex items-center justify-center mb-6">
+                        <div
+                            class="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-6 py-3 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-semibold flex items-center">
+                                <span class="mr-3">📅</span>
+                                Day 2 - March 13, 2025
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="grid gap-3">
+                        {{ range where .Site.Data.sessions.sessions "day" "2025-03-13" }}
+                        {{ $borderColor := "gray" }}
+                        {{ $bgColor := "gray" }}
+                        {{ $textColor := "gray" }}
+                        {{ $icon := "📋" }}
+                        {{ $typeName := title .type }}
 
-                    <div
-                        class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500">
-                        <div class="p-6">
-                            <div class="flex flex-col lg:flex-row lg:items-start justify-between">
-                                <div class="flex-1">
-                                    <div class="flex flex-wrap items-center mb-3">
-                                        <span class="text-lg font-bold text-gray-800 mr-4">🕐 {{ .time }}</span>
+                        {{ if eq .type "talk" }}
+                        {{ $borderColor = "green" }}
+                        {{ $bgColor = "green" }}
+                        {{ $textColor = "green" }}
+                        {{ $icon = "💬" }}
+                        {{ $typeName = "Talk" }}
+                        {{ else if eq .type "ignite" }}
+                        {{ $borderColor = "yellow" }}
+                        {{ $bgColor = "yellow" }}
+                        {{ $textColor = "yellow" }}
+                        {{ $icon = "⚡" }}
+                        {{ $typeName = "Ignite" }}
+                        {{ else if eq .type "workshop" }}
+                        {{ $borderColor = "purple" }}
+                        {{ $bgColor = "purple" }}
+                        {{ $textColor = "purple" }}
+                        {{ $icon = "🛠️" }}
+                        {{ $typeName = "Workshop" }}
+                        {{ else if eq .type "openspace" }}
+                        {{ $borderColor = "orange" }}
+                        {{ $bgColor = "orange" }}
+                        {{ $textColor = "orange" }}
+                        {{ $icon = "🌐" }}
+                        {{ $typeName = "Open Space" }}
+                        {{ end }}
+
+                        <div
+                            class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500">
+                            <div class="p-4">
+                                <div class="flex flex-col">
+                                    <div class="flex flex-wrap items-center mb-2">
+                                        <span class="text-sm font-bold text-gray-800 mr-3">🕐 {{ .time }}</span>
                                         <span
-                                            class="px-3 py-1 text-sm font-medium rounded-full bg-{{ $bgColor }}-100 text-{{ $textColor }}-800">
+                                            class="px-2 py-1 text-xs font-medium rounded-full bg-{{ $bgColor }}-100 text-{{ $textColor }}-800">
                                             {{ $icon }} {{ $typeName }}
                                         </span>
                                     </div>
-                                    <h4 class="text-xl font-bold mb-3 text-gray-900 leading-tight">{{ .title }}</h4>
+                                    <h4 class="text-lg font-bold mb-2 text-gray-900 leading-tight">{{ .title }}</h4>
 
                                     <!-- Speakers -->
                                     {{ if .speakers }}
-                                    <div class="flex flex-wrap items-center gap-4 mt-4">
+                                    <div class="flex flex-wrap items-center gap-2 mt-2">
                                         {{ range .speakers }}
                                         {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
                                         {{ if $speaker }}
                                         <div
-                                            class="flex items-center bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-colors">
+                                            class="flex items-center bg-gray-50 rounded-lg p-2 hover:bg-gray-100 transition-colors">
                                             <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
-                                                class="w-10 h-10 rounded-full object-cover border-2 border-white shadow-sm">
-                                            <div class="ml-3">
-                                                <p class="font-semibold text-gray-900 text-sm">{{ $speaker.name }}</p>
+                                                class="w-8 h-8 rounded-full object-cover border-2 border-white shadow-sm">
+                                            <div class="ml-2">
+                                                <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}</p>
                                             </div>
                                         </div>
                                         {{ end }}
@@ -181,39 +179,13 @@
                                 </div>
                             </div>
                         </div>
+                        {{ end }}
                     </div>
-                    {{ end }}
                 </div>
             </div>
 
-            <!-- Legend -->
-            <div class="mt-12 bg-gray-50 rounded-lg p-6">
-                <h3 class="text-lg font-semibold mb-4 text-center">📚 Session Types</h3>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <div class="flex items-center">
-                        <div class="w-4 h-4 bg-green-500 rounded mr-2"></div>
-                        <span class="text-sm">💬 Talks</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="w-4 h-4 bg-yellow-500 rounded mr-2"></div>
-                        <span class="text-sm">⚡ Ignites</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="w-4 h-4 bg-purple-500 rounded mr-2"></div>
-                        <span class="text-sm">🛠️ Workshops</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="w-4 h-4 bg-orange-500 rounded mr-2"></div>
-                        <span class="text-sm">🌐 Open Spaces</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="w-4 h-4 bg-gray-500 rounded mr-2"></div>
-                        <span class="text-sm">📋 Other</span>
-                    </div>
-                </div>
-            </div>
+            {{ end }}
+
         </div>
-        {{ end }}
-    </div>
 </section>
 {{ end }}
