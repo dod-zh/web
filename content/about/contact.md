@@ -19,25 +19,7 @@ c/o Swiss DevOps Association
 Bahnhofstrasse 123  
 8001 Zurich, Switzerland
 
-## Team Contacts
-
-### Event Organization
-
-**Sarah Miller** - Event Organizer  
-[sarah@devopsdays.ch](mailto:sarah@devopsdays.ch)  
-Responsible for: Overall event coordination, logistics, venue
-
-### Program & Speakers
-
-**Mike Chen** - Program Chair  
-[mike@devopsdays.ch](mailto:mike@devopsdays.ch)  
-Responsible for: Call for proposals, speaker selection, program scheduling
-
-### Sponsorship
-
-**Lisa Brown** - Sponsorship Coordinator  
-[lisa@devopsdays.ch](mailto:lisa@devopsdays.ch)  
-Responsible for: Sponsor relations, partnerships, exhibitor coordination
+For information about our team, please see the new [Team page](../about/team/).
 
 ## Specific Inquiries
 
