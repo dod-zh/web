@@ -25,6 +25,6 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
-        source: "./public"
+        source: "./public/*"
         target: "www/dod.tobile.ch"
         strip_components: 1
