@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="bg-gray-100 py-8">
+<div class="py-8" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
     <div class="container mx-auto px-4">
-        <h1 class="text-4xl font-bold">{{ .Title }}</h1>
+        <h1 class="text-4xl font-bold text-white">{{ .Title }}</h1>
         {{ if .Description }}
-        <p class="text-xl text-gray-600 mt-4">{{ .Description }}</p>
+        <p class="text-xl text-gray-100 mt-4">{{ .Description }}</p>
         {{ end }}
     </div>
 </div>
@@ -11,14 +11,14 @@
 <section class="py-12">
     <div class="container mx-auto px-4">
         {{ .Content }}
-        
+
         {{ if .Site.Data.sponsors }}
         <div class="mt-12">
             <!-- Platinum Sponsors -->
             {{ $platinum := where .Site.Data.sponsors.sponsors "level" "platinum" }}
             {{ if $platinum }}
             <div class="mb-12">
-                <h2 class="text-3xl font-bold text-center mb-8">Platinum Sponsors</h2>
+                <h2 class="text-3xl font-bold text-center mb-8" style="color: var(--indigo-dye);">Platinum Sponsors</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {{ range $platinum }}
                     <div class="bg-white rounded-lg shadow-lg p-8 text-center">
@@ -32,12 +32,12 @@
                 </div>
             </div>
             {{ end }}
-            
+
             <!-- Gold Sponsors -->
             {{ $gold := where .Site.Data.sponsors.sponsors "level" "gold" }}
             {{ if $gold }}
             <div class="mb-12">
-                <h2 class="text-2xl font-bold text-center mb-8">Gold Sponsors</h2>
+                <h2 class="text-2xl font-bold text-center mb-8" style="color: var(--indigo-dye);">Gold Sponsors</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {{ range $gold }}
                     <div class="bg-white rounded-lg shadow p-6 text-center">
@@ -51,12 +51,12 @@
                 </div>
             </div>
             {{ end }}
-            
+
             <!-- Silver Sponsors -->
             {{ $silver := where .Site.Data.sponsors.sponsors "level" "silver" }}
             {{ if $silver }}
             <div class="mb-12">
-                <h2 class="text-xl font-bold text-center mb-6">Silver Sponsors</h2>
+                <h2 class="text-xl font-bold text-center mb-6" style="color: var(--cerulean);">Silver Sponsors</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {{ range $silver }}
                     <div class="bg-white rounded-lg shadow p-4 text-center">
@@ -69,12 +69,12 @@
                 </div>
             </div>
             {{ end }}
-            
+
             <!-- Bronze Sponsors -->
             {{ $bronze := where .Site.Data.sponsors.sponsors "level" "bronze" }}
             {{ if $bronze }}
             <div>
-                <h2 class="text-lg font-bold text-center mb-6">Bronze Sponsors</h2>
+                <h2 class="text-lg font-bold text-center mb-6" style="color: var(--cerulean);">Bronze Sponsors</h2>
                 <div class="flex flex-wrap justify-center items-center gap-4">
                     {{ range $bronze }}
                     <a href="{{ .website }}" target="_blank" rel="noopener" class="block bg-white rounded p-3 shadow">

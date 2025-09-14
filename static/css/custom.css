@@ -266,3 +266,50 @@ select:focus {
     background-color: white;
     color: var(--cerulean);
 }
+
+/* Hero gradient utility class */
+.hero-gradient {
+    background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));
+}
+
+/* Additional color overrides for comprehensive styling */
+.bg-blue-50 {
+    background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye)) !important;
+}
+
+.text-blue-700 {
+    color: var(--indigo-dye) !important;
+}
+
+.border-blue-500 {
+    border-color: var(--cerulean) !important;
+}
+
+/* Ensure all heading colors are consistent */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--indigo-dye);
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+    color: var(--indigo-dye);
+}
+
+/* Link styling consistency */
+a:not(.btn-primary):not(.btn-secondary) {
+    color: var(--cerulean);
+    transition: color 0.3s ease;
+}
+
+a:not(.btn-primary):not(.btn-secondary):hover {
+    color: var(--indigo-dye);
+}
