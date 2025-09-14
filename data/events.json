@@ -1,10 +1,20 @@
 {
   "events": [
     {
+      "year": 2026,
+      "date": "2026-05-06",
+      "endDate": "2026-06-07",
+      "status": "upcoming",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Building Resilient Systems"
+    },
+    {
       "year": 2025,
       "date": "2025-06-15",
       "endDate": "2025-06-16",
-      "status": "upcoming",
+      "status": "past",
       "venue": "Swiss Tech Convention Center",
       "city": "Lausanne",
       "attendees": 300,
