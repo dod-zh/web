@@ -14,7 +14,8 @@
                 {{ range .Site.Menus.main }}
                 {{ if .HasChildren }}
                 <div class="relative group">
-                    <button class="text-gray-700 hover:text-blue-600 px-3 py-2 flex items-center">
+                    <button class="text-gray-700 px-3 py-2 flex items-center" style="transition: color 0.3s;"
+                        onmouseover="this.style.color='var(--cerulean)'" onmouseout="this.style.color='#374151'">
                         {{ .Name }}
                         <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -32,20 +33,25 @@
                     </div>
                 </div>
                 {{ else }}
-                <a href="{{ .URL }}" class="text-gray-700 hover:text-blue-600 px-3 py-2">{{ .Name }}</a>
+                <a href="{{ .URL }}" class="text-gray-700 px-3 py-2" style="transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--cerulean)'" onmouseout="this.style.color='#374151'">{{ .Name
+                    }}</a>
                 {{ end }}
                 {{ end }}
 
                 <!-- CTA Button -->
-                <a href="/event/tickets/"
-                    class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                <a href="/event/tickets/" class="text-white px-6 py-2 rounded-md transition-colors"
+                    style="background-color: var(--cerulean);"
+                    onmouseover="this.style.backgroundColor='var(--indigo-dye)'"
+                    onmouseout="this.style.backgroundColor='var(--cerulean)'">
                     Get Tickets
                 </a>
             </nav>
 
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                <button id="mobile-menu-button" class="text-gray-700" style="transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--cerulean)'" onmouseout="this.style.color='#374151'">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
@@ -68,7 +74,8 @@
             <a href="{{ .URL }}" class="block text-gray-700 px-3 py-2 hover:bg-gray-100">{{ .Name }}</a>
             {{ end }}
             {{ end }}
-            <a href="/event/tickets/" class="block bg-blue-600 text-white px-3 py-2 mt-4 rounded-md text-center">
+            <a href="/event/tickets/" class="block text-white px-3 py-2 mt-4 rounded-md text-center"
+                style="background-color: var(--cerulean);">
                 Get Tickets
             </a>
         </div>
@@ -86,7 +93,8 @@
                         class="h-8 w-auto opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
-                <a href="/event/sponsors/" class="text-sm text-blue-600 hover:text-blue-800 whitespace-nowrap">
+                <a href="/event/sponsors/" class="text-sm whitespace-nowrap" style="color: var(--cerulean);"
+                    onmouseover="this.style.color='var(--indigo-dye)'" onmouseout="this.style.color='var(--cerulean)'">
                     View all sponsors →
                 </a>
             </div>

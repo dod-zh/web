@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="bg-gradient-to-b from-blue-600 to-blue-800 text-white">
+<div class="text-white" style="background: linear-gradient(to bottom, var(--cerulean), var(--indigo-dye));">
     <div class="container mx-auto px-4 py-16">
         <div class="text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">{{ .Title }}</h1>
@@ -7,10 +7,15 @@
                 {{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Summary }}{{ end }}
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/event/tickets/" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <a href="/event/tickets/" class="bg-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                    style="color: var(--cerulean);" onmouseover="this.style.backgroundColor='#f3f4f6'"
+                    onmouseout="this.style.backgroundColor='white'">
                     Get Your Tickets
                 </a>
-                <a href="/event/program/" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                <a href="/event/program/"
+                    class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                    onmouseover="this.style.backgroundColor='white'; this.style.color='var(--cerulean)'"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
                     View Program
                 </a>
             </div>
@@ -26,17 +31,18 @@
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-                <div class="text-3xl font-bold text-blue-600 mb-2">
+                <div class="text-3xl font-bold mb-2" style="color: var(--cerulean);">
                     {{ dateFormat "January 2-" $currentEvent.date }}{{ dateFormat "2, 2006" $currentEvent.endDate }}
                 </div>
                 <div class="text-gray-600">Two Days of Learning</div>
             </div>
             <div>
-                <div class="text-3xl font-bold text-blue-600 mb-2">{{ $currentEvent.venue }}</div>
+                <div class="text-3xl font-bold mb-2" style="color: var(--cerulean);">{{ $currentEvent.venue }}</div>
                 <div class="text-gray-600">{{ $currentEvent.city }}, Switzerland</div>
             </div>
             <div>
-                <div class="text-3xl font-bold text-blue-600 mb-2">{{ $currentEvent.attendees }}+</div>
+                <div class="text-3xl font-bold mb-2" style="color: var(--cerulean);">{{ $currentEvent.attendees }}+
+                </div>
                 <div class="text-gray-600">Expected Attendees</div>
             </div>
         </div>
@@ -65,14 +71,15 @@
                 <img src="{{ .image }}" alt="{{ .name }}" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">{{ .name }}</h3>
-                    <p class="text-blue-600 mb-2">{{ .title }}</p>
+                    <p class="mb-2" style="color: var(--cerulean);">{{ .title }}</p>
                     <p class="text-gray-600 text-sm">{{ .company }}</p>
                 </div>
             </div>
             {{ end }}
         </div>
         <div class="text-center mt-8">
-            <a href="/event/program/" class="text-blue-600 hover:text-blue-800 font-semibold">
+            <a href="/event/program/" class="font-semibold" style="color: var(--cerulean);"
+                onmouseover="this.style.color='var(--indigo-dye)'" onmouseout="this.style.color='var(--cerulean)'">
                 View Full Speaker Lineup →
             </a>
         </div>
@@ -85,7 +92,7 @@
 <section class="py-12">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">Our Amazing Sponsors</h2>
-        
+
         <!-- Platinum Sponsors -->
         {{ $platinum := where .Site.Data.sponsors.sponsors "level" "platinum" }}
         {{ if $platinum }}
@@ -94,13 +101,14 @@
             <div class="flex flex-wrap justify-center items-center gap-8">
                 {{ range $platinum }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
-                    <img src="{{ .logo }}" alt="{{ .name }}" class="h-16 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="h-16 w-auto opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
         </div>
         {{ end }}
-        
+
         <!-- Gold Sponsors -->
         {{ $gold := where .Site.Data.sponsors.sponsors "level" "gold" }}
         {{ if $gold }}
@@ -109,15 +117,17 @@
             <div class="flex flex-wrap justify-center items-center gap-6">
                 {{ range $gold }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
-                    <img src="{{ .logo }}" alt="{{ .name }}" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
         </div>
         {{ end }}
-        
+
         <div class="text-center">
-            <a href="/event/sponsors/" class="text-blue-600 hover:text-blue-800 font-semibold">
+            <a href="/event/sponsors/" class="font-semibold" style="color: var(--cerulean);"
+                onmouseover="this.style.color='var(--indigo-dye)'" onmouseout="this.style.color='var(--cerulean)'">
                 View All Sponsors →
             </a>
         </div>

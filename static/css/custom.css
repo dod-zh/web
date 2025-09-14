@@ -1,30 +1,39 @@
 /* Custom CSS for DevOpsDays Switzerland */
 
+/* Color Palette Variables */
+:root {
+    --indigo-dye: #205474;
+    --black: #000000;
+    --cerulean: #1C80AA;
+    --rich-black: #0A191B;
+    --rich-black-2: #0A1819;
+}
+
 /* Prose styling for content pages */
 .prose {
-    color: #222;
+    color: var(--rich-black);
     max-width: none;
 }
 
 .prose h1 {
-    color: #009FE3;
+    color: var(--indigo-dye);
     font-weight: 800;
     font-size: 2.25rem;
     margin-bottom: 1rem;
 }
 
 .prose h2 {
-    color: #009FE3;
+    color: var(--indigo-dye);
     font-weight: 700;
     font-size: 1.875rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #009FE3;
+    border-bottom: 2px solid var(--cerulean);
     padding-bottom: 0.5rem;
 }
 
 .prose h3 {
-    color: #009FE3;
+    color: var(--cerulean);
     font-weight: 600;
     font-size: 1.5rem;
     margin-top: 1.5rem;
@@ -47,21 +56,21 @@
 }
 
 .prose a {
-    color: #009FE3;
+    color: var(--cerulean);
     text-decoration: none;
 }
 
 .prose a:hover {
-    color: #0077b3;
+    color: var(--indigo-dye);
     text-decoration: underline;
 }
 
 .prose blockquote {
-    border-left: 4px solid #009FE3;
+    border-left: 4px solid var(--cerulean);
     padding-left: 1rem;
     margin: 1.5rem 0;
     font-style: italic;
-    color: #555;
+    color: var(--rich-black-2);
 }
 
 .prose code {
@@ -72,7 +81,7 @@
 }
 
 .prose pre {
-    background-color: #1f2937;
+    background-color: var(--rich-black);
     color: #f9fafb;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -166,7 +175,7 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-    outline: 2px solid #009FE3;
+    outline: 2px solid var(--cerulean);
     outline-offset: 2px;
 }
 
@@ -175,7 +184,7 @@ select:focus {
     position: absolute;
     top: -40px;
     left: 6px;
-    background: #000;
+    background: var(--rich-black);
     color: #fff;
     padding: 8px;
     text-decoration: none;
@@ -189,17 +198,17 @@ select:focus {
 /* High contrast mode support */
 @media (prefers-contrast: high) {
     .prose {
-        color: #000;
+        color: var(--black);
     }
 
     .prose h1,
     .prose h2,
     .prose h3 {
-        color: #000;
+        color: var(--black);
     }
 
     .prose a {
-        color: #0000ee;
+        color: var(--cerulean);
         text-decoration: underline;
     }
 }
@@ -216,10 +225,44 @@ select:focus {
 /* CTA Button (override if needed) */
 .bg-blue-600,
 .hover\:bg-blue-700:hover {
-    background-color: #009FE3 !important;
+    background-color: var(--cerulean) !important;
 }
 
 .text-blue-600,
 .hover\:text-blue-800:hover {
-    color: #009FE3 !important;
+    color: var(--cerulean) !important;
+}
+
+/* Custom button styles for main CTA buttons */
+.btn-primary {
+    background-color: white;
+    color: var(--cerulean);
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #f3f4f6;
+    color: var(--indigo-dye);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: var(--cerulean);
 }
