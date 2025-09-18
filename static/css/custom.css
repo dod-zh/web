@@ -412,3 +412,30 @@ a:not(.btn-primary):not(.btn-secondary):hover {
         padding: 1.5rem;
     }
 }
+
+/* Breadcrumb navigation styling */
+.breadcrumbs a {
+    color: white !important;
+}
+
+.breadcrumbs a:hover {
+    color: #e5e7eb !important;
+    /* gray-200 */
+}
+
+.breadcrumbs span {
+    color: white !important;
+}
+
+/* Additional breadcrumb specificity for all potential breadcrumb patterns */
+nav.breadcrumbs a,
+.breadcrumbs a,
+nav[class*="breadcrumb"] a {
+    color: white !important;
+}
+
+nav.breadcrumbs span,
+.breadcrumbs span,
+nav[class*="breadcrumb"] span {
+    color: white !important;
+}
