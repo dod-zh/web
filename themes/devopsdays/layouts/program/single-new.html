@@ -73,7 +73,7 @@
                         {{ $hasDetailPage := and .speakers (gt (len .speakers) 0) }}
                         {{ if $hasDetailPage }}
                         <a href="/sessions/{{ .id }}/" class="block group">
-                        {{ end }}
+                            {{ end }}
                             <div
                                 class="bg-{{ $bgColor }} rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500 {{ if $hasDetailPage }}group-hover:shadow-xl{{ end }}">
                                 <div class="p-4">
@@ -92,7 +92,9 @@
                                             </span>
                                             {{ end }}
                                         </div>
-                                        <h4 class="text-lg font-bold mb-2 text-gray-900 leading-tight {{ if $hasDetailPage }}group-hover:text-cerulean{{ end }}">{{ .title }}</h4>
+                                        <h4
+                                            class="text-lg font-bold mb-2 text-gray-900 leading-tight {{ if $hasDetailPage }}group-hover:text-cerulean{{ end }}">
+                                            {{ .title }}</h4>
 
                                         <!-- Speakers -->
                                         {{ if .speakers }}
@@ -105,7 +107,8 @@
                                                 <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
                                                     class="w-8 h-8 rounded-full object-cover border-2 border-white shadow-sm">
                                                 <div class="ml-2">
-                                                    <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}</p>
+                                                    <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}
+                                                    </p>
                                                 </div>
                                             </div>
                                             {{ end }}
@@ -115,7 +118,7 @@
                                     </div>
                                 </div>
                             </div>
-                        {{ if $hasDetailPage }}
+                            {{ if $hasDetailPage }}
                         </a>
                         {{ end }}
                         {{ end }}
@@ -178,7 +181,7 @@
                         {{ $hasDetailPage := and .speakers (gt (len .speakers) 0) }}
                         {{ if $hasDetailPage }}
                         <a href="/sessions/{{ .id }}/" class="block group">
-                        {{ end }}
+                            {{ end }}
                             <div
                                 class="bg-{{ $bgColor }} rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500 {{ if $hasDetailPage }}group-hover:shadow-xl{{ end }}">
                                 <div class="p-4">
@@ -197,7 +200,9 @@
                                             </span>
                                             {{ end }}
                                         </div>
-                                        <h4 class="text-lg font-bold mb-2 text-gray-900 leading-tight {{ if $hasDetailPage }}group-hover:text-cerulean{{ end }}">{{ .title }}</h4>
+                                        <h4
+                                            class="text-lg font-bold mb-2 text-gray-900 leading-tight {{ if $hasDetailPage }}group-hover:text-cerulean{{ end }}">
+                                            {{ .title }}</h4>
 
                                         <!-- Speakers -->
                                         {{ if .speakers }}
@@ -210,7 +215,8 @@
                                                 <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
                                                     class="w-8 h-8 rounded-full object-cover border-2 border-white shadow-sm">
                                                 <div class="ml-2">
-                                                    <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}</p>
+                                                    <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}
+                                                    </p>
                                                 </div>
                                             </div>
                                             {{ end }}
@@ -220,7 +226,7 @@
                                     </div>
                                 </div>
                             </div>
-                        {{ if $hasDetailPage }}
+                            {{ if $hasDetailPage }}
                         </a>
                         {{ end }}
                         {{ end }}

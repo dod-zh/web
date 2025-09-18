@@ -1,0 +1,200 @@
+{{ define "main" }}
+<div class="py-8" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
+    <div class="container mx-auto px-4">
+        <nav class="text-sm breadcrumbs mb-4">
+            <a href="/" class="text-white hover:text-gray-200">Home</a>
+            <span class="mx-2 text-white">→</span>
+            <a href="/event/program/" class="text-white hover:text-gray-200">Program</a>
+            <span class="mx-2 text-white">→</span>
+            <span class="text-white">{{ .Title }}</span>
+        </nav>
+
+        {{ if .Params.sessionId }}
+        {{ $session := index (where .Site.Data.sessions.sessions "id" .Params.sessionId) 0 }}
+        {{ if $session }}
+
+        <!-- Session Type Badge -->
+        {{ $borderColor := "gray" }}
+        {{ $bgColor := "gray" }}
+        {{ $icon := "📋" }}
+        {{ $typeName := title $session.type }}
+
+        {{ if eq $session.type "talk" }}
+        {{ $borderColor = "green" }}
+        {{ $bgColor = "green" }}
+        {{ $icon = "💬" }}
+        {{ $typeName = "Talk" }}
+        {{ else if eq $session.type "ignite" }}
+        {{ $borderColor = "yellow" }}
+        {{ $bgColor = "yellow" }}
+        {{ $icon = "⚡" }}
+        {{ $typeName = "Ignite" }}
+        {{ else if eq $session.type "workshop" }}
+        {{ $borderColor = "purple" }}
+        {{ $bgColor = "purple" }}
+        {{ $icon = "🛠️" }}
+        {{ $typeName = "Workshop" }}
+        {{ end }}
+
+        <div class="mb-4">
+            <span
+                class="px-3 py-1 text-sm font-medium rounded-full bg-{{ $bgColor }}-100 text-{{ $bgColor }}-800 border border-{{ $borderColor }}-200">
+                {{ $icon }} {{ $typeName }}
+            </span>
+        </div>
+
+        <h1 class="text-4xl font-bold text-white mb-4">{{ $session.title }}</h1>
+
+        <!-- Session Details -->
+        <div class="flex flex-wrap items-center gap-6 text-gray-100">
+            <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                {{ dateFormat "January 2, 2006" $session.day }}
+            </div>
+            <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                {{ $session.time }}
+            </div>
+        </div>
+        {{ end }}
+        {{ else }}
+        <h1 class="text-4xl font-bold text-white">{{ .Title }}</h1>
+        {{ end }}
+
+        {{ if .Description }}
+        <p class="text-xl text-gray-100 mt-4">{{ .Description }}</p>
+        {{ end }}
+    </div>
+</div>
+
+<article class="py-12">
+    <div class="container mx-auto px-4">
+        {{ if .Params.sessionId }}
+        {{ $session := index (where .Site.Data.sessions.sessions "id" .Params.sessionId) 0 }}
+        {{ if $session }}
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2">
+                <div class="prose prose-lg max-w-none">
+                    {{ .Content }}
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <!-- Speakers -->
+                {{ if $session.speakers }}
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--indigo-dye);">
+                        {{ if gt (len $session.speakers) 1 }}Speakers{{ else }}Speaker{{ end }}
+                    </h3>
+                    <div class="space-y-4">
+                        {{ range $session.speakers }}
+                        {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
+                        {{ if $speaker }}
+                        <div class="flex items-start space-x-4">
+                            <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
+                                class="w-16 h-16 rounded-full object-cover border-2 border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">{{ $speaker.name }}</h4>
+                                {{ if $speaker.title }}
+                                <p class="text-sm text-gray-600">{{ $speaker.title }}</p>
+                                {{ end }}
+                                {{ if $speaker.company }}
+                                <p class="text-sm text-gray-600">{{ $speaker.company }}</p>
+                                {{ end }}
+                                {{ if $speaker.page }}
+                                <a href="{{ $speaker.page }}" target="_blank" rel="noopener"
+                                    class="text-sm hover:underline" style="color: var(--cerulean);">
+                                    View Speaker Profile →
+                                </a>
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+
+                <!-- Session Details -->
+                <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--indigo-dye);">Session Details</h3>
+                    <dl class="space-y-3">
+                        <div>
+                            <dt class="text-sm font-medium text-gray-600">Type</dt>
+                            <dd class="text-sm text-gray-900">{{ title $session.type }}</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-medium text-gray-600">Date</dt>
+                            <dd class="text-sm text-gray-900">{{ dateFormat "Monday, January 2, 2006" $session.day }}
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-medium text-gray-600">Time</dt>
+                            <dd class="text-sm text-gray-900">{{ $session.time }}</dd>
+                        </div>
+                        {{ if eq $session.type "workshop" }}
+                        <div>
+                            <dt class="text-sm font-medium text-gray-600">Duration</dt>
+                            <dd class="text-sm text-gray-900">2+ hours (hands-on)</dd>
+                        </div>
+                        {{ else if eq $session.type "ignite" }}
+                        <div>
+                            <dt class="text-sm font-medium text-gray-600">Duration</dt>
+                            <dd class="text-sm text-gray-900">5 minutes</dd>
+                        </div>
+                        {{ else if eq $session.type "talk" }}
+                        <div>
+                            <dt class="text-sm font-medium text-gray-600">Duration</dt>
+                            <dd class="text-sm text-gray-900">30-45 minutes</dd>
+                        </div>
+                        {{ end }}
+                    </dl>
+                </div>
+
+                <!-- Navigation -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--indigo-dye);">Navigation</h3>
+                    <div class="space-y-3">
+                        <a href="/event/program/"
+                            class="block px-4 py-2 text-sm font-medium text-white rounded-md transition-colors"
+                            style="background-color: var(--cerulean);"
+                            onmouseover="this.style.backgroundColor='var(--indigo-dye)'"
+                            onmouseout="this.style.backgroundColor='var(--cerulean)'">
+                            ← Back to Program
+                        </a>
+                        <a href="/event/tickets/"
+                            class="block px-4 py-2 text-sm font-medium border rounded-md transition-colors"
+                            style="border-color: var(--cerulean); color: var(--cerulean);"
+                            onmouseover="this.style.backgroundColor='var(--cerulean)'; this.style.color='white'"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--cerulean)'">
+                            Get Tickets
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ else }}
+        <div class="prose prose-lg max-w-4xl mx-auto">
+            {{ .Content }}
+        </div>
+        {{ end }}
+        {{ else }}
+        <div class="prose prose-lg max-w-4xl mx-auto">
+            {{ .Content }}
+        </div>
+        {{ end }}
+    </div>
+</article>
+{{ end }}

@@ -70,54 +70,42 @@
                         {{ $showLabel = false }}
                         {{ end }}
 
-                        {{ $hasDetailPage := and .speakers (gt (len .speakers) 0) }}
-                        {{ if $hasDetailPage }}
-                        <a href="/sessions/{{ .id }}/" class="block group">
-                        {{ end }}
-                            <div
-                                class="bg-{{ $bgColor }} rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500 {{ if $hasDetailPage }}group-hover:shadow-xl{{ end }}">
-                                <div class="p-4">
-                                    <div class="flex flex-col">
-                                        <div class="flex flex-wrap items-center mb-2">
-                                            <span class="text-sm font-bold text-gray-800 mr-3">{{ .time }}</span>
-                                            {{ if $showLabel }}
-                                            <span
-                                                class="px-2 py-1 text-xs font-medium rounded-full bg-{{ $textColor }}-100 text-{{ $textColor }}-800">
-                                                {{ $icon }} {{ $typeName }}
-                                            </span>
-                                            {{ end }}
-                                            {{ if $hasDetailPage }}
-                                            <span class="ml-auto text-xs text-gray-500 group-hover:text-gray-700">
-                                                View Details →
-                                            </span>
-                                            {{ end }}
-                                        </div>
-                                        <h4 class="text-lg font-bold mb-2 text-gray-900 leading-tight {{ if $hasDetailPage }}group-hover:text-cerulean{{ end }}">{{ .title }}</h4>
-
-                                        <!-- Speakers -->
-                                        {{ if .speakers }}
-                                        <div class="flex flex-wrap items-center gap-2 mt-2">
-                                            {{ range .speakers }}
-                                            {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
-                                            {{ if $speaker }}
-                                            <div
-                                                class="flex items-center rounded-lg p-2 hover:bg-black/5 transition-colors">
-                                                <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
-                                                    class="w-8 h-8 rounded-full object-cover border-2 border-white shadow-sm">
-                                                <div class="ml-2">
-                                                    <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}</p>
-                                                </div>
-                                            </div>
-                                            {{ end }}
-                                            {{ end }}
-                                        </div>
+                        <div
+                            class="bg-{{ $bgColor }} rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500">
+                            <div class="p-4">
+                                <div class="flex flex-col">
+                                    <div class="flex flex-wrap items-center mb-2">
+                                        <span class="text-sm font-bold text-gray-800 mr-3">{{ .time }}</span>
+                                        {{ if $showLabel }}
+                                        <span
+                                            class="px-2 py-1 text-xs font-medium rounded-full bg-{{ $textColor }}-100 text-{{ $textColor }}-800">
+                                            {{ $icon }} {{ $typeName }}
+                                        </span>
                                         {{ end }}
                                     </div>
+                                    <h4 class="text-lg font-bold mb-2 text-gray-900 leading-tight">{{ .title }}</h4>
+
+                                    <!-- Speakers -->
+                                    {{ if .speakers }}
+                                    <div class="flex flex-wrap items-center gap-2 mt-2">
+                                        {{ range .speakers }}
+                                        {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
+                                        {{ if $speaker }}
+                                        <div
+                                            class="flex items-center rounded-lg p-2 hover:bg-black/5 transition-colors">
+                                            <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
+                                                class="w-8 h-8 rounded-full object-cover border-2 border-white shadow-sm">
+                                            <div class="ml-2">
+                                                <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}</p>
+                                            </div>
+                                        </div>
+                                        {{ end }}
+                                        {{ end }}
+                                    </div>
+                                    {{ end }}
                                 </div>
                             </div>
-                        {{ if $hasDetailPage }}
-                        </a>
-                        {{ end }}
+                        </div>
                         {{ end }}
                     </div>
                 </div>
@@ -175,54 +163,42 @@
                         {{ $showLabel = false }}
                         {{ end }}
 
-                        {{ $hasDetailPage := and .speakers (gt (len .speakers) 0) }}
-                        {{ if $hasDetailPage }}
-                        <a href="/sessions/{{ .id }}/" class="block group">
-                        {{ end }}
-                            <div
-                                class="bg-{{ $bgColor }} rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500 {{ if $hasDetailPage }}group-hover:shadow-xl{{ end }}">
-                                <div class="p-4">
-                                    <div class="flex flex-col">
-                                        <div class="flex flex-wrap items-center mb-2">
-                                            <span class="text-sm font-bold text-gray-800 mr-3">{{ .time }}</span>
-                                            {{ if $showLabel }}
-                                            <span
-                                                class="px-2 py-1 text-xs font-medium rounded-full bg-{{ $textColor }}-100 text-{{ $textColor }}-800">
-                                                {{ $icon }} {{ $typeName }}
-                                            </span>
-                                            {{ end }}
-                                            {{ if $hasDetailPage }}
-                                            <span class="ml-auto text-xs text-gray-500 group-hover:text-gray-700">
-                                                View Details →
-                                            </span>
-                                            {{ end }}
-                                        </div>
-                                        <h4 class="text-lg font-bold mb-2 text-gray-900 leading-tight {{ if $hasDetailPage }}group-hover:text-cerulean{{ end }}">{{ .title }}</h4>
-
-                                        <!-- Speakers -->
-                                        {{ if .speakers }}
-                                        <div class="flex flex-wrap items-center gap-2 mt-2">
-                                            {{ range .speakers }}
-                                            {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
-                                            {{ if $speaker }}
-                                            <div
-                                                class="flex items-center rounded-lg p-2 hover:bg-black/5 transition-colors">
-                                                <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
-                                                    class="w-8 h-8 rounded-full object-cover border-2 border-white shadow-sm">
-                                                <div class="ml-2">
-                                                    <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}</p>
-                                                </div>
-                                            </div>
-                                            {{ end }}
-                                            {{ end }}
-                                        </div>
+                        <div
+                            class="bg-{{ $bgColor }} rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $borderColor }}-500">
+                            <div class="p-4">
+                                <div class="flex flex-col">
+                                    <div class="flex flex-wrap items-center mb-2">
+                                        <span class="text-sm font-bold text-gray-800 mr-3">{{ .time }}</span>
+                                        {{ if $showLabel }}
+                                        <span
+                                            class="px-2 py-1 text-xs font-medium rounded-full bg-{{ $textColor }}-100 text-{{ $textColor }}-800">
+                                            {{ $icon }} {{ $typeName }}
+                                        </span>
                                         {{ end }}
                                     </div>
+                                    <h4 class="text-lg font-bold mb-2 text-gray-900 leading-tight">{{ .title }}</h4>
+
+                                    <!-- Speakers -->
+                                    {{ if .speakers }}
+                                    <div class="flex flex-wrap items-center gap-2 mt-2">
+                                        {{ range .speakers }}
+                                        {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
+                                        {{ if $speaker }}
+                                        <div
+                                            class="flex items-center rounded-lg p-2 hover:bg-black/5 transition-colors">
+                                            <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
+                                                class="w-8 h-8 rounded-full object-cover border-2 border-white shadow-sm">
+                                            <div class="ml-2">
+                                                <p class="font-semibold text-gray-900 text-xs">{{ $speaker.name }}</p>
+                                            </div>
+                                        </div>
+                                        {{ end }}
+                                        {{ end }}
+                                    </div>
+                                    {{ end }}
                                 </div>
                             </div>
-                        {{ if $hasDetailPage }}
-                        </a>
-                        {{ end }}
+                        </div>
                         {{ end }}
                     </div>
                 </div>
