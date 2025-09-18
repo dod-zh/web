@@ -91,18 +91,72 @@
       "speakers": []
     },
     {
-      "id": "ignites-day1",
-      "title": "Ignites",
+      "id": "ignite-carmine-vassallo",
+      "title": "Eating Your Own Dog Food - The Secret Sauce for Better Product Development",
       "type": "ignite",
       "day": "2025-03-12",
-      "time": "14:10 - 14:45",
+      "time": "14:10 - 14:15",
       "speakers": [
-        "carmine-vassallo",
-        "marc-sallin",
-        "verena-traub",
-        "marcelo-ancelmo",
-        "alexander-ptakhin",
-        "sandra-czopek",
+        "carmine-vassallo"
+      ]
+    },
+    {
+      "id": "ignite-marc-sallin",
+      "title": "Bursting the End-2-End Myth: Divide and Conquer for Robust DevOps",
+      "type": "ignite",
+      "day": "2025-03-12",
+      "time": "14:15 - 14:20",
+      "speakers": [
+        "marc-sallin"
+      ]
+    },
+    {
+      "id": "ignite-verena-traub",
+      "title": "How can we make tech conferences more diverse?",
+      "type": "ignite",
+      "day": "2025-03-12",
+      "time": "14:20 - 14:25",
+      "speakers": [
+        "verena-traub"
+      ]
+    },
+    {
+      "id": "ignite-marcelo-ancelmo",
+      "title": "Cultivating a Learning Culture: Unlocking the Power of Continuous Development",
+      "type": "ignite",
+      "day": "2025-03-12",
+      "time": "14:25 - 14:30",
+      "speakers": [
+        "marcelo-ancelmo"
+      ]
+    },
+    {
+      "id": "ignite-alexander-ptakhin",
+      "title": "Pipeline ETA: 3… 2… Tomorrow? Let's Fix That!",
+      "type": "ignite",
+      "day": "2025-03-12",
+      "time": "14:30 - 14:35",
+      "speakers": [
+        "alexander-ptakhin"
+      ]
+    },
+    {
+      "id": "ignite-sandra-czopek",
+      "title": "Breaking Ba(l)d: How to Prevent Burnout and Thrive",
+      "type": "ignite",
+      "day": "2025-03-12",
+      "time": "14:35 - 14:40",
+      "speakers": [
+        "sandra-czopek"
+      ]
+    },
+    {
+      "id": "ignite-peter-farkas",
+      "title": "Taming the Testing Beast",
+      "type": "ignite",
+      "day": "2025-03-12",
+      "time": "14:40 - 14:45",
+      "speakers": [
         "peter-farkas"
       ]
     },
@@ -278,18 +332,72 @@
       "speakers": []
     },
     {
-      "id": "ignites-day2",
-      "title": "Ignites",
+      "id": "ignite-rasmus-lystrom",
+      "title": "Post Accelerate: Why are we still failing at adopting DevOps in the Enterprise?",
       "type": "ignite",
       "day": "2025-03-13",
-      "time": "14:10 - 14:45",
+      "time": "14:10 - 14:15",
       "speakers": [
-        "rasmus-lystrom",
-        "antonio-alvino",
-        "daiany-palacios",
-        "jonas-alder",
-        "marcel-britsch",
-        "kamali-wickramage",
+        "rasmus-lystrom"
+      ]
+    },
+    {
+      "id": "ignite-antonio-alvino",
+      "title": "The perfect match: How Extreme Programming enables Team Topologies concepts",
+      "type": "ignite",
+      "day": "2025-03-13",
+      "time": "14:15 - 14:20",
+      "speakers": [
+        "antonio-alvino"
+      ]
+    },
+    {
+      "id": "ignite-daiany-palacios",
+      "title": "Tomorrow's DevOps Engineers, Today!",
+      "type": "ignite",
+      "day": "2025-03-13",
+      "time": "14:20 - 14:25",
+      "speakers": [
+        "daiany-palacios"
+      ]
+    },
+    {
+      "id": "ignite-jonas-alder",
+      "title": "Software at Tesla - A peek from the outside",
+      "type": "ignite",
+      "day": "2025-03-13",
+      "time": "14:25 - 14:30",
+      "speakers": [
+        "jonas-alder"
+      ]
+    },
+    {
+      "id": "ignite-marcel-britsch",
+      "title": "How I Started Worrying and Stopped Loving DevOps",
+      "type": "ignite",
+      "day": "2025-03-13",
+      "time": "14:30 - 14:35",
+      "speakers": [
+        "marcel-britsch"
+      ]
+    },
+    {
+      "id": "ignite-kamali-wickramage",
+      "title": "No estimates? Try Flow Metrics.",
+      "type": "ignite",
+      "day": "2025-03-13",
+      "time": "14:35 - 14:40",
+      "speakers": [
+        "kamali-wickramage"
+      ]
+    },
+    {
+      "id": "ignite-adam-zieba",
+      "title": "Code & risk",
+      "type": "ignite",
+      "day": "2025-03-13",
+      "time": "14:40 - 14:45",
+      "speakers": [
         "adam-zieba"
       ]
     },
