@@ -27,13 +27,13 @@ const templates = {
 
 // Sessions that already have detail pages created
 const existingSessions = [
-    'talk-marc-schuh',
-    'talk-lena-fuhrimann',
-    'talk-christina-kraus',
-    'ignite-carmine-vassallo',
-    'ignite-marc-sallin',
-    'workshop-domain-driven-refactoring',
-    'workshop-secure-containers'
+    'talks/marc-schuh',
+    'talks/lena-fuhrimann',
+    'talks/christina-kraus',
+    'ignites/carmine-vassallo',
+    'ignites/marc-sallin',
+    'workshops/domain-driven-refactoring',
+    'workshops/secure-containers'
 ];
 
 // Generate content for each session that has speakers
@@ -122,7 +122,25 @@ This ${sessionType} is perfect for:
 *Don't miss this opportunity to learn from industry experts and expand your technical knowledge!*`;
 
     const fileName = `${session.id}.md`;
-    const filePath = path.join(__dirname, 'content/sessions', fileName);
+
+    // Determine the correct subfolder path
+    let subFolder = '';
+    if (session.id.startsWith('talks/')) {
+        subFolder = session.id.replace('talks/', '');
+        fileName = `${subFolder}.md`;
+        filePath = path.join(__dirname, 'content/sessions/talks', fileName);
+    } else if (session.id.startsWith('ignites/')) {
+        subFolder = session.id.replace('ignites/', '');
+        fileName = `${subFolder}.md`;
+        filePath = path.join(__dirname, 'content/sessions/ignites', fileName);
+    } else if (session.id.startsWith('workshops/')) {
+        subFolder = session.id.replace('workshops/', '');
+        fileName = `${subFolder}.md`;
+        filePath = path.join(__dirname, 'content/sessions/workshops', fileName);
+    } else {
+        fileName = `${session.id}.md`;
+        filePath = path.join(__dirname, 'content/sessions', fileName);
+    }
 
     try {
         fs.writeFileSync(filePath, content);

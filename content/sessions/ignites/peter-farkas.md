@@ -1,8 +1,8 @@
 ---
-title: "No estimates? Try Flow Metrics."
-description: "No estimates? Try Flow Metrics. - DevOpsDays Zurich 2025"
+title: "Taming the Testing Beast"
+description: "Taming the Testing Beast - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "ignite-kamali-wickramage"
+sessionId: "ignites/peter-farkas"
 ---
 
 This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.

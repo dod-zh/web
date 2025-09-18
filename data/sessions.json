@@ -17,7 +17,7 @@
       "speakers": []
     },
     {
-      "id": "talk-marc-schuh",
+      "id": "talks/marc-schuh",
       "title": "From Athlete to Algorithm: Transforming Canoe Technique Analysis with AI",
       "type": "talk",
       "day": "2025-03-12",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "talk-lena-fuhrimann",
+      "id": "talks/lena-fuhrimann",
       "title": "Level Up Your Serverless Game",
       "type": "talk",
       "day": "2025-03-12",
@@ -45,7 +45,7 @@
       "speakers": []
     },
     {
-      "id": "talk-christina-kraus",
+      "id": "talks/christina-kraus",
       "title": "Building Internal Platforms to Enhance Developer Experience",
       "type": "talk",
       "day": "2025-03-12",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "id": "talk-daniel-raniz-raneland",
+      "id": "talks/daniel-raniz-raneland",
       "title": "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do",
       "type": "talk",
       "day": "2025-03-12",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "id": "talk-robert-lehmann",
+      "id": "talks/robert-lehmann",
       "title": "Planet-Scale Dashboards",
       "type": "talk",
       "day": "2025-03-12",
@@ -91,7 +91,7 @@
       "speakers": []
     },
     {
-      "id": "ignite-carmine-vassallo",
+      "id": "ignites/carmine-vassallo",
       "title": "Eating Your Own Dog Food - The Secret Sauce for Better Product Development",
       "type": "ignite",
       "day": "2025-03-12",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "id": "ignite-marc-sallin",
+      "id": "ignites/marc-sallin",
       "title": "Bursting the End-2-End Myth: Divide and Conquer for Robust DevOps",
       "type": "ignite",
       "day": "2025-03-12",
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "id": "ignite-verena-traub",
+      "id": "ignites/verena-traub",
       "title": "How can we make tech conferences more diverse?",
       "type": "ignite",
       "day": "2025-03-12",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "ignite-marcelo-ancelmo",
+      "id": "ignites/marcelo-ancelmo",
       "title": "Cultivating a Learning Culture: Unlocking the Power of Continuous Development",
       "type": "ignite",
       "day": "2025-03-12",
@@ -131,7 +131,7 @@
       ]
     },
     {
-      "id": "ignite-alexander-ptakhin",
+      "id": "ignites/alexander-ptakhin",
       "title": "Pipeline ETA: 3… 2… Tomorrow? Let's Fix That!",
       "type": "ignite",
       "day": "2025-03-12",
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "id": "ignite-sandra-czopek",
+      "id": "ignites/sandra-czopek",
       "title": "Breaking Ba(l)d: How to Prevent Burnout and Thrive",
       "type": "ignite",
       "day": "2025-03-12",
@@ -151,7 +151,7 @@
       ]
     },
     {
-      "id": "ignite-peter-farkas",
+      "id": "ignites/peter-farkas",
       "title": "Taming the Testing Beast",
       "type": "ignite",
       "day": "2025-03-12",
@@ -177,7 +177,7 @@
       "speakers": []
     },
     {
-      "id": "workshop-domain-driven-refactoring",
+      "id": "workshops/domain-driven-refactoring",
       "title": "Untangle Your Legacy Code with Domain-Driven Refactoring",
       "type": "workshop",
       "day": "2025-03-12",
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "id": "workshop-user-needs-mapping",
+      "id": "workshops/user-needs-mapping",
       "title": "Enabling aligned decentralised architecture decisions through user needs mapping",
       "type": "workshop",
       "day": "2025-03-12",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "id": "workshop-secure-containers",
+      "id": "workshops/secure-containers",
       "title": "Building Secure Container Images",
       "type": "workshop",
       "day": "2025-03-12",
@@ -241,7 +241,7 @@
       "speakers": []
     },
     {
-      "id": "talk-dorota-parad",
+      "id": "talks/dorota-parad",
       "title": "Unintended consequences of well-meaning changes",
       "type": "talk",
       "day": "2025-03-13",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "id": "talk-darko-fabijan",
+      "id": "talks/darko-fabijan",
       "title": "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore",
       "type": "talk",
       "day": "2025-03-13",
@@ -269,7 +269,7 @@
       "speakers": []
     },
     {
-      "id": "talk-pia-wiedermayer",
+      "id": "talks/pia-wiedermayer",
       "title": "Human-Driven Intelligence: Where AI & Automation Fall Short",
       "type": "talk",
       "day": "2025-03-13",
@@ -279,7 +279,7 @@
       ]
     },
     {
-      "id": "talk-manisha-marco",
+      "id": "talks/manisha-marco",
       "title": "Empowering SRE with GitOps: Automating Kubernetes Deployments with GitLab CI and Flux CD",
       "type": "talk",
       "day": "2025-03-13",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "id": "talk-bertrand-delacretaz",
+      "id": "talks/bertrand-delacretaz",
       "title": "The Power of Simplicity: Crafting Durable Software Systems",
       "type": "talk",
       "day": "2025-03-13",
@@ -316,7 +316,7 @@
       "speakers": []
     },
     {
-      "id": "ignite-rasmus-lystrom",
+      "id": "ignites/rasmus-lystrom",
       "title": "Post Accelerate: Why are we still failing at adopting DevOps in the Enterprise?",
       "type": "ignite",
       "day": "2025-03-13",
@@ -326,7 +326,7 @@
       ]
     },
     {
-      "id": "ignite-antonio-alvino",
+      "id": "ignites/antonio-alvino",
       "title": "The perfect match: How Extreme Programming enables Team Topologies concepts",
       "type": "ignite",
       "day": "2025-03-13",
@@ -336,7 +336,7 @@
       ]
     },
     {
-      "id": "ignite-daiany-palacios",
+      "id": "ignites/daiany-palacios",
       "title": "Tomorrow's DevOps Engineers, Today!",
       "type": "ignite",
       "day": "2025-03-13",
@@ -346,7 +346,7 @@
       ]
     },
     {
-      "id": "ignite-jonas-alder",
+      "id": "ignites/jonas-alder",
       "title": "Software at Tesla - A peek from the outside",
       "type": "ignite",
       "day": "2025-03-13",
@@ -356,7 +356,7 @@
       ]
     },
     {
-      "id": "ignite-marcel-britsch",
+      "id": "ignites/marcel-britsch",
       "title": "How I Started Worrying and Stopped Loving DevOps",
       "type": "ignite",
       "day": "2025-03-13",
@@ -366,7 +366,7 @@
       ]
     },
     {
-      "id": "ignite-kamali-wickramage",
+      "id": "ignites/kamali-wickramage",
       "title": "No estimates? Try Flow Metrics.",
       "type": "ignite",
       "day": "2025-03-13",
@@ -376,7 +376,7 @@
       ]
     },
     {
-      "id": "ignite-adam-zieba",
+      "id": "ignites/adam-zieba",
       "title": "Code & risk",
       "type": "ignite",
       "day": "2025-03-13",
@@ -402,7 +402,7 @@
       "speakers": []
     },
     {
-      "id": "workshop-kubernetes-operators",
+      "id": "workshops/kubernetes-operators",
       "title": "Building Infrastructure Tools with Kubernetes Operators and Go",
       "type": "workshop",
       "day": "2025-03-13",
@@ -412,7 +412,7 @@
       ]
     },
     {
-      "id": "workshop-opentelemetry",
+      "id": "workshops/opentelemetry",
       "title": "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry",
       "type": "workshop",
       "day": "2025-03-13",
@@ -423,7 +423,7 @@
       ]
     },
     {
-      "id": "talk-marc-herren",
+      "id": "talks/marc-herren",
       "title": "Streamlining DevSecOps with Purposeful AI Integration",
       "type": "workshop",
       "day": "2025-03-13",

@@ -1,8 +1,8 @@
 ---
-title: "Code & risk"
-description: "Code & risk - DevOpsDays Zurich 2025"
+title: "Breaking Ba(l)d: How to Prevent Burnout and Thrive"
+description: "Breaking Ba(l)d: How to Prevent Burnout and Thrive - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "ignite-adam-zieba"
+sessionId: "ignites/sandra-czopek"
 ---
 
 This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.

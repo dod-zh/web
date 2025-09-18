@@ -2,7 +2,7 @@
 title: "Bursting the End-2-End Myth: Divide and Conquer for Robust DevOps"
 description: "Challenge the end-to-end testing orthodoxy and discover better testing strategies"
 type: "session"
-sessionId: "ignite-marc-sallin"
+sessionId: "ignites/marc-sallin"
 ---
 
 Ready to challenge conventional wisdom? This ignite talk dismantles the end-to-end testing myth and reveals why a divide-and-conquer approach creates more robust, maintainable, and efficient DevOps pipelines.

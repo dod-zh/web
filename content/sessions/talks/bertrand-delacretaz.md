@@ -2,7 +2,7 @@
 title: "The Power of Simplicity: Crafting Durable Software Systems"
 description: "The Power of Simplicity: Crafting Durable Software Systems - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "talk-bertrand-delacretaz"
+sessionId: "talks/bertrand-delacretaz"
 ---
 
 This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.

@@ -1,8 +1,8 @@
 ---
-title: "Cultivating a Learning Culture: Unlocking the Power of Continuous Development"
-description: "Cultivating a Learning Culture: Unlocking the Power of Continuous Development - DevOpsDays Zurich 2025"
+title: "Tomorrow's DevOps Engineers, Today!"
+description: "Tomorrow's DevOps Engineers, Today! - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "ignite-marcelo-ancelmo"
+sessionId: "ignites/daiany-palacios"
 ---
 
 This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.

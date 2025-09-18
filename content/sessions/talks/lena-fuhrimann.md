@@ -2,7 +2,7 @@
 title: "Level Up Your Serverless Game"
 description: "Advanced patterns and best practices for serverless applications"
 type: "session"
-sessionId: "talk-lena-fuhrimann"
+sessionId: "talks/lena-fuhrimann"
 ---
 
 Take your serverless knowledge to the next level with advanced patterns, optimization techniques, and real-world best practices that will make your serverless applications more robust, cost-effective, and maintainable.

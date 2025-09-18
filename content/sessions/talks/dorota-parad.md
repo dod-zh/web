@@ -1,8 +1,8 @@
 ---
-title: "Human-Driven Intelligence: Where AI & Automation Fall Short"
-description: "Human-Driven Intelligence: Where AI & Automation Fall Short - DevOpsDays Zurich 2025"
+title: "Unintended consequences of well-meaning changes"
+description: "Unintended consequences of well-meaning changes - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "talk-pia-wiedermayer"
+sessionId: "talks/dorota-parad"
 ---
 
 This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.

@@ -1,8 +1,8 @@
 ---
-title: "Enabling aligned decentralised architecture decisions through user needs mapping"
-description: "Enabling aligned decentralised architecture decisions through user needs mapping - DevOpsDays Zurich 2025"
+title: "Building Infrastructure Tools with Kubernetes Operators and Go"
+description: "Building Infrastructure Tools with Kubernetes Operators and Go - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "workshop-user-needs-mapping"
+sessionId: "workshops/kubernetes-operators"
 ---
 
 This hands-on workshop provides practical experience and in-depth knowledge through interactive exercises and real-world scenarios.

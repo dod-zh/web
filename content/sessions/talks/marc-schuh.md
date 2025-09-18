@@ -2,7 +2,7 @@
 title: "From Athlete to Algorithm: Transforming Canoe Technique Analysis with AI"
 description: "Discover how AI and computer vision revolutionize athletic training and technique analysis"
 type: "session"
-sessionId: "talk-marc-schuh"
+sessionId: "talks/marc-schuh"
 ---
 
 In this compelling talk, we explore the intersection of sports science and artificial intelligence, showcasing how modern technology can transform traditional athletic coaching methods.

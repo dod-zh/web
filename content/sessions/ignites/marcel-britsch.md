@@ -1,8 +1,8 @@
 ---
-title: "The perfect match: How Extreme Programming enables Team Topologies concepts"
-description: "The perfect match: How Extreme Programming enables Team Topologies concepts - DevOpsDays Zurich 2025"
+title: "How I Started Worrying and Stopped Loving DevOps"
+description: "How I Started Worrying and Stopped Loving DevOps - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "ignite-antonio-alvino"
+sessionId: "ignites/marcel-britsch"
 ---
 
 This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.

@@ -2,7 +2,7 @@
 title: "Building Secure Container Images"
 description: "Hands-on workshop for building and securing container images following security best practices"
 type: "session"
-sessionId: "workshop-secure-containers"
+sessionId: "workshops/secure-containers"
 ---
 
 Learn to build container images that are secure by design in this comprehensive hands-on workshop covering the complete container security lifecycle from development to production.

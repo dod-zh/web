@@ -2,7 +2,7 @@
 title: "Planet-Scale Dashboards"
 description: "Planet-Scale Dashboards - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "talk-robert-lehmann"
+sessionId: "talks/robert-lehmann"
 ---
 
 This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.

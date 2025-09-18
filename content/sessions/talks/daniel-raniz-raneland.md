@@ -1,8 +1,8 @@
 ---
-title: "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore"
-description: "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore - DevOpsDays Zurich 2025"
+title: "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do"
+description: "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "talk-darko-fabijan"
+sessionId: "talks/daniel-raniz-raneland"
 ---
 
 This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.

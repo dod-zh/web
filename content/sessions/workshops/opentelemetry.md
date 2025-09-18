@@ -1,8 +1,8 @@
 ---
-title: "Building Infrastructure Tools with Kubernetes Operators and Go"
-description: "Building Infrastructure Tools with Kubernetes Operators and Go - DevOpsDays Zurich 2025"
+title: "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry"
+description: "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "workshop-kubernetes-operators"
+sessionId: "workshops/opentelemetry"
 ---
 
 This hands-on workshop provides practical experience and in-depth knowledge through interactive exercises and real-world scenarios.

@@ -1,8 +1,8 @@
 ---
-title: "Post Accelerate: Why are we still failing at adopting DevOps in the Enterprise?"
-description: "Post Accelerate: Why are we still failing at adopting DevOps in the Enterprise? - DevOpsDays Zurich 2025"
+title: "Pipeline ETA: 3… 2… Tomorrow? Let's Fix That!"
+description: "Pipeline ETA: 3… 2… Tomorrow? Let's Fix That! - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "ignite-rasmus-lystrom"
+sessionId: "ignites/alexander-ptakhin"
 ---
 
 This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.

@@ -1,8 +1,8 @@
 ---
-title: "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry"
-description: "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry - DevOpsDays Zurich 2025"
+title: "Enabling aligned decentralised architecture decisions through user needs mapping"
+description: "Enabling aligned decentralised architecture decisions through user needs mapping - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "workshop-opentelemetry"
+sessionId: "workshops/user-needs-mapping"
 ---
 
 This hands-on workshop provides practical experience and in-depth knowledge through interactive exercises and real-world scenarios.

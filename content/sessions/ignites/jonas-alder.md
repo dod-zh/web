@@ -1,8 +1,8 @@
 ---
-title: "How can we make tech conferences more diverse?"
-description: "How can we make tech conferences more diverse? - DevOpsDays Zurich 2025"
+title: "Software at Tesla - A peek from the outside"
+description: "Software at Tesla - A peek from the outside - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "ignite-verena-traub"
+sessionId: "ignites/jonas-alder"
 ---
 
 This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.

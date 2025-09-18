@@ -2,7 +2,7 @@
 title: "Eating Your Own Dog Food - The Secret Sauce for Better Product Development"
 description: "Why using your own products is essential for building better software"
 type: "session"
-sessionId: "ignite-carmine-vassallo"
+sessionId: "ignites/carmine-vassallo"
 ---
 
 In this fast-paced ignite talk, discover why "eating your own dog food" - using the products you build - is one of the most powerful strategies for creating exceptional software and improving developer productivity.
