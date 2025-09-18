@@ -170,26 +170,10 @@
     },
     {
       "id": "openspace-track1-day1",
-      "title": "Open Space Track 1",
+      "title": "Open Spaces",
       "type": "openspace",
       "day": "2025-03-12",
-      "time": "15:15 - 15:55",
-      "speakers": []
-    },
-    {
-      "id": "openspace-track2-day1",
-      "title": "Open Space Track 2",
-      "type": "openspace",
-      "day": "2025-03-12",
-      "time": "16:00 - 16:40",
-      "speakers": []
-    },
-    {
-      "id": "openspace-track3-day1",
-      "title": "Open Space Track 3",
-      "type": "openspace",
-      "day": "2025-03-12",
-      "time": "16:45 - 17:25",
+      "time": "15:15 - 17:25",
       "speakers": []
     },
     {
@@ -411,26 +395,10 @@
     },
     {
       "id": "openspace-track1-day2",
-      "title": "Open Space Track 1",
+      "title": "Open Spaces",
       "type": "openspace",
       "day": "2025-03-13",
-      "time": "15:15 - 15:55",
-      "speakers": []
-    },
-    {
-      "id": "openspace-track2-day2",
-      "title": "Open Space Track 2",
-      "type": "openspace",
-      "day": "2025-03-13",
-      "time": "16:00 - 16:40",
-      "speakers": []
-    },
-    {
-      "id": "openspace-track3-day2",
-      "title": "Open Space Track 3",
-      "type": "openspace",
-      "day": "2025-03-13",
-      "time": "16:45 - 17:25",
+      "time": "15:15 - 17:2",
       "speakers": []
     },
     {
@@ -457,7 +425,7 @@
     {
       "id": "talk-marc-herren",
       "title": "Streamlining DevSecOps with Purposeful AI Integration",
-      "type": "talk",
+      "type": "workshop",
       "day": "2025-03-13",
       "time": "15:15 - 17:25",
       "speakers": [
