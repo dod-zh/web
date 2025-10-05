@@ -12,6 +12,18 @@
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-8">
                 {{ range .Site.Menus.main }}
+                {{ $showItem := true }}
+                {{ if eq .Identifier "event" }}
+                {{ $showItem = or $.Site.Params.features.show_program $.Site.Params.features.show_tickets
+                $.Site.Params.features.show_speakers }}
+                {{ else if (in .URL "/event/tickets/") }}
+                {{ $showItem = $.Site.Params.features.show_tickets }}
+                {{ else if (in .URL "/event/program/") }}
+                {{ $showItem = $.Site.Params.features.show_program }}
+                {{ else if (in .URL "/speakers/") }}
+                {{ $showItem = $.Site.Params.features.show_speakers }}
+                {{ end }}
+                {{ if $showItem }}
                 {{ if .HasChildren }}
                 <div class="relative group">
                     <button class="text-gray-700 px-3 py-2 flex items-center" style="transition: color 0.3s;"
@@ -26,8 +38,18 @@
                         class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                         <div class="py-1">
                             {{ range .Children }}
+                            {{ $showChild := true }}
+                            {{ if (in .URL "/event/tickets/") }}
+                            {{ $showChild = $.Site.Params.features.show_tickets }}
+                            {{ else if (in .URL "/event/program/") }}
+                            {{ $showChild = $.Site.Params.features.show_program }}
+                            {{ else if (in .URL "/speakers/") }}
+                            {{ $showChild = $.Site.Params.features.show_speakers }}
+                            {{ end }}
+                            {{ if $showChild }}
                             <a href="{{ .URL }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">{{
                                 .Name }}</a>
+                            {{ end }}
                             {{ end }}
                         </div>
                     </div>
@@ -38,14 +60,28 @@
                     }}</a>
                 {{ end }}
                 {{ end }}
+                {{ end }}
+
+                <!-- CFP Button -->
+                {{ if .Site.Params.features.show_cfp }}
+                <a href="{{ .Site.Params.features.cfp_url }}" target="_blank" rel="noopener"
+                    class="text-white px-6 py-2 rounded-md transition-colors"
+                    style="background-color: var(--indigo-dye); color: white;"
+                    onmouseover="this.style.backgroundColor='var(--rich-black)'; this.style.color='white';"
+                    onmouseout="this.style.backgroundColor='var(--indigo-dye)'; this.style.color='white';">
+                    Submit Your Talk
+                </a>
+                {{ end }}
 
                 <!-- CTA Button -->
+                {{ if .Site.Params.features.show_tickets }}
                 <a href="/event/tickets/" class="text-white px-6 py-2 rounded-md transition-colors"
                     style="background-color: var(--cerulean); color: white;"
                     onmouseover="this.style.backgroundColor='var(--indigo-dye)'; this.style.color='white';"
                     onmouseout="this.style.backgroundColor='var(--cerulean)'; this.style.color='white';">
                     Get Tickets
                 </a>
+                {{ end }}
             </nav>
 
             <!-- Mobile Menu Button -->
@@ -63,21 +99,53 @@
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
             {{ range .Site.Menus.main }}
+            {{ $showItem := true }}
+            {{ if eq .Identifier "event" }}
+            {{ $showItem = or $.Site.Params.features.show_program $.Site.Params.features.show_tickets
+            $.Site.Params.features.show_speakers }}
+            {{ else if (in .URL "/event/tickets/") }}
+            {{ $showItem = $.Site.Params.features.show_tickets }}
+            {{ else if (in .URL "/event/program/") }}
+            {{ $showItem = $.Site.Params.features.show_program }}
+            {{ else if (in .URL "/speakers/") }}
+            {{ $showItem = $.Site.Params.features.show_speakers }}
+            {{ end }}
+            {{ if $showItem }}
             {{ if .HasChildren }}
             <div class="mb-2">
                 <div class="text-gray-700 font-medium px-3 py-2">{{ .Name }}</div>
                 {{ range .Children }}
+                {{ $showChild := true }}
+                {{ if (in .URL "/event/tickets/") }}
+                {{ $showChild = $.Site.Params.features.show_tickets }}
+                {{ else if (in .URL "/event/program/") }}
+                {{ $showChild = $.Site.Params.features.show_program }}
+                {{ else if (in .URL "/speakers/") }}
+                {{ $showChild = $.Site.Params.features.show_speakers }}
+                {{ end }}
+                {{ if $showChild }}
                 <a href="{{ .URL }}" class="block text-gray-600 px-6 py-2 hover:bg-gray-100">{{ .Name }}</a>
+                {{ end }}
                 {{ end }}
             </div>
             {{ else }}
             <a href="{{ .URL }}" class="block text-gray-700 px-3 py-2 hover:bg-gray-100">{{ .Name }}</a>
             {{ end }}
             {{ end }}
+            {{ end }}
+            {{ if .Site.Params.features.show_cfp }}
+            <a href="{{ .Site.Params.features.cfp_url }}" target="_blank" rel="noopener"
+                class="block text-white px-3 py-2 mt-4 rounded-md text-center"
+                style="background-color: var(--indigo-dye);">
+                Submit Your Talk
+            </a>
+            {{ end }}
+            {{ if .Site.Params.features.show_tickets }}
             <a href="/event/tickets/" class="block text-white px-3 py-2 mt-4 rounded-md text-center"
                 style="background-color: var(--cerulean);">
                 Get Tickets
             </a>
+            {{ end }}
         </div>
     </div>
 </header>

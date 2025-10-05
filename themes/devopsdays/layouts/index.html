@@ -7,23 +7,29 @@
                 {{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Summary }}{{ end }}
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                {{ if .Site.Params.features.show_tickets }}
                 <a href="/event/tickets/" class="bg-white px-8 py-3 rounded-lg font-semibold transition-colors"
                     style="color: var(--indigo-dye);" onmouseover="this.style.backgroundColor='#f3f4f6'"
                     onmouseout="this.style.backgroundColor='white'">
                     Get Your Tickets
                 </a>
-                <a href="https://sessionize.com/devopsdays-zurich-2025/" target="_blank" rel="noopener"
+                {{ end }}
+                {{ if .Site.Params.features.show_cfp }}
+                <a href="{{ .Site.Params.features.cfp_url }}" target="_blank" rel="noopener"
                     class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold transition-colors"
                     onmouseover="this.style.backgroundColor='white'; this.style.color='var(--indigo-dye)'"
                     onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
                     Submit your Proposal
                 </a>
+                {{ end }}
+                {{ if .Site.Params.features.show_program }}
                 <a href="/event/program/"
                     class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold transition-colors"
                     onmouseover="this.style.backgroundColor='white'; this.style.color='var(--indigo-dye)'"
                     onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
                     View Program
                 </a>
+                {{ end }}
             </div>
         </div>
     </div>
