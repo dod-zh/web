@@ -56,7 +56,44 @@
 <section class="py-2">
     <div class="container mx-auto px-4">
         <div class="prose prose-lg max-w-4xl mx-auto">
+            {{ if .Site.Data.sessions }}
+            <!-- Stats Container - Generated from Data -->
+            {{ $currentEvent := index (where .Site.Data.events.events "status" "upcoming") 0 }}
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">{{ $currentEvent.attendees }}</div>
+                    <div class="stat-label">up to Attendees</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">{{ len (where .Site.Data.sessions.sessions "type" "keynote") }}</div>
+                    <div class="stat-label">Keynote-Speakers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">{{ len (where .Site.Data.sessions.sessions "type" "talk") }}</div>
+                    <div class="stat-label">Talks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">{{ len (where .Site.Data.sessions.sessions "type" "ignite") }}</div>
+                    <div class="stat-label">Ignites</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">{{ len (where .Site.Data.sessions.sessions "type" "workshop") }}</div>
+                    <div class="stat-label">Workshops</div>
+                </div>
+            </div>
+            {{ else }}
             {{ .Content }}
+            {{ end }}
+
+            <h2 class="text-3xl font-bold text-center mb-12">Impressions from DevOpsDays Zurich 2025</h2>
+
+            <div class="video-container">
+                <iframe
+                    src="https://player.vimeo.com/video/1068553160?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    title="DevOpsDays Zurich">
+                </iframe>
+            </div>
         </div>
     </div>
 </section>
