@@ -45,8 +45,12 @@
             <div>
                 <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
+                    {{ if .Site.Params.features.show_tickets }}
                     <li><a href="/event/tickets/" class="text-gray-300 hover:text-white">Tickets</a></li>
+                    {{ end }}
+                    {{ if .Site.Params.features.show_program }}
                     <li><a href="/event/program/" class="text-gray-300 hover:text-white">Program</a></li>
+                    {{ end }}
                     <li><a href="/event/sponsors/" class="text-gray-300 hover:text-white">Sponsors</a></li>
                     <li><a href="/event/location/" class="text-gray-300 hover:text-white">Location</a></li>
                     <li><a href="/about/conduct/" class="text-gray-300 hover:text-white">Code of Conduct</a></li>

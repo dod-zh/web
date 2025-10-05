@@ -16,12 +16,12 @@ params:
 
 ## What Each Flag Controls
 
-| Flag | Menu Item | CTA Button | Landing Page | Page Access |
-|------|-----------|------------|--------------|-------------|
-| `show_program` | ✅ Program | - | ✅ View Program | /event/program/ |
-| `show_tickets` | ✅ Tickets | ✅ Get Tickets | ✅ Get Your Tickets | /event/tickets/ |
-| `show_cfp` | - | ✅ Submit Your Talk | ✅ Submit your Proposal | External CFP URL |
-| `show_speakers` | ✅ Speakers | - | - | /speakers/ |
+| Flag | Menu Item | CTA Button | Landing Page | Footer | Page Access |
+|------|-----------|------------|--------------|--------|-------------|
+| `show_program` | ✅ Program | - | ✅ View Program | ✅ Program | /event/program/ |
+| `show_tickets` | ✅ Tickets | ✅ Get Tickets | ✅ Get Your Tickets | ✅ Tickets | /event/tickets/ |
+| `show_cfp` | - | ✅ Submit Your Talk | ✅ Submit your Proposal | - | External CFP URL |
+| `show_speakers` | ✅ Speakers | - | - | - | /speakers/ |
 
 ## Quick Actions
 

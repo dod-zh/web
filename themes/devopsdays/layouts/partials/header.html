@@ -13,10 +13,7 @@
             <nav class="hidden md:flex space-x-8">
                 {{ range .Site.Menus.main }}
                 {{ $showItem := true }}
-                {{ if eq .Identifier "event" }}
-                {{ $showItem = or $.Site.Params.features.show_program $.Site.Params.features.show_tickets
-                $.Site.Params.features.show_speakers }}
-                {{ else if (in .URL "/event/tickets/") }}
+                {{ if (in .URL "/event/tickets/") }}
                 {{ $showItem = $.Site.Params.features.show_tickets }}
                 {{ else if (in .URL "/event/program/") }}
                 {{ $showItem = $.Site.Params.features.show_program }}
@@ -100,10 +97,7 @@
         <div id="mobile-menu" class="md:hidden hidden pb-4">
             {{ range .Site.Menus.main }}
             {{ $showItem := true }}
-            {{ if eq .Identifier "event" }}
-            {{ $showItem = or $.Site.Params.features.show_program $.Site.Params.features.show_tickets
-            $.Site.Params.features.show_speakers }}
-            {{ else if (in .URL "/event/tickets/") }}
+            {{ if (in .URL "/event/tickets/") }}
             {{ $showItem = $.Site.Params.features.show_tickets }}
             {{ else if (in .URL "/event/program/") }}
             {{ $showItem = $.Site.Params.features.show_program }}

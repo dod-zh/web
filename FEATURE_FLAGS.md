@@ -24,6 +24,7 @@ params:
 - **Controls:**
   - "Program" menu item in navigation
   - "View Program" button on landing page
+  - "Program" link in footer
   - Access to `/event/program/` page
 - **Use case:** Set to `false` before the program is finalized
 
@@ -34,6 +35,7 @@ params:
   - "Tickets" menu item in navigation
   - "Get Tickets" CTA button in header (desktop and mobile)
   - "Get Your Tickets" button on landing page
+  - "Tickets" link in footer
   - Access to `/event/tickets/` page
 - **Use case:** Set to `false` before ticket sales open or after they close
 
