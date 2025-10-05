@@ -7,6 +7,10 @@ params:
   description: 'DevOpsDays Zurich - Annual community event for DevOps practitioners'
   author: 'DevOpsDays Zurich Team'
   keywords: 'devops, switzerland, conference, community, automation, culture'
+  social:
+    linkedin: 'https://www.linkedin.com/company/devopsdays-zurich'
+    vimeo: 'https://vimeo.com/devopsdayszh'
+    flickr: 'https://www.flickr.com/photos/150616602@N02/albums/with/72157680463366208'
   
 markup:
   goldmark:
