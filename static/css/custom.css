@@ -179,6 +179,17 @@ select:focus {
     outline-offset: 2px;
 }
 
+/* Ensure all button-like links maintain proper contrast */
+a.border-2.border-white.text-white {
+    /* Enhance text shadow for better readability on gradient backgrounds */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+a.bg-white {
+    /* Ensure dark text on white buttons */
+    color: var(--indigo-dye) !important;
+}
+
 /* Skip to main content link */
 .skip-link {
     position: absolute;
@@ -264,7 +275,7 @@ select:focus {
 
 .btn-secondary:hover {
     background-color: white;
-    color: var(--cerulean);
+    color: var(--indigo-dye);
 }
 
 /* Hero gradient utility class */
@@ -305,12 +316,12 @@ h6 {
 }
 
 /* Link styling consistency */
-a:not(.btn-primary):not(.btn-secondary) {
+a:not(.btn-primary):not(.btn-secondary):not(.border-2):not(.bg-white) {
     color: var(--cerulean);
     transition: color 0.3s ease;
 }
 
-a:not(.btn-primary):not(.btn-secondary):hover {
+a:not(.btn-primary):not(.btn-secondary):not(.border-2):not(.bg-white):hover {
     color: var(--indigo-dye);
 }
 
