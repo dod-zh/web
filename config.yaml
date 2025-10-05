@@ -1,6 +1,6 @@
 baseURL: 'https://devopsdays.ch'
 languageCode: 'en-us'
-title: 'DevOpsDays Zurich'
+title: DevOpsDays Zurich
 theme: 'devopsdays'
 
 params:

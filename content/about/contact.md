@@ -1,14 +1,12 @@
 ---
-title: "Contact"
+title: "Contact Us"
 description: "Get in touch with the DevOpsDays Zurich team"
 type: "contact"
 ---
 
-# Contact Us
-
 Have questions about DevOpsDays Zurich? We'd love to hear from you!
 
-## General Information
+## General Contact
 
 **Email**: [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch)  
 **Phone**: +41 79 123 4567
@@ -19,7 +17,7 @@ c/o Swiss DevOps Association
 Bahnhofstrasse 123  
 8001 Zurich, Switzerland
 
-For information about our team, please see the new [Team page](../about/team/).
+**Meet the Team**: Visit our [Team page](../team/) to learn about the organizers.
 
 ## Specific Inquiries
 
