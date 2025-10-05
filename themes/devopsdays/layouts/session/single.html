@@ -20,7 +20,12 @@
         {{ $icon := "📋" }}
         {{ $typeName := title $session.type }}
 
-        {{ if eq $session.type "talk" }}
+        {{ if eq $session.type "keynote" }}
+        {{ $borderColor = "red" }}
+        {{ $bgColor = "red" }}
+        {{ $icon = "🎤" }}
+        {{ $typeName = "Keynote" }}
+        {{ else if eq $session.type "talk" }}
         {{ $borderColor = "green" }}
         {{ $bgColor = "green" }}
         {{ $icon = "💬" }}
@@ -144,7 +149,12 @@
                             <dt class="text-sm font-medium text-gray-600">Time</dt>
                             <dd class="text-sm text-gray-900">{{ $session.time }}</dd>
                         </div>
-                        {{ if eq $session.type "workshop" }}
+                        {{ if eq $session.type "keynote" }}
+                        <div>
+                            <dt class="text-sm font-medium text-gray-600">Duration</dt>
+                            <dd class="text-sm text-gray-900">45 minutes</dd>
+                        </div>
+                        {{ else if eq $session.type "workshop" }}
                         <div>
                             <dt class="text-sm font-medium text-gray-600">Duration</dt>
                             <dd class="text-sm text-gray-900">2+ hours (hands-on)</dd>

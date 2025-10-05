@@ -2,7 +2,7 @@
 title: "Unintended consequences of well-meaning changes"
 description: "Unintended consequences of well-meaning changes - DevOpsDays Zurich 2025"
 type: "session"
-sessionId: "talks/dorota-parad"
+sessionId: "keynotes/dorota-parad"
 ---
 
 This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.

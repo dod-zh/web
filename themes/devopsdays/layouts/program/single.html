@@ -37,7 +37,13 @@
                         {{ $typeName := title .type }}
                         {{ $showLabel := true }}
 
-                        {{ if eq .type "talk" }}
+                        {{ if eq .type "keynote" }}
+                        {{ $borderColor = "red" }}
+                        {{ $bgColor = "red-50" }}
+                        {{ $textColor = "red" }}
+                        {{ $icon = "🎤" }}
+                        {{ $typeName = "Keynote" }}
+                        {{ else if eq .type "talk" }}
                         {{ $borderColor = "green" }}
                         {{ $bgColor = "green-50" }}
                         {{ $textColor = "green" }}
@@ -142,7 +148,13 @@
                         {{ $typeName := title .type }}
                         {{ $showLabel := true }}
 
-                        {{ if eq .type "talk" }}
+                        {{ if eq .type "keynote" }}
+                        {{ $borderColor = "red" }}
+                        {{ $bgColor = "red-50" }}
+                        {{ $textColor = "red" }}
+                        {{ $icon = "🎤" }}
+                        {{ $typeName = "Keynote" }}
+                        {{ else if eq .type "talk" }}
                         {{ $borderColor = "green" }}
                         {{ $bgColor = "green-50" }}
                         {{ $textColor = "green" }}
