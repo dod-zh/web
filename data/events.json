@@ -19,6 +19,86 @@
       "city": "Winterthur",
       "attendees": 300,
       "theme": "Building Resilient Systems"
+    },
+    {
+      "year": 2024,
+      "date": "2024-06-10",
+      "endDate": "2024-06-11",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 280,
+      "theme": "DevOps at Scale"
+    },
+    {
+      "year": 2023,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2022,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2022,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2021,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2019,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2018,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
+    },
+    {
+      "year": 2017,
+      "date": "2023-06-12",
+      "endDate": "2023-06-13",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "theme": "Culture & Automation"
     }
   ]
 }
