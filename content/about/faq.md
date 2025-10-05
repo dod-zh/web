@@ -101,16 +101,3 @@ The Alte Kaserne is easily accessible:
 - **Walking**: 10-15 minutes from Winterthur main station
 
 Detailed directions are available on our [location page](/event/location/).
-
----
-
-## Still Have Questions?
-
-If your question isn't answered here, please don't hesitate to [contact us](../contact/). We're here to help!
-
-### Quick Contact Links
-
-- **Tickets**: [registration@devopsdays.ch](mailto:registration@devopsdays.ch)
-- **Speaking**: [cfp@devopsdays.ch](mailto:cfp@devopsdays.ch)
-- **Sponsorship**: [sponsors@devopsdays.ch](mailto:sponsors@devopsdays.ch)
-- **General**: [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch)
