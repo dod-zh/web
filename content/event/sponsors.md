@@ -22,8 +22,6 @@ We encourage everyone, including Sponsor employees, to take part in our open Cal
 
 Sponsors are encouraged to represent themselves by actively participating and engaging with the attendees as peers (e.g. via proposing OpenSpace topics). Any Sponsor is free to collect attendee information with mutual consensus at their booth.
 
----
-
 ## Sponsorship Packages 2025
 
 <div style="overflow-x: auto;">
