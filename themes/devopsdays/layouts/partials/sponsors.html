@@ -1,0 +1,110 @@
+{{ if .Site.Data.sponsors }}
+<section class="py-8 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-center mb-8" style="color: var(--indigo-dye);">Our Amazing Sponsors</h3>
+
+        <!-- Gold Sponsors -->
+        {{ $gold := where .Site.Data.sponsors.sponsors "level" "gold" }}
+        {{ if $gold }}
+        <div class="mb-6">
+            <h4 class="text-lg font-semibold text-center mb-4 text-gray-600">Gold Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-6">
+                {{ range $gold }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- Silver Sponsors -->
+        {{ $silver := where .Site.Data.sponsors.sponsors "level" "silver" }}
+        {{ if $silver }}
+        <div class="mb-6">
+            <h4 class="text-base font-semibold text-center mb-4 text-gray-600">Silver Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                {{ range $silver }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="h-10 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- Event Sponsors -->
+        {{ $event := where .Site.Data.sponsors.sponsors "level" "event" }}
+        {{ if $event }}
+        <div class="mb-6">
+            <h4 class="text-base font-semibold text-center mb-4 text-gray-600">Event Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                {{ range $event }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="h-10 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- Bronze Sponsors -->
+        {{ $bronze := where .Site.Data.sponsors.sponsors "level" "bronze" }}
+        {{ if $bronze }}
+        <div class="mb-6">
+            <h4 class="text-sm font-semibold text-center mb-4 text-gray-600">Bronze Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-3">
+                {{ range $bronze }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="h-8 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- Community Sponsors -->
+        {{ $community := where .Site.Data.sponsors.sponsors "level" "community" }}
+        {{ if $community }}
+        <div class="mb-6">
+            <h4 class="text-sm font-semibold text-center mb-4 text-gray-600">Community Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-3">
+                {{ range $community }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="h-8 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- Partner Sponsors -->
+        {{ $partner := where .Site.Data.sponsors.sponsors "level" "partner" }}
+        {{ if $partner }}
+        <div class="mb-6">
+            <h4 class="text-sm font-semibold text-center mb-4 text-gray-600">Partner Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-3">
+                {{ range $partner }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="h-8 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <div class="text-center mt-6">
+            <a href="/event/sponsors/" class="text-sm font-semibold" style="color: var(--cerulean);"
+                onmouseover="this.style.color='var(--indigo-dye)'" onmouseout="this.style.color='var(--cerulean)'">
+                Learn more about sponsoring this event →
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}

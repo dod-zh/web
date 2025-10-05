@@ -1,12 +1,22 @@
 baseURL: 'https://devopsdays.ch'
 languageCode: 'en-us'
-title: 'DevOpsDays Zurich'
+title: DevOpsDays Zurich
 theme: 'devopsdays'
 
 params:
   description: 'DevOpsDays Zurich - Annual community event for DevOps practitioners'
   author: 'DevOpsDays Zurich Team'
   keywords: 'devops, switzerland, conference, community, automation, culture'
+  social:
+    linkedin: 'https://www.linkedin.com/company/devopsdays-zurich'
+    vimeo: 'https://vimeo.com/devopsdayszh'
+    flickr: 'https://www.flickr.com/photos/150616602@N02/albums/with/72157680463366208'
+  features:
+    show_program: true
+    show_tickets: true
+    show_cfp: false
+    show_speakers: true
+    cfp_url: 'https://sessionize.com/devopsdays-zurich-2025/'  # Update with your CFP platform URL
   
 markup:
   goldmark:
@@ -33,18 +43,22 @@ menu:
       url: "/event/program/"
       parent: "event"
       weight: 22
+    - name: "Speakers"
+      url: "/speakers/"
+      parent: "event"
+      weight: 23
     - name: "Sponsors"
       url: "/event/sponsors/"
       parent: "event"
-      weight: 23
+      weight: 24
     - name: "Location"
       url: "/event/location/"
       parent: "event"
-      weight: 24
+      weight: 25
     - name: "Past Events"
       url: "/event/past-events/"
       parent: "event"
-      weight: 25
+      weight: 26
     - name: "About"
       url: "/about/"
       weight: 30
@@ -69,10 +83,6 @@ menu:
       url: "/about/faq/"
       parent: "about"
       weight: 35
-    - name: "Contact"
-      url: "/about/contact/"
-      parent: "about"
-      weight: 36
 
 outputFormats:
   RSS:

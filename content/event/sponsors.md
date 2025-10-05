@@ -4,59 +4,59 @@ description: "Our amazing sponsors make DevOpsDays Zurich possible"
 type: "sponsors"
 ---
 
-# Sponsors
+DevOpsDays is a self-organizing conference for DevOps practitioners and enthusiasts. The conference is funded and supported by the sponsors. Essentially, the companies which are successful today and want to support tomorrows ideas when it comes to connecting functional silos.
 
-DevOpsDays Zurich is made possible by our amazing sponsors. These organizations support the Swiss DevOps community and help make this event accessible to everyone.
+We do not have vendor booths, sell product presentations, or distribute attendee contact lists. Sponsors will get recognition on the website and social media before, during and after the event. Sponsors are encouraged to represent themselves by actively participating and engaging with the attendees as peers. Any attendee also has the opportunity to demo products/projects as part of an open space session.
 
-## Become a Sponsor
+### Speaker Spots
 
-Partner with us to reach the Swiss DevOps community and support knowledge sharing in our ecosystem.
+**We do not sell or bundle speaker spots as part of any Sponsoring activities with our conference. Do not ask for it. We don't do it. No DevOpsDays conference does it. Never. Period.**
 
-### Sponsorship Levels
+We encourage everyone, including Sponsor employees, to take part in our open Call for Proposals process. However, working (or any other relation) to a Sponsor does not result in preferences or disadvantages in our selection process.
 
-#### Platinum - CHF 10,000
+### Attendee Information
 
-- Logo on all materials and website
-- 5-minute presentation slot
-- Booth space in networking area
-- 4 complimentary tickets
-- Social media promotion
+**We do not sell or distribute attendee information. Do not ask for it. We don't do it. No DevOpsDays conference does it. Never. Period.**
 
-#### Gold - CHF 7,500
+Sponsors are encouraged to represent themselves by actively participating and engaging with the attendees as peers (e.g. via proposing OpenSpace topics). Any Sponsor is free to collect attendee information with mutual consensus at their booth.
 
-- Logo on website and materials
-- Booth space in networking area
-- 3 complimentary tickets
-- Social media promotion
+## Sponsorship Packages 2025
 
-#### Silver - CHF 5,000
+<div style="overflow-x: auto;">
 
-- Logo on website
-- 2 complimentary tickets
-- Social media mention
+| Benefits | Gold<br>CHF 8'000 | Silver<br>CHF 5'000 | Bronze<br>CHF 750 | Evening Event<br>CHF 4'000 | Coffee/Meal<br>CHF 4'000 |
+|:---------|:---:|:---:|:---:|:---:|:---:|
+| **Visibility** |
+| Social media & website | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Logo in emails | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Logo during event | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **Booth & Engagement** |
+| Booth (9sqm) main room | ✓ | — | — | — | — |
+| Booth (9sqm) foyer | — | ✓ | — | — | — |
+| Sponsor pitch (1 min) | ✓ | — | — | ✓ | ✓ |
+| Sponsor Bingo | ✓ | ✓ | — | — | — |
+| **Special Benefits** |
+| Logo at evening event | — | — | — | ✓ | — |
+| Logo on lunch displays | — | — | — | — | ✓ |
+| Logo on coffee cups | — | — | — | — | ✓ |
+| Logo on snacks | — | — | — | — | ✓ |
+| **Tickets & Availability** |
+| Included tickets | 4 | 4 | 1 | 2 | 2 |
+| **Status** | **SOLD OUT** | **SOLD OUT** | **Available** | **SOLD OUT** | **Available** |
 
-#### Bronze - CHF 2,500
+</div>
 
-- Logo on website
-- 1 complimentary ticket
+*All prices exclude 8.1% VAT*
 
-### Custom Packages
+---
 
-We also offer custom sponsorship packages including:
-
-- Workshop sponsorship
-- Lunch sponsorship
-- Coffee break sponsorship
-- Evening event sponsorship
-- Diversity scholarship sponsorship
-
-## Contact Us
+## Get Started
 
 Interested in sponsoring DevOpsDays Zurich 2025?
 
-**Lisa Brown**  
-Sponsorship Coordinator  
-[sponsors@devopsdays.ch](mailto:sponsors@devopsdays.ch)  
-+41 79 123 4567
+**Contact us:** [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch)
 
-[Download Sponsorship Prospectus (PDF)](/downloads/devopsdays-ch-2025-sponsorship.pdf)
+**Download documents:**
+
+- [Sponsorship Prospectus (PDF)](/sponsor_prospectus.pdf)
+- [Sponsorship Rules (PDF)](/sponsor_rules.pdf)

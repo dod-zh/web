@@ -13,6 +13,11 @@ const templates = {
         learningOutcomes: "- Key concepts and practical applications\n- Real-world implementation strategies\n- Best practices and common pitfalls\n- Actionable insights for immediate application",
         takeaways: "You'll leave with a deeper understanding of the topic and practical knowledge you can apply in your own projects and organizations."
     },
+    keynote: {
+        abstract: "This keynote presentation delivers thought-provoking insights and sets the tone for important discussions around critical topics in modern technology and practices.",
+        learningOutcomes: "- Visionary perspectives on industry trends\n- Strategic insights for organizational transformation\n- Thought-provoking ideas and concepts\n- Inspiration for innovation and change",
+        takeaways: "You'll leave inspired with new perspectives and strategic insights that can drive meaningful change in your organization."
+    },
     ignite: {
         abstract: "This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.",
         learningOutcomes: "- Core concepts delivered at lightning speed\n- Practical insights for immediate application\n- Key takeaways that matter most\n- Inspiration for further exploration",
@@ -27,7 +32,8 @@ const templates = {
 
 // Sessions that already have detail pages created
 const existingSessions = [
-    'talks/marc-schuh',
+    'keynotes/marc-schuh',
+    'keynotes/dorota-parad',
     'talks/lena-fuhrimann',
     'talks/christina-kraus',
     'ignites/carmine-vassallo',
@@ -62,7 +68,7 @@ ${template.abstract}
 
 ## Abstract
 
-Join us for this ${sessionType === 'ignite' ? 'energizing ignite talk' : sessionType === 'workshop' ? 'comprehensive workshop' : 'insightful presentation'} that covers essential concepts and provides practical value for attendees.
+Join us for this ${sessionType === 'keynote' ? 'inspiring keynote presentation' : sessionType === 'ignite' ? 'energizing ignite talk' : sessionType === 'workshop' ? 'comprehensive workshop' : 'insightful presentation'} that covers essential concepts and provides practical value for attendees.
 
 ## What You'll Learn
 
@@ -125,7 +131,11 @@ This ${sessionType} is perfect for:
 
     // Determine the correct subfolder path
     let subFolder = '';
-    if (session.id.startsWith('talks/')) {
+    if (session.id.startsWith('keynotes/')) {
+        subFolder = session.id.replace('keynotes/', '');
+        fileName = `${subFolder}.md`;
+        filePath = path.join(__dirname, 'content/sessions/keynotes', fileName);
+    } else if (session.id.startsWith('talks/')) {
         subFolder = session.id.replace('talks/', '');
         fileName = `${subFolder}.md`;
         filePath = path.join(__dirname, 'content/sessions/talks', fileName);

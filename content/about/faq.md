@@ -1,43 +1,97 @@
 ---
-title: "FAQ"
+title: "Frequently Asked Questions"
 description: "Frequently asked questions about DevOpsDays Zurich"
 ---
 
-**Q: How do I register and how do I get my ticket?**
-A: Registration can be done online. A ticket can be purchased by clicking on *Event → Ticket*. Following payment, a digital ticket will be sent by email. This can be brought along digitally or printed out. ([DevOpsDaysZurich][1])
+Find answers to common questions about attending, speaking, and sponsoring DevOpsDays Zurich.
 
----
+## Registration & Tickets
 
-**Q: I would like to speak at DevOpsDays. How do I go about it?**
-A: Prior to each DevOpsDays, there is a Call for Papers (CFP). It is distributed via social media, websites and personal network. The CFP is open to anyone. Submissions can include Talks, Ignites, and Workshops. When the CFP is over, the organizing team will put together a program. Outside the period of an open CFP, you can contact the organizers by email if you are interested. ([DevOpsDaysZurich][1])
+### How do I register and how do I get my ticket?
 
----
+Registration can be done online through our [ticketing page](/event/tickets/). After purchasing your ticket:
 
-**Q: Can I cancel my participation spontaneously and will my ticket be refunded?**
-A: You can cancel your participation up to one week before the event and the costs will be refunded, provided that a small handling fee is paid. Be aware that there are only limited places and the tickets are very popular. ([DevOpsDaysZurich][1])
+- A **digital ticket** will be sent to your email
+- You can bring it along digitally or print it out
+- Present it at registration on the day of the event
 
----
+### Can I cancel my participation and get a refund?
 
-**Q: Is parking validated?**
-A: As the Alte Kaserne in Winterthur is very well accessible by public transport, they recommend using public transport. They do not validate parking. ([DevOpsDaysZurich][1])
+Yes! You can cancel your participation **up to one week before the event** and receive a refund, minus a small handling fee.
 
----
+**Please note**: Tickets are limited and very popular, so if you can't attend, please cancel early so others can join!
 
-**Q: I would like to become a sponsor. How do I go about it?**
-A: On the website under *Event → Sponsor*, more information about sponsorship packages is available. To get started, you can send an email to the organizers. Together you will clarify what would suit and then take the next steps. ([DevOpsDaysZurich][1])
+### Can I share my ticket with a colleague?
 
----
+Yes, but with conditions:
 
-**Q: Can I share my ticket with a colleague?**
-A: It is possible if the badge is returned on the evening of the first day. Exchanges within one day are not possible. ([DevOpsDaysZurich][1])
+- It's possible if the badge is **returned on the evening of the first day**
+- Exchanges within one day are **not possible**
+- Contact us in advance to arrange the transfer
 
----
+## Speaking at DevOpsDays
 
-**Q: What is an Ignite Talk?**
-A: An Ignite talk is a fast-paced, 5-minute presentation with 20 slides that auto-advance every 15 seconds, designed to share compelling ideas, insights, or stories in an engaging and dynamic format. More info: devopsdays.org's Ignite talks format. ([DevOpsDaysZurich][1])
+### I would like to speak at DevOpsDays. How do I apply?
 
----
+We'd love to hear from you! Here's how:
 
-If you want, I can format these for printing or extract them into a PDF.
+1. **Wait for the Call for Papers (CFP)** announcement
+   - Distributed via social media, website, and our network
+   - Open to anyone, regardless of experience level
 
-[1]: https://www.devopsdays.ch/faq "FAQ | DevOpsDays Zurich"
+2. **Submit your proposal** during the CFP period
+   - **Talks**: 30-45 minute presentations
+   - **Ignites**: 5-minute lightning talks
+   - **Workshops**: 2+ hour hands-on sessions
+
+3. **Selection process**
+   - After the CFP closes, our team reviews all submissions
+   - Selected speakers are notified and the program is published
+
+**Outside of CFP?** Feel free to [contact the organizers](../contact/) if you're interested in speaking at a future event.
+
+### What is an Ignite Talk?
+
+An **Ignite talk** is a unique presentation format:
+
+- **5 minutes** total duration
+- **20 slides** that auto-advance every 15 seconds
+- **Fast-paced** and engaging
+- Perfect for sharing compelling ideas, insights, or stories
+
+It's a challenging but exciting format that keeps the audience engaged! Learn more about [Ignite talks on devopsdays.org](https://devopsdays.org/ignite-talks-format).
+
+## Sponsorship
+
+### I would like to become a sponsor. How do I start?
+
+We'd love to have you as a partner!
+
+1. Check our [sponsorship packages](/event/sponsors/) for details
+2. [Email the organizers](mailto:sponsors@devopsdays.ch) to discuss options
+3. We'll work together to find the right package for you
+4. Complete the sponsorship agreement and payment
+
+We're flexible and happy to discuss custom packages that meet your needs!
+
+## Venue & Logistics
+
+### Is parking validated at the venue?
+
+The **Alte Kaserne in Winterthur** is very well accessible by public transport, which we strongly recommend for [sustainability](../sustainability/) reasons.
+
+**Parking**: Not validated by the venue. We encourage you to:
+
+- Use **public transport** (train, tram, bus)
+- Cycle to the venue
+- **Carpool** if you must drive
+
+### How do I get to the venue?
+
+The Alte Kaserne is easily accessible:
+
+- **By train**: Winterthur is well-connected to Zurich and other Swiss cities
+- **By tram/bus**: Multiple lines stop near the venue
+- **Walking**: 10-15 minutes from Winterthur main station
+
+Detailed directions are available on our [location page](/event/location/).

@@ -1,45 +1,14 @@
 ---
-title: "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do"
-description: "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "talks/daniel-raniz-raneland"
 ---
 
-This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.
+Automated pipelines have become an integral part of our daily workflow. As the pipelines become increasingly important, the demands placed on them rise proportionally.
 
-## Abstract
+As with many things, a great pipeline operates seamlessly in the background, while a poorly designed one becomes a constant irritation.
 
-Join us for this insightful presentation that covers essential concepts and provides practical value for attendees.
+Are you publishing your artefacts every time the pipeline runs, running all steps in a sequence, or installing all the tools every time a new build starts?
 
-## What You'll Learn
+In this talk, I will address these antipatterns and more I have encountered during my work as a consultant, explaining why I consider them such and what you should do instead.
 
-- Key concepts and practical applications
-- Real-world implementation strategies
-- Best practices and common pitfalls
-- Actionable insights for immediate application
-
-## Key Topics
-
-- Understanding core principles and concepts
-- Practical implementation strategies
-- Real-world examples and case studies
-- Best practices and lessons learned
-- Common challenges and how to overcome them
-
-
-
-## Key Takeaways
-
-You'll leave with a deeper understanding of the topic and practical knowledge you can apply in your own projects and organizations.
-
-
-
-## Who Should Attend
-
-This talk is perfect for:
-- Developers and engineers looking to expand their knowledge
-- Technical leads and architects planning implementations
-- DevOps professionals seeking practical insights
-- Anyone interested in modern software development practices
-
-*Don't miss this opportunity to learn from industry experts and expand your technical knowledge!*
+After listening to this talk, you will better understand what makes a pipeline great and concrete things you can do to improve it and shorten the feedback loop.

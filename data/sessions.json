@@ -17,9 +17,9 @@
       "speakers": []
     },
     {
-      "id": "talks/marc-schuh",
+      "id": "keynotes/marc-schuh",
       "title": "From Athlete to Algorithm: Transforming Canoe Technique Analysis with AI",
-      "type": "talk",
+      "type": "keynote",
       "day": "2025-03-12",
       "time": "9:15 - 10:00",
       "speakers": [
@@ -177,7 +177,7 @@
       "speakers": []
     },
     {
-      "id": "workshops/domain-driven-refactoring",
+      "id": "workshops/alina-liburkina",
       "title": "Untangle Your Legacy Code with Domain-Driven Refactoring",
       "type": "workshop",
       "day": "2025-03-12",
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "id": "workshops/user-needs-mapping",
+      "id": "workshops/thomas-krag",
       "title": "Enabling aligned decentralised architecture decisions through user needs mapping",
       "type": "workshop",
       "day": "2025-03-12",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "id": "workshops/secure-containers",
+      "id": "workshops/alvaro-revuelta-m",
       "title": "Building Secure Container Images",
       "type": "workshop",
       "day": "2025-03-12",
@@ -241,9 +241,9 @@
       "speakers": []
     },
     {
-      "id": "talks/dorota-parad",
+      "id": "keynotes/dorota-parad",
       "title": "Unintended consequences of well-meaning changes",
-      "type": "talk",
+      "type": "keynote",
       "day": "2025-03-13",
       "time": "9:15 - 10:00",
       "speakers": [
@@ -402,7 +402,7 @@
       "speakers": []
     },
     {
-      "id": "workshops/kubernetes-operators",
+      "id": "workshops/rabieh-fashwall",
       "title": "Building Infrastructure Tools with Kubernetes Operators and Go",
       "type": "workshop",
       "day": "2025-03-13",
@@ -412,7 +412,7 @@
       ]
     },
     {
-      "id": "workshops/opentelemetry",
+      "id": "workshops/stefan-pezzei",
       "title": "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry",
       "type": "workshop",
       "day": "2025-03-13",
@@ -423,7 +423,7 @@
       ]
     },
     {
-      "id": "talks/marc-herren",
+      "id": "workshops/marc-herren",
       "title": "Streamlining DevSecOps with Purposeful AI Integration",
       "type": "workshop",
       "day": "2025-03-13",

@@ -1,14 +1,7 @@
 {{ define "main" }}
 <div class="py-8" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
     <div class="container mx-auto px-4">
-        <nav class="text-sm breadcrumbs mb-4">
-            <a href="/" class="text-white hover:text-gray-200" style="color: white !important;">Home</a>
-            <span class="mx-2 text-white">→</span>
-            <a href="/event/program/" class="text-white hover:text-gray-200"
-                style="color: white !important;">Program</a>
-            <span class="mx-2 text-white">→</span>
-            <span class="text-white">{{ .Title }}</span>
-        </nav>
+        {{ partial "breadcrumbs.html" . }}
 
         {{ if .Params.sessionId }}
         {{ $session := index (where .Site.Data.sessions.sessions "id" .Params.sessionId) 0 }}
@@ -20,7 +13,12 @@
         {{ $icon := "📋" }}
         {{ $typeName := title $session.type }}
 
-        {{ if eq $session.type "talk" }}
+        {{ if eq $session.type "keynote" }}
+        {{ $borderColor = "red" }}
+        {{ $bgColor = "red" }}
+        {{ $icon = "🎤" }}
+        {{ $typeName = "Keynote" }}
+        {{ else if eq $session.type "talk" }}
         {{ $borderColor = "green" }}
         {{ $bgColor = "green" }}
         {{ $icon = "💬" }}
@@ -68,10 +66,6 @@
         {{ end }}
         {{ else }}
         <h1 class="text-4xl font-bold text-white">{{ .Title }}</h1>
-        {{ end }}
-
-        {{ if .Description }}
-        <p class="text-xl text-gray-100 mt-4">{{ .Description }}</p>
         {{ end }}
     </div>
 </div>
@@ -144,7 +138,12 @@
                             <dt class="text-sm font-medium text-gray-600">Time</dt>
                             <dd class="text-sm text-gray-900">{{ $session.time }}</dd>
                         </div>
-                        {{ if eq $session.type "workshop" }}
+                        {{ if eq $session.type "keynote" }}
+                        <div>
+                            <dt class="text-sm font-medium text-gray-600">Duration</dt>
+                            <dd class="text-sm text-gray-900">45 minutes</dd>
+                        </div>
+                        {{ else if eq $session.type "workshop" }}
                         <div>
                             <dt class="text-sm font-medium text-gray-600">Duration</dt>
                             <dd class="text-sm text-gray-900">2+ hours (hands-on)</dd>
@@ -161,27 +160,6 @@
                         </div>
                         {{ end }}
                     </dl>
-                </div>
-
-                <!-- Navigation -->
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-4" style="color: var(--indigo-dye);">Navigation</h3>
-                    <div class="space-y-3">
-                        <a href="/event/program/"
-                            class="block px-4 py-2 text-sm font-medium text-white rounded-md transition-colors"
-                            style="background-color: var(--cerulean);"
-                            onmouseover="this.style.backgroundColor='var(--indigo-dye)'"
-                            onmouseout="this.style.backgroundColor='var(--cerulean)'">
-                            ← Back to Program
-                        </a>
-                        <a href="/event/tickets/"
-                            class="block px-4 py-2 text-sm font-medium border rounded-md transition-colors"
-                            style="border-color: var(--cerulean); color: var(--cerulean);"
-                            onmouseover="this.style.backgroundColor='var(--cerulean)'; this.style.color='white'"
-                            onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--cerulean)'">
-                            Get Tickets
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
