@@ -2,18 +2,11 @@
 <div class="py-8" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
     <div class="container mx-auto px-4">
         {{ partial "breadcrumbs.html" . }}
-        <div class="flex flex-col md:flex-row items-start gap-6">
-            <div class="flex-shrink-0">
-                {{ if .Params.image }}
-                <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-48 h-48 rounded-lg object-cover shadow-lg">
-                {{ end }}
-            </div>
-            <div class="flex-1">
-                <h1 class="text-4xl font-bold text-white mb-2">{{ .Title }}</h1>
-                {{ if .Description }}
-                <p class="text-xl text-gray-100">{{ .Description }}</p>
-                {{ end }}
-            </div>
+        <div class="flex-1">
+            <h1 class="text-4xl font-bold text-white mb-2">{{ .Title }}</h1>
+            {{ if .Description }}
+            <p class="text-xl text-gray-100">{{ .Description }}</p>
+            {{ end }}
         </div>
     </div>
 </div>
@@ -21,9 +14,16 @@
 <article class="py-12">
     <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
-            <!-- Speaker Bio -->
-            <div class="prose prose-lg max-w-none mb-12">
-                {{ .Content }}
+            <!-- Speaker Profile Picture and Bio -->
+            <div class="flex flex-col md:flex-row items-start gap-8 mb-12">
+                {{ if .Params.image }}
+                <div class="flex-shrink-0">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-48 h-48 rounded-lg object-cover shadow-lg">
+                </div>
+                {{ end }}
+                <div class="prose prose-lg max-w-none flex-1">
+                    {{ .Content }}
+                </div>
             </div>
 
             <!-- Speaker's Sessions -->
