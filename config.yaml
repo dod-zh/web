@@ -33,18 +33,22 @@ menu:
       url: "/event/program/"
       parent: "event"
       weight: 22
+    - name: "Speakers"
+      url: "/speakers/"
+      parent: "event"
+      weight: 23
     - name: "Sponsors"
       url: "/event/sponsors/"
       parent: "event"
-      weight: 23
+      weight: 24
     - name: "Location"
       url: "/event/location/"
       parent: "event"
-      weight: 24
+      weight: 25
     - name: "Past Events"
       url: "/event/past-events/"
       parent: "event"
-      weight: 25
+      weight: 26
     - name: "About"
       url: "/about/"
       weight: 30

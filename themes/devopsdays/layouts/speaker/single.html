@@ -1,0 +1,130 @@
+{{ define "main" }}
+<div class="py-8" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
+    <div class="container mx-auto px-4">
+        <nav class="text-sm breadcrumbs mb-4">
+            <a href="/" class="text-white hover:text-gray-200">Home</a>
+            <span class="mx-2 text-white">→</span>
+            <span class="text-white">{{ .Title }}</span>
+        </nav>
+        <div class="flex flex-col md:flex-row items-start gap-6">
+            <div class="flex-shrink-0">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-48 h-48 rounded-lg object-cover shadow-lg">
+                {{ end }}
+            </div>
+            <div class="flex-1">
+                <h1 class="text-4xl font-bold text-white mb-2">{{ .Title }}</h1>
+                {{ if .Description }}
+                <p class="text-xl text-gray-100">{{ .Description }}</p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<article class="py-12">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <!-- Speaker Bio -->
+            <div class="prose prose-lg max-w-none mb-12">
+                {{ .Content }}
+            </div>
+
+            <!-- Speaker's Sessions -->
+            {{ $speakerId := .Params.speakerId }}
+            {{ $sessions := slice }}
+            {{ range .Site.Data.sessions.sessions }}
+            {{ if in .speakers $speakerId }}
+            {{ $sessions = $sessions | append . }}
+            {{ end }}
+            {{ end }}
+
+            {{ if $sessions }}
+            <div class="mt-12">
+                <h2 class="text-3xl font-bold mb-6" style="color: var(--indigo-dye);">Sessions</h2>
+                <div class="grid gap-6">
+                    {{ range $sessions }}
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex-1">
+                                <a href="/sessions/{{ .id }}/"
+                                    class="text-xl font-semibold hover:text-cerulean transition-colors"
+                                    style="color: var(--indigo-dye);">
+                                    {{ .title }}
+                                </a>
+                                <div class="flex flex-wrap gap-4 mt-3 text-sm text-gray-600">
+                                    {{ if eq .type "talk" }}
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                        Talk
+                                    </span>
+                                    {{ else if eq .type "ignite" }}
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
+                                        Ignite
+                                    </span>
+                                    {{ else if eq .type "workshop" }}
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Workshop
+                                    </span>
+                                    {{ end }}
+                                    {{ if .day }}
+                                    <span class="flex items-center">
+                                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        {{ .day }}
+                                    </span>
+                                    {{ end }}
+                                    {{ if .time }}
+                                    <span class="flex items-center">
+                                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        {{ .time }}
+                                    </span>
+                                    {{ end }}
+                                </div>
+                            </div>
+                            <a href="/sessions/{{ .id }}/"
+                                class="text-sm font-medium px-4 py-2 rounded-lg transition-colors"
+                                style="background-color: var(--cerulean); color: white;"
+                                onmouseover="this.style.backgroundColor='var(--indigo-dye)'"
+                                onmouseout="this.style.backgroundColor='var(--cerulean)'">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
+            <!-- Other Speakers (optional) -->
+            <div class="mt-12">
+                <h2 class="text-3xl font-bold mb-6" style="color: var(--indigo-dye);">Other Speakers</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    {{ range .Site.Data.speakers.speakers }}
+                    {{ if ne .id $speakerId }}
+                    <a href="/speakers/{{ .id }}/" class="group">
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                            <img src="{{ .image }}" alt="{{ .name }}" class="w-full h-32 object-cover">
+                            <div class="p-3">
+                                <p class="text-sm font-semibold text-center group-hover:text-cerulean transition-colors"
+                                    style="color: var(--indigo-dye);">{{ .name }}</p>
+                            </div>
+                        </div>
+                    </a>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+{{ end }}
