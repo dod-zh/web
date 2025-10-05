@@ -1,6 +1,4 @@
 ---
-title: "Enabling aligned decentralised architecture decisions through user needs mapping"
-description: "Enabling aligned decentralised architecture decisions through user needs mapping - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "workshops/user-needs-mapping"
 ---

@@ -1,6 +1,4 @@
 ---
-title: "How I Started Worrying and Stopped Loving DevOps"
-description: "How I Started Worrying and Stopped Loving DevOps - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/marcel-britsch"
 ---

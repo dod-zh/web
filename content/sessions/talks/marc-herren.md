@@ -1,6 +1,4 @@
 ---
-title: "Streamlining DevSecOps with Purposeful AI Integration"
-description: "Streamlining DevSecOps with Purposeful AI Integration - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "talks/marc-herren"
 ---

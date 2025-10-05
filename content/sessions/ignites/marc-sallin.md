@@ -1,6 +1,4 @@
 ---
-title: "Bursting the End-2-End Myth: Divide and Conquer for Robust DevOps"
-description: "Challenge the end-to-end testing orthodoxy and discover better testing strategies"
 type: "session"
 sessionId: "ignites/marc-sallin"
 ---

@@ -1,6 +1,4 @@
 ---
-title: "Breaking Ba(l)d: How to Prevent Burnout and Thrive"
-description: "Breaking Ba(l)d: How to Prevent Burnout and Thrive - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/sandra-czopek"
 ---

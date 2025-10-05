@@ -1,6 +1,4 @@
 ---
-title: "Cultivating a Learning Culture: Unlocking the Power of Continuous Development"
-description: "Cultivating a Learning Culture: Unlocking the Power of Continuous Development - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/marcelo-ancelmo"
 ---

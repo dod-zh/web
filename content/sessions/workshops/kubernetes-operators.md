@@ -1,6 +1,4 @@
 ---
-title: "Building Infrastructure Tools with Kubernetes Operators and Go"
-description: "Building Infrastructure Tools with Kubernetes Operators and Go - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "workshops/kubernetes-operators"
 ---

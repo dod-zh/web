@@ -1,6 +1,4 @@
 ---
-title: "How can we make tech conferences more diverse?"
-description: "How can we make tech conferences more diverse? - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/verena-traub"
 ---

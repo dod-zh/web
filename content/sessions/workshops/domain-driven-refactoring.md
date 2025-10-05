@@ -1,6 +1,4 @@
 ---
-title: "Untangle Your Legacy Code with Domain-Driven Refactoring"
-description: "Hands-on workshop for safely refactoring complex legacy systems using domain-driven design principles"
 type: "session"
 sessionId: "workshops/domain-driven-refactoring"
 ---

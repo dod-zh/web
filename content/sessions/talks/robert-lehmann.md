@@ -1,6 +1,4 @@
 ---
-title: "Planet-Scale Dashboards"
-description: "Planet-Scale Dashboards - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "talks/robert-lehmann"
 ---

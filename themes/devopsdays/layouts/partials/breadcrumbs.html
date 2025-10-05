@@ -15,5 +15,14 @@
     {{ end }}
 
     <span class="mx-2 text-white" aria-hidden="true">→</span>
+    {{ if and (eq .Type "session") .Params.sessionId }}
+    {{ $session := index (where .Site.Data.sessions.sessions "id" .Params.sessionId) 0 }}
+    {{ if $session }}
+    <span class="text-white" aria-current="page">{{ $session.title }}</span>
+    {{ else }}
     <span class="text-white" aria-current="page">{{ .Title }}</span>
+    {{ end }}
+    {{ else }}
+    <span class="text-white" aria-current="page">{{ .Title }}</span>
+    {{ end }}
 </nav>

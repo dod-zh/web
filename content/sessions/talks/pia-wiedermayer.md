@@ -1,6 +1,4 @@
 ---
-title: "Human-Driven Intelligence: Where AI & Automation Fall Short"
-description: "Human-Driven Intelligence: Where AI & Automation Fall Short - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "talks/pia-wiedermayer"
 ---

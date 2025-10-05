@@ -1,6 +1,4 @@
 ---
-title: "The perfect match: How Extreme Programming enables Team Topologies concepts"
-description: "The perfect match: How Extreme Programming enables Team Topologies concepts - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/antonio-alvino"
 ---

@@ -1,6 +1,4 @@
 ---
-title: "Pipeline ETA: 3… 2… Tomorrow? Let's Fix That!"
-description: "Pipeline ETA: 3… 2… Tomorrow? Let's Fix That! - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/alexander-ptakhin"
 ---

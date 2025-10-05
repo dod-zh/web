@@ -1,6 +1,4 @@
 ---
-title: "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do"
-description: "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "talks/daniel-raniz-raneland"
 ---

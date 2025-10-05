@@ -1,6 +1,4 @@
 ---
-title: "Tomorrow's DevOps Engineers, Today!"
-description: "Tomorrow's DevOps Engineers, Today! - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/daiany-palacios"
 ---

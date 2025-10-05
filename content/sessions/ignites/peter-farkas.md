@@ -1,6 +1,4 @@
 ---
-title: "Taming the Testing Beast"
-description: "Taming the Testing Beast - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/peter-farkas"
 ---

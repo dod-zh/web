@@ -1,6 +1,4 @@
 ---
-title: "Building Secure Container Images"
-description: "Hands-on workshop for building and securing container images following security best practices"
 type: "session"
 sessionId: "workshops/secure-containers"
 ---

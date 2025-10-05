@@ -1,6 +1,4 @@
 ---
-title: "Building Internal Platforms to Enhance Developer Experience"
-description: "Learn how to build internal developer platforms that boost productivity and developer satisfaction"
 type: "session"
 sessionId: "talks/christina-kraus"
 ---

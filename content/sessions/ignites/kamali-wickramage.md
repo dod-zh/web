@@ -1,6 +1,4 @@
 ---
-title: "No estimates? Try Flow Metrics."
-description: "No estimates? Try Flow Metrics. - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/kamali-wickramage"
 ---

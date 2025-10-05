@@ -1,6 +1,4 @@
 ---
-title: "Empowering SRE with GitOps: Automating Kubernetes Deployments with GitLab CI and Flux CD"
-description: "Empowering SRE with GitOps: Automating Kubernetes Deployments with GitLab CI and Flux CD - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "talks/manisha-marco"
 ---

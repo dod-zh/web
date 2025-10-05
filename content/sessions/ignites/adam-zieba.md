@@ -1,6 +1,4 @@
 ---
-title: "Code & risk"
-description: "Code & risk - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/adam-zieba"
 ---

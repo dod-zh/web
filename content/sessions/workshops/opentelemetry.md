@@ -1,6 +1,4 @@
 ---
-title: "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry"
-description: "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "workshops/opentelemetry"
 ---

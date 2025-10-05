@@ -1,6 +1,4 @@
 ---
-title: "Post Accelerate: Why are we still failing at adopting DevOps in the Enterprise?"
-description: "Post Accelerate: Why are we still failing at adopting DevOps in the Enterprise? - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/rasmus-lystrom"
 ---

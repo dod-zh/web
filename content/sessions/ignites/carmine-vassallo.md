@@ -1,6 +1,4 @@
 ---
-title: "Eating Your Own Dog Food - The Secret Sauce for Better Product Development"
-description: "Why using your own products is essential for building better software"
 type: "session"
 sessionId: "ignites/carmine-vassallo"
 ---

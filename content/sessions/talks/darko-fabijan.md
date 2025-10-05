@@ -1,6 +1,4 @@
 ---
-title: "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore"
-description: "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "talks/darko-fabijan"
 ---

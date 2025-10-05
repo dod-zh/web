@@ -1,6 +1,4 @@
 ---
-title: "Software at Tesla - A peek from the outside"
-description: "Software at Tesla - A peek from the outside - DevOpsDays Zurich 2025"
 type: "session"
 sessionId: "ignites/jonas-alder"
 ---
