@@ -1,0 +1,23 @@
+<!-- Breadcrumb Navigation -->
+<nav class="text-sm breadcrumbs mb-4" aria-label="Breadcrumb">
+    <a href="/" class="text-white hover:text-gray-200">Home</a>
+
+    {{ if eq .Type "session" }}
+    <!-- Special handling for session pages -->
+    <span class="mx-2 text-white" aria-hidden="true">→</span>
+    <a href="/event/program/" class="text-white hover:text-gray-200">Program</a>
+    {{ else if .Parent }}
+    <!-- Regular parent page -->
+    <span class="mx-2 text-white" aria-hidden="true">→</span>
+    <a href="{{ .Parent.Permalink }}" class="text-white hover:text-gray-200">{{ .Parent.Title }}</a>
+    {{ end }}
+
+    {{ with .Params.breadcrumbParent }}
+    <!-- Custom breadcrumb parent from frontmatter -->
+    <span class="mx-2 text-white" aria-hidden="true">→</span>
+    <a href="{{ .url }}" class="text-white hover:text-gray-200">{{ .title }}</a>
+    {{ end }}
+
+    <span class="mx-2 text-white" aria-hidden="true">→</span>
+    <span class="text-white" aria-current="page">{{ .Title }}</span>
+</nav>

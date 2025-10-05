@@ -1,14 +1,7 @@
 {{ define "main" }}
 <div class="py-8" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
     <div class="container mx-auto px-4">
-        <nav class="text-sm breadcrumbs mb-4">
-            <a href="/" class="text-white hover:text-gray-200" style="color: white !important;">Home</a>
-            <span class="mx-2 text-white">→</span>
-            <a href="/event/program/" class="text-white hover:text-gray-200"
-                style="color: white !important;">Program</a>
-            <span class="mx-2 text-white">→</span>
-            <span class="text-white">{{ .Title }}</span>
-        </nav>
+        {{ partial "breadcrumbs.html" . }}
 
         {{ if .Params.sessionId }}
         {{ $session := index (where .Site.Data.sessions.sessions "id" .Params.sessionId) 0 }}
