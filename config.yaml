@@ -73,10 +73,6 @@ menu:
       url: "/about/faq/"
       parent: "about"
       weight: 35
-    - name: "Contact"
-      url: "/about/contact/"
-      parent: "about"
-      weight: 36
 
 outputFormats:
   RSS:
