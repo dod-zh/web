@@ -6,10 +6,6 @@
     <!-- Special handling for session pages -->
     <span class="mx-2 text-white" aria-hidden="true">→</span>
     <a href="/event/program/" class="text-white hover:text-gray-200">Program</a>
-    {{ else if .Parent }}
-    <!-- Regular parent page -->
-    <span class="mx-2 text-white" aria-hidden="true">→</span>
-    <a href="{{ .Parent.Permalink }}" class="text-white hover:text-gray-200">{{ .Parent.Title }}</a>
     {{ end }}
 
     {{ with .Params.breadcrumbParent }}
