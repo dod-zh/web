@@ -5,48 +5,10 @@ type: "session"
 sessionId: "ignites/peter-farkas"
 ---
 
-This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.
+### Ignite
 
-## Abstract
+A once-mighty test framework, the pride of a software department, had fallen into disrepair. Complex, unpredictable, and demanding, it had become a burden rather than a boon.
 
-Join us for this energizing ignite talk that covers essential concepts and provides practical value for attendees.
+But as development of the framework stalled, quality issues with the application it supported began to creep back. The team faced a daunting challenge: to tame the beast or be consumed by it.
 
-## What You'll Learn
-
-- Core concepts delivered at lightning speed
-- Practical insights for immediate application
-- Key takeaways that matter most
-- Inspiration for further exploration
-
-## Key Topics
-
-- Understanding core principles and concepts
-- Practical implementation strategies
-- Real-world examples and case studies
-- Best practices and lessons learned
-- Common challenges and how to overcome them
-
-
-
-## Key Takeaways
-
-In just 5 minutes, you'll gain valuable insights and actionable ideas to take back to your team.
-
-## Ignite Format
-
-This presentation follows the ignite format:
-- **5 minutes total**
-- **20 slides** that auto-advance every 15 seconds
-- **Fast-paced** and highly engaging
-- **Focused** on the most important insights
-
-
-## Who Should Attend
-
-This ignite is perfect for:
-- Developers and engineers looking to expand their knowledge
-- Technical leads and architects planning implementations
-- DevOps professionals seeking practical insights
-- Anyone interested in modern software development practices
-
-*Don't miss this opportunity to learn from industry experts and expand your technical knowledge!*
+This talk will explore the journey of the tech squad tasked with confronting this legacy system. We'll delve into the challenges encountered, the strategies used, and the lessons learned. Ultimately, we’ll uncover the fate of the test framework: was it tamed into a powerful ally, or did it turn against its keepers, crushing them under its own weight?

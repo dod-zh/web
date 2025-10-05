@@ -6,12 +6,6 @@ speakerId: "philipp-moser"
 image: "/images/speakers/philipp-moser.webp"
 ---
 
-Philipp Moser is a speaker at DevOpsDays Zurich 2025.
+### It's time to build
 
-## Biography
-
-Philipp brings expertise and insights to the DevOpsDays community.
-
-## Sessions
-
-Check out Philipp's sessions at the conference.
+Philipp Moser is an experienced software engineer who studied Software Engineering at TU Wien. With over a decade of experience in the field, he has worked with startups and software consulting firms, gaining a strong background in software architecture and cloud-native technologies. Four years ago, Philipp founded his own software engineering company, where he continues to drive innovation and deliver quality solutions.

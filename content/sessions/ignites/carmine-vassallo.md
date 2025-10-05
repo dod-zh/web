@@ -5,42 +5,8 @@ type: "session"
 sessionId: "ignites/carmine-vassallo"
 ---
 
-In this fast-paced ignite talk, discover why "eating your own dog food" - using the products you build - is one of the most powerful strategies for creating exceptional software and improving developer productivity.
+### Ignite
 
-## The 5-Minute Deep Dive
+What’s the best way to ensure your product truly delivers? Use it yourself. “Eating your own dog food” is more than just a quirky phrase—it’s a practice my team and I embrace every day. By actively using the products we build, we’ve uncovered hidden flaws, improved deployment strategies, and refined configurations based on real-world usage.
 
-This ignite format presentation covers:
-
-- **Real User Perspective**: How being your own user reveals hidden pain points
-- **Faster Feedback Loops**: The immediate insights you gain from daily product usage
-- **Quality Through Empathy**: Building better software when you feel the user's pain
-- **Team Alignment**: How shared product usage creates unified development goals
-- **Competitive Advantage**: Why dogfooding companies build superior products
-
-## Key Insights
-
-### The Empathy Engine
-
-When developers use their own tools daily, they develop an intuitive understanding of user needs that no amount of user research can replace.
-
-### Bug Detection Superpower
-
-Your team becomes the ultimate quality assurance team, catching issues before customers ever see them.
-
-### Feature Validation
-
-Real usage data from your own team provides authentic validation for new features and improvements.
-
-## Real-World Examples
-
-Quick case studies of companies that transformed their products through dogfooding:
-
-- Development tools company that reduced deployment time by 90%
-- Platform team that discovered critical UX issues in their own workflows
-- SaaS startup that pivoted their entire product based on internal usage patterns
-
-## The Challenge
-
-Walk away with actionable steps to implement dogfooding in your organization, regardless of your product type or team size.
-
-*This ignite talk delivers maximum impact in minimum time - perfect for busy developers who want practical insights they can implement immediately.*
+In this talk, I’ll share how our team’s commitment to dogfooding has created a strong feedback loop that drives better decisions, builds confidence in new features, and enhances the user experience. Discover why living and breathing your product is the ultimate recipe for success.

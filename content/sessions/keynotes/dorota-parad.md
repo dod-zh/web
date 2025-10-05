@@ -5,38 +5,8 @@ type: "session"
 sessionId: "keynotes/dorota-parad"
 ---
 
-This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.
+### Talk
 
-## Abstract
+As engineers, we’re used to thinking in algorithms where causality is clear and the same set of actions always produces the same results. When we apply algorithmic thinking to complex systems, however, our well-meaning actions often result in unintended consequences. Whether driving organizational change or fixing a small bug in your monitoring system, it’s not enough to consider the most immediate and direct result.
 
-Join us for this insightful presentation that covers essential concepts and provides practical value for attendees.
-
-## What You'll Learn
-
-- Key concepts and practical applications
-- Real-world implementation strategies
-- Best practices and common pitfalls
-- Actionable insights for immediate application
-
-## Key Topics
-
-- Understanding core principles and concepts
-- Practical implementation strategies
-- Real-world examples and case studies
-- Best practices and lessons learned
-- Common challenges and how to overcome them
-
-## Key Takeaways
-
-You'll leave with a deeper understanding of the topic and practical knowledge you can apply in your own projects and organizations.
-
-## Who Should Attend
-
-This talk is perfect for:
-
-- Developers and engineers looking to expand their knowledge
-- Technical leads and architects planning implementations
-- DevOps professionals seeking practical insights
-- Anyone interested in modern software development practices
-
-*Don't miss this opportunity to learn from industry experts and expand your technical knowledge!*
+In this talk, I’ll go over examples of simple changes causing large scale unintended consequences, explain how to recognize when your actions could impact more than you wish for, share techniques for anticipating ripple effects so you can use them to your advantage, and help you become more adept at reasoning about complex systems.

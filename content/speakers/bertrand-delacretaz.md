@@ -6,12 +6,6 @@ speakerId: "bertrand-delacretaz"
 image: "/images/speakers/bertrand-delacretaz.webp"
 ---
 
-Bertrand Delacretaz is a speaker at DevOpsDays Zurich 2025.
+### Principal Scientist @ Adobe - Former Board Member @ Apache Software Foundation
 
-## Biography
-
-Bertrand brings expertise and insights to the DevOpsDays community.
-
-## Sessions
-
-Check out Bertrand's sessions at the conference.
+Bertrand Delacretaz works as a Principal Scientist for Adobe in Basel, Switzerland, on large-scale content management systems. He's also an active member of the Apache Software Foundation and has served on its Board of Directors for fourteen years.

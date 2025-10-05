@@ -5,48 +5,8 @@ type: "session"
 sessionId: "ignites/daiany-palacios"
 ---
 
-This fast-paced 5-minute ignite talk delivers maximum impact with key insights and actionable takeaways you can implement immediately.
+### Ignite
 
-## Abstract
-
-Join us for this energizing ignite talk that covers essential concepts and provides practical value for attendees.
-
-## What You'll Learn
-
-- Core concepts delivered at lightning speed
-- Practical insights for immediate application
-- Key takeaways that matter most
-- Inspiration for further exploration
-
-## Key Topics
-
-- Understanding core principles and concepts
-- Practical implementation strategies
-- Real-world examples and case studies
-- Best practices and lessons learned
-- Common challenges and how to overcome them
-
-
-
-## Key Takeaways
-
-In just 5 minutes, you'll gain valuable insights and actionable ideas to take back to your team.
-
-## Ignite Format
-
-This presentation follows the ignite format:
-- **5 minutes total**
-- **20 slides** that auto-advance every 15 seconds
-- **Fast-paced** and highly engaging
-- **Focused** on the most important insights
-
-
-## Who Should Attend
-
-This ignite is perfect for:
-- Developers and engineers looking to expand their knowledge
-- Technical leads and architects planning implementations
-- DevOps professionals seeking practical insights
-- Anyone interested in modern software development practices
-
-*Don't miss this opportunity to learn from industry experts and expand your technical knowledge!*
+More than 10 years into the DevOps movement, by now we know that it’s not just a job. We know the truth about DevOps (do we?) and understand that in principle there is not such a thing as a DevOps Engineer or a DevOps Team. Yet, our industry needed to find a label, a way to name the new role which Sysadmins or Developers were further growing into.
+Today, job ads for "DevOps Engineers" are everywhere, with diverse descriptions. I went through the hiring process for such a position in my team last year, and after interviewing a decent amount of candidates I started reflecting: How is this role going to evolve in the future? What about the next generation of “DevOps Engineers”? How do we get them “fresh” out of university”? How does someone come to the idea of starting their career in this field at all?
+In this ignite talk, I’ll share thoughts on nurturing the next generation of DevOps professionals. With patience, because we need tomorrow’s DevOps Engineers, today! :P

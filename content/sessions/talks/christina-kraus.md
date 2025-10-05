@@ -5,75 +5,10 @@ type: "session"
 sessionId: "talks/christina-kraus"
 ---
 
-Discover how to design and implement internal developer platforms that not only improve developer productivity but also create a foundation for scalable, reliable software delivery across your organization.
+### Talk
 
-## Abstract
+Platform Engineering is one of the top trends in the cloud-native space right now. However, while the theory behind it is quite clear, implementations are still in their early days. We condense the learnings of our extensive platform building experiences across some of Germany's largest organizations into an informative session that will guide teams in their platform journey.
 
-Internal Developer Platforms (IDPs) have become crucial for organizations looking to streamline their development processes and improve developer experience. This talk explores the principles, patterns, and practices for building platforms that developers actually want to use.
+Platform Engineering is here to relieve developers from the ever increasing cognitive load as the cloud-native tooling landscape grows and DevOps practices or “Shift Left” approaches expand the scope of their responsibility.
 
-## What You'll Learn
-
-- **Platform Engineering Fundamentals**: Core concepts and principles of effective internal platforms
-- **Developer Experience Design**: How to design platforms from the developer's perspective
-- **Technology Selection**: Choosing the right tools and technologies for your platform stack
-- **Adoption Strategies**: Techniques to drive platform adoption and gather feedback
-- **Measuring Success**: Metrics and KPIs for platform effectiveness
-
-## Platform Components
-
-### Core Infrastructure
-
-- Self-service environments and deployments
-- Standardized CI/CD pipelines
-- Infrastructure as Code templates
-- Monitoring and observability tools
-
-### Developer Tools Integration
-
-- IDE and local development setup
-- Testing and quality assurance tools
-- Documentation and knowledge management
-- Communication and collaboration platforms
-
-### Governance and Standards
-
-- Security and compliance automation
-- Code quality and review processes
-- Deployment and release management
-- Cost management and optimization
-
-## Implementation Strategies
-
-### Starting Small
-
-- MVP approach to platform development
-- Identifying high-impact, low-effort improvements
-- Building trust and momentum with early wins
-- Iterative development based on user feedback
-
-### Scaling Up
-
-- Expanding platform capabilities gradually
-- Building platform teams and communities
-- Creating self-service capabilities
-- Establishing platform governance
-
-## Common Pitfalls
-
-- Over-engineering platform solutions
-- Ignoring developer feedback and needs
-- Lack of clear platform strategy
-- Insufficient investment in documentation
-- Poor change management and communication
-
-## Success Stories
-
-Real-world examples of successful internal platforms:
-
-- Startup scaling from 10 to 100+ developers
-- Enterprise transformation reducing deployment time by 80%
-- Multi-team platform adoption increasing developer satisfaction scores
-
-## Key Takeaways
-
-Learn practical approaches to build platforms that truly enhance developer experience while supporting business objectives and scaling organizational capabilities.
+In this talk we’ll discuss how an internal platform can help you to effectively model the “new” responsibility split between developers and a platform team. We’ll talk about why developers as the internal “customers” of such platforms play a crucial role for its successful implementation and reveal typical pitfalls you should prevent on your road to a fully automated self-service developer experience.

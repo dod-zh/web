@@ -6,12 +6,6 @@ speakerId: "verena-traub"
 image: "/images/speakers/verena-traub.webp"
 ---
 
-Verena Traub is a speaker at DevOpsDays Zurich 2025.
+### Cloud Consultant & DevOps Engineer @ b'nerd GmbH
 
-## Biography
-
-Verena brings expertise and insights to the DevOpsDays community.
-
-## Sessions
-
-Check out Verena's sessions at the conference.
+Verena is Cloud Consultant and DevOps Engineer at b’nerd. After many years as HR expert in IT, she discovered her passion for programming in 2020 and has been passionate about modern software development and infrastructure ever since.

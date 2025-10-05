@@ -5,41 +5,12 @@ type: "session"
 sessionId: "talks/bertrand-delacretaz"
 ---
 
-This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.
+### Talk
 
-## Abstract
+Simplicity often takes a back seat in software engineering. Yet, it's absolutely key for creating durable and efficient systems.
 
-Join us for this insightful presentation that covers essential concepts and provides practical value for attendees.
+Crafting simple software is hard and takes lots of efforts. It's about setting a high bar and persisting until the simplest solution emerges, which you can often tell by its beauty and efficiency.
 
-## What You'll Learn
+This talk is based on more than twenty five years of software engineering experience, where the goal of essential simplicity has been reached in a few key projects. Digital audio recording, weather data management, interactive video kiosks, web app frameworks, the domains in which this happened are varied but a set of patterns emerges, that allowed us to reach high goals in terms of simplicity and efficiency in these projects.
 
-- Key concepts and practical applications
-- Real-world implementation strategies
-- Best practices and common pitfalls
-- Actionable insights for immediate application
-
-## Key Topics
-
-- Understanding core principles and concepts
-- Practical implementation strategies
-- Real-world examples and case studies
-- Best practices and lessons learned
-- Common challenges and how to overcome them
-
-
-
-## Key Takeaways
-
-You'll leave with a deeper understanding of the topic and practical knowledge you can apply in your own projects and organizations.
-
-
-
-## Who Should Attend
-
-This talk is perfect for:
-- Developers and engineers looking to expand their knowledge
-- Technical leads and architects planning implementations
-- DevOps professionals seeking practical insights
-- Anyone interested in modern software development practices
-
-*Don't miss this opportunity to learn from industry experts and expand your technical knowledge!*
+There's no magic formula for simplicity, but our real-world examples will help you discover principles and a philosophy of simplicity that will help on your own journey.

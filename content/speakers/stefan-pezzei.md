@@ -6,12 +6,6 @@ speakerId: "stefan-pezzei"
 image: "/images/speakers/stefan-pezzei.webp"
 ---
 
-Stefan Pezzei is a speaker at DevOpsDays Zurich 2025.
+### It's time to build
 
-## Biography
-
-Stefan brings expertise and insights to the DevOpsDays community.
-
-## Sessions
-
-Check out Stefan's sessions at the conference.
+Stefan, born and raised in South Tyrol, Italy, moved to Vienna to earn an MSc in Media and Human-Centered Computing. After completing the degree, Stefan started at &amp, where he has progressed to a team lead role. With a solid background in observability and monitoring solutions, Stefan specializes in Kubernetes and OpenTelemetry.

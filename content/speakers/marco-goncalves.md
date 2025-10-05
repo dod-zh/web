@@ -6,12 +6,7 @@ speakerId: "marco-goncalves"
 image: "/images/speakers/marco-goncalves.webp"
 ---
 
-Marco Gonçalves is a speaker at DevOpsDays Zurich 2025.
+### DevOps Engineer | Site Reliability Engineering @ Swisscom
+With a strong foundation in network security orchestration and site reliability engineering, I am dedicated to advancing modern infrastructure practices through the adoption of cutting-edge SRE principles. My expertise spans GitOps, Go, C++, Python programming, and Linux troubleshooting, enabling me to drive innovation and foster a culture of continuous improvement.
 
-## Biography
-
-Marco brings expertise and insights to the DevOpsDays community.
-
-## Sessions
-
-Check out Marco's sessions at the conference.
+Throughout my career, I have contributed to modernizing legacy systems, building automated testing platforms, and designing efficient CI/CD pipelines. My proficiency with tools like Docker, Ansible, and Jenkins has supported high-quality software delivery and the seamless integration of automation into development workflows.

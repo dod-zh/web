@@ -6,12 +6,10 @@ speakerId: "marcelo-ancelmo"
 image: "/images/speakers/marcelo-ancelmo.webp"
 ---
 
-Marcelo Ancelmo is a speaker at DevOpsDays Zurich 2025.
+### Head of Solution Architecture @ KPMG Switzerland
 
-## Biography
+Marcelo S. Ancelmo has 22 years (and counting) of IT experience and has done a bit (or would it be a byte) of everything.
 
-Marcelo brings expertise and insights to the DevOpsDays community.
+A good old-fashioned troublemaker, he started his professional career as a Java programmer, played many architecture games (which he still does today), worked into middleware (and does not regret it), built some great teams, and did infrastructure and operations work. He did some consultancy, delivered a lot of training, has been a mentor, and spoke at conferences. He is deeply engaged with the software community, joining Meetups everywhere he goes, teaming up with JUGs, helping organize events when he has spare time, and participating in working groups and committees.
 
-## Sessions
-
-Check out Marcelo's sessions at the conference.
+He is the Head of Solution Architecture at KPMG Switzerland, helping the company drive its DevOps transformation, still learning everything possible and enjoying all the bumps that come with it.

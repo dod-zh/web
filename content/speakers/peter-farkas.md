@@ -6,12 +6,10 @@ speakerId: "peter-farkas"
 image: "/images/speakers/peter-farkas.webp"
 ---
 
-Peter Farkas is a speaker at DevOpsDays Zurich 2025.
+### Empowering Teams in Test Automation
 
-## Biography
+I'm an unyielding automation engineer and consultant, helping development teams start or revive automated testing.
 
-Peter brings expertise and insights to the DevOpsDays community.
+My passion for test automation began during my master’s thesis, where I discovered the liberating power of unit tests. Since then, I've led testing initiatives in five large-scale projects across automotive, medical, and insurance industries.
 
-## Sessions
-
-Check out Peter's sessions at the conference.
+I'm also a regular participant in StorySlam Zurich and was a finalist in 2024, developing my skills to connect with audiences of all backgrounds.

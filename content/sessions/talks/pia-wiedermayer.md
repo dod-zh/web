@@ -5,41 +5,23 @@ type: "session"
 sessionId: "talks/pia-wiedermayer"
 ---
 
-This presentation explores key concepts and practical applications that will help you advance your understanding and implementation of modern practices.
+### Talk
 
-## Abstract
+My talk will dispel top-experienced myths and highlight realistic benefits about AI and automation in testing.
 
-Join us for this insightful presentation that covers essential concepts and provides practical value for attendees.
+I am increasingly confronted with the trend: AI in automation and testing first!
 
-## What You'll Learn
+Management shouts: "We need to leverage AI". And I wonder: “Even if you don't have a clue why?”
+Advertising promises: "Automation will improve quality." And I think: “If you feel that executing the wrong tests faster is an improvement of quality.”
+Providers announce: "AI will fix your testing!” And as I shake my head in disbelief, I ask ironically: “You mean like automation did?”
+Recruiting rejects applicants: "You need to have a proven record of several years in prompt engineering, AI testing and automation excellence (of course)." And I am speechless.
 
-- Key concepts and practical applications
-- Real-world implementation strategies
-- Best practices and common pitfalls
-- Actionable insights for immediate application
+These hypes are like boomerangs. They keep coming back. Like the mosquitoes in summer that find and maltreat me even when I'm bathed in the strongest insect repellent.
 
-## Key Topics
+But what remains after a hype (and before the next)?
 
-- Understanding core principles and concepts
-- Practical implementation strategies
-- Real-world examples and case studies
-- Best practices and lessons learned
-- Common challenges and how to overcome them
+I will show where hypes like AI and automation have their limits and why human-driven intelligence will never lose its power.
 
+You will realise that it is not an either-or discussion, but a both-and.
 
-
-## Key Takeaways
-
-You'll leave with a deeper understanding of the topic and practical knowledge you can apply in your own projects and organizations.
-
-
-
-## Who Should Attend
-
-This talk is perfect for:
-- Developers and engineers looking to expand their knowledge
-- Technical leads and architects planning implementations
-- DevOps professionals seeking practical insights
-- Anyone interested in modern software development practices
-
-*Don't miss this opportunity to learn from industry experts and expand your technical knowledge!*
+You will go back to the office and lead the discussions about the real capabilities of AI and automation in testing.

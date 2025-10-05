@@ -5,39 +5,6 @@ type: "session"
 sessionId: "keynotes/marc-schuh"
 ---
 
-In this compelling talk, we explore the intersection of sports science and artificial intelligence, showcasing how modern technology can transform traditional athletic coaching methods.
+### Talk
 
-## Abstract
-
-As a former competitive canoeist turned software engineer, I'll share my journey of developing an AI-powered system that analyzes paddling techniques with unprecedented precision. This session will demonstrate how computer vision and machine learning can provide insights that were previously impossible to capture.
-
-## What You'll Learn
-
-- **Computer Vision Applications**: How to apply CV techniques to real-world motion analysis
-- **Machine Learning in Sports**: Practical implementation of ML algorithms for technique assessment
-- **Data Pipeline Design**: Building robust systems for video processing and analysis
-- **Feedback Loop Creation**: Developing actionable insights from complex movement data
-
-## Technical Deep Dive
-
-We'll cover the technical architecture including:
-
-- Video processing pipelines using OpenCV
-- Real-time motion tracking algorithms
-- Machine learning model training for technique classification
-- Building user-friendly feedback systems
-
-## Real-World Impact
-
-The presentation includes case studies showing:
-
-- 15% improvement in paddling efficiency
-- Reduction in technique-related injuries
-- Faster skill acquisition for novice athletes
-- Data-driven coaching methodologies
-
-## Key Takeaways
-
-Whether you're interested in sports technology, computer vision, or innovative applications of AI, this talk provides practical insights into building systems that bridge the gap between athletic performance and data science.
-
-Perfect for engineers looking to apply their skills in new domains and understand how technology can enhance human performance in unexpected ways.
+We introduce an innovative application of computer vision and artificial intelligence to analyze training videos of canoe athletes preparing for the Olympic Games. Our method employs foreground-background separation for canoe detection and waterline derivation. Through pose detection, we identify the paddle and have trained a neural network to recognize essential paddle positions for routine training analysis. Additionally, we incorporate biomechanical insights in a post-processing step to refine AI results and enhance analysis accuracy. Traditionally, biomechanics engineers manually screen training videos frame by frame to locate specific paddle positions and measure the paddle's angle relative to the waterline; a process taking about 20 minutes per athlete. Our approach significantly streamlines this process, reducing the workload by an order of magnitude.
