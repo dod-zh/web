@@ -1,18 +1,7 @@
-+++
-City = "Zurich"
-Year = "2025"
-talk_date = "2025-03-16"
-talk_start_time = "14:00"
-talk_end_time = "14:30"
-title = "Untangle Your Legacy Code with Domain-Driven Refactoring"
-type = "talk"
-speakers = ["alina-liburkina", "oliver-zihler"]
-youtube = ""
-vimeo = ""
-speakerdeck = ""
-slideshare = ""
-slides = ""
-+++
+---
+type: "session"
+sessionId: "workshops/alina-liburkina"
+---
 
 Discover how Domain-Driven Refactoring can help you transform messy, tightly coupled systems into clean, maintainable architectures.
 In legacy systems, wrong abstractions and outdated, database-heavy designs can cause high complexity, a problem reinforced when there are no tests in place. Every change feels risky. Our session will walk you through the process of untangling legacy code using appropriate testing strategies to capture the current behavior and ensure safety as you refactor incrementally.

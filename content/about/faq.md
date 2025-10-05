@@ -29,8 +29,6 @@ Yes, but with conditions:
 - Exchanges within one day are **not possible**
 - Contact us in advance to arrange the transfer
 
----
-
 ## Speaking at DevOpsDays
 
 ### I would like to speak at DevOpsDays. How do I apply?
@@ -63,8 +61,6 @@ An **Ignite talk** is a unique presentation format:
 
 It's a challenging but exciting format that keeps the audience engaged! Learn more about [Ignite talks on devopsdays.org](https://devopsdays.org/ignite-talks-format).
 
----
-
 ## Sponsorship
 
 ### I would like to become a sponsor. How do I start?
@@ -77,8 +73,6 @@ We'd love to have you as a partner!
 4. Complete the sponsorship agreement and payment
 
 We're flexible and happy to discuss custom packages that meet your needs!
-
----
 
 ## Venue & Logistics
 

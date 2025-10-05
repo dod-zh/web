@@ -1,18 +1,7 @@
-+++
-City = "Zurich"
-Year = "2025"
-talk_date = "2025-03-16"
-talk_start_time = "14:00"
-talk_end_time = "14:30"
-title = "Enabling aligned decentralised architecture decisions through user needs mapping"
-type = "talk"
-speakers = ["thomas-krag"]
-youtube = ""
-vimeo = ""
-speakerdeck = ""
-slideshare = ""
-slides = ""
-+++
+---
+type: "session"
+sessionId: "workshops/thomas-krag"
+---
 
 Our goal is to enable teams to maintain their flow of delivery, allowing them to focus on delivering continuous business value without being held up by dependencies on other teams. This requires teams to make decentralised architecture decisions whenever possible. However, decentralised decisions can have unintended consequences across the organisation. For example, a team’s decision to optimise for their specific user might negatively affect the resilience or user experience of another team downstream. To prevent this, teams are often forced to consider the wider organisational impact of each decision, which adds to their cognitive load and disrupts their flow. The challenge is: how do we foster alignment across teams so they can make decentralised architecture decisions without being overwhelmed by the complexity?
 

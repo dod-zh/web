@@ -1,6 +1,6 @@
 ---
 type: "session"
-sessionId: "talks/marc-herren"
+sessionId: "workshops/marc-herren"
 ---
 
 This hands-on workshop/tutorial examines practical patterns for integrating AI into engineering workflows and automation pipelines, based on our approved multi-day workshop. We'll implement tools that enhance daily tasks: from accelerating technical research and troubleshooting to improving documentation processes and development standardization.

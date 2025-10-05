@@ -1,18 +1,7 @@
-+++
-City = "Zurich"
-Year = "2025"
-talk_date = "2025-03-16"
-talk_start_time = "14:00"
-talk_end_time = "14:30"
-title = "Building Secure Container Images"
-type = "talk"
-speakers = ["alvaro-revuelta-m"]
-youtube = ""
-vimeo = ""
-speakerdeck = ""
-slideshare = ""
-slides = ""
-+++
+---
+type: "session"
+sessionId: "workshops/alvaro-revuelta-m"
+---
 
 In this workshop, participants will learn how to build secure container images. The session will cover essential security practices throughout the image lifecycle, from development to deployment, ensuring that containers are resilient against common vulnerabilities and threats.
 
