@@ -17,6 +17,7 @@ slides = ""
 In this hands-on workshop, participants will learn how to build powerful infrastructure management tools using Kubernetes (K8s) Operators written in Go. Kubernetes Operators extend the functionality of Kubernetes by automating complex, domain-specific tasks, and managing custom resources at scale. Through this workshop, attendees will gain a deep understanding of the Operator pattern, best practices in Operator development, and how Go can be used to create robust, production-grade Operators.
 
 Key topics covered will include:
+
 - Introduction to Kubernetes Operators: What they are, why they're needed, and how they fit into the Kubernetes ecosystem.
 - Deep dive into the Operator Framework: Building, testing, and deploying Operators with Go.
 - Custom Resource Definitions (CRDs) and how to manage lifecycle events of custom resources.

@@ -19,4 +19,3 @@ Join us for a hands-on workshop where you'll learn to transform your Kubernetes 
 We'll cover the essentials of deploying the OpenTelemetry Collector to process and export telemetry data efficiently. Learn to set up sidecars and agents to capture comprehensive insights into your services.
 
 Leave uncertainty behind and achieve total operational control.
-

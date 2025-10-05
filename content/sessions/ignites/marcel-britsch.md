@@ -18,6 +18,7 @@ I will conclude with guiding principles to avoid falling into the same traps.
 
 What participants will take away:
 An awareness of the important to adopt a critical view on
+
 - DevOps (and other) technical decisions
 - A list of potential pitfalls and challenges
 - Actionable guidance and suggestions on how to manage these tensions, risks and challenges to avoid falling into the same traps
