@@ -18,7 +18,8 @@
             <div class="flex flex-col md:flex-row items-start gap-8 mb-12">
                 {{ if .Params.image }}
                 <div class="flex-shrink-0">
-                    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-48 h-48 rounded-lg object-cover shadow-lg">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}"
+                        class="w-48 h-48 rounded-lg object-cover shadow-lg">
                 </div>
                 {{ end }}
                 <div class="prose prose-lg max-w-none flex-1">
