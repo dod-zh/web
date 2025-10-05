@@ -40,8 +40,10 @@
     <div class="container mx-auto px-4">
         <div class="prose prose-lg max-w-4xl mx-auto">
             {{ $content := .Content }}
-            {{ $searchStr := print "| **Status** | **SOLD OUT** | **SOLD OUT** | **Available** | **SOLD OUT** | **Available** |" }}
-            {{ $replaceStr := printf "| **Status** | **%s** | **%s** | **%s** | **%s** | **%s** |" $goldStatus $silverStatus $bronzeStatus $eventStatus $eventStatus }}
+            {{ $searchStr := print "| **Status** | **SOLD OUT** | **SOLD OUT** | **Available** | **SOLD OUT** |
+            **Available** |" }}
+            {{ $replaceStr := printf "| **Status** | **%s** | **%s** | **%s** | **%s** | **%s** |" $goldStatus
+            $silverStatus $bronzeStatus $eventStatus $eventStatus }}
             {{ $content = replace $content $searchStr $replaceStr }}
             {{ $content | safeHTML }}
         </div>
