@@ -3,8 +3,6 @@ title: "Sustainability"
 description: "Our commitment to environmental sustainability"
 ---
 
-## Our Commitment to the Environment
-
 At DevOpsDays Zurich, we take our environmental responsibility seriously. We're committed to reducing our carbon footprint and promoting sustainable practices throughout our conference.
 
 ## What We're Doing

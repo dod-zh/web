@@ -14,7 +14,6 @@ slideshare = ""
 slides = ""
 +++
 
-### Talk
 
 At Semaphore, we’ve spent over 15 years helping others optimize their CI/CD workflows, but tackling our own architecture’s growing pains was a whole different story. As our platform grew to over 30 microservices hosted in separate repositories, the cracks began to show. Onboarding was painful, dependency updates were tedious, and inconsistent pipelines made maintaining our own CI/CD workflows a chore.
 

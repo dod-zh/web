@@ -4,8 +4,6 @@ description: "Our amazing sponsors make DevOpsDays Zurich possible"
 type: "sponsors"
 ---
 
-## About Sponsoring DevOpsDays
-
 DevOpsDays is a self-organizing conference for DevOps practitioners and enthusiasts. The conference is funded and supported by the sponsors. Essentially, the companies which are successful today and want to support tomorrows ideas when it comes to connecting functional silos.
 
 We do not have vendor booths, sell product presentations, or distribute attendee contact lists. Sponsors will get recognition on the website and social media before, during and after the event. Sponsors are encouraged to represent themselves by actively participating and engaging with the attendees as peers. Any attendee also has the opportunity to demo products/projects as part of an open space session.

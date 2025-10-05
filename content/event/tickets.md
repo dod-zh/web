@@ -10,33 +10,14 @@ description: "Get your tickets for DevOpsDays Zurich 2025"
   <tito-widget event="dod/dodzh2025"></tito-widget>
 </div>
 
----
-
 ## What's Included
 
 Your ticket provides you with everything you need for an amazing DevOpsDays experience:
 
-<div class="grid md:grid-cols-2 gap-4 my-6">
-  <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-    <h3 class="font-semibold text-base mb-1">Two-Day Conference Access</h3>
-    <p class="text-gray-600 text-sm">Full access to all talks, workshops, and sessions</p>
-  </div>
-
-  <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-    <h3 class="font-semibold text-base mb-1">Full Catering</h3>
-    <p class="text-gray-600 text-sm">Breakfast, lunch, and refreshments for both days</p>
-  </div>
-
-  <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-    <h3 class="font-semibold text-base mb-1">Evening Event Access</h3>
-    <p class="text-gray-600 text-sm">Join us for networking and socializing</p>
-  </div>
-
-  <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-    <h3 class="font-semibold text-base mb-1">Conference T-Shirt</h3>
-    <p class="text-gray-600 text-sm">Exclusive DevOpsDays Zurich 2025 swag</p>
-  </div>
-</div>
+- **Two-Day Conference Access** - Full access to all talks, workshops, and sessions
+- **Full Catering** - Breakfast, lunch, and refreshments for both days
+- **Evening Event Access** - Join us for networking and socializing
+- **Conference T-Shirt** - Exclusive DevOpsDays Zurich 2025 swag
 
 ### Dietary Options
 
