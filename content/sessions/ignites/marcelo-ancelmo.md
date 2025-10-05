@@ -3,8 +3,6 @@ type: "session"
 sessionId: "ignites/marcelo-ancelmo"
 ---
 
-### Ignite
-
 In today's rapidly evolving world, organisations face the constant challenge of staying ahead and adapting to change. The key to thriving in this environment lies in creating and fostering a learning culture within the workplace.
 
 This presentation aims to explore the significance of creating a learning culture and provide practical insights into how organizations can nurture a mindset of continuous development and continuous improvement.

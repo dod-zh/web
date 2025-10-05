@@ -3,8 +3,6 @@ type: "session"
 sessionId: "talks/christina-kraus"
 ---
 
-### Talk
-
 Platform Engineering is one of the top trends in the cloud-native space right now. However, while the theory behind it is quite clear, implementations are still in their early days. We condense the learnings of our extensive platform building experiences across some of Germany's largest organizations into an informative session that will guide teams in their platform journey.
 
 Platform Engineering is here to relieve developers from the ever increasing cognitive load as the cloud-native tooling landscape grows and DevOps practices or “Shift Left” approaches expand the scope of their responsibility.

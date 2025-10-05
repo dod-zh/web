@@ -14,8 +14,6 @@ slideshare = ""
 slides = ""
 +++
 
-### Workshop
-
 In this workshop, participants will learn how to build secure container images. The session will cover essential security practices throughout the image lifecycle, from development to deployment, ensuring that containers are resilient against common vulnerabilities and threats.
 
 Attendees will start with an overview of container security principles. The workshop will then guide participants through practical steps to build secure images using Docker, including:

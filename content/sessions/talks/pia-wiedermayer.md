@@ -3,8 +3,6 @@ type: "session"
 sessionId: "talks/pia-wiedermayer"
 ---
 
-### Talk
-
 My talk will dispel top-experienced myths and highlight realistic benefits about AI and automation in testing.
 
 I am increasingly confronted with the trend: AI in automation and testing first!

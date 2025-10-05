@@ -3,8 +3,6 @@ type: "session"
 sessionId: "ignites/peter-farkas"
 ---
 
-### Ignite
-
 A once-mighty test framework, the pride of a software department, had fallen into disrepair. Complex, unpredictable, and demanding, it had become a burden rather than a boon.
 
 But as development of the framework stalled, quality issues with the application it supported began to creep back. The team faced a daunting challenge: to tame the beast or be consumed by it.

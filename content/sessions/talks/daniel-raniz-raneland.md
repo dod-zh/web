@@ -3,8 +3,6 @@ type: "session"
 sessionId: "talks/daniel-raniz-raneland"
 ---
 
-### Talk
-
 Automated pipelines have become an integral part of our daily workflow. As the pipelines become increasingly important, the demands placed on them rise proportionally.
 
 As with many things, a great pipeline operates seamlessly in the background, while a poorly designed one becomes a constant irritation.

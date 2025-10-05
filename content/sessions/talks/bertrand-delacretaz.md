@@ -3,8 +3,6 @@ type: "session"
 sessionId: "talks/bertrand-delacretaz"
 ---
 
-### Talk
-
 Simplicity often takes a back seat in software engineering. Yet, it's absolutely key for creating durable and efficient systems.
 
 Crafting simple software is hard and takes lots of efforts. It's about setting a high bar and persisting until the simplest solution emerges, which you can often tell by its beauty and efficiency.

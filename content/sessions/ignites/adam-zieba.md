@@ -3,6 +3,4 @@ type: "session"
 sessionId: "ignites/adam-zieba"
 ---
 
-### Ignite
-
 Code is a liability/risk not an asset. Hedging this risk can be done by writing more code, having good practices etc. Developers think that they are the ones producing value and see HR , Finance etc as risk avoidance entities. However software development should understand that they should be risk managers too. Undocumented, tested code that does not meet the non-functional requirements that are expected is risk exposure. Before you ship you have 1 problem after you ship you have to maintain that problem and develop the new thing.
