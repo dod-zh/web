@@ -58,6 +58,13 @@ devopsdays_ch-web/
 │   ├── sponsors.json     # Sponsor information
 │   ├── team.json         # Team member details
 │   └── events.json       # Past and current events
+├── docs/                 # Project documentation
+│   └── README.md        # Documentation index
+├── scripts/              # Helper scripts
+│   ├── generate-sessions.js        # Session generation script
+│   ├── download-speaker-images.sh  # Speaker image downloader
+│   ├── download-sponsor-images.sh  # Sponsor image downloader
+│   └── download-team-images.sh     # Team image downloader
 ├── static/               # Static assets
 │   ├── css/             # Custom stylesheets
 │   ├── images/          # Images and logos
