@@ -1,0 +1,15 @@
+{{/*
+Page Header Partial
+Renders a consistent page header with gradient background, breadcrumbs, title and optional description
+Usage: {{ partial "page-header.html" . }}
+*/}}
+
+<div class="py-8" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
+    <div class="container mx-auto px-4">
+        {{ partial "breadcrumbs.html" . }}
+        <h1 class="text-4xl font-bold text-white">{{ .Title }}</h1>
+        {{ if .Description }}
+        <p class="text-xl text-gray-100 mt-4">{{ .Description }}</p>
+        {{ end }}
+    </div>
+</div>
