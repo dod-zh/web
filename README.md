@@ -390,6 +390,7 @@ menu:
 ```
 
 **Tips:**
+
 - Use `identifier` for parent menu items
 - Use `parent` to create submenus
 - Use `weight` to control ordering (lower numbers appear first)
