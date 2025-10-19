@@ -1,7 +1,20 @@
----
-type: "session"
-sessionId: "talks/radoslaw-wozniak"
----
++++
+City = "Zurich"
+Year = "2025"
+talk_date = "2025-03-16"
+talk_start_time = "14:00"
+talk_end_time = "14:30"
+title = "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore"
+type = "talk"
+speakers = ["radoslaw-wozniak"]
+youtube = ""
+vimeo = ""
+speakerdeck = ""
+slideshare = ""
+slides = ""
++++
+
+### Talk
 
 At Semaphore, we’ve spent over 15 years helping others optimize their CI/CD workflows, but tackling our own architecture’s growing pains was a whole different story. As our platform grew to over 30 microservices hosted in separate repositories, the cracks began to show. Onboarding was painful, dependency updates were tedious, and inconsistent pipelines made maintaining our own CI/CD workflows a chore.
 
