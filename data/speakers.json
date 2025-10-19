@@ -4,7 +4,15 @@
       "id": "adam-zieba",
       "name": "Adam Zieba",
       "image": "/images/speakers/adam-zieba.webp",
-      "page": "/speakers/adam-zieba/"
+      "page": "/speakers/adam-zieba/",
+      "social": {
+        "linkedin": "a",
+        "github": "a",
+        "x": "hdjkhsskjadhs",
+        "web": "a",
+        "bluesky": "a",
+        "mastodon": "a"
+      }
     },
     {
       "id": "alexander-ptakhin",

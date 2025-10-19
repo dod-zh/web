@@ -79,9 +79,51 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Main Content -->
             <div class="lg:col-span-2">
-                <div class="prose prose-lg max-w-none">
+                <div class="prose prose-lg max-w-none mb-8">
                     {{ .Content }}
                 </div>
+
+                <!-- Speaker Bios on Desktop -->
+                {{ if $session.speakers }}
+                <div class="hidden lg:block">
+                    <h3 class="text-2xl font-bold mb-6" style="color: var(--indigo-dye);">
+                        {{ if gt (len $session.speakers) 1 }}About the Speakers{{ else }}About the Speaker{{ end }}
+                    </h3>
+                    <div class="space-y-6">
+                        {{ range $session.speakers }}
+                        {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
+                        {{ if $speaker }}
+                        {{ $speakerPage := $.Site.GetPage (printf "/speakers/%s" .) }}
+                        {{ if $speakerPage }}
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-start gap-4 mb-4">
+                                <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
+                                    class="w-20 h-20 rounded-full object-cover border-2 border-gray-200 flex-shrink-0">
+                                <div>
+                                    <h4 class="text-xl font-semibold" style="color: var(--indigo-dye);">{{ $speaker.name
+                                        }}</h4>
+                                    {{ if $speaker.title }}
+                                    <p class="text-sm text-gray-600">{{ $speaker.title }}</p>
+                                    {{ end }}
+                                    {{ if $speaker.company }}
+                                    <p class="text-sm text-gray-600">{{ $speaker.company }}</p>
+                                    {{ end }}
+                                </div>
+                            </div>
+                            <div class="prose prose-sm max-w-none text-gray-700">
+                                {{ $speakerPage.Content }}
+                            </div>
+                            <a href="{{ $speaker.page }}" class="inline-block mt-4 text-sm font-medium hover:underline"
+                                style="color: var(--cerulean);">
+                                View full speaker profile →
+                            </a>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
             </div>
 
             <!-- Sidebar -->

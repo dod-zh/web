@@ -6,13 +6,13 @@
         <!-- Gold Sponsors -->
         {{ $gold := where .Site.Data.sponsors.sponsors "level" "gold" }}
         {{ if $gold }}
-        <div class="mb-6">
-            <h4 class="text-lg font-semibold text-center mb-4 text-gray-600">Gold Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6">
+        <div class="mb-8">
+            <h4 class="text-xl font-semibold text-center mb-6" style="color: var(--indigo-dye);">Gold Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-8">
                 {{ range $gold }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-gold opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
@@ -22,13 +22,13 @@
         <!-- Silver Sponsors -->
         {{ $silver := where .Site.Data.sponsors.sponsors "level" "silver" }}
         {{ if $silver }}
-        <div class="mb-6">
-            <h4 class="text-base font-semibold text-center mb-4 text-gray-600">Silver Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-4">
+        <div class="mb-8">
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Silver Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-6">
                 {{ range $silver }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="h-10 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-silver opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
@@ -38,13 +38,13 @@
         <!-- Event Sponsors -->
         {{ $event := where .Site.Data.sponsors.sponsors "level" "event" }}
         {{ if $event }}
-        <div class="mb-6">
-            <h4 class="text-base font-semibold text-center mb-4 text-gray-600">Event Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-4">
+        <div class="mb-8">
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Event Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-6">
                 {{ range $event }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="h-10 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
@@ -54,13 +54,14 @@
         <!-- Bronze Sponsors -->
         {{ $bronze := where .Site.Data.sponsors.sponsors "level" "bronze" }}
         {{ if $bronze }}
-        <div class="mb-6">
-            <h4 class="text-sm font-semibold text-center mb-4 text-gray-600">Bronze Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-3">
+        <div class="mb-8">
+            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Bronze Sponsors</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
                 {{ range $bronze }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                <a href="{{ .website }}" target="_blank" rel="noopener"
+                    class="flex items-center justify-center sponsor-logo-container p-2">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="h-8 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-bronze opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
@@ -70,13 +71,14 @@
         <!-- Community Sponsors -->
         {{ $community := where .Site.Data.sponsors.sponsors "level" "community" }}
         {{ if $community }}
-        <div class="mb-6">
-            <h4 class="text-sm font-semibold text-center mb-4 text-gray-600">Community Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-3">
+        <div class="mb-8">
+            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Community Sponsors
+            </h4>
+            <div class="flex flex-wrap justify-center items-center gap-4">
                 {{ range $community }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="h-8 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-bronze opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
@@ -87,20 +89,20 @@
         {{ $partner := where .Site.Data.sponsors.sponsors "level" "partner" }}
         {{ if $partner }}
         <div class="mb-6">
-            <h4 class="text-sm font-semibold text-center mb-4 text-gray-600">Partner Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-3">
+            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Partner Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-4">
                 {{ range $partner }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block">
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="h-8 w-auto opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-bronze opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
         </div>
         {{ end }}
 
-        <div class="text-center mt-6">
-            <a href="/event/sponsors/" class="text-sm font-semibold" style="color: var(--cerulean);"
+        <div class="text-center mt-8">
+            <a href="/event/sponsors/" class="text-base font-semibold" style="color: var(--cerulean);"
                 onmouseover="this.style.color='var(--indigo-dye)'" onmouseout="this.style.color='var(--cerulean)'">
                 Learn more about sponsoring this event →
             </a>
