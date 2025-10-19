@@ -76,6 +76,7 @@ header.scrolled {
     max-width: 110px;
 }
 
+/* Mobile responsive grid layouts for sponsors */
 @media (max-width: 768px) {
     .sponsor-logo-gold {
         max-width: 140px;
@@ -93,6 +94,18 @@ header.scrolled {
 
     .sponsor-logo-community {
         max-width: 90px;
+    }
+
+    /* Convert flex layouts to grid on mobile for better tile organization */
+    [data-sponsor-tier="gold"],
+    [data-sponsor-tier="silver"],
+    [data-sponsor-tier="event"],
+    [data-sponsor-tier="coffee"],
+    [data-sponsor-tier="community"],
+    [data-sponsor-tier="partner"] {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
     }
 }
 
