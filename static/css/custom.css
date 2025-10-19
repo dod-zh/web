@@ -30,6 +30,17 @@ header.scrolled {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.sponsor-logo-container:hover {
+    border-color: var(--cerulean);
+    box-shadow: 0 4px 12px rgba(28, 128, 170, 0.1);
+    transform: translateY(-2px);
 }
 
 .sponsor-logo {
