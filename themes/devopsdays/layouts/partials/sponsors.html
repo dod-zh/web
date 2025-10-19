@@ -51,6 +51,22 @@
         </div>
         {{ end }}
 
+        <!-- Coffee Sponsors -->
+        {{ $coffee := where .Site.Data.sponsors.sponsors "level" "coffee" }}
+        {{ if $coffee }}
+        <div class="mb-8">
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Coffee Sponsors</h4>
+            <div class="flex flex-wrap justify-center items-center gap-6">
+                {{ range $coffee }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="sponsor-logo sponsor-logo-coffee opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
         <!-- Bronze Sponsors -->
         {{ $bronze := where .Site.Data.sponsors.sponsors "level" "bronze" }}
         {{ if $bronze }}
@@ -78,7 +94,7 @@
                 {{ range $community }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-bronze opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-community opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>

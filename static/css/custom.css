@@ -11,7 +11,8 @@
 
 /* Sticky Navigation */
 header {
-    position: -webkit-sticky !important; /* Safari */
+    position: -webkit-sticky !important;
+    /* Safari */
     position: sticky !important;
     top: 0 !important;
     z-index: 1000 !important;
@@ -24,7 +25,7 @@ header.scrolled {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Sponsor Logo Styling - Uniform Sizes */
+/* Sponsor Logo Styling - Uniform Sizes with Clear Hierarchy */
 .sponsor-logo-container {
     display: flex;
     align-items: center;
@@ -37,45 +38,60 @@ header.scrolled {
     object-fit: contain;
 }
 
+/* Gold - Largest */
 .sponsor-logo-gold {
-    height: 80px;
-    max-width: 200px;
+    height: 70px;
+    max-width: 180px;
 }
 
+/* Silver, Event, Coffee - Medium */
 .sponsor-logo-silver {
-    height: 60px;
-    max-width: 180px;
+    height: 55px;
+    max-width: 150px;
 }
 
 .sponsor-logo-event {
-    height: 60px;
-    max-width: 180px;
+    height: 55px;
+    max-width: 150px;
 }
 
+.sponsor-logo-coffee {
+    height: 55px;
+    max-width: 150px;
+}
+
+/* Bronze, Community - Smaller */
 .sponsor-logo-bronze {
-    height: 50px;
-    max-width: 140px;
+    height: 45px;
+    max-width: 120px;
+}
+
+.sponsor-logo-community {
+    height: 40px;
+    max-width: 110px;
 }
 
 @media (max-width: 768px) {
     .sponsor-logo-gold {
-        height: 60px;
-        max-width: 160px;
-    }
-
-    .sponsor-logo-silver {
-        height: 50px;
+        height: 55px;
         max-width: 140px;
     }
 
-    .sponsor-logo-event {
-        height: 50px;
-        max-width: 140px;
+    .sponsor-logo-silver,
+    .sponsor-logo-event,
+    .sponsor-logo-coffee {
+        height: 45px;
+        max-width: 120px;
     }
 
     .sponsor-logo-bronze {
-        height: 40px;
-        max-width: 120px;
+        height: 38px;
+        max-width: 100px;
+    }
+
+    .sponsor-logo-community {
+        height: 35px;
+        max-width: 90px;
     }
 }
 
@@ -123,6 +139,11 @@ section.py-8 {
 .prose p {
     margin-bottom: 1.25rem;
     line-height: 1.75;
+}
+
+/* Remove top margin from first element to align with image */
+.prose>*:first-child {
+    margin-top: 0;
 }
 
 .prose ul,
