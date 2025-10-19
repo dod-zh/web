@@ -23,4 +23,4 @@ Conference staff can be identified by distinct staff t-shirts. Conference staff 
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
-The DevopsDays Zürich 2025 Code of Conduct is based on confcodeofconduct.com.
+The DevopsDays Zürich 2025 Code of Conduct is based on [confcodeofconduct.com](https://confcodeofconduct.com).
