@@ -249,6 +249,20 @@ section.py-8 {
     visibility: visible;
 }
 
+/* Mobile menu styling for better readability */
+#mobile-menu {
+    background-color: white;
+}
+
+#mobile-menu a {
+    white-space: nowrap;
+}
+
+/* Ensure mobile menu buttons have proper contrast */
+#mobile-menu a[style*="background-color"] {
+    color: white !important;
+}
+
 /* Cookie consent styling */
 #cc-main {
     z-index: 9999 !important;
@@ -366,6 +380,7 @@ a.bg-white {
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -383,6 +398,7 @@ a.bg-white {
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .btn-secondary:hover {
