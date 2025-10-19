@@ -8,7 +8,7 @@
         {{ if $gold }}
         <div class="mb-8">
             <h4 class="text-xl font-semibold text-center mb-6" style="color: var(--indigo-dye);">Gold Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-8">
+            <div class="flex flex-wrap justify-center items-center gap-8" data-sponsor-tier="gold">
                 {{ range $gold }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
@@ -24,7 +24,7 @@
         {{ if $silver }}
         <div class="mb-8">
             <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Silver Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6">
+            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="silver">
                 {{ range $silver }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
@@ -40,7 +40,7 @@
         {{ if $event }}
         <div class="mb-8">
             <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Event Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6">
+            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="event">
                 {{ range $event }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
@@ -56,7 +56,7 @@
         {{ if $coffee }}
         <div class="mb-8">
             <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Coffee Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6">
+            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="coffee">
                 {{ range $coffee }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
@@ -72,7 +72,8 @@
         {{ if $bronze }}
         <div class="mb-8">
             <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Bronze Sponsors</h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-5xl mx-auto"
+                data-sponsor-tier="bronze">
                 {{ range $bronze }}
                 <a href="{{ .website }}" target="_blank" rel="noopener"
                     class="flex items-center justify-center sponsor-logo-container p-2">
@@ -90,7 +91,7 @@
         <div class="mb-8">
             <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Community Sponsors
             </h4>
-            <div class="flex flex-wrap justify-center items-center gap-4">
+            <div class="flex flex-wrap justify-center items-center gap-4" data-sponsor-tier="community">
                 {{ range $community }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
@@ -106,7 +107,7 @@
         {{ if $partner }}
         <div class="mb-6">
             <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Partner Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-4">
+            <div class="flex flex-wrap justify-center items-center gap-4" data-sponsor-tier="partner">
                 {{ range $partner }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
@@ -125,4 +126,61 @@
         </div>
     </div>
 </section>
+
+<script>
+    // Calculate optimal row height based on widest logo
+    function adjustSponsorLogoHeights() {
+        const tiers = document.querySelectorAll('[data-sponsor-tier]');
+
+        tiers.forEach(tierContainer => {
+            const tier = tierContainer.getAttribute('data-sponsor-tier');
+            const logos = tierContainer.querySelectorAll('.sponsor-logo');
+
+            if (logos.length === 0) return;
+
+            // Get max-width for this tier from CSS
+            const maxWidths = {
+                'gold': 180,
+                'silver': 150,
+                'event': 150,
+                'coffee': 150,
+                'bronze': 120,
+                'community': 110,
+                'partner': 120
+            };
+
+            const maxWidth = maxWidths[tier] || 150;
+            let maxHeight = 0;
+
+            // Calculate the height needed for the widest logo
+            logos.forEach(img => {
+                if (img.complete && img.naturalWidth > 0) {
+                    const aspectRatio = img.naturalHeight / img.naturalWidth;
+                    const calculatedHeight = maxWidth * aspectRatio;
+                    maxHeight = Math.max(maxHeight, calculatedHeight);
+                }
+            });
+
+            // Apply the calculated height to all logos in this tier
+            if (maxHeight > 0) {
+                logos.forEach(img => {
+                    img.style.height = maxHeight + 'px';
+                });
+            }
+        });
+    }
+
+    // Run on load and when images are loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', adjustSponsorLogoHeights);
+    } else {
+        adjustSponsorLogoHeights();
+    }
+
+    // Also run when window is resized
+    window.addEventListener('resize', adjustSponsorLogoHeights);
+
+    // Ensure all images are loaded before calculating
+    window.addEventListener('load', adjustSponsorLogoHeights);
+</script>
 {{ end }}
