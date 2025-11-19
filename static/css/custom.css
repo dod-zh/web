@@ -26,8 +26,25 @@ header.scrolled {
 }
 
 /* Sponsor Logo Styling - Uniform Sizes with Clear Hierarchy */
-.sponsor-logo-container {
+[data-sponsor-tier] {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+[data-sponsor-tier="gold"] {
+    gap: 2rem;
+}
+
+[data-sponsor-tier="bronze"],
+[data-sponsor-tier="partner"] {
+    gap: 1rem;
+}
+
+.sponsor-logo-container {
+    display: inline-flex;
+    flex: 0 0 auto;
     align-items: center;
     justify-content: center;
     padding: 1rem;
@@ -106,6 +123,7 @@ header.scrolled {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 1rem !important;
+        justify-items: center;
     }
 }
 
