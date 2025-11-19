@@ -52,6 +52,29 @@ header.scrolled {
     border: 1px solid #e5e7eb;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
+    box-sizing: border-box;
+    --tile-size: clamp(8.75rem, 22vw, 11.5rem);
+    width: var(--tile-size);
+    aspect-ratio: 1 / 1;
+}
+
+[data-sponsor-tier="gold"] .sponsor-logo-container {
+    --tile-size: clamp(9.25rem, 24vw, 13.5rem);
+}
+
+[data-sponsor-tier="silver"] .sponsor-logo-container,
+[data-sponsor-tier="event"] .sponsor-logo-container,
+[data-sponsor-tier="coffee"] .sponsor-logo-container {
+    --tile-size: clamp(8.75rem, 24vw, 12rem);
+}
+
+[data-sponsor-tier="bronze"] .sponsor-logo-container {
+    --tile-size: clamp(8.25rem, 20vw, 10.5rem);
+}
+
+[data-sponsor-tier="community"] .sponsor-logo-container,
+[data-sponsor-tier="partner"] .sponsor-logo-container {
+    --tile-size: clamp(7.75rem, 18vw, 9.75rem);
 }
 
 .sponsor-logo-container:hover {
@@ -61,8 +84,11 @@ header.scrolled {
 }
 
 .sponsor-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
     max-width: 100%;
-    width: auto;
+    max-height: 100%;
     object-fit: contain;
 }
 
