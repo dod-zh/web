@@ -8,8 +8,8 @@
     <a href="/event/program/" class="text-white hover:text-gray-200">Program</a>
     {{ end }}
 
-    {{ if and (eq .Type "speaker") (not .IsHome) (not .IsSection) (.Parent) }}
-    <!-- Special handling for speaker detail pages (not the speakers list page) -->
+    {{ if and (eq .Type "speaker") (not .IsHome) (ne .RelPermalink "/speakers/") }}
+    <!-- Special handling for speaker detail pages -->
     <span class="mx-2 text-white" aria-hidden="true">→</span>
     <a href="/speakers/" class="text-white hover:text-gray-200">Speakers</a>
     {{ end }}

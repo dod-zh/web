@@ -9,6 +9,116 @@
     --rich-black-2: #0A1819;
 }
 
+/* Sticky Navigation */
+header {
+    position: -webkit-sticky !important;
+    /* Safari */
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background-color: white !important;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Add shadow when scrolled */
+header.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Sponsor Logo Styling - Uniform Sizes with Clear Hierarchy */
+.sponsor-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.sponsor-logo-container:hover {
+    border-color: var(--cerulean);
+    box-shadow: 0 4px 12px rgba(28, 128, 170, 0.1);
+    transform: translateY(-2px);
+}
+
+.sponsor-logo {
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Gold - Largest */
+.sponsor-logo-gold {
+    max-width: 180px;
+}
+
+/* Silver, Event, Coffee - Medium */
+.sponsor-logo-silver {
+    max-width: 150px;
+}
+
+.sponsor-logo-event {
+    max-width: 150px;
+}
+
+.sponsor-logo-coffee {
+    max-width: 150px;
+}
+
+/* Bronze, Community - Smaller */
+.sponsor-logo-bronze {
+    max-width: 120px;
+}
+
+.sponsor-logo-community {
+    max-width: 110px;
+}
+
+/* Mobile responsive grid layouts for sponsors */
+@media (max-width: 768px) {
+    .sponsor-logo-gold {
+        max-width: 140px;
+    }
+
+    .sponsor-logo-silver,
+    .sponsor-logo-event,
+    .sponsor-logo-coffee {
+        max-width: 120px;
+    }
+
+    .sponsor-logo-bronze {
+        max-width: 100px;
+    }
+
+    .sponsor-logo-community {
+        max-width: 90px;
+    }
+
+    /* Convert flex layouts to grid on mobile for better tile organization */
+    [data-sponsor-tier="gold"],
+    [data-sponsor-tier="silver"],
+    [data-sponsor-tier="event"],
+    [data-sponsor-tier="coffee"],
+    [data-sponsor-tier="community"],
+    [data-sponsor-tier="partner"] {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+}
+
+/* Fix spacing between sections */
+article>div>div>div {
+    margin-bottom: 2rem;
+}
+
+/* Ensure consistent spacing before sponsor sections */
+section.py-8 {
+    margin-top: 3rem;
+}
+
 /* Prose styling for content pages */
 .prose {
     color: var(--rich-black);
@@ -43,6 +153,11 @@
 .prose p {
     margin-bottom: 1.25rem;
     line-height: 1.75;
+}
+
+/* Remove top margin from first element to align with image */
+.prose>*:first-child {
+    margin-top: 0;
 }
 
 .prose ul,
@@ -145,6 +260,20 @@
 
 .group:hover .group-hover\:visible {
     visibility: visible;
+}
+
+/* Mobile menu styling for better readability */
+#mobile-menu {
+    background-color: white;
+}
+
+#mobile-menu a {
+    white-space: nowrap;
+}
+
+/* Ensure mobile menu buttons have proper contrast */
+#mobile-menu a[style*="background-color"] {
+    color: white !important;
 }
 
 /* Cookie consent styling */
@@ -264,6 +393,7 @@ a.bg-white {
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -281,6 +411,7 @@ a.bg-white {
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .btn-secondary:hover {

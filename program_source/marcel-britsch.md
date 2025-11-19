@@ -1,7 +1,20 @@
----
-type: "session"
-sessionId: "ignites/marcel-britsch"
----
++++
+City = "Zurich"
+Year = "2025"
+talk_date = "2025-03-16"
+talk_start_time = "14:00"
+talk_end_time = "14:30"
+title = "How I Started Worrying and Stopped Loving DevOps"
+type = "talk"
+speakers = ["marcel-britsch"]
+youtube = ""
+vimeo = ""
+speakerdeck = ""
+slideshare = ""
+slides = ""
++++
+
+### Ignite
 
 Summary:
 In this cautionary tale, I’ll share three real-world product-building experiences, mapping my journey as a product manager from a DevOps enthusiast to a wary cynic. I’ll share examples of how infrastructure can drift into ‘purgatory’: pipelines that are ‘never done,’ painfully complex to maintain, or beautifully engineered yet devoid of applications to support. My goal is to highlight the missteps I encountered, so future teams might avoid these traps and sidestep the costly pursuit of infrastructure perfection that can derail real progress.

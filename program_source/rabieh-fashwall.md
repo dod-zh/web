@@ -1,7 +1,20 @@
----
-type: "session"
-sessionId: "workshops/rabieh-fashwall"
----
++++
+City = "Zurich"
+Year = "2025"
+talk_date = "2025-03-16"
+talk_start_time = "14:00"
+talk_end_time = "14:30"
+title = "Building Infrastructure Tools with Kubernetes Operators and Go"
+type = "talk"
+speakers = ["rabieh-fashwall"]
+youtube = ""
+vimeo = ""
+speakerdeck = ""
+slideshare = ""
+slides = ""
++++
+
+### Workshop
 
 In this hands-on workshop, participants will learn how to build powerful infrastructure management tools using Kubernetes (K8s) Operators written in Go. Kubernetes Operators extend the functionality of Kubernetes by automating complex, domain-specific tasks, and managing custom resources at scale. Through this workshop, attendees will gain a deep understanding of the Operator pattern, best practices in Operator development, and how Go can be used to create robust, production-grade Operators.
 

@@ -23,11 +23,6 @@ Here's how we're making DevOpsDays Zurich more sustainable:
 - **Vegan options** for all lunches and breaks
 - **Minimal single-use plastics** in food service
 
-### Carbon Offset Program
-
-- **We will plant trees for every participant** attending the conference
-- Contributing to reforestation efforts in Switzerland
-
 ## Addressing Travel Emissions
 
 We are aware that the **largest CO2 emissions are caused by air travel**. Therefore, we have made it our goal to decrease the CO2 emissions caused by flights our speakers take to DevOpsDays year by year.

@@ -10,13 +10,22 @@
       "id": "alexander-ptakhin",
       "name": "Alexander Ptakhin",
       "image": "/images/speakers/alexander-ptakhin.webp",
-      "page": "/speakers/alexander-ptakhin/"
+      "page": "/speakers/alexander-ptakhin/",
+      "social": {
+        "linkedin": "https://linkedin.com/in/aptakhin",
+        "x": "https://x.com/aptakhin",
+        "web": "https://aptakhin.name/"
+      }
     },
     {
       "id": "alina-liburkina",
       "name": "Alina Liburkina",
       "image": "/images/speakers/alina-liburkina.webp",
-      "page": "/speakers/alina-liburkina/"
+      "page": "/speakers/alina-liburkina/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/alina-liburkina/",
+        "web": "https://codeartify.com/en/blog"
+      }
     },
     {
       "id": "alvaro-revuelta-m",
@@ -28,37 +37,64 @@
       "id": "antonio-alvino",
       "name": "Antonio Alvino",
       "image": "/images/speakers/antonio-alvino.webp",
-      "page": "/speakers/antonio-alvino/"
+      "page": "/speakers/antonio-alvino/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/antonioalvino/",
+        "web": "https://bsky.app/profile/tonylook.github.io"
+      }
     },
     {
       "id": "bertrand-delacretaz",
       "name": "Bertrand Delacretaz",
       "image": "/images/speakers/bertrand-delacretaz.webp",
-      "page": "/speakers/bertrand-delacretaz/"
+      "page": "/speakers/bertrand-delacretaz/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/bdelacretaz/",
+        "x": "https://x.com/bdelacretaz",
+        "web": "https://grep.codeconsult.ch/"
+      }
     },
     {
       "id": "carmine-vassallo",
       "name": "Carmine Vassallo",
       "image": "/images/speakers/carmine-vassallo.webp",
-      "page": "/speakers/carmine-vassallo/"
+      "page": "/speakers/carmine-vassallo/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/carmine-vassallo",
+        "x": "https://x.com/ccvassallo"
+      }
     },
     {
       "id": "christina-kraus",
       "name": "Christina Kraus",
       "image": "/images/speakers/christina-kraus.webp",
-      "page": "/speakers/christina-kraus/"
+      "page": "/speakers/christina-kraus/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/krauschristina/",
+        "x": "https://x.com/meshstack",
+        "web": "https://www.meshcloud.io/en"
+      }
     },
     {
       "id": "daiany-palacios",
       "name": "Daiany Palacios",
       "image": "/images/speakers/daiany-palacios.webp",
-      "page": "/speakers/daiany-palacios/"
+      "page": "/speakers/daiany-palacios/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/daiany-palacios/",
+        "x": "https://x.com/DaianyMargarita",
+        "web": "https://daiany-palacios.com/"
+      }
     },
     {
       "id": "daniel-raniz-raneland",
       "name": "Daniel Raniz Raneland",
       "image": "/images/speakers/daniel-raniz-raneland.webp",
-      "page": "/speakers/daniel-raniz-raneland/"
+      "page": "/speakers/daniel-raniz-raneland/",
+      "social": {
+        "linkedin": "https://linkedin.com/in/raneland",
+        "web": "https://factor10.com/"
+      }
     },
     {
       "id": "darko-fabijan",
@@ -70,19 +106,29 @@
       "id": "dorota-parad",
       "name": "Dorota Parad",
       "image": "/images/speakers/dorota-parad.webp",
-      "page": "/speakers/dorota-parad/"
+      "page": "/speakers/dorota-parad/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/dorota-parad/",
+        "web": "https://authress.io/"
+      }
     },
     {
       "id": "jonas-alder",
       "name": "Jonas Alder",
       "image": "/images/speakers/jonas-alder.webp",
-      "page": "/speakers/jonas-alder/"
+      "page": "/speakers/jonas-alder/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/jonas-alder/"
+      }
     },
     {
       "id": "kamali-wickramage",
       "name": "Kamali Wickramage",
       "image": "/images/speakers/kamali-wickramage.webp",
-      "page": "/speakers/kamali-wickramage/"
+      "page": "/speakers/kamali-wickramage/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/kamali-w"
+      }
     },
     {
       "id": "kenny-baas-schwegler",
@@ -100,79 +146,133 @@
       "id": "manisha-de",
       "name": "Manisha De",
       "image": "/images/speakers/manisha-de.webp",
-      "page": "/speakers/manisha-de/"
+      "page": "/speakers/manisha-de/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/manisha-de-58616483/",
+        "web": "https://www.swisscom.ch/"
+      }
     },
     {
       "id": "marc-herren",
       "name": "Marc Herren",
       "image": "/images/speakers/marc-herren.webp",
-      "page": "/speakers/marc-herren/"
+      "page": "/speakers/marc-herren/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/marc-herren-7181b0ab/",
+        "web": "https://remmen.io/"
+      }
     },
     {
       "id": "marc-sallin",
       "name": "Marc Sallin",
       "image": "/images/speakers/marc-sallin.webp",
-      "page": "/speakers/marc-sallin/"
+      "page": "/speakers/marc-sallin/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/marcsallin/",
+        "x": "https://x.com/marcsallin"
+      }
     },
     {
       "id": "marc-schuh",
       "name": "Marc Schuh",
       "image": "/images/speakers/marc-schuh.webp",
-      "page": "/speakers/marc-schuh/"
+      "page": "/speakers/marc-schuh/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/dr-marc-schuh-aba23697/",
+        "web": "https://www.tngtech.com/"
+      }
     },
     {
       "id": "marcel-britsch",
       "name": "Marcel Britsch",
       "image": "/images/speakers/marcel-britsch.webp",
-      "page": "/speakers/marcel-britsch/"
+      "page": "/speakers/marcel-britsch/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/marcelbritsch/",
+        "web": "https://www.thedigitalbusinessanalyst.co.uk/"
+      }
     },
     {
       "id": "marcelo-ancelmo",
       "name": "Marcelo Ancelmo",
       "image": "/images/speakers/marcelo-ancelmo.webp",
-      "page": "/speakers/marcelo-ancelmo/"
+      "page": "/speakers/marcelo-ancelmo/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/marceloancelmo/",
+        "x": "https://x.com/marceloancelmo",
+        "web": "https://marceloancelmo.com/"
+      }
     },
     {
       "id": "marco-goncalves",
       "name": "Marco Gonçalves",
       "image": "/images/speakers/marco-goncalves.webp",
-      "page": "/speakers/marco-goncalves/"
+      "page": "/speakers/marco-goncalves/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/marco-ant%C3%B3nio-gon%C3%A7alves-6b865744",
+        "web": "https://www.swisscom.ch/"
+      }
     },
     {
       "id": "oliver-zihler",
       "name": "Oliver Zihler",
       "image": "/images/speakers/oliver-zihler.webp",
-      "page": "/speakers/oliver-zihler/"
+      "page": "/speakers/oliver-zihler/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/oliver-zihler",
+        "web": "https://codeartify.com/en/blog"
+      }
     },
     {
       "id": "peter-farkas",
       "name": "Peter Farkas",
       "image": "/images/speakers/peter-farkas.webp",
-      "page": "/speakers/peter-farkas/"
+      "page": "/speakers/peter-farkas/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/peter--farkas/",
+        "web": "https://www.linkedin.com/in/peter--farkas/"
+      }
     },
     {
       "id": "philipp-moser",
       "name": "Philipp Moser",
       "image": "/images/speakers/philipp-moser.webp",
-      "page": "/speakers/philipp-moser/"
+      "page": "/speakers/philipp-moser/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/philipp-moser-6ab2351b2",
+        "web": "https://medium.com/@philipp.moser.andamp"
+      }
     },
     {
       "id": "pia-wiedermayer",
       "name": "Pia Wiedermayer",
       "image": "/images/speakers/pia-wiedermayer.webp",
-      "page": "/speakers/pia-wiedermayer/"
+      "page": "/speakers/pia-wiedermayer/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/piawiedermayer/",
+        "web": "https://www.piawiedermayer.com/"
+      }
     },
     {
       "id": "rabieh-fashwall",
       "name": "Rabieh Fashwall",
       "image": "/images/speakers/rabieh-fashwall.webp",
-      "page": "/speakers/rabieh-fashwall/"
+      "page": "/speakers/rabieh-fashwall/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/rabieh-fashwall/",
+        "x": "https://x.com/rabieh_fashwall",
+        "web": "https://medium.com/@rfashwal"
+      }
     },
     {
       "id": "rasmus-lystrom",
       "name": "Rasmus Lystrøm",
       "image": "/images/speakers/rasmus-lystrom.webp",
-      "page": "/speakers/rasmus-lystrom/"
+      "page": "/speakers/rasmus-lystrom/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/rasmuslystroem/",
+        "web": "https://ondfisk.dk/"
+      }
     },
     {
       "id": "robert-lehmann",
@@ -190,19 +290,31 @@
       "id": "stefan-pezzei",
       "name": "Stefan Pezzei",
       "image": "/images/speakers/stefan-pezzei.webp",
-      "page": "/speakers/stefan-pezzei/"
+      "page": "/speakers/stefan-pezzei/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/stefanpezzei/",
+        "web": "https://medium.com/@stefan.pezzei"
+      }
     },
     {
       "id": "thomas-krag",
       "name": "Thomas Krag",
       "image": "/images/speakers/thomas-krag.webp",
-      "page": "/speakers/thomas-krag/"
+      "page": "/speakers/thomas-krag/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/vikingops/",
+        "web": "https://teamtopologies.com/all-tta/thomas-krag"
+      }
     },
     {
       "id": "verena-traub",
       "name": "Verena Traub",
       "image": "/images/speakers/verena-traub.webp",
-      "page": "/speakers/verena-traub/"
+      "page": "/speakers/verena-traub/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/verena-traub/",
+        "web": "https://rehersal.io/"
+      }
     }
   ]
 }

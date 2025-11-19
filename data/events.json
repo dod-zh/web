@@ -3,7 +3,7 @@
     {
       "year": 2026,
       "date": "2026-05-06",
-      "endDate": "2026-06-07",
+      "endDate": "2026-05-07",
       "status": "upcoming",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
@@ -12,8 +12,8 @@
     },
     {
       "year": 2025,
-      "date": "2025-06-15",
-      "endDate": "2025-06-16",
+      "date": "2025-03-12",
+      "endDate": "2025-03-13",
       "status": "past",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
@@ -22,8 +22,8 @@
     },
     {
       "year": 2024,
-      "date": "2024-06-10",
-      "endDate": "2024-06-11",
+      "date": "2024-04-16",
+      "endDate": "2024-04-17",
       "status": "past",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
@@ -32,8 +32,8 @@
     },
     {
       "year": 2023,
-      "date": "2023-06-12",
-      "endDate": "2023-06-13",
+      "date": "2023-05-03",
+      "endDate": "2023-05-04",
       "status": "past",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
@@ -42,63 +42,53 @@
     },
     {
       "year": 2022,
-      "date": "2023-06-12",
-      "endDate": "2023-06-13",
+      "date": "2022-05-31",
+      "endDate": "2022-06-01",
       "status": "past",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
-      "attendees": 250,
-      "theme": "Culture & Automation"
-    },
-    {
-      "year": 2022,
-      "date": "2023-06-12",
-      "endDate": "2023-06-13",
-      "status": "past",
-      "venue": "Alte Kaserne",
-      "city": "Winterthur",
-      "attendees": 250,
-      "theme": "Culture & Automation"
+      "attendees": 230,
+      "theme": "Collaboration & Innovation"
     },
     {
       "year": 2021,
-      "date": "2023-06-12",
-      "endDate": "2023-06-13",
+      "date": "2021-09-07",
+      "endDate": "2021-09-08",
       "status": "past",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
-      "attendees": 250,
-      "theme": "Culture & Automation"
+      "attendees": 200,
+      "theme": "Resilience & Recovery"
     },
     {
       "year": 2019,
-      "date": "2023-06-12",
-      "endDate": "2023-06-13",
+      "date": "2019-05-14",
+      "endDate": "2019-05-15",
       "status": "past",
-      "venue": "Alte Kaserne",
-      "city": "Winterthur",
-      "attendees": 250,
-      "theme": "Culture & Automation"
+      "venue": "Technopark",
+      "city": "Zurich",
+      "attendees": 280,
+      "theme": "DevOps Transformation"
     },
     {
       "year": 2018,
-      "date": "2023-06-12",
-      "endDate": "2023-06-13",
+      "date": "2018-05-02",
+      "endDate": "2018-05-03",
       "status": "past",
-      "venue": "Alte Kaserne",
-      "city": "Winterthur",
+      "venue": "Technopark",
+      "city": "Zurich",
       "attendees": 250,
-      "theme": "Culture & Automation"
+      "theme": "Automation & Culture"
     },
     {
       "year": 2017,
-      "date": "2023-06-12",
-      "endDate": "2023-06-13",
+      "date": "2017-05-03",
+      "endDate": "2017-05-04",
       "status": "past",
-      "venue": "Alte Kaserne",
-      "city": "Winterthur",
-      "attendees": 250,
-      "theme": "Culture & Automation"
+      "venue": "Technopark",
+      "city": "Zurich",
+      "attendees": 200,
+      "theme": "DevOps Practices"
     }
   ]
 }
