@@ -1,7 +1,7 @@
 {
   "sponsors": [
     {
-      "id": "sponsor-6",
+      "id": "sponsor-01",
       "name": "VSHN AG",
       "level": "gold",
       "logo": "/images/sponsors/vshn.webp",
@@ -10,25 +10,34 @@
       "featured": true
     },
     {
-      "id": "sponsor-7",
+      "id": "sponsor-02",
+      "name": "Cloudscale.ch",
+      "level": "gold",
+      "logo": "/images/sponsors/cloudscalech.webp",
+      "website": "https://www.cloudscale.ch/",
+      "description": "Gold Sponsor",
+      "featured": true
+    },
+    {
+      "id": "sponsor-03",
+      "name": "Redgate",
+      "level": "gold",
+      "logo": "/images/sponsors/redgate.webp",
+      "website": "https://www.red-gate.com/solutions/database-devops/",
+      "description": "Gold Sponsor",
+      "featured": true
+    },
+    {
+      "id": "sponsor-04",
       "name": "BIT",
       "level": "gold",
       "logo": "/images/sponsors/bit.webp",
       "website": "https://www.bit.admin.ch/",
       "description": "Gold Sponsor",
-      "featured": true
+      "featured": false
     },
     {
-      "id": "sponsor-8",
-      "name": "Redgate",
-      "level": "gold",
-      "logo": "/images/sponsors/redgate.webp",
-      "website": "https://www.red-gate.com/",
-      "description": "Gold Sponsor",
-      "featured": true
-    },
-    {
-      "id": "sponsor-10",
+      "id": "sponsor-05",
       "name": "Infometis",
       "level": "silver",
       "logo": "/images/sponsors/infometis.webp",
@@ -37,124 +46,25 @@
       "featured": false
     },
     {
-      "id": "sponsor-13",
-      "name": "Cloudscale.ch",
-      "level": "gold",
-      "logo": "/images/sponsors/cloudscalech.webp",
-      "website": "https://www.cloudscale.ch/",
-      "description": "Evening Event, Coffee, Meal Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-14",
-      "name": "Exoscale",
+      "id": "sponsor-06",
+      "name": "Xelon",
       "level": "event",
-      "logo": "/images/sponsors/exoscale.webp",
-      "website": "https://www.exoscale.com/",
+      "logo": "/images/sponsors/xelon.png",
+      "website": "https://www.xelon.ch/",
       "description": "Evening Event, Coffee, Meal Sponsor",
       "featured": false
     },
     {
-      "id": "sponsor-15",
-      "name": "Eficode",
-      "level": "event",
-      "logo": "/images/sponsors/eficode.webp",
-      "website": "https://www.eficode.com/",
-      "description": "Evening Event, Coffee, Meal Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-16",
-      "name": "Amanox",
+      "id": "sponsor-07",
+      "name": "Zuehlke",
       "level": "bronze",
-      "logo": "/images/sponsors/amanox.webp",
-      "website": "https://www.amanox.ch/",
+      "logo": "/images/sponsors/zuehlke.png",
+      "website": "https://www.zuehlke.com/",
       "description": "Bronze Sponsor",
       "featured": false
     },
     {
-      "id": "sponsor-17",
-      "name": "cognizant",
-      "level": "bronze",
-      "logo": "/images/sponsors/cognizant.webp",
-      "website": "https://www.cognizant.com/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-18",
-      "name": "dbi services",
-      "level": "bronze",
-      "logo": "/images/sponsors/dbi-services.webp",
-      "website": "https://www.dbi-services.com/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-19",
-      "name": "Checkmarx",
-      "level": "bronze",
-      "logo": "/images/sponsors/checkmarx.webp",
-      "website": "https://www.checkmarx.com/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-20",
-      "name": "Infiniroot",
-      "level": "bronze",
-      "logo": "/images/sponsors/infiniroot.webp",
-      "website": "https://www.infiniroot.com/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-21",
-      "name": "Ciklum",
-      "level": "bronze",
-      "logo": "/images/sponsors/ciklum.webp",
-      "website": "https://www.ciklum.com/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-22",
-      "name": "cloudbees",
-      "level": "bronze",
-      "logo": "/images/sponsors/cloudbees.webp",
-      "website": "https://www.cloudbees.com/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-23",
-      "name": "datastore",
-      "level": "bronze",
-      "logo": "/images/sponsors/datastore.webp",
-      "website": "https://www.datastore.ch/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-24",
-      "name": "Zesty",
-      "level": "bronze",
-      "logo": "/images/sponsors/zesty.webp",
-      "website": "https://zesty.co/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-25",
-      "name": "Couchbase",
-      "level": "bronze",
-      "logo": "/images/sponsors/couchbase.webp",
-      "website": "https://www.couchbase.com/",
-      "description": "Bronze Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-26",
+      "id": "sponsor-08",
       "name": "Powercoders",
       "level": "community",
       "logo": "/images/sponsors/powercoders.webp",
@@ -163,25 +73,25 @@
       "featured": false
     },
     {
-      "id": "sponsor-27",
+      "id": "sponsor-09",
       "name": "belikegrace",
       "level": "community",
       "logo": "/images/sponsors/belikegrace.webp",
-      "website": "https://belikegrace.com/",
+      "website": "https://www.belikegrace.ch/",
       "description": "Community Sponsor",
       "featured": false
     },
     {
-      "id": "sponsor-28",
+      "id": "sponsor-10",
       "name": "girlscodetoo",
       "level": "community",
       "logo": "/images/sponsors/girlscodetoo.webp",
-      "website": "https://girlscodetoo.ch/",
+      "website": "https://www.girlscodetoo.ch/",
       "description": "Community Sponsor",
       "featured": false
     },
     {
-      "id": "sponsor-29",
+      "id": "sponsor-11",
       "name": "businessmap",
       "level": "partner",
       "logo": "/images/sponsors/businessmap.webp",
@@ -190,7 +100,7 @@
       "featured": false
     },
     {
-      "id": "sponsor-30",
+      "id": "sponsor-12",
       "name": "Hostpoint",
       "level": "partner",
       "logo": "/images/sponsors/hostpoint.webp",
@@ -199,20 +109,20 @@
       "featured": false
     },
     {
-      "id": "sponsor-31",
+      "id": "sponsor-13",
       "name": "Digicomp",
       "level": "partner",
       "logo": "/images/sponsors/digicomp.webp",
-      "website": "https://www.digicomp.ch/",
+      "website": "https://www.digicomp.ch/weiterbildung-digital-transformation-technologies/devops",
       "description": "Partner Sponsor",
       "featured": false
     },
     {
-      "id": "sponsor-32",
+      "id": "sponsor-14",
       "name": "puresivefilms",
       "level": "partner",
       "logo": "/images/sponsors/puresivefilms.webp",
-      "website": "https://puresivefilms.com/",
+      "website": "https://www.puresivefilms.com/",
       "description": "Partner Sponsor",
       "featured": false
     }
