@@ -28,20 +28,52 @@ This repository contains the source code for the DevOpsDays Zurich website, buil
 3. **Open your browser**
    Navigate to `http://localhost:1313`
 
-### Using Dev Container
+### Using Dev Container (Recommended)
 
-For a consistent development environment:
+This project includes a fully configured dev container with Hugo, Go, Node.js, and all necessary tools pre-installed.
+
+#### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) or compatible container runtime
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+#### Setup
 
 1. **Open in VS Code**
-   - Install the "Dev Containers" extension
-   - Open the project folder
-   - Click "Reopen in Container" when prompted
+   - Open the project folder in VS Code
+   - When prompted, click "Reopen in Container"
+   - Or use Command Palette (F1) → "Dev Containers: Reopen in Container"
 
-2. **Start Hugo server inside container**
+2. **Wait for container to build**
+   - First build may take a few minutes
+   - Subsequent launches are much faster
+
+3. **Start Hugo server**
 
    ```bash
    hugo server -D --bind 0.0.0.0
    ```
+
+4. **Access the site**
+   - The site will be available at `http://localhost:1313`
+   - VS Code will automatically forward the port
+
+#### What's Included
+
+- **Hugo Extended** - Latest version with SCSS/SASS support
+- **Go** - Required for Hugo modules
+- **Node.js & npm** - For build tools and dependencies
+- **Git & GitHub CLI** - Version control and GitHub integration
+- **Common CLI tools** - curl, wget, jq, and more
+
+#### Benefits
+
+- ✅ Consistent environment across all developers
+- ✅ No need to install Hugo or dependencies locally
+- ✅ Isolated from your host system
+- ✅ Easy onboarding for new team members
+- ✅ Same environment used in CI/CD
 
 ## 📁 Project Structure
 
@@ -53,11 +85,18 @@ devopsdays_ch-web/
 │   ├── event/            # Event-related pages
 │   └── about/            # About section pages
 ├── data/                 # JSON data files
-│   ├── sessions.json     # Session information
-│   ├── speakers.json     # Speaker profiles
-│   ├── sponsors.json     # Sponsor information
-│   ├── team.json         # Team member details
-│   └── events.json       # Past and current events
+│   ├── events.json       # Past and future events timeline
+│   ├── sessions.json     # Conference sessions and schedule
+│   ├── speakers.json     # Speaker basic info (IDs, names, images)
+│   ├── sponsors.json     # Sponsor information by tier
+│   └── team.json         # Organizing team member details
+├── docs/                 # Project documentation
+│   └── README.md        # Documentation index
+├── scripts/              # Helper scripts
+│   ├── generate-sessions.js        # Session generation script
+│   ├── download-speaker-images.sh  # Speaker image downloader
+│   ├── download-sponsor-images.sh  # Sponsor image downloader
+│   └── download-team-images.sh     # Team image downloader
 ├── static/               # Static assets
 │   ├── css/             # Custom stylesheets
 │   ├── images/          # Images and logos
@@ -92,18 +131,26 @@ Edit `data/sessions.json`:
 
 ```json
 {
-  "id": "session-id",
-  "title": "Session Title",
-  "type": "talk|keynote|ignite|workshop",
-  "day": 1,
-  "time": "10:00",
-  "duration": 30,
-  "speaker": "speaker-id",
-  "description": "Brief description",
-  "abstract": "Detailed abstract",
-  "room": "Room Name"
+  "sessions": [
+    {
+      "id": "talks/session-slug",
+      "title": "Session Title",
+      "type": "talk|keynote|ignite|workshop|other",
+      "day": "2025-03-12",
+      "time": "10:00 - 10:45",
+      "speakers": ["speaker-id"]
+    }
+  ]
 }
 ```
+
+**Session Types:**
+
+- `talk` - Regular 45-minute talk
+- `keynote` - Keynote presentation
+- `ignite` - 5-minute lightning talk
+- `workshop` - Hands-on workshop session
+- `other` - Registration, breaks, social events
 
 #### Speaker Profiles
 
@@ -111,17 +158,80 @@ Edit `data/speakers.json`:
 
 ```json
 {
-  "id": "speaker-id",
-  "name": "Speaker Name",
-  "title": "Job Title",
-  "company": "Company Name",
-  "bio": "Speaker biography",
-  "image": "/images/speakers/speaker.jpg",
-  "social": {
-    "twitter": "@handle",
-    "linkedin": "profile",
-    "website": "https://example.com"
-  }
+  "speakers": [
+    {
+      "id": "speaker-slug",
+      "name": "Speaker Name",
+      "image": "/images/speakers/speaker-slug.webp",
+      "page": "/speakers/speaker-slug/"
+    }
+  ]
+}
+```
+
+**Note:** Detailed speaker bios are stored in markdown files at `content/speakers/speaker-slug.md`
+
+#### Sponsor Information
+
+Edit `data/sponsors.json`:
+
+```json
+{
+  "sponsors": [
+    {
+      "id": "sponsor-id",
+      "name": "Company Name",
+      "level": "platinum|gold|silver|bronze",
+      "logo": "/images/sponsors/logo.webp",
+      "website": "https://example.com",
+      "description": "Sponsor tier",
+      "featured": true
+    }
+  ]
+}
+```
+
+#### Team Members
+
+Edit `data/team.json`:
+
+```json
+{
+  "team": [
+    {
+      "id": "team-id",
+      "name": "Team Member Name",
+      "role": "Organizer|Volunteer",
+      "bio": "Biography text",
+      "image": "/images/team/member.webp",
+      "email": "email@example.com",
+      "social": {
+        "twitter": "@handle",
+        "linkedin": "linkedin-username"
+      }
+    }
+  ]
+}
+```
+
+#### Events History
+
+Edit `data/events.json`:
+
+```json
+{
+  "events": [
+    {
+      "year": 2025,
+      "date": "2025-06-15",
+      "endDate": "2025-06-16",
+      "status": "upcoming|current|past",
+      "venue": "Venue Name",
+      "city": "City",
+      "attendees": 300,
+      "theme": "Event Theme"
+    }
+  ]
 }
 ```
 
@@ -143,24 +253,49 @@ type: "custom-layout-type"
 ### Program Page
 
 - Automatically generates schedule from `data/sessions.json`
+- Groups sessions by day and time
 - Links sessions to speaker profiles
-- Color-coded by session type
+- Color-coded by session type (talks, keynotes, ignites, workshops)
+
+### Speakers Page
+
+- Displays speaker profiles with images
+- Combines data from `data/speakers.json` and `content/speakers/*.md`
+- Supports social media links
+- Links to individual speaker detail pages
 
 ### Sponsors Page
 
 - Displays sponsors by tier (Platinum, Gold, Silver, Bronze)
 - Pulls data from `data/sponsors.json`
-- Featured sponsors appear in header
+- Featured sponsors can appear in header/footer
+- Links to sponsor websites
 
-### Contact Page
+### Contact/Team Page
 
 - Shows team member cards from `data/team.json`
-- Contact forms and information
+- Displays organizer and volunteer information
+- Includes social media links and email contacts
 
 ### Past Events
 
 - Historical event information from `data/events.json`
+- Displays event timeline with attendance numbers
 - Archives and links to previous content
+
+## 📊 Data Files
+
+All structured data is stored in JSON files in the `/data` directory:
+
+| File | Purpose | Structure |
+|------|---------|-----------|
+| `sessions.json` | Conference sessions and schedule | Array of session objects with type, time, speakers |
+| `speakers.json` | Speaker basic info and references | Array of speaker objects with ID, name, image |
+| `sponsors.json` | Sponsor information and logos | Array of sponsor objects by tier |
+| `team.json` | Organizing team members | Array of team member objects |
+| `events.json` | Past and future events | Array of event objects with dates and stats |
+
+**Note:** Speaker detailed bios are stored as markdown files in `content/speakers/` directory.
 
 ## 🚀 Deployment
 
@@ -185,20 +320,109 @@ hugo --minify
 
 ### Site Configuration (`config.yaml`)
 
-Key configuration options:
+The site configuration is managed in `config.yaml`. Here are the main sections:
 
-- **baseURL**: Your domain
-- **title**: Site title
-- **params**: Custom parameters
-- **menu**: Navigation structure
-- **privacy**: GDPR settings
+#### Basic Settings
+
+```yaml
+baseURL: 'https://devopsdays.ch'
+languageCode: 'en-us'
+title: DevOpsDays Zurich
+theme: 'devopsdays'
+```
+
+- **baseURL**: Your production domain
+- **languageCode**: Language code for the site (e.g., 'en-us', 'de-ch')
+- **title**: Site title displayed in browser and meta tags
+- **theme**: Hugo theme name (must match folder in `themes/`)
+
+#### Custom Parameters
+
+```yaml
+params:
+  description: 'Site description for SEO'
+  author: 'DevOpsDays Zurich Team'
+  keywords: 'devops, switzerland, conference, community, automation, culture'
+  social:
+    linkedin: 'https://www.linkedin.com/company/devopsdays-zurich'
+    vimeo: 'https://vimeo.com/devopsdayszh'
+    flickr: 'https://www.flickr.com/photos/...'
+  features:
+    show_program: true      # Show/hide program page
+    show_tickets: true      # Show/hide tickets page
+    show_cfp: false         # Show/hide Call for Papers
+    show_speakers: true     # Show/hide speakers page
+    cfp_url: 'https://sessionize.com/...'  # CFP platform URL
+```
+
+**Feature Flags**: Use the `features` section to toggle site sections on/off without removing content.
+
+#### Markup Configuration
+
+```yaml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true          # Allow raw HTML in markdown
+  highlight:
+    style: github           # Syntax highlighting theme
+    lineNos: true           # Show line numbers in code blocks
+```
+
+#### Menu Structure
+
+The navigation menu supports multi-level hierarchies:
+
+```yaml
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10          # Lower weight = appears first
+    - name: "Event"
+      url: "/event/"
+      weight: 20
+      identifier: "event" # Required for parent items
+    - name: "Tickets"
+      url: "/event/tickets/"
+      parent: "event"     # Creates submenu under "Event"
+      weight: 21
+```
+
+**Tips:**
+
+- Use `identifier` for parent menu items
+- Use `parent` to create submenus
+- Use `weight` to control ordering (lower numbers appear first)
+- Keep weight gaps (10, 20, 30) to allow easy insertion of new items
+
+#### Output Formats
+
+```yaml
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"      # Creates /feed.xml instead of /index.xml
+```
+
+#### Privacy Settings (GDPR Compliance)
+
+```yaml
+privacy:
+  googleAnalytics:
+    disable: false              # Set to true to disable Google Analytics
+    anonymizeIP: true           # Anonymize visitor IP addresses
+    respectDoNotTrack: true     # Respect browser Do Not Track setting
+```
 
 ### Environment Variables
 
 For production deployment:
 
-- `HUGO_ENV=production`
-- `HUGO_VERSION=latest`
+```bash
+HUGO_ENV=production    # Enables production optimizations
+HUGO_VERSION=latest    # Hugo version (or specific version like 0.120.0)
+```
 
 ## 🎨 Customization
 

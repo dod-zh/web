@@ -39,8 +39,9 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/custom.css">
 
-    <!-- GDPR Cookie Consent -->
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.9.2/dist/cookieconsent.js"></script>
+    <!-- GDPR Cookie Consent v3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+    <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js"></script>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -81,20 +82,60 @@
     {{ partial "sponsors.html" . }}
     {{ partial "footer.html" . }}
 
-    <!-- Cookie Consent Script -->
+    <!-- Cookie Consent Configuration -->
     <script>
         window.addEventListener('load', function () {
-            cookieconsent.run({
-                "notice_banner_type": "simple",
-                "consent_type": "express",
-                "palette": "light",
-                "language": "en",
-                "page_load_consent_levels": ["strictly-necessary"],
-                "notice_banner_reject_button_hide": false,
-                "preferences_center_close_button_hide": false,
-                "page_refresh_confirmation_buttons": false,
-                "website_name": "DevOpsDays Zurich"
-            });
+            // Check if CookieConsent (v3) is loaded before trying to use it
+            if (typeof CookieConsent !== 'undefined') {
+                CookieConsent.run({
+                    categories: {
+                        necessary: {
+                            enabled: true,
+                            readOnly: true
+                        },
+                        analytics: {}
+                    },
+                    language: {
+                        default: 'en',
+                        translations: {
+                            en: {
+                                consentModal: {
+                                    title: 'We use cookies',
+                                    description: 'We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept all", you consent to our use of cookies.',
+                                    acceptAllBtn: 'Accept all',
+                                    acceptNecessaryBtn: 'Reject all',
+                                    showPreferencesBtn: 'Manage preferences'
+                                },
+                                preferencesModal: {
+                                    title: 'Manage cookie preferences',
+                                    acceptAllBtn: 'Accept all',
+                                    acceptNecessaryBtn: 'Reject all',
+                                    savePreferencesBtn: 'Accept current selection',
+                                    closeIconLabel: 'Close modal',
+                                    sections: [
+                                        {
+                                            title: 'Cookie Usage',
+                                            description: 'DevOpsDays Zurich uses cookies to improve your experience on our website.'
+                                        },
+                                        {
+                                            title: 'Strictly Necessary Cookies',
+                                            description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
+                                            linkedCategory: 'necessary'
+                                        },
+                                        {
+                                            title: 'Analytics Cookies',
+                                            description: 'These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.',
+                                            linkedCategory: 'analytics'
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                });
+            } else {
+                console.warn('Cookie consent library failed to load');
+            }
         });
     </script>
 </body>

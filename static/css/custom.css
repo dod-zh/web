@@ -457,12 +457,12 @@ h6 {
 }
 
 /* Link styling consistency */
-a:not(.btn-primary):not(.btn-secondary):not(.border-2):not(.bg-white) {
+a:not(.btn-primary):not(.btn-secondary):not(.border-2):not(.bg-white):not(.text-white) {
     color: var(--cerulean);
     transition: color 0.3s ease;
 }
 
-a:not(.btn-primary):not(.btn-secondary):not(.border-2):not(.bg-white):hover {
+a:not(.btn-primary):not(.btn-secondary):not(.border-2):not(.bg-white):not(.text-white):hover {
     color: var(--indigo-dye);
 }
 
@@ -590,4 +590,24 @@ nav.breadcrumbs span,
 .breadcrumbs span,
 nav[class*="breadcrumb"] span {
     color: white !important;
+}
+
+/* Mobile menu button contrast fix - ensure white text on blue background buttons */
+/* Only target the CTA buttons at the bottom of mobile menu, not navigation items */
+#mobile-menu a.text-white[href="/event/tickets/"],
+#mobile-menu a.text-white[href="/event/tickets/"]:link,
+#mobile-menu a.text-white[href="/event/tickets/"]:visited,
+#mobile-menu a.text-white[href="/event/tickets/"]:hover,
+#mobile-menu a.text-white[href="/event/tickets/"]:active {
+    color: white !important;
+    background-color: var(--cerulean) !important;
+}
+
+#mobile-menu a.text-white[href*="cfp"],
+#mobile-menu a.text-white[href*="cfp"]:link,
+#mobile-menu a.text-white[href*="cfp"]:visited,
+#mobile-menu a.text-white[href*="cfp"]:hover,
+#mobile-menu a.text-white[href*="cfp"]:active {
+    color: white !important;
+    background-color: var(--indigo-dye) !important;
 }

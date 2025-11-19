@@ -81,6 +81,12 @@ Home → [Parent] → Current Page
 Home → Program → Session Title
 ```
 
+### Speaker Pages (Special Case)
+
+```
+Home → Speakers → Speaker Name
+```
+
 ### Pages with Auto-Detected Parents
 
 - Team: `Home → About → Team`
@@ -103,6 +109,7 @@ Home (always present)
 ### Special Type Handling
 
 - Session pages (`type: "session"`) automatically link to `/event/program/` as parent
+- Speaker detail pages (`type: "speaker"`) automatically link to `/speakers/` as parent
 
 ### Styling
 

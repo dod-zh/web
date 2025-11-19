@@ -1,0 +1,53 @@
+{{/*
+Session Type Styling Partial
+Returns a dict with styling information for a session type
+Usage: {{ $styling := partial "session-type-styling.html" .type }}
+*/}}
+
+{{ $type := . }}
+{{ $borderColor := "gray" }}
+{{ $bgColor := "gray-50" }}
+{{ $textColor := "gray" }}
+{{ $icon := "📋" }}
+{{ $typeName := "Event" }}
+{{ $showLabel := false }}
+
+{{ if eq $type "keynote" }}
+{{ $borderColor = "red" }}
+{{ $bgColor = "red-50" }}
+{{ $textColor = "red" }}
+{{ $icon = "🎤" }}
+{{ $typeName = "Keynote" }}
+{{ $showLabel = true }}
+{{ else if eq $type "talk" }}
+{{ $borderColor = "green" }}
+{{ $bgColor = "green-50" }}
+{{ $textColor = "green" }}
+{{ $icon = "💬" }}
+{{ $typeName = "Talk" }}
+{{ $showLabel = true }}
+{{ else if eq $type "ignite" }}
+{{ $borderColor = "yellow" }}
+{{ $bgColor = "yellow-50" }}
+{{ $textColor = "yellow" }}
+{{ $icon = "⚡" }}
+{{ $typeName = "Ignite" }}
+{{ $showLabel = true }}
+{{ else if eq $type "workshop" }}
+{{ $borderColor = "purple" }}
+{{ $bgColor = "purple-50" }}
+{{ $textColor = "purple" }}
+{{ $icon = "🛠️" }}
+{{ $typeName = "Workshop" }}
+{{ $showLabel = true }}
+{{ else if eq $type "openspace" }}
+{{ $borderColor = "orange" }}
+{{ $bgColor = "orange-50" }}
+{{ $textColor = "orange" }}
+{{ $icon = "🌐" }}
+{{ $typeName = "Open Space" }}
+{{ $showLabel = true }}
+{{ end }}
+
+{{ return (dict "borderColor" $borderColor "bgColor" $bgColor "textColor" $textColor "icon" $icon "typeName" $typeName
+"showLabel" $showLabel) }}
