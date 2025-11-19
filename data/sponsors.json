@@ -1,15 +1,6 @@
 {
   "sponsors": [
     {
-      "id": "sponsor-5",
-      "name": "infomaniak",
-      "level": "gold",
-      "logo": "/images/sponsors/infomaniak.webp",
-      "website": "https://www.infomaniak.com/",
-      "description": "Gold Sponsor",
-      "featured": true
-    },
-    {
       "id": "sponsor-6",
       "name": "VSHN AG",
       "level": "gold",
@@ -37,15 +28,6 @@
       "featured": true
     },
     {
-      "id": "sponsor-9",
-      "name": "Elastic",
-      "level": "gold",
-      "logo": "/images/sponsors/elastic.webp",
-      "website": "https://www.elastic.co/",
-      "description": "Gold Sponsor",
-      "featured": true
-    },
-    {
       "id": "sponsor-10",
       "name": "Infometis",
       "level": "silver",
@@ -55,27 +37,9 @@
       "featured": false
     },
     {
-      "id": "sponsor-11",
-      "name": "Zürcher Kantonalbank",
-      "level": "silver",
-      "logo": "/images/sponsors/zkb.webp",
-      "website": "https://www.zkb.ch/",
-      "description": "Silver Sponsor",
-      "featured": false
-    },
-    {
-      "id": "sponsor-12",
-      "name": "4data",
-      "level": "silver",
-      "logo": "/images/sponsors/4data.webp",
-      "website": "https://www.4data.ch/",
-      "description": "Silver Sponsor",
-      "featured": false
-    },
-    {
       "id": "sponsor-13",
       "name": "Cloudscale.ch",
-      "level": "event",
+      "level": "gold",
       "logo": "/images/sponsors/cloudscalech.webp",
       "website": "https://www.cloudscale.ch/",
       "description": "Evening Event, Coffee, Meal Sponsor",
