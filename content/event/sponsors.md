@@ -20,35 +20,34 @@ We encourage everyone, including Sponsor employees, to take part in our open Cal
 
 Sponsors are encouraged to represent themselves by actively participating and engaging with the attendees as peers (e.g. via proposing OpenSpace topics). Any Sponsor is free to collect attendee information with mutual consensus at their booth.
 
-## Sponsorship Packages 2025
+## Sponsorship Packages 2026
 
 <div style="overflow-x: auto;">
 
-| Benefits | Gold<br>CHF 8'000 | Silver<br>CHF 5'000 | Bronze<br>CHF 750 | Evening Event<br>CHF 4'000 | Coffee/Meal<br>CHF 4'000 |
-|:---------|:---:|:---:|:---:|:---:|:---:|
-| **Visibility** |
-| Social media & website | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Logo in emails | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Logo during event | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **Booth & Engagement** |
-| Booth (9sqm) main room | ✓ | — | — | — | — |
-| Booth (9sqm) foyer | — | ✓ | — | — | — |
-| Sponsor pitch (1 min) | ✓ | — | — | ✓ | ✓ |
-| Sponsor Bingo | ✓ | ✓ | — | — | — |
-| **Special Benefits** |
-| Logo at evening event | — | — | — | ✓ | — |
-| Logo on lunch displays | — | — | — | — | ✓ |
-| Logo on coffee cups | — | — | — | — | ✓ |
-| Logo on snacks | — | — | — | — | ✓ |
-| **Tickets & Availability** |
-| Included tickets | 4 | 4 | 1 | 2 | 2 |
-| **Status** | **SOLD OUT** | **SOLD OUT** | **Available** | **SOLD OUT** | **Available** |
+| Benefits | Gold | Silver | Bronze | Evening Event | Coffee | Meals | Snacks |
+|:---------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Social Media & Web Sites | x | x | x | x | x | x | x |
+| Logo in emails | x | x | x | x | x | x | x |
+| Logo shown during event¹ | x | x | x | x | x | x | x |
+| Booth (9sqm) main room² | x | — | — | — | — | — | — |
+| Booth (9sqm) foyer/1st floor² | — | x | — | — | — | — | — |
+| Sponsoring Pitches (1min)³ | x | x | x | x | x | x | x |
+| Sponsoring Bingo | x | x | — | — | — | — | — |
+| Logo shown at Evening Event | — | — | — | x | — | — | — |
+| Logo on A4 table displays @ lunch | — | — | — | — | — | x | — |
+| Logo on Coffee Cups⁴ | — | — | — | — | x | — | — |
+| Logo on Snacks⁴⁵ | — | — | — | — | — | — | x |
+| # Tickets included | 4 | 4 | 1 | 2 | 2 | 2 | 2 |
+| # Available Packages | 1 | 2 | unlimited | SOLD OUT | SOLD OUT | 1 | 1 |
+| Price (CHF excl. 8.1% VAT) | 8'000.- | 5'000.- | 750.- | 4'000.- | 4'000.- | 4'000.- | 4'000.- |
 
 </div>
 
-*All prices exclude 8.1% VAT*
-
----
+¹ Includes stage, slides, and streaming overlays.  
+² Booth placement subject to venue layout.  
+³ Pitch slot scheduled by organizers and limited to 60 seconds.  
+⁴ Requires timely delivery of artwork.  
+⁵ Snack selection coordinated with catering partner.
 
 ## Get Started
 

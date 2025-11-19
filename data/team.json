@@ -121,6 +121,18 @@
         "x": "https://x.com/bufrasch",
         "github": "https://github.com/franbuehler"
       }
+    },
+    {
+      "id": "team-14",
+      "name": "Zoltan Vitus",
+      "role": "Organizer",
+      "bio": "Experienced agile coach, SAFe Program consultant with a demonstrated history of working in the information technology and services industry. Skilled in agile coaching and leadership, enterprise architecture management, portfolio management and IT strategy.",
+      "image": "/images/team/zoltan-vitus.webp",
+      "email": null,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/zoltan-vitus-828abb/",
+        "x": "https://x.com/vituszoli2"
+      }
     }
   ]
 }
