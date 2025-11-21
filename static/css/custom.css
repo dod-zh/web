@@ -139,17 +139,16 @@ header.scrolled {
         max-width: 90px;
     }
 
-    /* Convert flex layouts to grid on mobile for better tile organization */
+    /* Tighter spacing and left-aligned layout for mobile */
     [data-sponsor-tier="gold"],
     [data-sponsor-tier="silver"],
     [data-sponsor-tier="event"],
     [data-sponsor-tier="coffee"],
+    [data-sponsor-tier="bronze"],
     [data-sponsor-tier="community"],
     [data-sponsor-tier="partner"] {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
+        justify-content: flex-start !important;
         gap: 1rem !important;
-        justify-items: center;
     }
 }
 

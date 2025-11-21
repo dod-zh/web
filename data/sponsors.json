@@ -10,6 +10,24 @@
       "featured": true
     },
     {
+      "id": "sponsor-01",
+      "name": "VSHN AG",
+      "level": "gold",
+      "logo": "/images/sponsors/vshn.webp",
+      "website": "https://vshn.ch/",
+      "description": "Gold Sponsor",
+      "featured": true
+    },
+    {
+      "id": "sponsor-01",
+      "name": "VSHN AG",
+      "level": "gold",
+      "logo": "/images/sponsors/vshn.webp",
+      "website": "https://vshn.ch/",
+      "description": "Gold Sponsor",
+      "featured": true
+    },
+    {
       "id": "sponsor-02",
       "name": "Cloudscale.ch",
       "level": "gold",
