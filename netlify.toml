@@ -9,7 +9,8 @@ HUGO_ENABLEGITINFO = "true"
 NODE_VERSION = "18"
 
 [context.production]
-command = "hugo --gc --minify --baseURL=https://devopsdays.ch"
+ignore = "git diff --quiet HEAD^ HEAD"
+#command = "hugo --gc --minify --baseURL=https://devopsdays.ch"
 
 [context.deploy-preview]
 command = "hugo --gc --minify --baseURL=$DEPLOY_PRIME_URL"
