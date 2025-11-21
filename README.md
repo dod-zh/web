@@ -306,6 +306,13 @@ The site automatically deploys when you:
 1. Push to `main` branch → Production deployment
 2. Create a pull request → Preview deployment at `/preview-[PR-number]/`
 
+### Netlify
+
+- Connect the GitHub repository to Netlify and select the `main` branch.
+- The build command and publish directory are defined in `netlify.toml` (`hugo --gc --minify`, `public`).
+- Hugo 0.150.0, Node 18, and Git info are enforced via environment variables so previews match production.
+- Deploy previews and branch deploys automatically reuse the preview URL thanks to `DEPLOY_PRIME_URL`.
+
 ### Manual Deployment
 
 ```bash
