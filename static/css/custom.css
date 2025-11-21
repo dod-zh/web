@@ -139,7 +139,7 @@ header.scrolled {
         max-width: 90px;
     }
 
-    /* Tighter spacing and left-aligned layout for mobile */
+    /* Centered layout for mobile */
     [data-sponsor-tier="gold"],
     [data-sponsor-tier="silver"],
     [data-sponsor-tier="event"],
@@ -147,7 +147,7 @@ header.scrolled {
     [data-sponsor-tier="bronze"],
     [data-sponsor-tier="community"],
     [data-sponsor-tier="partner"] {
-        justify-content: flex-start !important;
+        justify-content: center !important;
         gap: 1rem !important;
     }
 }
