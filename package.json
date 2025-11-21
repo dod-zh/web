@@ -4,11 +4,13 @@
   "description": "DevOpsDays Zurich website built with Hugo",
   "scripts": {
     "dev": "hugo server -D --bind 0.0.0.0",
+    "prebuild": "node scripts/generate-sponsor-banner.js",
     "build": "hugo --minify",
-    "build:preview": "hugo --minify --baseURL=/preview/",
+    "build:preview": "npm run prebuild && hugo --minify --baseURL=/preview/",
     "validate": "html-validate public/**/*.html",
     "lighthouse": "lhci autorun",
-    "clean": "rm -rf public resources"
+    "clean": "rm -rf public resources",
+    "generate:banner": "node scripts/generate-sponsor-banner.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,9 @@
   "license": "MIT",
   "devDependencies": {
     "@lhci/cli": "^0.12.0",
-    "html-validate": "^8.7.3"
+    "canvas": "^3.2.0",
+    "html-validate": "^8.7.3",
+    "sharp": "^0.34.5"
   },
   "engines": {
     "node": ">=18"
