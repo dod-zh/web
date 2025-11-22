@@ -6,8 +6,8 @@ const sharp = require('sharp');
 const { createCanvas } = require('canvas');
 
 const CONFIG = {
-    outputPath: path.join(__dirname, '../static/images/generated/sponsor-banner.jpg'),
-    headerPath: path.join(__dirname, '../static/images/banner-header.jpg'),
+    outputPath: path.join(__dirname, '../static/images/banner/sponsor-banner.jpg'),
+    headerPath: path.join(__dirname, '../static/images/banner/banner-header.jpg'),
     sponsorsDataPath: path.join(__dirname, '../data/sponsors.json'),
     sponsorImagesDir: path.join(__dirname, '../static/images/sponsors'),
 
