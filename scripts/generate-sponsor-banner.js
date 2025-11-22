@@ -20,6 +20,8 @@ const CONFIG = {
     sectionTitleHeight: 60,
     backgroundColor: '#ffffff',
     textColor: '#333333',
+    separatorColor: '#4A90E2',
+    separatorHeight: 3,
 
     // Logo sizes per sponsor level
     logoSizes: {
@@ -37,8 +39,8 @@ const CONFIG = {
         { level: 'silver', title: 'Silver Sponsors' },
         { level: 'bronze', title: 'Bronze Sponsors' },
         { level: 'event', title: 'Event Sponsors' },
-        { level: 'partner', title: 'Partners' },
-        { level: 'community', title: 'Community Sponsors' }
+        { level: 'community', title: 'Community Sponsors' },
+        { level: 'partner', title: 'Partners' }
     ]
 };
 
@@ -245,7 +247,7 @@ async function generateBanner() {
             { input: titleBuffer, top: 0, left: 0 }
         ];
 
-        // Layout logos in rows
+        // Layout logos in rows with vertical centering
         let rowY = CONFIG.sectionTitleHeight;
         for (const row of rows) {
             const totalRowWidth = row.reduce((sum, logo) => sum + logo.width, 0) +
@@ -253,9 +255,11 @@ async function generateBanner() {
             let logoX = CONFIG.sectionPadding + (contentWidth - totalRowWidth) / 2;
 
             for (const logo of row) {
+                // Center logo vertically within the row height
+                const verticalOffset = Math.round((logoSize.height - logo.height) / 2);
                 composites.push({
                     input: logo.buffer,
-                    top: rowY,
+                    top: rowY + verticalOffset,
                     left: Math.round(logoX)
                 });
                 logoX += logo.width + CONFIG.logoSpacing;
@@ -277,6 +281,29 @@ async function generateBanner() {
         });
 
         currentY += sectionHeight;
+
+        // Add separator line after section (except for the last section)
+        const isLastSection = CONFIG.sections.indexOf(section) === CONFIG.sections.length - 1 ||
+            CONFIG.sections.slice(CONFIG.sections.indexOf(section) + 1).every(s => !sponsorsByLevel[s.level] || sponsorsByLevel[s.level].length === 0);
+
+        if (!isLastSection) {
+            const separatorBuffer = await sharp({
+                create: {
+                    width: CONFIG.bannerWidth,
+                    height: CONFIG.separatorHeight,
+                    channels: 3,
+                    background: CONFIG.separatorColor
+                }
+            }).png().toBuffer();
+
+            sectionComposites.push({
+                input: separatorBuffer,
+                top: currentY,
+                left: 0
+            });
+
+            currentY += CONFIG.separatorHeight;
+        }
     }
 
     // Calculate total banner height
