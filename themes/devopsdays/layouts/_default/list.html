@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    {{ partial "page-header.html" . }}
+
+    <div class="prose prose-lg max-w-none">
+        {{ .Content }}
+    </div>
+
+    {{ if .Pages }}
+    <div class="mt-12">
+        <h2 class="text-2xl font-bold mb-6">Pages in this section:</h2>
+        <ul class="space-y-2">
+            {{ range .Pages }}
+            <li>
+                <a href="{{ .RelPermalink }}" class="text-cerulean hover:underline">
+                    {{ .Title }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</main>
+{{ end }}
