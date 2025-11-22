@@ -21,7 +21,7 @@ params:
     show_tickets: false
     show_cfp: true
     show_speakers: false
-    cfp_url: 'https://sessionize.com/devopsdays-zurich-2025/'  # Update with your CFP platform URL
+    cfp_url: 'https://sessionize.com/devopsdays-zurich-2026/'  # Update with your CFP platform URL
   
 markup:
   goldmark:
