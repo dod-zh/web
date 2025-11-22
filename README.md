@@ -15,8 +15,8 @@ This repository contains the source code for the DevOpsDays Zurich website, buil
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/tweinmann/devopsdays_ch-web.git
-   cd devopsdays_ch-web
+   git clone https://github.com/dod-zh/web.git
+   cd web
    ```
 
 2. **Start the development server**
@@ -93,10 +93,7 @@ devopsdays_ch-web/
 ├── docs/                 # Project documentation
 │   └── README.md        # Documentation index
 ├── scripts/              # Helper scripts
-│   ├── generate-sessions.js        # Session generation script
-│   ├── download-speaker-images.sh  # Speaker image downloader
-│   ├── download-sponsor-images.sh  # Sponsor image downloader
-│   └── download-team-images.sh     # Team image downloader
+│   └── generate-sponsor-banner.js  # Sponsor banner generation script
 ├── static/               # Static assets
 │   ├── css/             # Custom stylesheets
 │   ├── images/          # Images and logos
