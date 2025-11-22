@@ -8,9 +8,6 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_VERSION = "18"
 
-[context.production]
-command = "npm run build:production"
-
 [context.deploy-preview]
 command = "npm run generate:banner && hugo --gc --minify --baseURL=$DEPLOY_PRIME_URL"
 [context.deploy-preview.environment]
