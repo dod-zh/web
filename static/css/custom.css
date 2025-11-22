@@ -654,3 +654,197 @@ nav[class*="breadcrumb"] span {
     color: white !important;
     background-color: var(--indigo-dye) !important;
 }
+
+/* Mailchimp Signup Form Styles */
+.mailchimp-signup-wrapper {
+    margin: 3rem 0;
+}
+
+#mc_embed_signup {
+    background: #f8f9fa !important;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    max-width: 700px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 2.5rem !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+#mc_embed_signup h2 {
+    color: var(--indigo-dye) !important;
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+    text-align: center !important;
+}
+
+#mc_embed_signup .indicates-required {
+    text-align: center !important;
+    font-size: 0.9rem !important;
+    color: #666 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+#mc_embed_signup .mc-field-group {
+    margin-bottom: 1.5rem !important;
+}
+
+#mc_embed_signup label {
+    display: block !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+    color: #333 !important;
+}
+
+#mc_embed_signup input[type="text"],
+#mc_embed_signup input[type="email"] {
+    width: 100% !important;
+    padding: 0.75rem !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    transition: border-color 0.3s ease !important;
+}
+
+#mc_embed_signup input[type="text"]:focus,
+#mc_embed_signup input[type="email"]:focus {
+    outline: none !important;
+    border-color: var(--cerulean) !important;
+    box-shadow: 0 0 0 3px rgba(28, 128, 170, 0.1) !important;
+}
+
+#mc_embed_signup input[type="checkbox"] {
+    display: inline !important;
+    width: auto !important;
+    margin: 0 8px 0 0 !important;
+    vertical-align: middle !important;
+}
+
+#mc_embed_signup .asterisk {
+    color: #d9534f !important;
+    font-weight: bold !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe {
+    background-color: var(--cerulean) !important;
+    color: white !important;
+    padding: 0.875rem 2rem !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.1s ease !important;
+    display: block !important;
+    margin: 1.5rem auto 0 !important;
+    min-width: 200px !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe:hover {
+    background-color: var(--indigo-dye) !important;
+    transform: translateY(-1px) !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe:active {
+    transform: translateY(0) !important;
+}
+
+#mergeRow-gdpr {
+    margin-top: 2rem !important;
+    padding: 1.5rem !important;
+    background: white !important;
+    border-radius: 6px !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+#mergeRow-gdpr label {
+    font-weight: 600 !important;
+    color: var(--indigo-dye) !important;
+    margin-bottom: 0.75rem !important;
+}
+
+#mergeRow-gdpr p {
+    margin: 0.75rem 0 !important;
+    font-size: 0.9rem !important;
+    color: #666 !important;
+    line-height: 1.5 !important;
+}
+
+#mergeRow-gdpr fieldset {
+    border: none !important;
+    min-height: 0px !important;
+    padding: 0.5rem 0 !important;
+    margin: 0.75rem 0 !important;
+    text-align: left !important;
+}
+
+#mergeRow-gdpr fieldset label {
+    font-weight: normal !important;
+    color: #333 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+#mergeRow-gdpr fieldset label input[type="checkbox"] {
+    margin: 0 !important;
+}
+
+#mergeRow-gdpr fieldset label span {
+    line-height: 1 !important;
+}
+
+#mergeRow-gdpr .content__gdprLegal {
+    margin-top: 1rem !important;
+    padding-top: 1rem !important;
+    border-top: 1px solid #e0e0e0 !important;
+}
+
+#mergeRow-gdpr .content__gdprLegal p {
+    font-size: 0.85rem !important;
+    color: #777 !important;
+}
+
+#mergeRow-gdpr a {
+    color: var(--cerulean) !important;
+    text-decoration: none !important;
+}
+
+#mergeRow-gdpr a:hover {
+    text-decoration: underline !important;
+}
+
+#mc_embed_signup .response {
+    padding: 1rem !important;
+    margin: 1rem 0 !important;
+    border-radius: 4px !important;
+}
+
+#mc_embed_signup #mce-error-response {
+    background-color: #f8d7da !important;
+    border: 1px solid #f5c6cb !important;
+    color: #721c24 !important;
+}
+
+#mc_embed_signup #mce-success-response {
+    background-color: #d4edda !important;
+    border: 1px solid #c3e6cb !important;
+    color: #155724 !important;
+}
+
+@media (max-width: 768px) {
+    .mailchimp-signup-wrapper {
+        margin: 2rem 0;
+    }
+    
+    #mc_embed_signup {
+        padding: 1.5rem !important;
+    }
+    
+    #mc_embed_signup h2 {
+        font-size: 1.5rem !important;
+    }
+}
