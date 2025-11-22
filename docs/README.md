@@ -1,35 +1,45 @@
-# Project Documentation
+# Documentation Index
 
-This folder contains internal project documentation, change logs, and development guides that are not part of the website content.
+Technical documentation for the DevOpsDays Zurich website.
 
-## 📚 Contents
+## 📚 Main Documentation
 
-### Development Guides
+### For Content Contributors
 
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick reference guide for common tasks
-- **[FEATURE_FLAGS.md](FEATURE_FLAGS.md)** - Feature flags documentation
+- **[CONTRIBUTOR.md](../CONTRIBUTOR.md)** - Content management guide
+  - Adding/editing speakers, sessions, sponsors
+  - Managing content and images
+  - Publishing workflows
+  - Event workflow checklists
+
+### For Developers
+
+- **[DEVELOPER.md](../DEVELOPER.md)** - Development guide
+  - Environment setup
+  - Build processes
+  - Deployment architecture
+  - Theme customization
+  - Testing and debugging
+
+### Quick Start
+
+- **[README.md](../README.md)** - Project overview and quick start
+
+## 📖 Additional Documentation
+
+- **[FEATURE_FLAGS.md](FEATURE_FLAGS.md)** - Complete feature flags documentation
 - **[FEATURE_FLAGS_QUICK_REFERENCE.md](FEATURE_FLAGS_QUICK_REFERENCE.md)** - Quick reference for feature flags
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Template refactoring and code organization reference
+- **[TECHNICAL_SETUP.md](TECHNICAL_SETUP.md)** - Detailed technical setup (legacy, see DEVELOPER.md)
 
-### Change Logs & Refactoring
+## 🎯 Document Organization
 
-- **[CHANGES_SUMMARY.md](CHANGES_SUMMARY.md)** - Summary of changes made to the project
-- **[REFACTORING_SUMMARY.md](REFACTORING_SUMMARY.md)** - Overview of refactoring efforts
-- **[REFACTORING_COMPLETE.md](REFACTORING_COMPLETE.md)** - Refactoring completion notes
+| Document | Audience | Purpose |
+|----------|----------|---------|
+| `README.md` | All | Project overview and quick start |
+| `CONTRIBUTOR.md` | Content team | Content management workflows |
+| `DEVELOPER.md` | Developers | Development and deployment |
+| `docs/FEATURE_FLAGS.md` | All | Feature flag usage |
+| `docs/TECHNICAL_SETUP.md` | Developers | Detailed setup (legacy) |
 
-### Improvement Documentation
-
-- **[BREADCRUMB_CONSISTENCY_IMPROVEMENTS.md](BREADCRUMB_CONSISTENCY_IMPROVEMENTS.md)** - Breadcrumb navigation improvements
-- **[BUTTON_CONTRAST_IMPROVEMENTS.md](BUTTON_CONTRAST_IMPROVEMENTS.md)** - Button contrast and accessibility improvements
-- **[SESSION_METADATA_CLEANUP.md](SESSION_METADATA_CLEANUP.md)** - Session metadata cleanup documentation
-
-### Checklists
-
-- **[CLEANUP_CHECKLIST.md](CLEANUP_CHECKLIST.md)** - Cleanup tasks checklist
-
-## 🎯 Purpose
-
-These documents track the evolution of the project, document major changes, and provide guidance for developers working on the codebase. They are maintained separately from the user-facing content in the `content/` directory.
-
-## 📝 Note
-
-For website content (pages, blog posts, etc.), use the `content/` directory following Hugo's content organization conventions.
+---

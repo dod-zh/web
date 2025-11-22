@@ -59,3 +59,4 @@ Interested in sponsoring DevOpsDays Zurich 2025?
 
 - [Sponsorship Prospectus (PDF)](/sponsor_prospectus.pdf)
 - [Sponsorship Rules (PDF)](/sponsor_rules.pdf)
+- [Sponsor Banner (JPG)](/images/banner/sponsor-banner.jpg)
