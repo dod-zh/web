@@ -5,7 +5,7 @@ description: "Privacy Policy for DevOpsDays Zurich"
 
 # Privacy Policy DevOpsDays Zurich
 
-## Introduction
+## Introduction____
 
 We take the privacy of users of our website as well as of our conference participants, speakers, partners and staff very seriously and are committed to protecting the information you provide to us in connection with your use of our website (<www.devopsdays.ch>) and/or our digital assets published on this web site [collectively, from now on referred to as services]. Further, we are committed to protecting and using your information in accordance with applicable law and not for additional purposes.
 
