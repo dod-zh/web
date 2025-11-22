@@ -8,43 +8,40 @@
         {{ if .Site.Data.sessions }}
         <div class="mt-12">
 
-            <!-- Two Column Layout for Days -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Day 1 Column -->
-                <div class="order-1">
-                    <div class="flex items-center justify-center mb-6">
-                        <div class="text-gray-800 px-8 py-4 rounded-xl shadow-lg border-2 border-gray-200 bg-gray-50">
-                            <h3 class="text-2xl font-bold text-center">
-                                Day 1
-                                <br>
-                                <span class="text-lg font-medium opacity-80">March 12, 2025</span>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="grid gap-3">
-                        {{ range where .Site.Data.sessions.sessions "day" "2025-03-12" }}
-                        {{ partial "session-card.html" (dict "session" . "context" $) }}
-                        {{ end }}
-                    </div>
-                </div>
+            <!-- Dynamic Column Layout for Days -->
+            {{ $sessions := .Site.Data.sessions.sessions }}
+            {{ $dayMap := dict }}
+            {{ range $sessions }}
+            {{ $dayMap = merge $dayMap (dict .day (slice)) }}
+            {{ end }}
+            {{ $uniqueDays := slice }}
+            {{ range $sessions }}
+            {{ if not (in $uniqueDays .day) }}
+            {{ $uniqueDays = $uniqueDays | append .day }}
+            {{ end }}
+            {{ end }}
+            {{ $sortedDays := sort $uniqueDays }}
 
-                <!-- Day 2 Column -->
-                <div class="order-2">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {{ range $index, $day := $sortedDays }}
+                <div class="order-{{ add $index 1 }}">
                     <div class="flex items-center justify-center mb-6">
                         <div class="text-gray-800 px-8 py-4 rounded-xl shadow-lg border-2 border-gray-200 bg-gray-50">
                             <h3 class="text-2xl font-bold text-center">
-                                Day 2
+                                Day {{ add $index 1 }}
                                 <br>
-                                <span class="text-lg font-medium opacity-80">March 13, 2025</span>
+                                <span class="text-lg font-medium opacity-80">{{ dateFormat "January 2, 2006" $day
+                                    }}</span>
                             </h3>
                         </div>
                     </div>
                     <div class="grid gap-3">
-                        {{ range where .Site.Data.sessions.sessions "day" "2025-03-13" }}
+                        {{ range where $sessions "day" $day }}
                         {{ partial "session-card.html" (dict "session" . "context" $) }}
                         {{ end }}
                     </div>
                 </div>
+                {{ end }}
             </div>
 
             {{ end }}
