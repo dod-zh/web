@@ -4,7 +4,7 @@
       "id": "registration-day1-morning",
       "title": "Registration & Welcome Coffee",
       "type": "other",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "8:00 - 9:00",
       "speakers": []
     },
@@ -12,7 +12,7 @@
       "id": "opening-day1-morning",
       "title": "Opening",
       "type": "other",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "9:00 - 9:15",
       "speakers": []
     },
@@ -20,7 +20,7 @@
       "id": "keynotes/marc-schuh",
       "title": "From Athlete to Algorithm: Transforming Canoe Technique Analysis with AI",
       "type": "keynote",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "9:15 - 10:00",
       "speakers": [
         "marc-schuh"
@@ -30,7 +30,7 @@
       "id": "talks/lena-fuhrimann",
       "title": "Level Up Your Serverless Game",
       "type": "talk",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "10:00 - 10:30",
       "speakers": [
         "lena-fuhrimann"
@@ -40,7 +40,7 @@
       "id": "break-day1-morning",
       "title": "Break",
       "type": "other",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "10:30 - 11:00",
       "speakers": []
     },
@@ -48,7 +48,7 @@
       "id": "talks/christina-kraus",
       "title": "Building Internal Platforms to Enhance Developer Experience",
       "type": "talk",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "11:00 - 11:30",
       "speakers": [
         "christina-kraus"
@@ -58,7 +58,7 @@
       "id": "talks/daniel-raniz-raneland",
       "title": "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do",
       "type": "talk",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "11:30 - 12:00",
       "speakers": [
         "daniel-raniz-raneland"
@@ -68,7 +68,7 @@
       "id": "talks/robert-lehmann",
       "title": "Planet-Scale Dashboards",
       "type": "talk",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "12:00 - 12:30",
       "speakers": [
         "robert-lehmann"
@@ -78,7 +78,7 @@
       "id": "lunch-day1",
       "title": "Lunch",
       "type": "other",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "12:30 - 14:00",
       "speakers": []
     },
@@ -86,7 +86,7 @@
       "id": "opening-day1-afternoon",
       "title": "Opening Afternoon",
       "type": "other",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:00 - 14:10",
       "speakers": []
     },
@@ -94,7 +94,7 @@
       "id": "ignites/carmine-vassallo",
       "title": "Eating Your Own Dog Food - The Secret Sauce for Better Product Development",
       "type": "ignite",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:10 - 14:15",
       "speakers": [
         "carmine-vassallo"
@@ -104,7 +104,7 @@
       "id": "ignites/marc-sallin",
       "title": "Bursting the End-2-End Myth: Divide and Conquer for Robust DevOps",
       "type": "ignite",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:15 - 14:20",
       "speakers": [
         "marc-sallin"
@@ -114,7 +114,7 @@
       "id": "ignites/verena-traub",
       "title": "How can we make tech conferences more diverse?",
       "type": "ignite",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:20 - 14:25",
       "speakers": [
         "verena-traub"
@@ -124,7 +124,7 @@
       "id": "ignites/marcelo-ancelmo",
       "title": "Cultivating a Learning Culture: Unlocking the Power of Continuous Development",
       "type": "ignite",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:25 - 14:30",
       "speakers": [
         "marcelo-ancelmo"
@@ -134,7 +134,7 @@
       "id": "ignites/alexander-ptakhin",
       "title": "Pipeline ETA: 3… 2… Tomorrow? Let's Fix That!",
       "type": "ignite",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:30 - 14:35",
       "speakers": [
         "alexander-ptakhin"
@@ -144,7 +144,7 @@
       "id": "ignites/sandra-czopek",
       "title": "Breaking Ba(l)d: How to Prevent Burnout and Thrive",
       "type": "ignite",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:35 - 14:40",
       "speakers": [
         "sandra-czopek"
@@ -154,7 +154,7 @@
       "id": "ignites/peter-farkas",
       "title": "Taming the Testing Beast",
       "type": "ignite",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:40 - 14:45",
       "speakers": [
         "peter-farkas"
@@ -164,7 +164,7 @@
       "id": "openspace-voting-day1",
       "title": "Open Space Voting",
       "type": "other",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "14:45 - 15:15",
       "speakers": []
     },
@@ -172,7 +172,7 @@
       "id": "openspace-track1-day1",
       "title": "Open Spaces",
       "type": "openspace",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "15:15 - 17:25",
       "speakers": []
     },
@@ -180,7 +180,7 @@
       "id": "workshops/alina-liburkina",
       "title": "Untangle Your Legacy Code with Domain-Driven Refactoring",
       "type": "workshop",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "15:15 - 17:25",
       "speakers": [
         "alina-liburkina",
@@ -191,7 +191,7 @@
       "id": "workshops/thomas-krag",
       "title": "Enabling aligned decentralised architecture decisions through user needs mapping",
       "type": "workshop",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "15:15 - 17:25",
       "speakers": [
         "thomas-krag",
@@ -202,7 +202,7 @@
       "id": "workshops/alvaro-revuelta-m",
       "title": "Building Secure Container Images",
       "type": "workshop",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "15:15 - 17:25",
       "speakers": [
         "alvaro-revuelta-m"
@@ -212,7 +212,7 @@
       "id": "closing-day1",
       "title": "Closing Day 1",
       "type": "other",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "17:30 - 17:40",
       "speakers": []
     },
@@ -220,7 +220,7 @@
       "id": "evening-event",
       "title": "Evening Event",
       "type": "other",
-      "day": "2025-03-12",
+      "day": "2026-05-06",
       "time": "17:40 - 23:00",
       "speakers": []
     },
@@ -228,7 +228,7 @@
       "id": "registration-day2-morning",
       "title": "Registration & Welcome Coffee",
       "type": "other",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "8:00 - 9:00",
       "speakers": []
     },
@@ -236,7 +236,7 @@
       "id": "opening-day2-morning",
       "title": "Opening",
       "type": "other",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "9:00 - 9:15",
       "speakers": []
     },
@@ -244,7 +244,7 @@
       "id": "keynotes/dorota-parad",
       "title": "Unintended consequences of well-meaning changes",
       "type": "keynote",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "9:15 - 10:00",
       "speakers": [
         "dorota-parad"
@@ -254,7 +254,7 @@
       "id": "talks/darko-fabijan",
       "title": "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore",
       "type": "talk",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "10:00 - 10:30",
       "speakers": [
         "darko-fabijan"
@@ -264,7 +264,7 @@
       "id": "break-day2-morning",
       "title": "Break",
       "type": "other",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "10:30 - 11:00",
       "speakers": []
     },
@@ -272,7 +272,7 @@
       "id": "talks/pia-wiedermayer",
       "title": "Human-Driven Intelligence: Where AI & Automation Fall Short",
       "type": "talk",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "11:00 - 11:30",
       "speakers": [
         "pia-wiedermayer"
@@ -282,7 +282,7 @@
       "id": "talks/manisha-marco",
       "title": "Empowering SRE with GitOps: Automating Kubernetes Deployments with GitLab CI and Flux CD",
       "type": "talk",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "11:30 - 12:00",
       "speakers": [
         "manisha-de",
@@ -293,7 +293,7 @@
       "id": "talks/bertrand-delacretaz",
       "title": "The Power of Simplicity: Crafting Durable Software Systems",
       "type": "talk",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "12:00 - 12:30",
       "speakers": [
         "bertrand-delacretaz"
@@ -303,7 +303,7 @@
       "id": "lunch-day2",
       "title": "Lunch",
       "type": "other",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "12:30 - 14:00",
       "speakers": []
     },
@@ -311,7 +311,7 @@
       "id": "opening-day2-afternoon",
       "title": "Opening Afternoon",
       "type": "other",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:00 - 14:10",
       "speakers": []
     },
@@ -319,7 +319,7 @@
       "id": "ignites/rasmus-lystrom",
       "title": "Post Accelerate: Why are we still failing at adopting DevOps in the Enterprise?",
       "type": "ignite",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:10 - 14:15",
       "speakers": [
         "rasmus-lystrom"
@@ -329,7 +329,7 @@
       "id": "ignites/antonio-alvino",
       "title": "The perfect match: How Extreme Programming enables Team Topologies concepts",
       "type": "ignite",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:15 - 14:20",
       "speakers": [
         "antonio-alvino"
@@ -339,7 +339,7 @@
       "id": "ignites/daiany-palacios",
       "title": "Tomorrow's DevOps Engineers, Today!",
       "type": "ignite",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:20 - 14:25",
       "speakers": [
         "daiany-palacios"
@@ -349,7 +349,7 @@
       "id": "ignites/jonas-alder",
       "title": "Software at Tesla - A peek from the outside",
       "type": "ignite",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:25 - 14:30",
       "speakers": [
         "jonas-alder"
@@ -359,7 +359,7 @@
       "id": "ignites/marcel-britsch",
       "title": "How I Started Worrying and Stopped Loving DevOps",
       "type": "ignite",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:30 - 14:35",
       "speakers": [
         "marcel-britsch"
@@ -369,7 +369,7 @@
       "id": "ignites/kamali-wickramage",
       "title": "No estimates? Try Flow Metrics.",
       "type": "ignite",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:35 - 14:40",
       "speakers": [
         "kamali-wickramage"
@@ -379,7 +379,7 @@
       "id": "ignites/adam-zieba",
       "title": "Code & risk",
       "type": "ignite",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:40 - 14:45",
       "speakers": [
         "adam-zieba"
@@ -389,7 +389,7 @@
       "id": "openspace-voting-day2",
       "title": "Open Space Voting",
       "type": "other",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "14:45 - 15:15",
       "speakers": []
     },
@@ -397,7 +397,7 @@
       "id": "openspace-track1-day2",
       "title": "Open Spaces",
       "type": "openspace",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "15:15 - 17:2",
       "speakers": []
     },
@@ -405,7 +405,7 @@
       "id": "workshops/rabieh-fashwall",
       "title": "Building Infrastructure Tools with Kubernetes Operators and Go",
       "type": "workshop",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "15:15 - 17:25",
       "speakers": [
         "rabieh-fashwall"
@@ -415,7 +415,7 @@
       "id": "workshops/stefan-pezzei",
       "title": "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry",
       "type": "workshop",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "15:15 - 17:25",
       "speakers": [
         "stefan-pezzei",
@@ -426,7 +426,7 @@
       "id": "workshops/marc-herren",
       "title": "Streamlining DevSecOps with Purposeful AI Integration",
       "type": "workshop",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "15:15 - 17:25",
       "speakers": [
         "marc-herren"
@@ -436,7 +436,7 @@
       "id": "closing-day2",
       "title": "Raffle & Closing Day 2",
       "type": "other",
-      "day": "2025-03-13",
+      "day": "2026-05-07",
       "time": "17:30 - 17:40",
       "speakers": []
     }
