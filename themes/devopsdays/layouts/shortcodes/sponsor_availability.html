@@ -1,0 +1,25 @@
+{{- $packageName := .Get 0 -}}
+{{- $packages := .Site.Data.sponsor_packages.packages -}}
+{{- $sponsors := .Site.Data.sponsors.sponsors -}}
+
+{{- $sponsorCounts := dict -}}
+{{- range $sponsors -}}
+{{- $level := .level -}}
+{{- $currentCount := index $sponsorCounts $level | default 0 -}}
+{{- $sponsorCounts = merge $sponsorCounts (dict $level (add $currentCount 1)) -}}
+{{- end -}}
+
+{{- range $packages -}}
+{{- if eq .name $packageName -}}
+{{- $level := .level -}}
+{{- $max := .max_available -}}
+{{- $current := index $sponsorCounts $level | default 0 -}}
+{{- if lt $max 0 -}}
+unlimited
+{{- else if ge $current $max -}}
+SOLD OUT
+{{- else -}}
+{{- sub $max $current -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}

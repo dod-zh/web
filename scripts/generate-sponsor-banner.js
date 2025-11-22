@@ -28,17 +28,21 @@ const CONFIG = {
         gold: { width: 300, height: 120 },
         silver: { width: 250, height: 100 },
         bronze: { width: 200, height: 80 },
-        event: { width: 200, height: 80 },
+        evening: { width: 200, height: 80 },
+        coffee: { width: 200, height: 80 },
+        meals: { width: 200, height: 80 },
+        snacks: { width: 200, height: 80 },
         partner: { width: 180, height: 72 },
         community: { width: 180, height: 72 }
     },
 
     // Section order and titles
+    // Event sponsors (evening, coffee, meals, snacks) are grouped together
     sections: [
         { level: 'gold', title: 'Gold Sponsors' },
         { level: 'silver', title: 'Silver Sponsors' },
+        { levels: ['evening', 'coffee', 'meals', 'snacks'], title: 'Event Sponsors' },
         { level: 'bronze', title: 'Bronze Sponsors' },
-        { level: 'event', title: 'Event Sponsors' },
         { level: 'community', title: 'Community Sponsors' },
         { level: 'partner', title: 'Partners' }
     ]
@@ -197,14 +201,24 @@ async function generateBanner() {
     let currentY = headerHeight;
 
     for (const section of CONFIG.sections) {
-        const levelSponsors = sponsorsByLevel[section.level];
-        if (!levelSponsors || levelSponsors.length === 0) {
+        // Handle both single level and grouped levels (for Event Sponsors)
+        const levels = section.levels || [section.level];
+        const levelSponsors = [];
+
+        for (const level of levels) {
+            if (sponsorsByLevel[level]) {
+                levelSponsors.push(...sponsorsByLevel[level]);
+            }
+        }
+
+        if (levelSponsors.length === 0) {
             continue;
         }
 
         console.log(`\n📦 Processing ${section.title} (${levelSponsors.length} sponsors)...`);
 
-        const logoSize = CONFIG.logoSizes[section.level];
+        // Use the first level's logo size (all event sponsors use same size)
+        const logoSize = CONFIG.logoSizes[levels[0]];
         const contentWidth = CONFIG.bannerWidth - (CONFIG.sectionPadding * 2);
 
         // Load all logos for this section
@@ -284,7 +298,10 @@ async function generateBanner() {
 
         // Add separator line after section (except for the last section)
         const isLastSection = CONFIG.sections.indexOf(section) === CONFIG.sections.length - 1 ||
-            CONFIG.sections.slice(CONFIG.sections.indexOf(section) + 1).every(s => !sponsorsByLevel[s.level] || sponsorsByLevel[s.level].length === 0);
+            CONFIG.sections.slice(CONFIG.sections.indexOf(section) + 1).every(s => {
+                const levels = s.levels || [s.level];
+                return levels.every(level => !sponsorsByLevel[level] || sponsorsByLevel[level].length === 0);
+            });
 
         if (!isLastSection) {
             const separatorBuffer = await sharp({

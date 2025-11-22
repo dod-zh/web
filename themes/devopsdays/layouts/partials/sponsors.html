@@ -35,32 +35,24 @@
         </div>
         {{ end }}
 
-        <!-- Event Sponsors -->
-        {{ $event := where .Site.Data.sponsors.sponsors "level" "event" }}
-        {{ if $event }}
+        <!-- Event Sponsors (Evening, Coffee, Meals, Snacks) -->
+        {{ $evening := where .Site.Data.sponsors.sponsors "level" "evening" }}
+        {{ $coffee := where .Site.Data.sponsors.sponsors "level" "coffee" }}
+        {{ $meals := where .Site.Data.sponsors.sponsors "level" "meals" }}
+        {{ $snacks := where .Site.Data.sponsors.sponsors "level" "snacks" }}
+        {{ $eventSponsors := slice }}
+        {{ range $evening }}{{ $eventSponsors = $eventSponsors | append . }}{{ end }}
+        {{ range $coffee }}{{ $eventSponsors = $eventSponsors | append . }}{{ end }}
+        {{ range $meals }}{{ $eventSponsors = $eventSponsors | append . }}{{ end }}
+        {{ range $snacks }}{{ $eventSponsors = $eventSponsors | append . }}{{ end }}
+        {{ if $eventSponsors }}
         <div class="mb-8">
             <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Event Sponsors</h4>
             <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="event">
-                {{ range $event }}
+                {{ range $eventSponsors }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
                         class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
-                </a>
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
-
-        <!-- Coffee Sponsors -->
-        {{ $coffee := where .Site.Data.sponsors.sponsors "level" "coffee" }}
-        {{ if $coffee }}
-        <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Coffee Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="coffee">
-                {{ range $coffee }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
-                    <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-coffee opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
