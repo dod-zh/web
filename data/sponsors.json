@@ -6,8 +6,7 @@
       "level": "gold",
       "logo": "/images/sponsors/vshn.webp",
       "website": "https://vshn.ch/",
-      "description": "Gold Sponsor",
-      "featured": true
+      "description": "Gold Sponsor"
     },
     {
       "id": "sponsor-02",
@@ -15,8 +14,7 @@
       "level": "gold",
       "logo": "/images/sponsors/cloudscalech.webp",
       "website": "https://www.cloudscale.ch/",
-      "description": "Gold Sponsor",
-      "featured": true
+      "description": "Gold Sponsor"
     },
     {
       "id": "sponsor-03",
@@ -24,8 +22,7 @@
       "level": "gold",
       "logo": "/images/sponsors/redgate.webp",
       "website": "https://www.red-gate.com/solutions/database-devops/",
-      "description": "Gold Sponsor",
-      "featured": true
+      "description": "Gold Sponsor"
     },
     {
       "id": "sponsor-04",
@@ -33,8 +30,7 @@
       "level": "gold",
       "logo": "/images/sponsors/bit.webp",
       "website": "https://www.bit.admin.ch/",
-      "description": "Gold Sponsor",
-      "featured": false
+      "description": "Gold Sponsor"
     },
     {
       "id": "sponsor-05",
@@ -42,17 +38,23 @@
       "level": "silver",
       "logo": "/images/sponsors/infometis.webp",
       "website": "https://www.infometis.ch/",
-      "description": "Silver Sponsor",
-      "featured": false
+      "description": "Silver Sponsor"
     },
     {
       "id": "sponsor-06",
       "name": "Xelon",
-      "level": "event",
+      "level": "coffee",
       "logo": "/images/sponsors/xelon.png",
       "website": "https://www.xelon.ch/",
-      "description": "Evening Event, Coffee, Meal Sponsor",
-      "featured": false
+      "description": "Coffree Sponsor"
+    },
+    {
+      "id": "sponsor-06",
+      "name": "Cyberlink",
+      "level": "evening",
+      "logo": "/images/sponsors/cyberlink.png",
+      "website": "https://www.cyberlink.ch/",
+      "description": "Evening Event Sponsor"
     },
     {
       "id": "sponsor-07",
@@ -60,8 +62,7 @@
       "level": "bronze",
       "logo": "/images/sponsors/zuehlke.png",
       "website": "https://www.zuehlke.com/",
-      "description": "Bronze Sponsor",
-      "featured": false
+      "description": "Bronze Sponsor"
     },
     {
       "id": "sponsor-08",
@@ -69,8 +70,7 @@
       "level": "community",
       "logo": "/images/sponsors/powercoders.webp",
       "website": "https://powercoders.org/",
-      "description": "Community Sponsor",
-      "featured": false
+      "description": "Community Sponsor"
     },
     {
       "id": "sponsor-09",
@@ -78,8 +78,7 @@
       "level": "community",
       "logo": "/images/sponsors/belikegrace.webp",
       "website": "https://www.belikegrace.ch/",
-      "description": "Community Sponsor",
-      "featured": false
+      "description": "Community Sponsor"
     },
     {
       "id": "sponsor-10",
@@ -87,8 +86,7 @@
       "level": "community",
       "logo": "/images/sponsors/girlscodetoo.webp",
       "website": "https://www.girlscodetoo.ch/",
-      "description": "Community Sponsor",
-      "featured": false
+      "description": "Community Sponsor"
     },
     {
       "id": "sponsor-11",
@@ -96,8 +94,7 @@
       "level": "partner",
       "logo": "/images/sponsors/businessmap.webp",
       "website": "https://businessmap.io/",
-      "description": "Partner Sponsor",
-      "featured": false
+      "description": "Partner Sponsor"
     },
     {
       "id": "sponsor-12",
@@ -105,8 +102,7 @@
       "level": "partner",
       "logo": "/images/sponsors/hostpoint.webp",
       "website": "https://www.hostpoint.ch/",
-      "description": "Partner Sponsor",
-      "featured": false
+      "description": "Partner Sponsor"
     },
     {
       "id": "sponsor-13",
@@ -114,8 +110,7 @@
       "level": "partner",
       "logo": "/images/sponsors/digicomp.webp",
       "website": "https://www.digicomp.ch/weiterbildung-digital-transformation-technologies/devops",
-      "description": "Partner Sponsor",
-      "featured": false
+      "description": "Partner Sponsor"
     },
     {
       "id": "sponsor-14",
@@ -123,8 +118,7 @@
       "level": "partner",
       "logo": "/images/sponsors/puresivefilms.webp",
       "website": "https://www.puresivefilms.com/",
-      "description": "Partner Sponsor",
-      "featured": false
+      "description": "Partner Sponsor"
     }
   ]
 }

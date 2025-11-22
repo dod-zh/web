@@ -38,7 +38,7 @@ Sponsors are encouraged to represent themselves by actively participating and en
 | Logo on Coffee Cups⁴ | — | — | — | — | x | — | — |
 | Logo on Snacks⁴⁵ | — | — | — | — | — | — | x |
 | # Tickets included | 4 | 4 | 1 | 2 | 2 | 2 | 2 |
-| # Available Packages | 1 | 2 | unlimited | SOLD OUT | SOLD OUT | 1 | 1 |
+| # Available Packages | {{< sponsor_availability "Gold" >}} | {{< sponsor_availability "Silver" >}} | {{< sponsor_availability "Bronze" >}} | {{< sponsor_availability "Evening Event" >}} | {{< sponsor_availability "Coffee" >}} | {{< sponsor_availability "Meals" >}} | {{< sponsor_availability "Snacks" >}} |
 | Price (CHF excl. 8.1% VAT) | 8'000.- | 5'000.- | 750.- | 4'000.- | 4'000.- | 4'000.- | 4'000.- |
 
 </div>

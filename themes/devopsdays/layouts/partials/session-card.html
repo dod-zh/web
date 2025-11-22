@@ -10,7 +10,7 @@ Usage: {{ partial "session-card.html" (dict "session" . "context" $) }}
 {{ $hasDetailPage := and $session.speakers (gt (len $session.speakers) 0) }}
 
 {{ if $hasDetailPage }}
-<a href="/sessions/{{ $session.id }}/" class="block group">
+<a href="/event/program/{{ $session.id }}/" class="block group">
     {{ end }}
     <div
         class="bg-{{ $styling.bgColor }} rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-{{ $styling.borderColor }}-500 {{ if $hasDetailPage }}group-hover:shadow-xl{{ end }}">

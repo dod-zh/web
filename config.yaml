@@ -49,7 +49,7 @@ menu:
       parent: "event"
       weight: 22
     - name: "Speakers"
-      url: "/speakers/"
+      url: "/event/speakers/"
       parent: "event"
       weight: 23
     - name: "Sponsors"

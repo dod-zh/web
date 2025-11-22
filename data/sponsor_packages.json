@@ -1,0 +1,54 @@
+{
+    "packages": [
+        {
+            "name": "Gold",
+            "level": "gold",
+            "max_available": 5,
+            "price": 8000,
+            "currency": "CHF"
+        },
+        {
+            "name": "Silver",
+            "level": "silver",
+            "max_available": 3,
+            "price": 5000,
+            "currency": "CHF"
+        },
+        {
+            "name": "Bronze",
+            "level": "bronze",
+            "max_available": -1,
+            "price": 750,
+            "currency": "CHF",
+            "note": "unlimited"
+        },
+        {
+            "name": "Evening Event",
+            "level": "evening",
+            "max_available": 1,
+            "price": 4000,
+            "currency": "CHF"
+        },
+        {
+            "name": "Coffee",
+            "level": "coffee",
+            "max_available": 1,
+            "price": 4000,
+            "currency": "CHF"
+        },
+        {
+            "name": "Meals",
+            "level": "meals",
+            "max_available": 1,
+            "price": 4000,
+            "currency": "CHF"
+        },
+        {
+            "name": "Snacks",
+            "level": "snacks",
+            "max_available": 1,
+            "price": 4000,
+            "currency": "CHF"
+        }
+    ]
+}
