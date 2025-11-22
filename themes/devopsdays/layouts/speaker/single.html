@@ -148,7 +148,7 @@
                     <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex-1">
-                                <a href="/sessions/{{ .id }}/"
+                                <a href="/event/program/{{ .id }}/"
                                     class="text-xl font-semibold hover:text-cerulean transition-colors"
                                     style="color: var(--indigo-dye);">
                                     {{ .title }}
@@ -180,7 +180,7 @@
                                     {{ end }}
                                 </div>
                             </div>
-                            <a href="/sessions/{{ .id }}/"
+                            <a href="/event/program/{{ .id }}/"
                                 class="text-sm font-medium px-4 py-2 rounded-lg transition-colors"
                                 style="background-color: var(--cerulean); color: white;"
                                 onmouseover="this.style.backgroundColor='var(--indigo-dye)'"
@@ -201,7 +201,7 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                     {{ range .Site.Data.speakers.speakers }}
                     {{ if ne .id $speakerId }}
-                    <a href="/speakers/{{ .id }}/" class="group">
+                    <a href="/event/speakers/{{ .id }}/" class="group">
                         <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                             <img src="{{ .image }}" alt="{{ .name }}" class="w-full h-32 object-cover">
                             <div class="p-3">

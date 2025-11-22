@@ -17,10 +17,10 @@ params:
     vimeo: 'https://vimeo.com/devopsdayszh'
     flickr: 'https://www.flickr.com/photos/150616602@N02/albums/with/72157680463366208'
   features:
-    show_program: false
+    show_program: true
     show_tickets: false
     show_cfp: true
-    show_speakers: false
+    show_speakers: true
     cfp_url: 'https://sessionize.com/devopsdays-zurich-2025/'  # Update with your CFP platform URL
   
 markup:
@@ -49,7 +49,7 @@ menu:
       parent: "event"
       weight: 22
     - name: "Speakers"
-      url: "/speakers/"
+      url: "/event/speakers/"
       parent: "event"
       weight: 23
     - name: "Sponsors"

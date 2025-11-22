@@ -17,7 +17,7 @@
                 {{ $showItem = $.Site.Params.features.show_tickets }}
                 {{ else if (in .URL "/event/program/") }}
                 {{ $showItem = $.Site.Params.features.show_program }}
-                {{ else if (in .URL "/speakers/") }}
+                {{ else if (in .URL "/event/speakers/") }}
                 {{ $showItem = $.Site.Params.features.show_speakers }}
                 {{ end }}
                 {{ if $showItem }}
@@ -40,7 +40,7 @@
                             {{ $showChild = $.Site.Params.features.show_tickets }}
                             {{ else if (in .URL "/event/program/") }}
                             {{ $showChild = $.Site.Params.features.show_program }}
-                            {{ else if (in .URL "/speakers/") }}
+                            {{ else if (in .URL "/event/speakers/") }}
                             {{ $showChild = $.Site.Params.features.show_speakers }}
                             {{ end }}
                             {{ if $showChild }}
@@ -101,7 +101,7 @@
             {{ $showItem = $.Site.Params.features.show_tickets }}
             {{ else if (in .URL "/event/program/") }}
             {{ $showItem = $.Site.Params.features.show_program }}
-            {{ else if (in .URL "/speakers/") }}
+            {{ else if (in .URL "/event/speakers/") }}
             {{ $showItem = $.Site.Params.features.show_speakers }}
             {{ end }}
             {{ if $showItem }}
@@ -114,7 +114,7 @@
                 {{ $showChild = $.Site.Params.features.show_tickets }}
                 {{ else if (in .URL "/event/program/") }}
                 {{ $showChild = $.Site.Params.features.show_program }}
-                {{ else if (in .URL "/speakers/") }}
+                {{ else if (in .URL "/event/speakers/") }}
                 {{ $showChild = $.Site.Params.features.show_speakers }}
                 {{ end }}
                 {{ if $showChild }}

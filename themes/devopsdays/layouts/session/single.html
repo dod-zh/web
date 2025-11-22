@@ -73,7 +73,7 @@
                         {{ range $session.speakers }}
                         {{ $speaker := index (where $.Site.Data.speakers.speakers "id" .) 0 }}
                         {{ if $speaker }}
-                        {{ $speakerPage := $.Site.GetPage (printf "/speakers/%s" .) }}
+                        {{ $speakerPage := $.Site.GetPage (printf "/event/speakers/%s" .) }}
                         {{ if $speakerPage }}
                         <div class="bg-white rounded-lg shadow-md p-6">
                             <h3 class="text-xl font-bold mb-4" style="color: var(--indigo-dye);">Speaker{{ if gt (len
