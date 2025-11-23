@@ -46,7 +46,7 @@ We encourage girls to discover coding and explore a career in tech. DevOpsDays Z
 
 ### Be Like Grace
 
-We are committed to the integration of diverse perspectives in tech and innovation. DevOpsDays Zurich is proud to collaborate with [Be Like Grace](https://belikegrace.com), a network dedicated to fostering inclusion and diversity in Bern's tech scene.
+We are committed to the integration of diverse perspectives in tech and innovation. DevOpsDays Zurich is proud to collaborate with [Be Like Grace](https://belikegrace.ch), a network dedicated to fostering inclusion and diversity in Bern's tech scene.
 
 By empowering women and embracing varied backgrounds, languages, and cultures, we support Be Like Grace's commitment to:
 
