@@ -27,6 +27,34 @@
                         <a href="https://devopsdays.org/events/{{ .year }}-zurich/speakers"
                             style="color: var(--cerulean);" onmouseover="this.style.color='var(--indigo-dye)'"
                             onmouseout="this.style.color='var(--cerulean)'" class="text-sm">Speakers</a>
+                        {{ if .videoUrl }}
+                        <span class="text-gray-400">•</span>
+                        <a href="{{ .videoUrl }}" target="_blank" rel="noopener" style="color: var(--cerulean);"
+                            onmouseover="this.style.color='var(--indigo-dye)'"
+                            onmouseout="this.style.color='var(--cerulean)'"
+                            class="text-sm inline-flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                            Videos
+                        </a>
+                        {{ end }}
+                        {{ if .imagesUrl }}
+                        <span class="text-gray-400">•</span>
+                        <a href="{{ .imagesUrl }}" target="_blank" rel="noopener" style="color: var(--cerulean);"
+                            onmouseover="this.style.color='var(--indigo-dye)'"
+                            onmouseout="this.style.color='var(--cerulean)'"
+                            class="text-sm inline-flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 12c0 3.074 1.676 5.854 4.284 7.298.339.188.82.104 1.074-.188.254-.292.188-.82-.104-1.074C2.822 16.76 1.5 14.48 1.5 12c0-2.48 1.322-4.76 3.754-6.036.292-.254.358-.782.104-1.074-.254-.292-.734-.376-1.074-.188C1.676 6.146 0 8.926 0 12zm18.862-8.667c.254.292.735.376 1.074.188C22.324 4.855 24 7.635 24 11.334c0 3.074-1.676 5.854-4.284 7.298-.339.188-.82.104-1.074-.188-.254-.292-.188-.82.104-1.074 2.432-1.276 3.754-3.556 3.754-6.036 0-2.48-1.322-4.76-3.754-6.036-.292-.254-.358-.782-.104-1.074.254-.292.735-.376 1.074-.188zM12 6c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0 10.5c-2.485 0-4.5-2.015-4.5-4.5s2.015-4.5 4.5-4.5 4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5zM6.104 3.188c.254.292.735.376 1.074.188C8.606 2.522 10.253 2 12 2c1.747 0 3.394.522 4.822 1.376.339.188.82.104 1.074-.188.254-.292.188-.82-.104-1.074C16.106.855 14.103.25 12 .25c-2.103 0-4.106.605-5.792 1.864-.292.254-.358.782-.104 1.074zm11.792 17.624c-.254-.292-.735-.376-1.074-.188C15.394 21.478 13.747 22 12 22c-1.747 0-3.394-.522-4.822-1.376-.339-.188-.82-.104-1.074.188-.254.292-.188.82.104 1.074C7.894 23.145 9.897 23.75 12 23.75c2.103 0 4.106-.605 5.792-1.864.292-.254.358-.782.104-1.074z" />
+                            </svg>
+                            Photos
+                        </a>
+                        {{ end }}
                     </div>
 
                 </div>
