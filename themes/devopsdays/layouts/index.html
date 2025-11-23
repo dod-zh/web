@@ -47,7 +47,11 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center max-w-4xl mx-auto">
             <div>
                 <div class="text-4xl md:text-5xl font-bold mb-3" style="color: var(--cerulean);">
-                    {{ dateFormat "January 2-" $currentEvent.date }}{{ dateFormat "2, 2006" $currentEvent.endDate }}
+                    {{ if eq (dateFormat "January" $currentEvent.date) (dateFormat "January" $currentEvent.endDate) }}
+                        {{ dateFormat "January 2-" $currentEvent.date }}{{ dateFormat "2, 2006" $currentEvent.endDate }}
+                    {{ else }}
+                        {{ dateFormat "January 2 -" $currentEvent.date }} {{ dateFormat "January 2, 2006" $currentEvent.endDate }}
+                    {{ end }}
                 </div>
                 <div class="text-xl text-gray-600 font-medium">Two Days of Learning</div>
             </div>

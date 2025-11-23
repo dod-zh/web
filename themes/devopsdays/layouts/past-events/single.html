@@ -13,8 +13,13 @@
                     <div class="flex items-start justify-between mb-4">
                         <div>
                             <h3 class="text-2xl font-bold mb-2" style="color: var(--cerulean);">{{ .year }}</h3>
-                            <p class="text-gray-600">{{ dateFormat "January 2-" .date }}{{ dateFormat "2, 2006" .endDate
-                                }}</p>
+                            <p class="text-gray-600">
+                                {{ if eq (dateFormat "January" .date) (dateFormat "January" .endDate) }}
+                                    {{ dateFormat "January 2-" .date }}{{ dateFormat "2, 2006" .endDate }}
+                                {{ else }}
+                                    {{ dateFormat "January 2 -" .date }} {{ dateFormat "January 2, 2006" .endDate }}
+                                {{ end }}
+                            </p>
                             <p class="text-gray-600">{{ .venue }}, {{ .city }}</p>
                         </div>
                     </div>
