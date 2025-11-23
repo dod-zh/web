@@ -61,7 +61,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=devopsdays-ch --branch=preview-pr-${{ github.event.pull_request.number }}
+          command: pages deploy public --project-name=devopsdays-ch --branch=preview-pr-${{ github.event.pull_request.number }} --commit-dirty=true
       
       - name: Comment PR with preview URL
         uses: actions/github-script@v7
