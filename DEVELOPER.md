@@ -9,7 +9,7 @@ Technical documentation for developing and maintaining the DevOpsDays Zurich web
 git clone https://github.com/dod-zh/web.git
 cd web
 
-# Start dev server 
+# Start dev server
 hugo server -D
 ```
 
