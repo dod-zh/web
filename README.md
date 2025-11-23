@@ -23,8 +23,7 @@ Visit <http://localhost:1313>
 - **Hugo** 0.150.0+ (Extended) - Static site generator
 - **Tailwind CSS** - Styling framework
 - **Node.js** 18+ - Build tools
-- **Netlify** - Preview deployments
-- **GitHub Pages** - Production hosting
+- **Cloudflare Pages** - Hosting and preview deployments
 
 ## 📁 Structure
 
@@ -59,15 +58,16 @@ npm run validate
 
 ## 🚀 Deployment
 
-### Preview (Netlify)
+### Preview Deployments
 
-- Every PR gets automatic preview deployment
+- Every PR gets automatic preview deployment to Cloudflare Pages
+- Preview URL: `https://preview-pr-{number}.devopsdays-ch.pages.dev`
 - Preview URL posted in PR comments
 - Updates on each commit
 
-### Production (GitHub Pages)
+### Production
 
-- Merge to `main` triggers deployment
+- Merge to `main` triggers deployment to Cloudflare Pages
 - Live at <https://devopsdays.ch> in ~2-3 minutes
 - Deployed via GitHub Actions
 

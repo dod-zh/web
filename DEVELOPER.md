@@ -80,7 +80,6 @@ web/
 │   ├── layouts/      # Templates
 │   └── static/       # Theme assets
 ├── config.yaml        # Hugo config
-├── netlify.toml       # Netlify config
 └── package.json       # Node.js config
 ```
 
@@ -232,24 +231,25 @@ npm run generate:banner
 
 ### Architecture
 
-- **Netlify:** Preview deployments (PRs)
-- **GitHub Pages:** Production (<https://devopsdays.ch>)
+- **Cloudflare Pages:** Production and preview deployments
+- **GitHub Actions:** Build automation
 
 ### Workflow
 
 **Pull Request:**
 
-1. Netlify detects PR
+1. GitHub Actions detects PR
 2. Builds preview deployment
-3. Posts URL in PR comments
-4. Updates on each commit
+3. Deploys to Cloudflare Pages
+4. Posts preview URL in PR comments: `https://preview-pr-{number}.devopsdays-ch.pages.dev`
+5. Updates on each commit
 
 **Merged to `main`:**
 
 1. GitHub Actions triggers
 2. Builds with Hugo
-3. Deploys to GitHub Pages
-4. Live in ~2-3 minutes
+3. Deploys to Cloudflare Pages
+4. Live at <https://devopsdays.ch> in ~2-3 minutes
 
 ### Branch Protection
 
@@ -258,33 +258,36 @@ npm run generate:banner
 - All changes via Pull Requests
 - Automatic preview before merge
 
-### Netlify Configuration
+### Cloudflare Pages Configuration
 
-**File:** `netlify.toml`
+Deployment is handled via GitHub Actions using Wrangler CLI.
 
-```toml
-[build]
-command = "npm run build"
-publish = "public"
+**Workflows:**
 
-[build.environment]
-HUGO_VERSION = "0.150.0"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
-NODE_VERSION = "18"
+- `.github/workflows/cloudflare-pages.yml` - Production deployment
+- `.github/workflows/cloudflare-pages-preview.yml` - PR previews
+- `.github/workflows/cloudflare-pages-cleanup.yml` - Deployment cleanup
 
-[context.deploy-preview]
-command = "npm run generate:banner && hugo --gc --minify --baseURL=$DEPLOY_PRIME_URL"
-```
+**Required Secrets:**
 
-### GitHub Actions
+- `CLOUDFLARE_API_TOKEN` - Cloudflare API token
+- `CLOUDFLARE_ACCOUNT_ID` - Cloudflare account ID
 
-Production deployment handled by workflow in `.github/workflows/`.
+**Production:**
 
-**Trigger:** Push to `main` (via PR merge)  
-**Build:** Hugo with production settings  
-**Deploy:** GitHub Pages  
-**Domain:** <https://devopsdays.ch>
+- **Trigger:** Push to `main` (via PR merge)
+- **Build:** Hugo with production settings
+- **Deploy:** Cloudflare Pages via Wrangler
+- **Domain:** <https://devopsdays.ch>
+
+**Preview:**
+
+- **Trigger:** PR opened/updated
+- **Build:** Hugo with preview settings
+- **Deploy:** Cloudflare Pages branch deployment
+- **URL:** `https://preview-pr-{number}.devopsdays-ch.pages.dev`
+
+See [docs/CLOUDFLARE_PAGES.md](docs/CLOUDFLARE_PAGES.md) for complete setup instructions.
 
 ## 🧪 Testing
 
@@ -442,7 +445,7 @@ See [docs/FEATURE_FLAGS.md](docs/FEATURE_FLAGS.md) for details.
 
 - Minified HTML/CSS/JS
 - Optimized images (WebP)
-- CDN via GitHub Pages
+- CDN via Cloudflare Pages
 - No external dependencies in critical path
 
 ### Analytics
@@ -497,7 +500,7 @@ Use semantic commits:
 1. Create branch from `main`
 2. Make changes and test locally
 3. Push and create PR
-4. Review Netlify preview
+4. Review Cloudflare Pages preview
 5. Address review comments
 6. Merge when approved
 
@@ -507,8 +510,7 @@ Use semantic commits:
 
 - [Hugo Docs](https://gohugo.io/documentation/)
 - [Tailwind CSS](https://tailwindcss.com/docs)
-- [Netlify Docs](https://docs.netlify.com/)
-- [GitHub Pages](https://docs.github.com/en/pages)
+- [Cloudflare Pages](https://developers.cloudflare.com/pages/)
 
 ### Tools
 

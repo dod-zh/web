@@ -265,15 +265,16 @@ Open <http://localhost:1313>
 
 ## 🚀 Deployment
 
-### Preview (Netlify)
+### Preview Deployments
 
-- Every PR gets automatic preview URL
+- Every PR gets automatic preview URL on Cloudflare Pages
+- Preview URL: `https://preview-pr-{number}.devopsdays-ch.pages.dev`
 - Check PR comments for link
 - Updates on each commit
 
-### Production (GitHub Pages)
+### Production
 
-- PR merged to `main` → deploys automatically
+- PR merged to `main` → deploys automatically to Cloudflare Pages
 - Live at <https://devopsdays.ch> in ~2-3 minutes
 
 ## 📋 Event Workflow Checklist
@@ -340,7 +341,7 @@ A: JSON = structured data lists. Markdown = long-form content.
 A: ~2-3 minutes after PR merge to main.
 
 **Q: Can I preview changes?**  
-A: Yes. Every PR gets automatic Netlify preview URL.
+A: Yes. Every PR gets automatic preview URL on Cloudflare Pages.
 
 **Q: What if I make a mistake?**  
 A: All changes tracked in Git. Easy to revert.
