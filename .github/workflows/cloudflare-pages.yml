@@ -1,0 +1,67 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "cloudflare-pages-production"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    
+    env:
+      HUGO_VERSION: 0.150.0
+      NODE_VERSION: 18
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      
+      - name: Install Node.js dependencies
+        run: npm ci
+      
+      - name: Install system fonts for banner generation
+        run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core fonts-liberation fontconfig
+      
+      - name: Generate sponsor banner
+        run: npm run generate:banner
+      
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: hugo --minify --baseURL "${{ vars.CLOUDFLARE_PAGES_URL || 'https://devopsdays.ch' }}"
+      
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: devopsdays-ch
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

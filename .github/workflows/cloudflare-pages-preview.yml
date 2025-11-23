@@ -1,0 +1,123 @@
+name: Deploy PR Preview to Cloudflare Pages
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+# Allow only one concurrent deployment per PR
+concurrency:
+  group: "cloudflare-pages-pr-${{ github.event.pull_request.number }}"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    # Skip deployment if PR is closed
+    if: github.event.action != 'closed'
+    permissions:
+      contents: read
+      deployments: write
+      pull-requests: write
+    
+    env:
+      HUGO_VERSION: 0.150.0
+      NODE_VERSION: 18
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      
+      - name: Install Node.js dependencies
+        run: npm ci
+      
+      - name: Install system fonts for banner generation
+        run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core fonts-liberation fontconfig
+      
+      - name: Generate sponsor banner
+        run: npm run generate:banner
+      
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: preview
+          HUGO_ENV: preview
+        run: hugo --minify --buildFuture --baseURL "/"
+      
+      - name: Publish to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: devopsdays-ch
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: pr-${{ github.event.pull_request.number }}
+      
+      - name: Comment PR with preview URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const previewUrl = '${{ steps.deploy.outputs.url }}';
+            const comment = `## 🚀 Preview Deployment\n\nYour preview deployment is ready!\n\n🔗 **Preview URL:** ${previewUrl}\n\n---\n*Updated for commit ${{ github.event.pull_request.head.sha }}*`;
+            
+            // Find existing comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            
+            const botComment = comments.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('Preview Deployment')
+            );
+            
+            if (botComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: comment
+              });
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: comment
+              });
+            }
+  
+  cleanup:
+    runs-on: ubuntu-latest
+    # Only run on PR close
+    if: github.event.action == 'closed'
+    permissions:
+      contents: read
+      deployments: write
+    
+    steps:
+      - name: Delete preview deployment
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: devopsdays-ch
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: pr-${{ github.event.pull_request.number }}
