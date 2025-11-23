@@ -41,6 +41,14 @@
       "description": "Silver Sponsor"
     },
     {
+      "id": "sponsor-05",
+      "name": "4data",
+      "level": "silver",
+      "logo": "/images/sponsors/4data.webp",
+      "website": "https://4data.ch/",
+      "description": "Silver Sponsor"
+    },
+    {
       "id": "sponsor-06",
       "name": "Xelon",
       "level": "coffee",
