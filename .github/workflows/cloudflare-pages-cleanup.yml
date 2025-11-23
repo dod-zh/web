@@ -28,17 +28,32 @@ jobs:
             exit 1
           fi
           
-          # Get preview deployments and delete old ones
-          deployments=$(echo "$response" | jq -r '.result[]? | select(.environment=="preview") | "\(.id) \(.created_on)"' \
+          # Cleanup old preview deployments
+          echo "=== Cleaning up preview deployments ==="
+          preview_deployments=$(echo "$response" | jq -r '.result[]? | select(.environment=="preview") | "\(.id) \(.created_on)"' \
             | sort -k2 -r | tail -n +$((KEEP_LATEST + 1)) | awk '{print $1}')
 
-          if [ -z "$deployments" ]; then
+          if [ -z "$preview_deployments" ]; then
             echo "No old preview deployments to clean up"
-            exit 0
+          else
+            for id in $preview_deployments; do
+              echo "Deleting preview deployment $id"
+              curl -s -X DELETE -H "Authorization: Bearer $CF_API_TOKEN" \
+                "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/pages/projects/$CF_PROJECT_NAME/deployments/$id?force=true"
+            done
           fi
+          
+          # Cleanup old production deployments
+          echo "=== Cleaning up production deployments ==="
+          production_deployments=$(echo "$response" | jq -r '.result[]? | select(.environment=="production") | "\(.id) \(.created_on)"' \
+            | sort -k2 -r | tail -n +$((KEEP_LATEST + 1)) | awk '{print $1}')
 
-          for id in $deployments; do
-            echo "Deleting deployment $id"
-            curl -X DELETE -H "Authorization: Bearer $CF_API_TOKEN" \
-              "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/pages/projects/$CF_PROJECT_NAME/deployments/$id?force=true"
-          done
+          if [ -z "$production_deployments" ]; then
+            echo "No old production deployments to clean up"
+          else
+            for id in $production_deployments; do
+              echo "Deleting production deployment $id"
+              curl -s -X DELETE -H "Authorization: Bearer $CF_API_TOKEN" \
+                "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/pages/projects/$CF_PROJECT_NAME/deployments/$id?force=true"
+            done
+          fi
