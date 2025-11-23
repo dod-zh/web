@@ -3,12 +3,15 @@
 ## Changes Made
 
 ### 1. Created Package Configuration File
+
 **File:** `data/sponsor_packages.json`
+
 - Defines all sponsor packages with their limits
 - Supports unlimited packages (using -1 for max_available)
 - Contains pricing and metadata for each package
 
 **Package Limits:**
+
 - Gold: 5 packages
 - Silver: 3 packages
 - Bronze: unlimited
@@ -18,20 +21,26 @@
 - Snacks: 1 package
 
 ### 2. Created Dynamic Availability Shortcode
+
 **File:** `themes/devopsdays/layouts/shortcodes/sponsor_availability.html`
+
 - Calculates available packages in real-time
 - Counts current sponsors from sponsors.json
 - Compares with package limits
 - Displays: number available, "unlimited", or "SOLD OUT"
 
 ### 3. Updated Sponsors Page
+
 **File:** `content/event/sponsors.md`
+
 - Replaced static availability values with dynamic shortcodes
 - Now automatically updates when sponsors are added/removed
 - Uses format: `{{< sponsor_availability "Package Name" >}}`
 
 ### 4. Documentation
+
 **File:** `docs/SPONSOR_PACKAGES.md`
+
 - Complete guide for managing sponsor packages
 - Configuration reference
 - Usage examples
@@ -54,16 +63,19 @@ Based on current sponsors in `data/sponsors.json`:
 ## How to Use
 
 ### Adding a New Sponsor
+
 1. Edit `data/sponsors.json`
 2. Add sponsor with appropriate `level` field
 3. Rebuild site - availability updates automatically
 
 ### Changing Package Limits
+
 1. Edit `data/sponsor_packages.json`
 2. Update `max_available` for the desired package
 3. Rebuild site - page updates automatically
 
 ### Viewing Changes
+
 - Development: `hugo server` (auto-reloads)
 - Production: `hugo` to build static site
 
@@ -78,8 +90,9 @@ Based on current sponsors in `data/sponsors.json`:
 ## Testing
 
 Site has been built and tested successfully:
+
 - All shortcodes render correctly
 - Availability calculations are accurate
 - Bronze package correctly shows "unlimited"
 - Sold out packages show "SOLD OUT"
-- Development server running at http://localhost:1313
+- Development server running at <http://localhost:1313>
