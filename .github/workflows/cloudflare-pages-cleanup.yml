@@ -1,0 +1,27 @@
+name: Cleanup old previews
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # daily at midnight UTC
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup old preview deployments
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT_ID: your_account_id
+          CF_PROJECT_NAME: your_project_name
+          KEEP_LATEST: 5
+        run: |
+          deployments=$(curl -s -H "Authorization: Bearer $CF_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/pages/projects/$CF_PROJECT_NAME/deployments" \
+            | jq -r '.result[] | select(.environment=="preview") | "\(.id) \(.created_on)"' \
+            | sort -k2 | head -n -$KEEP_LATEST | awk '{print $1}')
+
+          for id in $deployments; do
+            echo "Deleting deployment $id"
+            curl -X DELETE -H "Authorization: Bearer $CF_API_TOKEN" \
+              "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/pages/projects/$CF_PROJECT_NAME/deployments/$id"
+          done
