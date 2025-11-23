@@ -57,21 +57,18 @@ jobs:
       
       - name: Publish to Cloudflare Pages
         id: deploy
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: devopsdays-ch
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: pr-${{ github.event.pull_request.number }}
+          command: pages deploy public --project-name=devopsdays-ch --branch=preview-pr-${{ github.event.pull_request.number }}
       
       - name: Comment PR with preview URL
         uses: actions/github-script@v7
         with:
           script: |
-            const previewUrl = '${{ steps.deploy.outputs.url }}';
-            const comment = `## 🚀 Preview Deployment\n\nYour preview deployment is ready!\n\n🔗 **Preview URL:** ${previewUrl}\n\n---\n*Updated for commit ${{ github.event.pull_request.head.sha }}*`;
+            const deploymentUrl = `https://preview-pr-${{ github.event.pull_request.number }}.devopsdays-ch.pages.dev`;
+            const comment = `## 🚀 Preview Deployment\n\nYour preview deployment is ready!\n\n🔗 **Preview URL:** ${deploymentUrl}\n\n---\n*Updated for commit ${{ github.event.pull_request.head.sha }}*`;
             
             // Find existing comment
             const { data: comments } = await github.rest.issues.listComments({
@@ -109,15 +106,10 @@ jobs:
     if: github.event.action == 'closed'
     permissions:
       contents: read
-      deployments: write
     
     steps:
       - name: Delete preview deployment
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: devopsdays-ch
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: pr-${{ github.event.pull_request.number }}
+        run: |
+          echo "Note: Cloudflare Pages preview deployments remain accessible."
+          echo "To delete, use the Cloudflare dashboard or API directly."
+          echo "Preview URL: https://preview-pr-${{ github.event.pull_request.number }}.devopsdays-ch.pages.dev"
