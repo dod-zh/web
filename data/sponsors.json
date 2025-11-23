@@ -65,6 +65,22 @@
       "description": "Bronze Sponsor"
     },
     {
+      "id": "sponsor-10",
+      "name": "DevOpsMeetupBern",
+      "level": "community",
+      "logo": "/images/sponsors/dom_bern.jpg",
+      "website": "https://www.meetup.com/de-de/devops-bern/",
+      "description": "Community Sponsor"
+    },
+    {
+      "id": "sponsor-10",
+      "name": "DevOpsMeetupZurich",
+      "level": "community",
+      "logo": "/images/sponsors/dom_zurich.jpg",
+      "website": "https://www.meetup.com/de-de/devops-meetup-zurich/",
+      "description": "Community Sponsor"
+    },
+    {
       "id": "sponsor-08",
       "name": "Powercoders",
       "level": "community",

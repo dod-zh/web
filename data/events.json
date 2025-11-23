@@ -65,7 +65,7 @@
       "date": "2019-05-14",
       "endDate": "2019-05-15",
       "status": "past",
-      "venue": "Technopark",
+      "venue": "Umweltarena",
       "city": "Zurich",
       "attendees": 280,
       "theme": "DevOps Transformation"
@@ -75,8 +75,8 @@
       "date": "2018-05-02",
       "endDate": "2018-05-03",
       "status": "past",
-      "venue": "Technopark",
-      "city": "Zurich",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
       "attendees": 250,
       "theme": "Automation & Culture"
     },
@@ -85,8 +85,8 @@
       "date": "2017-05-03",
       "endDate": "2017-05-04",
       "status": "past",
-      "venue": "Technopark",
-      "city": "Zurich",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
       "attendees": 200,
       "theme": "DevOps Practices"
     }
