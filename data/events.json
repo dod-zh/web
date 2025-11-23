@@ -7,8 +7,7 @@
       "status": "upcoming",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
-      "attendees": 250,
-      "theme": "Building Resilient Systems"
+      "attendees": 250
     },
     {
       "year": 2025,
@@ -18,7 +17,8 @@
       "venue": "Alte Kaserne",
       "city": "Winterthur",
       "attendees": 300,
-      "theme": "Building Resilient Systems"
+      "videoUrl": "https://vimeo.com/showcase/11634536",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72177720324447388"
     },
     {
       "year": 2024,
@@ -28,7 +28,8 @@
       "venue": "Alte Kaserne",
       "city": "Winterthur",
       "attendees": 280,
-      "theme": "DevOps at Scale"
+      "videoUrl": "https://vimeo.com/showcase/11113419",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72177720316302190"
     },
     {
       "year": 2023,
@@ -38,7 +39,8 @@
       "venue": "Alte Kaserne",
       "city": "Winterthur",
       "attendees": 250,
-      "theme": "Culture & Automation"
+      "videoUrl": "https://vimeo.com/showcase/10397059",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72177720308136345"
     },
     {
       "year": 2022,
@@ -48,7 +50,8 @@
       "venue": "Alte Kaserne",
       "city": "Winterthur",
       "attendees": 230,
-      "theme": "Collaboration & Innovation"
+      "videoUrl": "https://vimeo.com/showcase/9608509",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72177720299498519"
     },
     {
       "year": 2021,
@@ -58,7 +61,8 @@
       "venue": "Alte Kaserne",
       "city": "Winterthur",
       "attendees": 200,
-      "theme": "Resilience & Recovery"
+      "videoUrl": "https://vimeo.com/showcase/8835529",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72157719880335267"
     },
     {
       "year": 2019,
@@ -68,7 +72,8 @@
       "venue": "Umweltarena",
       "city": "Zurich",
       "attendees": 280,
-      "theme": "DevOps Transformation"
+      "videoUrl": "https://vimeo.com/showcase/6186239",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72157680463366208"
     },
     {
       "year": 2018,
@@ -78,7 +83,8 @@
       "venue": "Alte Kaserne",
       "city": "Winterthur",
       "attendees": 250,
-      "theme": "Automation & Culture"
+      "videoUrl": "https://vimeo.com/showcase/5189967",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72157690847332020"
     },
     {
       "year": 2017,
@@ -88,7 +94,8 @@
       "venue": "Alte Kaserne",
       "city": "Winterthur",
       "attendees": 200,
-      "theme": "DevOps Practices"
+      "videoUrl": "https://vimeo.com/showcase/6186272",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72157683712222866"
     }
   ]
 }
