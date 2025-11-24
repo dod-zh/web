@@ -37,7 +37,7 @@ Parking is available but not validated. We strongly recommend using public trans
 ![Location Plan](/images/location.avif)
 
 <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.4797688202353!2d8.724134715724164!3d47.498504679177385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a997f41b4f7d3%3A0x54d6f50e39c82eaf!2sAlte%20Kaserne%20Kulturzentrum!5e0!3m2!1sen!2sch!4v1697000000000!5m2!1sen!2sch"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.3421567916254!2d8.723063976584889!3d47.49789561009867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a997f41b4f7d3%3A0x54d6f50e39c82eaf!2sTechnikumstrasse%208%2C%208400%20Winterthur%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1732410000000!5m2!1sen!2sch"
   width="600"
   height="450"
   style="border:0;"
