@@ -52,7 +52,7 @@ We'd love to hear from you! Here's how:
    - After the CFP closes, our team reviews all submissions
    - Selected speakers are notified and the program is published
 
-**Outside of CFP?** Feel free to [contact the organizers](../contact/) if you're interested in speaking at a future event.
+**Outside of CFP?** Feel free to [contact the organizers](mailto:organizer@devopsdays.ch) if you're interested in speaking at a future event.
 
 ### What is an Ignite Talk?
 

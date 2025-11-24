@@ -66,7 +66,7 @@ As a visitor, you can also contribute to a sustainable conference. We encourage 
 
 ## Share Your Ideas
 
-If you have any more suggestions or ideas for making DevOpsDays Zurich more sustainable, please [get in touch using our contact form](../contact/).
+If you have any more suggestions or ideas for making DevOpsDays Zurich more sustainable, please [get in touch](mailto:organizer@devopsdays.ch).
 
 We might not have a solution in every case or right away – but you can be sure that **we are passionate and eager to find one**!
 
