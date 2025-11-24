@@ -5,6 +5,8 @@ description: "Frequently asked questions about DevOpsDays Zurich"
 
 Find answers to common questions about attending, speaking, and sponsoring DevOpsDays Zurich.
 
+{{< if-feature flag="tickets" >}}
+
 ## Registration & Tickets
 
 ### How do I register and how do I get my ticket?
@@ -28,6 +30,8 @@ Yes, but with conditions:
 - It's possible if the badge is **returned on the evening of the first day**
 - Exchanges within one day are **not possible**
 - Contact us in advance to arrange the transfer
+
+{{< /if-feature >}}
 
 ## Speaking at DevOpsDays
 
