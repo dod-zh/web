@@ -1,0 +1,16 @@
+{{- $feature := .Get "flag" -}}
+{{- $enabled := false -}}
+
+{{- if eq $feature "program" -}}
+{{- $enabled = $.Site.Params.features.show_program -}}
+{{- else if eq $feature "tickets" -}}
+{{- $enabled = $.Site.Params.features.show_tickets -}}
+{{- else if eq $feature "cfp" -}}
+{{- $enabled = $.Site.Params.features.show_cfp -}}
+{{- else if eq $feature "speakers" -}}
+{{- $enabled = $.Site.Params.features.show_speakers -}}
+{{- end -}}
+
+{{- if $enabled -}}
+{{- .Inner | markdownify -}}
+{{- end -}}
