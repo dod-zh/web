@@ -1,4 +1,10 @@
 {{ if .Site.Data.sponsors }}
+{{- /* Build a map of level to package name */ -}}
+{{- $levelToName := dict -}}
+{{- range .Site.Data.sponsor_packages.packages -}}
+{{- $levelToName = merge $levelToName (dict .level .name) -}}
+{{- end -}}
+
 <section class="py-8 bg-white">
     <div class="container mx-auto px-4">
         <h3 class="text-2xl font-bold text-center mb-8" style="color: var(--indigo-dye);">Our Amazing Sponsors</h3>
@@ -6,8 +12,9 @@
         <!-- Gold Sponsors -->
         {{ $gold := where .Site.Data.sponsors.sponsors "level" "gold" }}
         {{ if $gold }}
+        {{- $packageName := index $levelToName "gold" | default "Gold" -}}
         <div class="mb-8">
-            <h4 class="text-xl font-semibold text-center mb-6" style="color: var(--indigo-dye);">Gold Sponsors</h4>
+            <h4 class="text-xl font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}</h4>
             <div class="flex flex-wrap justify-center items-center gap-8" data-sponsor-tier="gold">
                 {{ range $gold }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
@@ -22,8 +29,9 @@
         <!-- Silver Sponsors -->
         {{ $silver := where .Site.Data.sponsors.sponsors "level" "silver" }}
         {{ if $silver }}
+        {{- $packageName := index $levelToName "silver" | default "Silver" -}}
         <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Silver Sponsors</h4>
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}</h4>
             <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="silver">
                 {{ range $silver }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
@@ -35,21 +43,14 @@
         </div>
         {{ end }}
 
-        <!-- Event Sponsors (Evening, Coffee, Meals, Snacks) -->
-        {{ $evening := where .Site.Data.sponsors.sponsors "level" "evening" }}
-        {{ $coffee := where .Site.Data.sponsors.sponsors "level" "coffee" }}
-        {{ $meals := where .Site.Data.sponsors.sponsors "level" "meals" }}
-        {{ $snacks := where .Site.Data.sponsors.sponsors "level" "snacks" }}
-        {{ $eventSponsors := slice }}
-        {{ range $evening }}{{ $eventSponsors = $eventSponsors | append . }}{{ end }}
-        {{ range $coffee }}{{ $eventSponsors = $eventSponsors | append . }}{{ end }}
-        {{ range $meals }}{{ $eventSponsors = $eventSponsors | append . }}{{ end }}
-        {{ range $snacks }}{{ $eventSponsors = $eventSponsors | append . }}{{ end }}
-        {{ if $eventSponsors }}
+        <!-- Food and Beverage Sponsors -->
+        {{ $foodAndBeverage := where .Site.Data.sponsors.sponsors "level" "food_and_beverage" }}
+        {{ if $foodAndBeverage }}
+        {{- $packageName := index $levelToName "food_and_beverage" | default "Food and Beverage" -}}
         <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Event Sponsors</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="event">
-                {{ range $eventSponsors }}
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}</h4>
+            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="food_and_beverage">
+                {{ range $foodAndBeverage }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
                         class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
@@ -62,8 +63,10 @@
         <!-- Bronze Sponsors -->
         {{ $bronze := where .Site.Data.sponsors.sponsors "level" "bronze" }}
         {{ if $bronze }}
+        {{- $packageName := index $levelToName "bronze" | default "Bronze" -}}
         <div class="mb-8">
-            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Bronze Sponsors</h4>
+            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}
+            </h4>
             <div class="flex flex-wrap justify-center items-center" data-sponsor-tier="bronze">
                 {{ range $bronze }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
@@ -78,8 +81,9 @@
         <!-- Community Sponsors -->
         {{ $community := where .Site.Data.sponsors.sponsors "level" "community" }}
         {{ if $community }}
+        {{- $packageName := index $levelToName "community" | default "Community" -}}
         <div class="mb-8">
-            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Community Sponsors
+            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}
             </h4>
             <div class="flex flex-wrap justify-center items-center gap-4" data-sponsor-tier="community">
                 {{ range $community }}
@@ -95,8 +99,10 @@
         <!-- Partner Sponsors -->
         {{ $partner := where .Site.Data.sponsors.sponsors "level" "partner" }}
         {{ if $partner }}
+        {{- $packageName := index $levelToName "partner" | default "Partner" -}}
         <div class="mb-6">
-            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">Partner Sponsors</h4>
+            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}
+            </h4>
             <div class="flex flex-wrap justify-center items-center gap-4" data-sponsor-tier="partner">
                 {{ range $partner }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">

@@ -27,7 +27,7 @@
     {
       "id": "sponsor-04",
       "name": "BIT",
-      "level": "gold",
+      "level": "partner",
       "logo": "/images/sponsors/bit.webp",
       "website": "https://www.bit.admin.ch/",
       "description": "Gold Sponsor"
@@ -51,7 +51,7 @@
     {
       "id": "sponsor-06",
       "name": "Xelon",
-      "level": "coffee",
+      "level": "food_and_beverage",
       "logo": "/images/sponsors/xelon.png",
       "website": "https://www.xelon.ch/",
       "description": "Coffree Sponsor"
@@ -59,7 +59,7 @@
     {
       "id": "sponsor-06",
       "name": "Cyberlink",
-      "level": "evening",
+      "level": "food_and_beverage",
       "logo": "/images/sponsors/cyberlink.png",
       "website": "https://www.cyberlink.ch/",
       "description": "Evening Event Sponsor"
