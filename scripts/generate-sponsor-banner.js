@@ -28,7 +28,7 @@ const CONFIG = {
     logoSizes: {
         gold: { width: 300, height: 120 },
         silver: { width: 250, height: 100 },
-        food_and_beverage: { width: 250, height: 100 },
+        event: { width: 250, height: 100 },
         bronze: { width: 200, height: 80 },
         partner: { width: 180, height: 72 },
         community: { width: 180, height: 72 }
@@ -38,7 +38,7 @@ const CONFIG = {
     sections: [
         { level: 'gold' },
         { level: 'silver' },
-        { level: 'food_and_beverage' },
+        { level: 'event' },
         { level: 'bronze' },
         { level: 'community' },
         { level: 'partner' }
