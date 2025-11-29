@@ -28,21 +28,17 @@ const CONFIG = {
     logoSizes: {
         gold: { width: 300, height: 120 },
         silver: { width: 250, height: 100 },
+        food_and_beverage: { width: 250, height: 100 },
         bronze: { width: 200, height: 80 },
-        evening: { width: 200, height: 80 },
-        coffee: { width: 200, height: 80 },
-        meals: { width: 200, height: 80 },
-        snacks: { width: 200, height: 80 },
         partner: { width: 180, height: 72 },
         community: { width: 180, height: 72 }
     },
 
     // Section order (titles will be loaded from sponsor_packages.json)
-    // Event sponsors (evening, coffee, meals, snacks) are grouped together
     sections: [
         { level: 'gold' },
         { level: 'silver' },
-        { levels: ['evening', 'coffee', 'meals', 'snacks'] },
+        { level: 'food_and_beverage' },
         { level: 'bronze' },
         { level: 'community' },
         { level: 'partner' }
@@ -230,14 +226,7 @@ async function generateBanner() {
         }
 
         // Determine section title from sponsor_packages.json
-        let sectionTitle;
-        if (levels.length > 1) {
-            // For grouped levels (Event Sponsors), use the first level's name or fallback
-            sectionTitle = levelToName[levels[0]] || 'Event';
-        } else {
-            // For single level, use the package name from sponsor_packages.json
-            sectionTitle = levelToName[levels[0]] || levels[0].charAt(0).toUpperCase() + levels[0].slice(1);
-        }
+        const sectionTitle = levelToName[levels[0]] || levels[0].charAt(0).toUpperCase() + levels[0].slice(1);
 
         console.log(`\n📦 Processing ${sectionTitle} (${levelSponsors.length} sponsors)...`);
 
