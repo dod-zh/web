@@ -43,14 +43,14 @@
         </div>
         {{ end }}
 
-        <!-- Food and Beverage Sponsors -->
-        {{ $foodAndBeverage := where .Site.Data.sponsors.sponsors "level" "food_and_beverage" }}
-        {{ if $foodAndBeverage }}
-        {{- $packageName := index $levelToName "food_and_beverage" | default "Food and Beverage" -}}
+        <!-- Event Sponsors -->
+        {{ $event := where .Site.Data.sponsors.sponsors "level" "event" }}
+        {{ if $event }}
+        {{- $packageName := index $levelToName "event" | default "Event" -}}
         <div class="mb-8">
             <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="food_and_beverage">
-                {{ range $foodAndBeverage }}
+            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="event">
+                {{ range $event }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
                         class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">

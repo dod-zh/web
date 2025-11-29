@@ -24,7 +24,7 @@
         },
         {
             "name": "Evening Event, Coffee, Meals, Snacks",
-            "level": "food_and_beverage",
+            "level": "event",
             "max_available": 1,
             "price": 4000,
             "currency": "CHF"
