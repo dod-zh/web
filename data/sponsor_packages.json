@@ -49,6 +49,22 @@
             "max_available": 1,
             "price": 4000,
             "currency": "CHF"
+        },
+        {
+            "name": "Community",
+            "level": "community",
+            "max_available": -1,
+            "price": 0,
+            "currency": "CHF",
+            "note": "unlimited"
+        },
+        {
+            "name": "Partner",
+            "level": "partner",
+            "max_available": -1,
+            "price": 0,
+            "currency": "CHF",
+            "note": "unlimited"
         }
     ]
 }

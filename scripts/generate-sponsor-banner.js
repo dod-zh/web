@@ -9,6 +9,7 @@ const CONFIG = {
     outputPath: path.join(__dirname, '../static/images/banner/sponsor-banner.jpg'),
     headerPath: path.join(__dirname, '../static/images/banner/banner-header.jpg'),
     sponsorsDataPath: path.join(__dirname, '../data/sponsors.json'),
+    sponsorPackagesDataPath: path.join(__dirname, '../data/sponsor_packages.json'),
     sponsorImagesDir: path.join(__dirname, '../static/images/sponsors'),
 
     // Layout settings
@@ -36,17 +37,29 @@ const CONFIG = {
         community: { width: 180, height: 72 }
     },
 
-    // Section order and titles
+    // Section order (titles will be loaded from sponsor_packages.json)
     // Event sponsors (evening, coffee, meals, snacks) are grouped together
     sections: [
-        { level: 'gold', title: 'Gold Sponsors' },
-        { level: 'silver', title: 'Silver Sponsors' },
-        { levels: ['evening', 'coffee', 'meals', 'snacks'], title: 'Event Sponsors' },
-        { level: 'bronze', title: 'Bronze Sponsors' },
-        { level: 'community', title: 'Community Sponsors' },
-        { level: 'partner', title: 'Partners' }
+        { level: 'gold' },
+        { level: 'silver' },
+        { levels: ['evening', 'coffee', 'meals', 'snacks'] },
+        { level: 'bronze' },
+        { level: 'community' },
+        { level: 'partner' }
     ]
 };
+
+/**
+ * Load and parse sponsor packages data
+ */
+function loadSponsorPackages() {
+    const data = JSON.parse(fs.readFileSync(CONFIG.sponsorPackagesDataPath, 'utf8'));
+    const levelToName = {};
+    data.packages.forEach(pkg => {
+        levelToName[pkg.level] = pkg.name;
+    });
+    return levelToName;
+}
 
 /**
  * Load and parse sponsors data
@@ -176,9 +189,10 @@ function calculateSectionHeight(logos, maxWidth, logoHeight, logoSpacing, rowSpa
 async function generateBanner() {
     console.log('🎨 Generating sponsor banner...');
 
-    // Load sponsors data
+    // Load sponsors data and package names
     const sponsors = loadSponsors();
     const sponsorsByLevel = groupSponsorsByLevel(sponsors);
+    const levelToName = loadSponsorPackages();
 
     console.log(`📊 Found ${sponsors.length} sponsors across ${Object.keys(sponsorsByLevel).length} levels`);
 
@@ -215,7 +229,17 @@ async function generateBanner() {
             continue;
         }
 
-        console.log(`\n📦 Processing ${section.title} (${levelSponsors.length} sponsors)...`);
+        // Determine section title from sponsor_packages.json
+        let sectionTitle;
+        if (levels.length > 1) {
+            // For grouped levels (Event Sponsors), use the first level's name or fallback
+            sectionTitle = levelToName[levels[0]] || 'Event';
+        } else {
+            // For single level, use the package name from sponsor_packages.json
+            sectionTitle = levelToName[levels[0]] || levels[0].charAt(0).toUpperCase() + levels[0].slice(1);
+        }
+
+        console.log(`\n📦 Processing ${sectionTitle} (${levelSponsors.length} sponsors)...`);
 
         // Use the first level's logo size (all event sponsors use same size)
         const logoSize = CONFIG.logoSizes[levels[0]];
@@ -232,7 +256,7 @@ async function generateBanner() {
         }
 
         if (logos.length === 0) {
-            console.log(`  ⚠️  No logos loaded for ${section.title}, skipping section`);
+            console.log(`  ⚠️  No logos loaded for ${sectionTitle}, skipping section`);
             continue;
         }
 
@@ -254,7 +278,7 @@ async function generateBanner() {
         }).png().toBuffer();
 
         // Create section title
-        const titleBuffer = await createSectionTitleImage(section.title, CONFIG.bannerWidth);
+        const titleBuffer = await createSectionTitleImage(sectionTitle, CONFIG.bannerWidth);
 
         // Prepare composites for this section
         const composites = [
