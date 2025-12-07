@@ -39,7 +39,7 @@
     {
       "name": "Xelon",
       "level": "coffee",
-      "logo": "/images/sponsors/xelon.png",
+      "logo": "/images/sponsors/xelon.webp",
       "website": "https://www.xelon.ch/"
     },
     {
@@ -51,19 +51,19 @@
     {
       "name": "Zuehlke",
       "level": "bronze",
-      "logo": "/images/sponsors/zuehlke.png",
+      "logo": "/images/sponsors/zuehlke.webp",
       "website": "https://www.zuehlke.com/"
     },
     {
       "name": "DevOpsMeetupBern",
       "level": "community",
-      "logo": "/images/sponsors/dom_bern.jpg",
+      "logo": "/images/sponsors/dom_bern.webp",
       "website": "https://www.meetup.com/de-de/devops-bern/"
     },
     {
       "name": "DevOpsMeetupZurich",
       "level": "community",
-      "logo": "/images/sponsors/dom_zurich.jpg",
+      "logo": "/images/sponsors/dom_zurich.webp",
       "website": "https://www.meetup.com/de-de/devops-meetup-zurich/"
     },
     {
