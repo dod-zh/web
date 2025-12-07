@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "DevOpsDays Zurich website built with Hugo",
   "scripts": {
-    "dev": "hugo server -D --bind 0.0.0.0",
-    "prebuild": "node scripts/generate-sponsor-banner.js",
+    "dev": "npm run build:css && hugo server -D --bind 0.0.0.0",
+    "prebuild": "npm run build:css && node scripts/generate-sponsor-banner.js",
     "build": "hugo --minify",
+    "build:css": "npx tailwindcss -i ./assets/css/tailwind.css -o ./static/css/tailwind.min.css --minify",
+    "watch:css": "npx tailwindcss -i ./assets/css/tailwind.css -o ./static/css/tailwind.min.css --watch",
     "build:preview": "npm run prebuild && hugo --minify --baseURL=/preview/",
     "validate": "html-validate public/**/*.html",
     "lighthouse": "lhci autorun",
-    "clean": "rm -rf public resources",
+    "clean": "rm -rf public resources static/css/tailwind.min.css",
     "generate:banner": "node scripts/generate-sponsor-banner.js"
   },
   "repository": {
@@ -27,9 +29,12 @@
   "license": "MIT",
   "devDependencies": {
     "@lhci/cli": "^0.12.0",
+    "autoprefixer": "^10.4.22",
     "canvas": "^3.2.0",
     "html-validate": "^8.7.3",
-    "sharp": "^0.34.5"
+    "postcss": "^8.5.6",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.18"
   },
   "engines": {
     "node": ">=18"
