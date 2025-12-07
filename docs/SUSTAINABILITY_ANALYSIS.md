@@ -10,15 +10,15 @@
 
 This document provides an initial analysis of the DevOpsDays Zurich website against three key sustainability principles for web development:
 
-1. **Energieeffizientes Hosting** - Energy-efficient hosting with renewable energy
-2. **Ressourcenschonendes Webdesign** - Resource-efficient web design with optimized assets
-3. **Farben und Schriftarten** - Energy-efficient colors and fonts
+1. **Energy-Efficient Hosting** - Energy-efficient hosting with renewable energy
+2. **Resource-Efficient Web Design** - Resource-efficient web design with optimized assets
+3. **Colors and Fonts** - Energy-efficient colors and fonts
 
 ---
 
 ## Analysis Against Sustainability Principles
 
-### 1. ✅ Energieeffizientes Hosting (Energy-Efficient Hosting)
+### 1. ✅ Energy-Efficient Hosting
 
 **Assessment: EXCELLENT**
 
@@ -49,7 +49,7 @@ The hosting infrastructure represents best-in-class sustainable web hosting. Clo
 
 ---
 
-### 2. ⚠️ Ressourcenschonendes Webdesign (Resource-Efficient Web Design)
+### 2. ⚠️ Resource-Efficient Web Design
 
 **Assessment: GOOD with areas for improvement**
 
@@ -159,7 +159,7 @@ The website foundation is solid with good practices in place (static site, syste
 
 ---
 
-### 3. ⚠️ Farben und Schriftarten (Colors and Fonts)
+### 3. ⚠️ Colors and Fonts
 
 **Assessment: MIXED**
 

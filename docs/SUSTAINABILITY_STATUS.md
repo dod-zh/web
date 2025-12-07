@@ -10,9 +10,9 @@
 
 This report documents the current sustainability status of the DevOpsDays Zurich website, evaluated against three key principles:
 
-1. **Energieeffizientes Hosting** - Renewable energy-powered hosting
-2. **Ressourcenschonendes Webdesign** - Resource-efficient design and optimization
-3. **Farben und Schriftarten** - Energy-efficient colors and typography
+1. **Energy-Efficient Hosting** - Renewable energy-powered hosting
+2. **Resource-Efficient Web Design** - Resource-efficient design and optimization
+3. **Colors and Fonts** - Energy-efficient colors and typography
 
 **Overall Sustainability Score: 9.0/10** ⭐
 
@@ -22,7 +22,7 @@ The website demonstrates strong commitment to environmental sustainability throu
 
 ## Sustainability Principles Assessment
 
-### 1. Energieeffizientes Hosting ✅
+### 1. Energy-Efficient Hosting ✅
 
 **Score: 10/10**
 
@@ -54,7 +54,7 @@ The conference website is hosted on infrastructure powered by renewable energy, 
 
 ---
 
-### 2. Ressourcenschonendes Webdesign ✅
+### 2. Resource-Efficient Web Design ✅
 
 **Score: 9.5/10**
 
@@ -168,7 +168,7 @@ This optimization alone saves 2.34 GB of data transfer per 10,000 page views and
 
 ---
 
-### 3. Farben und Schriftarten ⚠️
+### 3. Colors and Fonts ⚠️
 
 **Score: 7/10**
 
