@@ -46,7 +46,7 @@ function loadSponsorPackages() {
     const levelToName = {};
     const groupedLevels = {};
     const sections = [];
-    const processedLevels = new Set();
+    const displayOrder = data.display_order || [];
 
     data.packages.forEach(pkg => {
         levelToName[pkg.level] = pkg.name;
@@ -60,19 +60,35 @@ function loadSponsorPackages() {
         }
     });
 
-    // Build sections: groups first, then individual levels
-    // First add groups
-    Object.entries(groupedLevels).forEach(([groupName, levels]) => {
-        sections.push({ levels, title: groupName });
-        levels.forEach(level => processedLevels.add(level));
-    });
+    // Build sections based on display_order if provided, otherwise use order from packages
+    if (displayOrder.length > 0) {
+        displayOrder.forEach(groupOrLevel => {
+            if (groupedLevels[groupOrLevel]) {
+                // It's a group
+                sections.push({ levels: groupedLevels[groupOrLevel], title: groupOrLevel });
+            } else {
+                // It's an individual level - find the package with this name
+                const pkg = data.packages.find(p => p.name === groupOrLevel);
+                if (pkg) {
+                    sections.push({ level: pkg.level });
+                }
+            }
+        });
+    } else {
+        // Fallback: groups first, then individual levels
+        Object.entries(groupedLevels).forEach(([groupName, levels]) => {
+            sections.push({ levels, title: groupName });
+        });
 
-    // Then add individual levels that aren't in groups
-    data.packages.forEach(pkg => {
-        if (!processedLevels.has(pkg.level)) {
-            sections.push({ level: pkg.level });
-        }
-    });
+        const processedLevels = new Set();
+        Object.values(groupedLevels).flat().forEach(level => processedLevels.add(level));
+
+        data.packages.forEach(pkg => {
+            if (!processedLevels.has(pkg.level)) {
+                sections.push({ level: pkg.level });
+            }
+        });
+    }
 
     return { levelToName, sections };
 }

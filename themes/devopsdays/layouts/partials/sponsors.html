@@ -2,137 +2,91 @@
 {{- /* Build a map of level to package name and group levels by group name */ -}}
 {{- $levelToName := dict -}}
 {{- $groupedLevels := dict -}}
+{{- $levelToGroup := dict -}}
 {{- range .Site.Data.sponsor_packages.packages -}}
 {{- $levelToName = merge $levelToName (dict .level .name) -}}
 {{- if .group -}}
 {{- $existingLevels := index $groupedLevels .group | default slice -}}
 {{- $groupedLevels = merge $groupedLevels (dict .group ($existingLevels | append .level)) -}}
+{{- $levelToGroup = merge $levelToGroup (dict .level .group) -}}
 {{- end -}}
 {{- end -}}
 
-{{- /* Track which levels have been displayed to avoid duplicates */ -}}
-{{- $displayedLevels := slice -}}
+{{- /* Get display order from config */ -}}
+{{- $displayOrder := .Site.Data.sponsor_packages.display_order -}}
 
 <section class="py-8 bg-white">
     <div class="container mx-auto px-4">
         <h3 class="text-2xl font-bold text-center mb-8" style="color: var(--indigo-dye);">Our Amazing Sponsors</h3>
 
-        <!-- Gold Sponsors -->
-        {{ $gold := where .Site.Data.sponsors.sponsors "level" "gold" }}
-        {{ if $gold }}
-        {{- $packageName := index $levelToName "gold" | default "Gold" -}}
-        <div class="mb-8">
-            <h4 class="text-xl font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}</h4>
-            <div class="flex flex-wrap justify-center items-center gap-8" data-sponsor-tier="gold">
-                {{ range $gold }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
-                    <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-gold opacity-75 hover:opacity-100 transition-opacity">
-                </a>
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
+        {{- /* Track which levels and groups have been displayed */ -}}
+        {{- $displayedGroups := slice -}}
+        {{- $displayedLevels := slice -}}
 
-        <!-- Silver Sponsors -->
-        {{ $silver := where .Site.Data.sponsors.sponsors "level" "silver" }}
-        {{ if $silver }}
-        {{- $packageName := index $levelToName "silver" | default "Silver" -}}
-        <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="silver">
-                {{ range $silver }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
-                    <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-silver opacity-75 hover:opacity-100 transition-opacity">
-                </a>
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
+        {{- /* Iterate through display order */ -}}
+        {{- range $displayOrder -}}
+        {{- $groupOrLevel := . -}}
 
-        <!-- Grouped Sponsors (dynamically rendered from sponsor_packages.json) -->
-        {{- range $groupName, $levels := $groupedLevels -}}
+        {{- /* Check if this is a group */ -}}
+        {{- $isGroup := index $groupedLevels $groupOrLevel -}}
+        {{- if $isGroup -}}
+        {{- /* It's a group - display all levels in this group */ -}}
+        {{- if not (in $displayedGroups $groupOrLevel) -}}
+        {{- $displayedGroups = $displayedGroups | append $groupOrLevel -}}
         {{- $hasSponsors := false -}}
-        {{- $groupSponsors := slice -}}
-        {{- range $levels -}}
+        {{- range $isGroup -}}
         {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" . -}}
         {{- if $levelSponsors -}}
         {{- $hasSponsors = true -}}
         {{- end -}}
         {{- end -}}
+
         {{ if $hasSponsors }}
         <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $groupName }}</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="event">
-                {{- range $levels -}}
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $groupOrLevel }}
+            </h4>
+            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="{{ index $isGroup 0 }}">
+                {{- range $isGroup -}}
+                {{- $displayedLevels = $displayedLevels | append . -}}
+                {{- $currentLevel := . -}}
                 {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" . -}}
                 {{ range $levelSponsors }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-{{ $currentLevel }} opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
                 {{- end -}}
             </div>
         </div>
-        {{- $displayedLevels = $displayedLevels | append $levels -}}
         {{ end }}
         {{- end -}}
-
-        <!-- Bronze Sponsors -->
-        {{ $bronze := where .Site.Data.sponsors.sponsors "level" "bronze" }}
-        {{ if $bronze }}
-        {{- $packageName := index $levelToName "bronze" | default "Bronze" -}}
+        {{- else -}}
+        {{- /* It's an individual level name - find the level */ -}}
+        {{- range $.Site.Data.sponsor_packages.packages -}}
+        {{- if eq .name $groupOrLevel -}}
+        {{- $level := .level -}}
+        {{- if not (in $displayedLevels $level) -}}
+        {{- $displayedLevels = $displayedLevels | append $level -}}
+        {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" $level -}}
+        {{ if $levelSponsors }}
         <div class="mb-8">
-            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}
-            </h4>
-            <div class="flex flex-wrap justify-center items-center" data-sponsor-tier="bronze">
-                {{ range $bronze }}
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ .name }}</h4>
+            <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="{{ $level }}">
+                {{ range $levelSponsors }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-bronze opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-{{ $level }} opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
             </div>
         </div>
         {{ end }}
-
-        <!-- Community Sponsors -->
-        {{ $community := where .Site.Data.sponsors.sponsors "level" "community" }}
-        {{ if $community }}
-        {{- $packageName := index $levelToName "community" | default "Community" -}}
-        <div class="mb-8">
-            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}
-            </h4>
-            <div class="flex flex-wrap justify-center items-center gap-4" data-sponsor-tier="community">
-                {{ range $community }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
-                    <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-community opacity-75 hover:opacity-100 transition-opacity">
-                </a>
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
-
-        <!-- Partner Sponsors -->
-        {{ $partner := where .Site.Data.sponsors.sponsors "level" "partner" }}
-        {{ if $partner }}
-        {{- $packageName := index $levelToName "partner" | default "Partner" -}}
-        <div class="mb-6">
-            <h4 class="text-base font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}
-            </h4>
-            <div class="flex flex-wrap justify-center items-center gap-4" data-sponsor-tier="partner">
-                {{ range $partner }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
-                    <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-bronze opacity-75 hover:opacity-100 transition-opacity">
-                </a>
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
+        {{- end -}}
+        {{- end -}}
+        {{- end -}}
+        {{- end -}}
+        {{- end -}}
 
         <div class="text-center mt-8">
             <a href="/event/sponsors/" class="text-base font-semibold" style="color: var(--cerulean);"

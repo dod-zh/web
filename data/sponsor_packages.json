@@ -1,18 +1,28 @@
 {
+    "display_order": [
+        "Gold",
+        "Silver",
+        "Evening Event, Coffee, Meals, Snacks",
+        "Bronze",
+        "Community",
+        "Partner"
+    ],
     "packages": [
         {
             "name": "Gold",
             "level": "gold",
             "max_available": 5,
             "price": 8000,
-            "currency": "CHF"
+            "currency": "CHF",
+            "group": "Gold"
         },
         {
             "name": "Silver",
             "level": "silver",
             "max_available": 3,
             "price": 5000,
-            "currency": "CHF"
+            "currency": "CHF",
+            "group": "Silver"
         },
         {
             "name": "Bronze",
@@ -20,7 +30,8 @@
             "max_available": -1,
             "price": 750,
             "currency": "CHF",
-            "note": "unlimited"
+            "note": "unlimited",
+            "group": "Bronze"
         },
         {
             "name": "Evening Event",
@@ -60,7 +71,8 @@
             "max_available": -1,
             "price": 0,
             "currency": "CHF",
-            "note": "unlimited"
+            "note": "unlimited",
+            "group": "Community"
         },
         {
             "name": "Partner",
@@ -68,7 +80,8 @@
             "max_available": -1,
             "price": 0,
             "currency": "CHF",
-            "note": "unlimited"
+            "note": "unlimited",
+            "group": "Partner"
         }
     ]
 }
