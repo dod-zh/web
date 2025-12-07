@@ -1,9 +1,17 @@
 {{ if .Site.Data.sponsors }}
-{{- /* Build a map of level to package name */ -}}
+{{- /* Build a map of level to package name and group levels by group name */ -}}
 {{- $levelToName := dict -}}
+{{- $groupedLevels := dict -}}
 {{- range .Site.Data.sponsor_packages.packages -}}
 {{- $levelToName = merge $levelToName (dict .level .name) -}}
+{{- if .group -}}
+{{- $existingLevels := index $groupedLevels .group | default slice -}}
+{{- $groupedLevels = merge $groupedLevels (dict .group ($existingLevels | append .level)) -}}
 {{- end -}}
+{{- end -}}
+
+{{- /* Track which levels have been displayed to avoid duplicates */ -}}
+{{- $displayedLevels := slice -}}
 
 <section class="py-8 bg-white">
     <div class="container mx-auto px-4">
@@ -43,48 +51,34 @@
         </div>
         {{ end }}
 
-        <!-- Event Sponsors (grouped: evening, coffee, meal, snack) -->
-        {{- $eventEvening := where .Site.Data.sponsors.sponsors "level" "evening" -}}
-        {{- $eventCoffee := where .Site.Data.sponsors.sponsors "level" "coffee" -}}
-        {{- $eventMeal := where .Site.Data.sponsors.sponsors "level" "meal" -}}
-        {{- $eventSnack := where .Site.Data.sponsors.sponsors "level" "snack" -}}
-        {{- $eventSponsors := slice -}}
-        {{- $eventSponsors = $eventSponsors | append $eventEvening -}}
-        {{- $eventSponsors = $eventSponsors | append $eventCoffee -}}
-        {{- $eventSponsors = $eventSponsors | append $eventMeal -}}
-        {{- $eventSponsors = $eventSponsors | append $eventSnack -}}
-        {{ if or $eventEvening $eventCoffee $eventMeal $eventSnack }}
+        <!-- Grouped Sponsors (dynamically rendered from sponsor_packages.json) -->
+        {{- range $groupName, $levels := $groupedLevels -}}
+        {{- $hasSponsors := false -}}
+        {{- $groupSponsors := slice -}}
+        {{- range $levels -}}
+        {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" . -}}
+        {{- if $levelSponsors -}}
+        {{- $hasSponsors = true -}}
+        {{- end -}}
+        {{- end -}}
+        {{ if $hasSponsors }}
         <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Evening Event, Coffee,
-                Meals, Snacks</h4>
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $groupName }}</h4>
             <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="event">
-                {{ range $eventEvening }}
+                {{- range $levels -}}
+                {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" . -}}
+                {{ range $levelSponsors }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
                         class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
                 </a>
                 {{ end }}
-                {{ range $eventCoffee }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
-                    <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
-                </a>
-                {{ end }}
-                {{ range $eventMeal }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
-                    <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
-                </a>
-                {{ end }}
-                {{ range $eventSnack }}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
-                    <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
-                </a>
-                {{ end }}
+                {{- end -}}
             </div>
         </div>
+        {{- $displayedLevels = $displayedLevels | append $levels -}}
         {{ end }}
+        {{- end -}}
 
         <!-- Bronze Sponsors -->
         {{ $bronze := where .Site.Data.sponsors.sponsors "level" "bronze" }}

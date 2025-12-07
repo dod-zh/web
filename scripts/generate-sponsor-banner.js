@@ -35,17 +35,7 @@ const CONFIG = {
         bronze: { width: 200, height: 80 },
         partner: { width: 180, height: 72 },
         community: { width: 180, height: 72 }
-    },
-
-    // Section order (titles will be loaded from sponsor_packages.json)
-    sections: [
-        { level: 'gold' },
-        { level: 'silver' },
-        { levels: ['evening', 'coffee', 'meal', 'snack'], title: 'Evening Event, Coffee, Meals, Snacks' },
-        { level: 'bronze' },
-        { level: 'community' },
-        { level: 'partner' }
-    ]
+    }
 };
 
 /**
@@ -54,10 +44,37 @@ const CONFIG = {
 function loadSponsorPackages() {
     const data = JSON.parse(fs.readFileSync(CONFIG.sponsorPackagesDataPath, 'utf8'));
     const levelToName = {};
+    const groupedLevels = {};
+    const sections = [];
+    const processedLevels = new Set();
+
     data.packages.forEach(pkg => {
         levelToName[pkg.level] = pkg.name;
+
+        // Group levels if they have a group field
+        if (pkg.group) {
+            if (!groupedLevels[pkg.group]) {
+                groupedLevels[pkg.group] = [];
+            }
+            groupedLevels[pkg.group].push(pkg.level);
+        }
     });
-    return levelToName;
+
+    // Build sections: groups first, then individual levels
+    // First add groups
+    Object.entries(groupedLevels).forEach(([groupName, levels]) => {
+        sections.push({ levels, title: groupName });
+        levels.forEach(level => processedLevels.add(level));
+    });
+
+    // Then add individual levels that aren't in groups
+    data.packages.forEach(pkg => {
+        if (!processedLevels.has(pkg.level)) {
+            sections.push({ level: pkg.level });
+        }
+    });
+
+    return { levelToName, sections };
 }
 
 /**
@@ -191,7 +208,7 @@ async function generateBanner() {
     // Load sponsors data and package names
     const sponsors = loadSponsors();
     const sponsorsByLevel = groupSponsorsByLevel(sponsors);
-    const levelToName = loadSponsorPackages();
+    const { levelToName, sections } = loadSponsorPackages();
 
     console.log(`📊 Found ${sponsors.length} sponsors across ${Object.keys(sponsorsByLevel).length} levels`);
 
@@ -213,7 +230,7 @@ async function generateBanner() {
     const sectionComposites = [];
     let currentY = headerHeight;
 
-    for (const section of CONFIG.sections) {
+    for (const section of sections) {
         // Handle both single level and grouped levels (for Event Sponsors)
         const levels = section.levels || [section.level];
         const levelSponsors = [];
@@ -313,8 +330,8 @@ async function generateBanner() {
         currentY += sectionHeight;
 
         // Add separator line after section (except for the last section)
-        const isLastSection = CONFIG.sections.indexOf(section) === CONFIG.sections.length - 1 ||
-            CONFIG.sections.slice(CONFIG.sections.indexOf(section) + 1).every(s => {
+        const isLastSection = sections.indexOf(section) === sections.length - 1 ||
+            sections.slice(sections.indexOf(section) + 1).every(s => {
                 const levels = s.levels || [s.level];
                 return levels.every(level => !sponsorsByLevel[level] || sponsorsByLevel[level].length === 0);
             });
