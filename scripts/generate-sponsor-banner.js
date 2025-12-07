@@ -28,21 +28,14 @@ const CONFIG = {
     logoSizes: {
         gold: { width: 300, height: 120 },
         silver: { width: 250, height: 100 },
-        event: { width: 250, height: 100 },
+        evening: { width: 250, height: 100 },
+        coffee: { width: 250, height: 100 },
+        meal: { width: 250, height: 100 },
+        snack: { width: 250, height: 100 },
         bronze: { width: 200, height: 80 },
         partner: { width: 180, height: 72 },
         community: { width: 180, height: 72 }
-    },
-
-    // Section order (titles will be loaded from sponsor_packages.json)
-    sections: [
-        { level: 'gold' },
-        { level: 'silver' },
-        { level: 'event' },
-        { level: 'bronze' },
-        { level: 'community' },
-        { level: 'partner' }
-    ]
+    }
 };
 
 /**
@@ -51,10 +44,61 @@ const CONFIG = {
 function loadSponsorPackages() {
     const data = JSON.parse(fs.readFileSync(CONFIG.sponsorPackagesDataPath, 'utf8'));
     const levelToName = {};
+    const groupedLevels = {};
+    const groupIdToName = {};
+    const sections = [];
+
+    // Build group ID to name mapping
+    if (data.groups) {
+        data.groups.forEach(group => {
+            groupIdToName[group.id] = group.name;
+        });
+    }
+
     data.packages.forEach(pkg => {
         levelToName[pkg.level] = pkg.name;
+
+        // Group levels if they have a group field
+        if (pkg.group) {
+            if (!groupedLevels[pkg.group]) {
+                groupedLevels[pkg.group] = [];
+            }
+            groupedLevels[pkg.group].push(pkg.level);
+        }
     });
-    return levelToName;
+
+    // Build sections based on groups array order
+    if (data.groups && data.groups.length > 0) {
+        data.groups.forEach(group => {
+            if (groupedLevels[group.id]) {
+                // Group has associated levels
+                sections.push({ levels: groupedLevels[group.id], title: group.name });
+            } else {
+                // Group might be for a single level
+                const pkg = data.packages.find(p => p.level === group.id);
+                if (pkg) {
+                    sections.push({ level: pkg.level });
+                }
+            }
+        });
+    } else {
+        // Fallback: groups first, then individual levels
+        Object.entries(groupedLevels).forEach(([groupId, levels]) => {
+            const groupName = groupIdToName[groupId] || groupId;
+            sections.push({ levels, title: groupName });
+        });
+
+        const processedLevels = new Set();
+        Object.values(groupedLevels).flat().forEach(level => processedLevels.add(level));
+
+        data.packages.forEach(pkg => {
+            if (!processedLevels.has(pkg.level)) {
+                sections.push({ level: pkg.level });
+            }
+        });
+    }
+
+    return { levelToName, sections };
 }
 
 /**
@@ -188,7 +232,7 @@ async function generateBanner() {
     // Load sponsors data and package names
     const sponsors = loadSponsors();
     const sponsorsByLevel = groupSponsorsByLevel(sponsors);
-    const levelToName = loadSponsorPackages();
+    const { levelToName, sections } = loadSponsorPackages();
 
     console.log(`📊 Found ${sponsors.length} sponsors across ${Object.keys(sponsorsByLevel).length} levels`);
 
@@ -210,14 +254,16 @@ async function generateBanner() {
     const sectionComposites = [];
     let currentY = headerHeight;
 
-    for (const section of CONFIG.sections) {
+    for (const section of sections) {
         // Handle both single level and grouped levels (for Event Sponsors)
         const levels = section.levels || [section.level];
         const levelSponsors = [];
 
-        for (const level of levels) {
-            if (sponsorsByLevel[level]) {
-                levelSponsors.push(...sponsorsByLevel[level]);
+        // Iterate through sponsors in their original order and filter by level
+        // This preserves the order from sponsors.json
+        for (const sponsor of sponsors) {
+            if (levels.includes(sponsor.level)) {
+                levelSponsors.push(sponsor);
             }
         }
 
@@ -225,8 +271,8 @@ async function generateBanner() {
             continue;
         }
 
-        // Determine section title from sponsor_packages.json
-        const sectionTitle = levelToName[levels[0]] || levels[0].charAt(0).toUpperCase() + levels[0].slice(1);
+        // Determine section title - use custom title if provided, otherwise from sponsor_packages.json
+        const sectionTitle = section.title || levelToName[levels[0]] || levels[0].charAt(0).toUpperCase() + levels[0].slice(1);
 
         console.log(`\n📦 Processing ${sectionTitle} (${levelSponsors.length} sponsors)...`);
 
@@ -310,8 +356,8 @@ async function generateBanner() {
         currentY += sectionHeight;
 
         // Add separator line after section (except for the last section)
-        const isLastSection = CONFIG.sections.indexOf(section) === CONFIG.sections.length - 1 ||
-            CONFIG.sections.slice(CONFIG.sections.indexOf(section) + 1).every(s => {
+        const isLastSection = sections.indexOf(section) === sections.length - 1 ||
+            sections.slice(sections.indexOf(section) + 1).every(s => {
                 const levels = s.levels || [s.level];
                 return levels.every(level => !sponsorsByLevel[level] || sponsorsByLevel[level].length === 0);
             });
