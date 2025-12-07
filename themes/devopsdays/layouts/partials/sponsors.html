@@ -43,14 +43,40 @@
         </div>
         {{ end }}
 
-        <!-- Event Sponsors -->
-        {{ $event := where .Site.Data.sponsors.sponsors "level" "event" }}
-        {{ if $event }}
-        {{- $packageName := index $levelToName "event" | default "Event" -}}
+        <!-- Event Sponsors (grouped: evening, coffee, meal, snack) -->
+        {{- $eventEvening := where .Site.Data.sponsors.sponsors "level" "evening" -}}
+        {{- $eventCoffee := where .Site.Data.sponsors.sponsors "level" "coffee" -}}
+        {{- $eventMeal := where .Site.Data.sponsors.sponsors "level" "meal" -}}
+        {{- $eventSnack := where .Site.Data.sponsors.sponsors "level" "snack" -}}
+        {{- $eventSponsors := slice -}}
+        {{- $eventSponsors = $eventSponsors | append $eventEvening -}}
+        {{- $eventSponsors = $eventSponsors | append $eventCoffee -}}
+        {{- $eventSponsors = $eventSponsors | append $eventMeal -}}
+        {{- $eventSponsors = $eventSponsors | append $eventSnack -}}
+        {{ if or $eventEvening $eventCoffee $eventMeal $eventSnack }}
         <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $packageName }}</h4>
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">Evening Event, Coffee,
+                Meals, Snacks</h4>
             <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="event">
-                {{ range $event }}
+                {{ range $eventEvening }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+                {{ range $eventCoffee }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+                {{ range $eventMeal }}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
+                    <img src="{{ .logo }}" alt="{{ .name }}"
+                        class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">
+                </a>
+                {{ end }}
+                {{ range $eventSnack }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
                         class="sponsor-logo sponsor-logo-event opacity-75 hover:opacity-100 transition-opacity">

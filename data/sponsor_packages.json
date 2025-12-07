@@ -23,11 +23,36 @@
             "note": "unlimited"
         },
         {
-            "name": "Evening Event, Coffee, Meals, Snacks",
-            "level": "event",
+            "name": "Evening Event",
+            "level": "evening",
             "max_available": 1,
             "price": 4000,
-            "currency": "CHF"
+            "currency": "CHF",
+            "group": "Evening Event, Coffee, Meals, Snacks"
+        },
+        {
+            "name": "Coffee",
+            "level": "coffee",
+            "max_available": 1,
+            "price": 4000,
+            "currency": "CHF",
+            "group": "Evening Event, Coffee, Meals, Snacks"
+        },
+        {
+            "name": "Meals",
+            "level": "meal",
+            "max_available": 1,
+            "price": 4000,
+            "currency": "CHF",
+            "group": "Evening Event, Coffee, Meals, Snacks"
+        },
+        {
+            "name": "Snacks",
+            "level": "snack",
+            "max_available": 1,
+            "price": 4000,
+            "currency": "CHF",
+            "group": "Evening Event, Coffee, Meals, Snacks"
         },
         {
             "name": "Community",

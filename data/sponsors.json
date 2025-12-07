@@ -51,15 +51,15 @@
     {
       "id": "sponsor-06",
       "name": "Xelon",
-      "level": "event",
+      "level": "coffee",
       "logo": "/images/sponsors/xelon.png",
       "website": "https://www.xelon.ch/",
-      "description": "Coffree Sponsor"
+      "description": "Coffee Sponsor"
     },
     {
       "id": "sponsor-06",
       "name": "Cyberlink",
-      "level": "event",
+      "level": "evening",
       "logo": "/images/sponsors/cyberlink.webp",
       "website": "https://www.cyberlink.ch/",
       "description": "Evening Event Sponsor"

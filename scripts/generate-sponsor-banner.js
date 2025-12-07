@@ -28,7 +28,10 @@ const CONFIG = {
     logoSizes: {
         gold: { width: 300, height: 120 },
         silver: { width: 250, height: 100 },
-        event: { width: 250, height: 100 },
+        evening: { width: 250, height: 100 },
+        coffee: { width: 250, height: 100 },
+        meal: { width: 250, height: 100 },
+        snack: { width: 250, height: 100 },
         bronze: { width: 200, height: 80 },
         partner: { width: 180, height: 72 },
         community: { width: 180, height: 72 }
@@ -38,7 +41,7 @@ const CONFIG = {
     sections: [
         { level: 'gold' },
         { level: 'silver' },
-        { level: 'event' },
+        { levels: ['evening', 'coffee', 'meal', 'snack'], title: 'Evening Event, Coffee, Meals, Snacks' },
         { level: 'bronze' },
         { level: 'community' },
         { level: 'partner' }
@@ -225,8 +228,8 @@ async function generateBanner() {
             continue;
         }
 
-        // Determine section title from sponsor_packages.json
-        const sectionTitle = levelToName[levels[0]] || levels[0].charAt(0).toUpperCase() + levels[0].slice(1);
+        // Determine section title - use custom title if provided, otherwise from sponsor_packages.json
+        const sectionTitle = section.title || levelToName[levels[0]] || levels[0].charAt(0).toUpperCase() + levels[0].slice(1);
 
         console.log(`\n📦 Processing ${sectionTitle} (${levelSponsors.length} sponsors)...`);
 
