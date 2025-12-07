@@ -52,3 +52,6 @@ coverage/
 
 # Hugo cache
 resources/_gen/
+
+# Generated CSS (built from source)
+static/css/tailwind.min.css
