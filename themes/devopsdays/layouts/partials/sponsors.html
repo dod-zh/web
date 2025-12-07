@@ -1,8 +1,16 @@
 {{ if .Site.Data.sponsors }}
-{{- /* Build a map of level to package name and group levels by group name */ -}}
+{{- /* Build a map of level to package name and group levels by group ID */ -}}
 {{- $levelToName := dict -}}
 {{- $groupedLevels := dict -}}
+{{- $groupIdToName := dict -}}
 {{- $levelToGroup := dict -}}
+
+{{- /* Build group ID to name mapping */ -}}
+{{- range .Site.Data.sponsor_packages.groups -}}
+{{- $groupIdToName = merge $groupIdToName (dict .id .name) -}}
+{{- end -}}
+
+{{- /* Build level mappings and group levels */ -}}
 {{- range .Site.Data.sponsor_packages.packages -}}
 {{- $levelToName = merge $levelToName (dict .level .name) -}}
 {{- if .group -}}
@@ -12,9 +20,6 @@
 {{- end -}}
 {{- end -}}
 
-{{- /* Get display order from config */ -}}
-{{- $displayOrder := .Site.Data.sponsor_packages.display_order -}}
-
 <section class="py-8 bg-white">
     <div class="container mx-auto px-4">
         <h3 class="text-2xl font-bold text-center mb-8" style="color: var(--indigo-dye);">Our Amazing Sponsors</h3>
@@ -23,16 +28,17 @@
         {{- $displayedGroups := slice -}}
         {{- $displayedLevels := slice -}}
 
-        {{- /* Iterate through display order */ -}}
-        {{- range $displayOrder -}}
-        {{- $groupOrLevel := . -}}
+        {{- /* Iterate through groups array in order */ -}}
+        {{- range .Site.Data.sponsor_packages.groups -}}
+        {{- $groupId := .id -}}
+        {{- $groupName := .name -}}
 
         {{- /* Check if this is a group */ -}}
-        {{- $isGroup := index $groupedLevels $groupOrLevel -}}
+        {{- $isGroup := index $groupedLevels $groupId -}}
         {{- if $isGroup -}}
         {{- /* It's a group - display all levels in this group */ -}}
-        {{- if not (in $displayedGroups $groupOrLevel) -}}
-        {{- $displayedGroups = $displayedGroups | append $groupOrLevel -}}
+        {{- if not (in $displayedGroups $groupId) -}}
+        {{- $displayedGroups = $displayedGroups | append $groupId -}}
         {{- $hasSponsors := false -}}
         {{- range $isGroup -}}
         {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" . -}}
@@ -43,7 +49,7 @@
 
         {{ if $hasSponsors }}
         <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $groupOrLevel }}
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $groupName }}
             </h4>
             <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="{{ index $isGroup 0 }}">
                 {{- range $isGroup -}}
@@ -62,16 +68,16 @@
         {{ end }}
         {{- end -}}
         {{- else -}}
-        {{- /* It's an individual level name - find the level */ -}}
+        {{- /* It's an individual level ID - find the level */ -}}
         {{- range $.Site.Data.sponsor_packages.packages -}}
-        {{- if eq .name $groupOrLevel -}}
+        {{- if eq .level $groupId -}}
         {{- $level := .level -}}
         {{- if not (in $displayedLevels $level) -}}
         {{- $displayedLevels = $displayedLevels | append $level -}}
         {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" $level -}}
         {{ if $levelSponsors }}
         <div class="mb-8">
-            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ .name }}</h4>
+            <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $groupName }}</h4>
             <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="{{ $level }}">
                 {{ range $levelSponsors }}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">

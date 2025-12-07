@@ -45,8 +45,15 @@ function loadSponsorPackages() {
     const data = JSON.parse(fs.readFileSync(CONFIG.sponsorPackagesDataPath, 'utf8'));
     const levelToName = {};
     const groupedLevels = {};
+    const groupIdToName = {};
     const sections = [];
-    const displayOrder = data.display_order || [];
+
+    // Build group ID to name mapping
+    if (data.groups) {
+        data.groups.forEach(group => {
+            groupIdToName[group.id] = group.name;
+        });
+    }
 
     data.packages.forEach(pkg => {
         levelToName[pkg.level] = pkg.name;
@@ -60,15 +67,15 @@ function loadSponsorPackages() {
         }
     });
 
-    // Build sections based on display_order if provided, otherwise use order from packages
-    if (displayOrder.length > 0) {
-        displayOrder.forEach(groupOrLevel => {
-            if (groupedLevels[groupOrLevel]) {
-                // It's a group
-                sections.push({ levels: groupedLevels[groupOrLevel], title: groupOrLevel });
+    // Build sections based on groups array order
+    if (data.groups && data.groups.length > 0) {
+        data.groups.forEach(group => {
+            if (groupedLevels[group.id]) {
+                // Group has associated levels
+                sections.push({ levels: groupedLevels[group.id], title: group.name });
             } else {
-                // It's an individual level - find the package with this name
-                const pkg = data.packages.find(p => p.name === groupOrLevel);
+                // Group might be for a single level
+                const pkg = data.packages.find(p => p.level === group.id);
                 if (pkg) {
                     sections.push({ level: pkg.level });
                 }
@@ -76,7 +83,8 @@ function loadSponsorPackages() {
         });
     } else {
         // Fallback: groups first, then individual levels
-        Object.entries(groupedLevels).forEach(([groupName, levels]) => {
+        Object.entries(groupedLevels).forEach(([groupId, levels]) => {
+            const groupName = groupIdToName[groupId] || groupId;
             sections.push({ levels, title: groupName });
         });
 

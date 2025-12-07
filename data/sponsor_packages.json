@@ -1,11 +1,29 @@
 {
-    "display_order": [
-        "Gold",
-        "Silver",
-        "Evening Event, Coffee, Meals, Snacks",
-        "Bronze",
-        "Community",
-        "Partner"
+    "groups": [
+        {
+            "id": "gold",
+            "name": "Gold"
+        },
+        {
+            "id": "silver",
+            "name": "Silver"
+        },
+        {
+            "id": "event",
+            "name": "Evening Event, Coffee, Meals, Snacks"
+        },
+        {
+            "id": "bronze",
+            "name": "Bronze"
+        },
+        {
+            "id": "community",
+            "name": "Community"
+        },
+        {
+            "id": "partner",
+            "name": "Partner"
+        }
     ],
     "packages": [
         {
@@ -14,7 +32,7 @@
             "max_available": 5,
             "price": 8000,
             "currency": "CHF",
-            "group": "Gold"
+            "group": "gold"
         },
         {
             "name": "Silver",
@@ -22,7 +40,7 @@
             "max_available": 3,
             "price": 5000,
             "currency": "CHF",
-            "group": "Silver"
+            "group": "silver"
         },
         {
             "name": "Bronze",
@@ -31,7 +49,7 @@
             "price": 750,
             "currency": "CHF",
             "note": "unlimited",
-            "group": "Bronze"
+            "group": "bronze"
         },
         {
             "name": "Evening Event",
@@ -39,7 +57,7 @@
             "max_available": 1,
             "price": 4000,
             "currency": "CHF",
-            "group": "Evening Event, Coffee, Meals, Snacks"
+            "group": "event"
         },
         {
             "name": "Coffee",
@@ -47,7 +65,7 @@
             "max_available": 1,
             "price": 4000,
             "currency": "CHF",
-            "group": "Evening Event, Coffee, Meals, Snacks"
+            "group": "event"
         },
         {
             "name": "Meals",
@@ -55,7 +73,7 @@
             "max_available": 1,
             "price": 4000,
             "currency": "CHF",
-            "group": "Evening Event, Coffee, Meals, Snacks"
+            "group": "event"
         },
         {
             "name": "Snacks",
@@ -63,7 +81,7 @@
             "max_available": 1,
             "price": 4000,
             "currency": "CHF",
-            "group": "Evening Event, Coffee, Meals, Snacks"
+            "group": "event"
         },
         {
             "name": "Community",
@@ -72,7 +90,7 @@
             "price": 0,
             "currency": "CHF",
             "note": "unlimited",
-            "group": "Community"
+            "group": "community"
         },
         {
             "name": "Partner",
@@ -81,7 +99,7 @@
             "price": 0,
             "currency": "CHF",
             "note": "unlimited",
-            "group": "Partner"
+            "group": "partner"
         }
     ]
 }
