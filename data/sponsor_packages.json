@@ -29,7 +29,7 @@
         {
             "name": "Gold",
             "level": "gold",
-            "max_available": 5,
+            "max_available": 4,
             "price": 8000,
             "currency": "CHF",
             "group": "gold"
