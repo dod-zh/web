@@ -52,16 +52,15 @@
             <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $groupName }}
             </h4>
             <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="{{ index $isGroup 0 }}">
-                {{- range $isGroup -}}
-                {{- $displayedLevels = $displayedLevels | append . -}}
-                {{- $currentLevel := . -}}
-                {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" . -}}
-                {{ range $levelSponsors }}
+                {{- /* Iterate through all sponsors and display those matching any level in this group */ -}}
+                {{- range $.Site.Data.sponsors.sponsors -}}
+                {{- if in $isGroup .level -}}
+                {{- $displayedLevels = $displayedLevels | append .level -}}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
                     <img src="{{ .logo }}" alt="{{ .name }}"
-                        class="sponsor-logo sponsor-logo-{{ $currentLevel }} opacity-75 hover:opacity-100 transition-opacity">
+                        class="sponsor-logo sponsor-logo-{{ .level }} opacity-75 hover:opacity-100 transition-opacity">
                 </a>
-                {{ end }}
+                {{- end -}}
                 {{- end -}}
             </div>
         </div>

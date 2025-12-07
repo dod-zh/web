@@ -259,9 +259,11 @@ async function generateBanner() {
         const levels = section.levels || [section.level];
         const levelSponsors = [];
 
-        for (const level of levels) {
-            if (sponsorsByLevel[level]) {
-                levelSponsors.push(...sponsorsByLevel[level]);
+        // Iterate through sponsors in their original order and filter by level
+        // This preserves the order from sponsors.json
+        for (const sponsor of sponsors) {
+            if (levels.includes(sponsor.level)) {
+                levelSponsors.push(sponsor);
             }
         }
 
