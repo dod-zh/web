@@ -78,11 +78,17 @@
                         <div class="bg-white rounded-lg shadow-md p-6">
                             <h3 class="text-xl font-bold mb-4" style="color: var(--indigo-dye);">Speaker</h3>
                             <div class="flex items-center gap-4 mb-4">
-                                <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
-                                    class="w-24 h-24 rounded-full object-cover border-2 border-gray-200 flex-shrink-0">
+                                <a href="{{ $speakerPage.RelPermalink }}"
+                                    class="flex-shrink-0 hover:opacity-80 transition-opacity">
+                                    <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
+                                        class="w-24 h-24 rounded-full object-cover border-2 border-gray-200">
+                                </a>
                                 <div class="flex-1">
-                                    <h4 class="text-lg font-semibold" style="color: var(--indigo-dye);">{{ $speaker.name
-                                        }}</h4>
+                                    <a href="{{ $speakerPage.RelPermalink }}" class="hover:underline">
+                                        <h4 class="text-lg font-semibold" style="color: var(--indigo-dye);">{{
+                                            $speaker.name
+                                            }}</h4>
+                                    </a>
                                     {{ if $speaker.title }}
                                     <p class="text-sm text-gray-600">{{ $speaker.title }}</p>
                                     {{ end }}
