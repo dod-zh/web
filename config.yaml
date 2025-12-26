@@ -3,7 +3,7 @@ languageCode: 'en-us'
 title: DevOpsDays Zurich
 theme: 'devopsdays'
 
-# Disable unused page kinds to suppress build warnings
+# Disable unused page kinds to suppress build warnings 
 disableKinds:
   - taxonomy
   - term
