@@ -1,13 +1,13 @@
 ---
 title: "Tickets"
-description: "Get your tickets for DevOpsDays Zurich 2025"
+description: "Get your tickets for DevOpsDays Zurich 2026"
 ---
 
 ## Get Your Ticket
 
 <div style="width:100%; text-align:left;">
   <script src="https://js.tito.io/v2" async></script>
-  <tito-widget event="dod/dodzh2025"></tito-widget>
+  <tito-widget event="dod/dodzh2026"></tito-widget>
 </div>
 
 ## What's Included
