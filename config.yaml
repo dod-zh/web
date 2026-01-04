@@ -18,7 +18,7 @@ params:
     flickr: 'https://www.flickr.com/photos/150616602@N02/albums/with/72157680463366208'
   features:
     show_program: false
-    show_tickets: false
+    show_tickets: true
     show_cfp: true
     show_speakers: false
     cfp_url: 'https://sessionize.com/devopsdays-zurich-2026/'  # Update with your CFP platform URL
