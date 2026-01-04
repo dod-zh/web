@@ -1,6 +1,6 @@
 ---
 title: "Tickets"
-description: "Get your tickets for DevOpsDays Zurich 2025"
+description: "Get your tickets for DevOpsDays Zurich 2026"
 ---
 
 ## Get Your Ticket
