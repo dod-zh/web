@@ -24,6 +24,9 @@ yarn-error.log*
 ehthumbs.db
 Thumbs.db
 
+# Claude Code
+.claude/
+
 # Editor files
 .vscode/
 !.vscode/settings.json
