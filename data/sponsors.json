@@ -37,6 +37,12 @@
       "website": "https://4data.ch/"
     },
     {
+      "name": "Zürcher Kantonalbank",
+      "level": "silver",
+      "logo": "/images/sponsors/zkb.webp",
+      "website": "https://www.zkb.ch/"
+    },
+    {
       "name": "Xelon",
       "level": "coffee",
       "logo": "/images/sponsors/xelon.webp",
