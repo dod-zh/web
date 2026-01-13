@@ -37,6 +37,12 @@
       "website": "https://4data.ch/"
     },
     {
+      "name": "Zürcher Kantonalbank",
+      "level": "silver",
+      "logo": "/images/sponsors/zkb.webp",
+      "website": "https://www.zkb.ch/"
+    },
+    {
       "name": "Xelon",
       "level": "coffee",
       "logo": "/images/sponsors/xelon.webp",
@@ -53,6 +59,12 @@
       "level": "bronze",
       "logo": "/images/sponsors/zuehlke.webp",
       "website": "https://www.zuehlke.com/"
+    },
+    {
+      "name": "KPMG",
+      "level": "bronze",
+      "logo": "/images/sponsors/kpmg.png",
+      "website": "https://kpmg.com/ch/"
     },
     {
       "name": "DevOpsMeetupBern",
