@@ -61,6 +61,12 @@
       "website": "https://www.zuehlke.com/"
     },
     {
+      "name": "KPMG",
+      "level": "bronze",
+      "logo": "/images/sponsors/kpmg.png",
+      "website": "https://kpmg.com/ch/"
+    },
+    {
       "name": "DevOpsMeetupBern",
       "level": "community",
       "logo": "/images/sponsors/dom_bern.webp",
