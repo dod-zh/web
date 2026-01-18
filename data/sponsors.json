@@ -67,6 +67,12 @@
       "website": "https://kpmg.com/ch/"
     },
     {
+      "name": "Cognizant",
+      "level": "bronze",
+      "logo": "/images/sponsors/cognizant.webp",
+      "website": "https://www.cognizant.com/"
+    },
+    {
       "name": "DevOpsMeetupBern",
       "level": "community",
       "logo": "/images/sponsors/dom_bern.webp",
