@@ -17,7 +17,7 @@ Your ticket provides you with everything you need for an amazing DevOpsDays expe
 - **Two-Day Conference Access** - Full access to all talks, workshops, and sessions
 - **Full Catering** - Breakfast, lunch, and refreshments for both days
 - **Evening Event Access** - Join us for networking and socializing
-- **Conference T-Shirt** - Exclusive DevOpsDays Zurich 2025 swag
+- **Conference T-Shirt** - Exclusive DevOpsDays Zurich 2026 swag
 
 ### Dietary Options
 
