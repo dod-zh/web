@@ -73,6 +73,18 @@
       "website": "https://www.cognizant.com/"
     },
     {
+      "name": "dbi services",
+      "level": "bronze",
+      "logo": "/images/sponsors/dbi-services.webp",
+      "website": "https://www.dbi-services.com/"
+    },
+    {
+      "name": "HSLU",
+      "level": "bronze",
+      "logo": "/images/sponsors/hslu.jpg",
+      "website": "https://www.hslu.ch/"
+    },
+    {
       "name": "DevOpsMeetupBern",
       "level": "community",
       "logo": "/images/sponsors/dom_bern.webp",
