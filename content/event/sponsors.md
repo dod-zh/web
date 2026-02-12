@@ -19,7 +19,7 @@ We do not have vendor booths, sell product presentations, or distribute attendee
 | Logo shown during event¹ | x | x | x | x | x | x | x |
 | Booth (9sqm) main room² | x | — | — | — | — | — | — |
 | Booth (9sqm) foyer/1st floor² | — | x | — | — | — | — | — |
-| Sponsoring Pitches (1min)³ | x | - | - | x | x | x | x |
+| Sponsoring Pitches (1min)³ | x | — | — | x | x | x | x |
 | Sponsoring Bingo | x | x | — | — | — | — | — |
 | Logo shown at Evening Event | — | — | — | x | — | — | — |
 | Logo on A4 table displays @ lunch | — | — | — | — | — | x | — |
