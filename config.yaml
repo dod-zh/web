@@ -19,7 +19,7 @@ params:
   features:
     show_program: false
     show_tickets: true
-    show_cfp: true
+    show_cfp: false
     show_speakers: false
     cfp_url: 'https://sessionize.com/devopsdays-zurich-2026/'  # Update with your CFP platform URL
   
