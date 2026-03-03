@@ -2,6 +2,9 @@
 public/
 resources/
 
+# Input files (Excel exports, photo ZIPs)
+input/
+
 # Node modules
 node_modules/
 npm-debug.log*

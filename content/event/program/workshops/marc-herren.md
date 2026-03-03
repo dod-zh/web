@@ -3,8 +3,6 @@ type: "session"
 sessionId: "workshops/marc-herren"
 ---
 
-This hands-on workshop/tutorial examines practical patterns for integrating AI into engineering workflows and automation pipelines, based on our approved multi-day workshop. We'll implement tools that enhance daily tasks: from accelerating technical research and troubleshooting to improving documentation processes and development standardization.
+Generating a Software Bill of Materials (SBOM) is only the first step toward compliance with upcoming regulations like the EU Cyber Resilience Act (CRA). The real challenge lies in managing these artifacts at scale, tracking vulnerabilities across a diverse portfolio, and communicating real-world risks effectively.
 
-Working with open-source components compatible with any LLM backend, you'll build both interactive assistants and pipeline automation. Learn to craft reliable prompts that produce structured outputs, enabling consistent results across interactive and automated use cases. 
-
-Features real-world examples demonstrating immediate practical value in both personal and pipeline contexts.
+This workshop takes you beyond simple pipeline scanning. We will dive into OWASP Dependency-Track, an intelligent component analysis platform that allows organizations to identify and reduce risk in their software supply chain. You will learn how to transform static SBOMs into a living, automated security ecosystem.

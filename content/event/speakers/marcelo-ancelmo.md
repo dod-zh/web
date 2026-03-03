@@ -1,15 +1,13 @@
 ---
 title: "Marcelo Ancelmo"
-description: "Speaker at DevOpsDays Zurich 2025"
+description: "Speaker at DevOpsDays Zurich 2026"
 type: "speaker"
 speakerId: "marcelo-ancelmo"
 image: "/images/speakers/marcelo-ancelmo.webp"
 ---
 
-### Head of Solution Architecture @ KPMG Switzerland
+### Lifelong learner. Tech Leader, Speaker, Trainer. Troubleshooter and Troublemaker - Head of Solution Architecture @ KPMG Switzerland
 
-Marcelo S. Ancelmo has 22 years (and counting) of IT experience and has done a bit (or would it be a byte) of everything.
+Marcelo S. Ancelmo has 23 years (and counting) of IT experience and has done a bit (or would it be a byte) of everything. A good old-fashioned troublemaker, he started his professional career as a Java programmer, fell in love with architecture (a passion he still pursues today), dove into middleware (with no regrets), built high-performing teams, and explored infrastructure and operations. Deeply engaged in the tech community, Marcelo joins Meetups wherever he goes, teaming up with JUGs, helping organize events when time allows, and contributing to working groups and committees. Along the way, he’s delivered consulting, training, mentorship, and conference talks.
 
-A good old-fashioned troublemaker, he started his professional career as a Java programmer, played many architecture games (which he still does today), worked into middleware (and does not regret it), built some great teams, and did infrastructure and operations work. He did some consultancy, delivered a lot of training, has been a mentor, and spoke at conferences. He is deeply engaged with the software community, joining Meetups everywhere he goes, teaming up with JUGs, helping organize events when he has spare time, and participating in working groups and committees.
-
-He is the Head of Solution Architecture at KPMG Switzerland, helping the company drive its DevOps transformation, still learning everything possible and enjoying all the bumps that come with it.
+Today, he's Head of Solution Architecture at KPMG Switzerland, helping the company drive its digital transformation toward sustainable business agility, fueled by Architecture and DevOps, learning everything possible and enjoying the bumps along the ride.

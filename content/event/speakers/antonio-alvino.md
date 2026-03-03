@@ -1,6 +1,6 @@
 ---
 title: "Antonio Alvino"
-description: "Speaker at DevOpsDays Zurich 2025"
+description: "Speaker at DevOpsDays Zurich 2026"
 type: "speaker"
 speakerId: "antonio-alvino"
 image: "/images/speakers/antonio-alvino.webp"
