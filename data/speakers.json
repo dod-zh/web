@@ -145,6 +145,14 @@
       }
     },
     {
+      "id": "manuel-schindler",
+      "name": "Manuel Schindler",
+      "image": "/images/speakers/manuel-schindler.webp",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/manuel-schindler-aa0397118/"
+      }
+    },
+    {
       "id": "limor-bergman-gross",
       "name": "Limor Bergman Gross",
       "image": "/images/speakers/limor-bergman-gross.webp",
@@ -184,6 +192,14 @@
       "image": "/images/speakers/kristina-kondrashevich.webp",
       "social": {
         "linkedin": "https://www.linkedin.com/in/kristina-kondrashevich/"
+      }
+    },
+    {
+      "id": "florian-mair",
+      "name": "Florian Mair",
+      "image": "/images/speakers/florian-mair.webp",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/flomair/"
       }
     },
     {

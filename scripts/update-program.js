@@ -57,10 +57,10 @@ function rmDir(dir) {
 const ROOT = path.resolve(__dirname, '..');
 
 const sessionsWb = XLSX.readFile(
-    path.join(ROOT, 'input', 'devopsdays-zurich-2026 accepted sessions - exported 2026-03-03.xlsx')
+    path.join(ROOT, 'input', 'final', 'devopsdays-zurich-2026 accepted sessions - exported 2026-03-08.xlsx')
 );
 const scheduleWb = XLSX.readFile(
-    path.join(ROOT, 'input', 'devopsdays-zurich-2026 schedulelist - exported 2026-03-03.xlsx')
+    path.join(ROOT, 'input', 'final', 'devopsdays-zurich-2026 schedulelist - exported 2026-03-08.xlsx')
 );
 
 const acceptedSessions = XLSX.utils.sheet_to_json(sessionsWb.Sheets['Accepted sessions']);
@@ -188,8 +188,8 @@ const nonSpeakerMap = {
     'Lunch Day 1': { id: 'lunch-day1', title: 'Lunch', type: 'other', day: '2026-05-06', time: '12:30 - 14:00' },
     "Opening afternoon & Sponsor's speeches": { id: 'opening-day1-afternoon', title: 'Opening Afternoon', type: 'other', day: '2026-05-06', time: '14:00 - 14:10' },
     'Open Space Voting Day 1': { id: 'openspace-voting-day1', title: 'Open Space Voting', type: 'other', day: '2026-05-06', time: '14:45 - 15:15' },
-    'Closing the day 1': { id: 'closing-day1', title: 'Closing Day 1', type: 'other', day: '2026-05-06', time: '17:30 - 17:40' },
-    'Evening Event': { id: 'evening-event', title: 'Evening Event', type: 'other', day: '2026-05-06', time: '17:40 - 19:40' },
+    'Closing the day 1': { id: 'closing-day1', title: 'Closing Day 1', type: 'other', day: '2026-05-06', time: '17:30 - 17:45' },
+    'Evening Event': { id: 'evening-event', title: 'Evening Event', type: 'other', day: '2026-05-06', time: '17:45 - 22:00' },
     'Registration Day 2': { id: 'registration-day2-morning', title: 'Registration & Welcome Coffee', type: 'other', day: '2026-05-07', time: '8:00 - 9:00' },
     'Opening Day 2': { id: 'opening-day2-morning', title: 'Opening', type: 'other', day: '2026-05-07', time: '9:00 - 9:15' },
     'Coffee break Day 2': { id: 'break-day2-morning', title: 'Break', type: 'other', day: '2026-05-07', time: '10:30 - 11:00' },
