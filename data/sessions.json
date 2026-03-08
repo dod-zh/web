@@ -17,23 +17,24 @@
       "speakers": []
     },
     {
-      "id": "keynotes/marc-schuh",
-      "title": "From Athlete to Algorithm: Transforming Canoe Technique Analysis with AI",
+      "id": "keynotes/bertrand-delacretaz",
+      "title": "Engineering & Ethics: Navigating Responsibility in an Accelerating Tech World",
       "type": "keynote",
       "day": "2026-05-06",
       "time": "9:15 - 10:00",
       "speakers": [
-        "marc-schuh"
+        "bertrand-delacretaz"
       ]
     },
     {
-      "id": "talks/lena-fuhrimann",
-      "title": "Level Up Your Serverless Game",
+      "id": "talks/maria-hendrike-peetz",
+      "title": "Agents in Action: How Google is Automating Operational Toil",
       "type": "talk",
       "day": "2026-05-06",
       "time": "10:00 - 10:30",
       "speakers": [
-        "lena-fuhrimann"
+        "maria-hendrike-peetz",
+        "ramon-medrano-llamas"
       ]
     },
     {
@@ -45,33 +46,34 @@
       "speakers": []
     },
     {
-      "id": "talks/christina-kraus",
-      "title": "Building Internal Platforms to Enhance Developer Experience",
+      "id": "talks/olga-kristjansdottir",
+      "title": "From Firefighting to Flow: Building Calm and Resilience in a High-Reliability Engineering Team",
       "type": "talk",
       "day": "2026-05-06",
       "time": "11:00 - 11:30",
       "speakers": [
-        "christina-kraus"
+        "olga-kristjansdottir"
       ]
     },
     {
-      "id": "talks/daniel-raniz-raneland",
-      "title": "Pipeline Patterns and Antipatterns - Things your Pipeline Should (Not) Do",
+      "id": "talks/camille-nigon",
+      "title": "The playbook for a sovereign Model-as-a-Service platform",
       "type": "talk",
       "day": "2026-05-06",
       "time": "11:30 - 12:00",
       "speakers": [
-        "daniel-raniz-raneland"
+        "camille-nigon",
+        "maarten-vandeperre"
       ]
     },
     {
-      "id": "talks/robert-lehmann",
-      "title": "Planet-Scale Dashboards",
+      "id": "talks/mohammad-ali-arabi",
+      "title": "Beyond SBOMs: The Future of Container Supply Chain Security",
       "type": "talk",
       "day": "2026-05-06",
       "time": "12:00 - 12:30",
       "speakers": [
-        "robert-lehmann"
+        "mohammad-ali-arabi"
       ]
     },
     {
@@ -91,73 +93,74 @@
       "speakers": []
     },
     {
-      "id": "ignites/carmine-vassallo",
-      "title": "Eating Your Own Dog Food - The Secret Sauce for Better Product Development",
+      "id": "ignites/michele-brambilla",
+      "title": "Taming the Metal: Platform Engineering for HPC",
       "type": "ignite",
       "day": "2026-05-06",
       "time": "14:10 - 14:15",
       "speakers": [
-        "carmine-vassallo"
+        "michele-brambilla"
       ]
     },
     {
-      "id": "ignites/marc-sallin",
-      "title": "Bursting the End-2-End Myth: Divide and Conquer for Robust DevOps",
+      "id": "ignites/vera-herzmann",
+      "title": "Neurodiversity: An Underrated Superpower in Business",
       "type": "ignite",
       "day": "2026-05-06",
       "time": "14:15 - 14:20",
       "speakers": [
-        "marc-sallin"
+        "vera-herzmann"
       ]
     },
     {
-      "id": "ignites/verena-traub",
-      "title": "How can we make tech conferences more diverse?",
+      "id": "ignites/denniz-donmez",
+      "title": "Excellent collaboration. The basics.",
       "type": "ignite",
       "day": "2026-05-06",
       "time": "14:20 - 14:25",
       "speakers": [
-        "verena-traub"
+        "denniz-donmez",
+        "simon-berg"
       ]
     },
     {
-      "id": "ignites/marcelo-ancelmo",
-      "title": "Cultivating a Learning Culture: Unlocking the Power of Continuous Development",
+      "id": "ignites/eszter-torda",
+      "title": "What is a Scrum Master good for?",
       "type": "ignite",
       "day": "2026-05-06",
       "time": "14:25 - 14:30",
       "speakers": [
-        "marcelo-ancelmo"
+        "eszter-torda"
       ]
     },
     {
-      "id": "ignites/alexander-ptakhin",
-      "title": "Pipeline ETA: 3… 2… Tomorrow? Let's Fix That!",
+      "id": "ignites/bastian-spanneberg",
+      "title": "Dr. Strangepod or: How I Learned to Stop Worrying and Love the AI",
       "type": "ignite",
       "day": "2026-05-06",
       "time": "14:30 - 14:35",
       "speakers": [
-        "alexander-ptakhin"
+        "bastian-spanneberg"
       ]
     },
     {
-      "id": "ignites/sandra-czopek",
-      "title": "Breaking Ba(l)d: How to Prevent Burnout and Thrive",
+      "id": "ignites/antonio-alvino",
+      "title": "Why Living Documentation is Cool",
       "type": "ignite",
       "day": "2026-05-06",
       "time": "14:35 - 14:40",
       "speakers": [
-        "sandra-czopek"
+        "antonio-alvino"
       ]
     },
     {
-      "id": "ignites/peter-farkas",
-      "title": "Taming the Testing Beast",
+      "id": "ignites/simon-falsig",
+      "title": "Cutting 2/3rds of your cloud costs with common sense",
       "type": "ignite",
       "day": "2026-05-06",
       "time": "14:40 - 14:45",
       "speakers": [
-        "peter-farkas"
+        "simon-falsig"
       ]
     },
     {
@@ -177,35 +180,34 @@
       "speakers": []
     },
     {
-      "id": "workshops/alina-liburkina",
-      "title": "Untangle Your Legacy Code with Domain-Driven Refactoring",
+      "id": "workshops/oliver-zihler",
+      "title": "Event-Sourced DDD Domain Models with Axon (in Kotlin)",
       "type": "workshop",
       "day": "2026-05-06",
       "time": "15:15 - 17:25",
       "speakers": [
-        "alina-liburkina",
-        "oliver-zihler"
+        "oliver-zihler",
+        "alina-liburkina"
       ]
     },
     {
-      "id": "workshops/thomas-krag",
-      "title": "Enabling aligned decentralised architecture decisions through user needs mapping",
+      "id": "workshops/cristian-schuszter",
+      "title": "Maintaining legacy applications using AI tooling",
       "type": "workshop",
       "day": "2026-05-06",
       "time": "15:15 - 17:25",
       "speakers": [
-        "thomas-krag",
-        "kenny-baas-schwegler"
+        "cristian-schuszter"
       ]
     },
     {
-      "id": "workshops/alvaro-revuelta-m",
-      "title": "Building Secure Container Images",
+      "id": "workshops/manuel-schindler",
+      "title": "Platform Engineering in the Age of AI: Secure the Software Supply Chain, Empower the Developer",
       "type": "workshop",
       "day": "2026-05-06",
       "time": "15:15 - 17:25",
       "speakers": [
-        "alvaro-revuelta-m"
+        "manuel-schindler"
       ]
     },
     {
@@ -213,7 +215,7 @@
       "title": "Closing Day 1",
       "type": "other",
       "day": "2026-05-06",
-      "time": "17:30 - 17:40",
+      "time": "17:30 - 17:45",
       "speakers": []
     },
     {
@@ -221,7 +223,7 @@
       "title": "Evening Event",
       "type": "other",
       "day": "2026-05-06",
-      "time": "17:40 - 23:00",
+      "time": "17:45 - 22:00",
       "speakers": []
     },
     {
@@ -241,23 +243,23 @@
       "speakers": []
     },
     {
-      "id": "keynotes/dorota-parad",
-      "title": "Unintended consequences of well-meaning changes",
+      "id": "keynotes/limor-bergman-gross",
+      "title": "Your Systems Aren’t Stuck - Your Teams Are: The Leadership Patterns Behind Scalable DevOps",
       "type": "keynote",
       "day": "2026-05-07",
       "time": "9:15 - 10:00",
       "speakers": [
-        "dorota-parad"
+        "limor-bergman-gross"
       ]
     },
     {
-      "id": "talks/darko-fabijan",
-      "title": "Microservices, Monorepos, and the Efficient Build Processes: Our Experience at Semaphore",
+      "id": "talks/egor-savochkin",
+      "title": "From Gut Feel to Evidence: What DORA Metrics Actually Tell Us",
       "type": "talk",
       "day": "2026-05-07",
       "time": "10:00 - 10:30",
       "speakers": [
-        "darko-fabijan"
+        "egor-savochkin"
       ]
     },
     {
@@ -269,34 +271,34 @@
       "speakers": []
     },
     {
-      "id": "talks/pia-wiedermayer",
-      "title": "Human-Driven Intelligence: Where AI & Automation Fall Short",
+      "id": "talks/melchior-thambipillai",
+      "title": "Automated Root Cause Analysis",
       "type": "talk",
       "day": "2026-05-07",
       "time": "11:00 - 11:30",
       "speakers": [
-        "pia-wiedermayer"
+        "melchior-thambipillai"
       ]
     },
     {
-      "id": "talks/manisha-marco",
-      "title": "Empowering SRE with GitOps: Automating Kubernetes Deployments with GitLab CI and Flux CD",
+      "id": "talks/gang-luo",
+      "title": "Scaling DevOps Without Scaling Ops: Our Platform Engineering Journey",
       "type": "talk",
       "day": "2026-05-07",
       "time": "11:30 - 12:00",
       "speakers": [
-        "manisha-de",
-        "marco-goncalves"
+        "gang-luo",
+        "kristina-kondrashevich"
       ]
     },
     {
-      "id": "talks/bertrand-delacretaz",
-      "title": "The Power of Simplicity: Crafting Durable Software Systems",
+      "id": "talks/florian-mair",
+      "title": "When Your \"New Teammate\" Hallucinates: Observability as the Safety Net for AI Code",
       "type": "talk",
       "day": "2026-05-07",
       "time": "12:00 - 12:30",
       "speakers": [
-        "bertrand-delacretaz"
+        "florian-mair"
       ]
     },
     {
@@ -316,73 +318,84 @@
       "speakers": []
     },
     {
-      "id": "ignites/rasmus-lystrom",
-      "title": "Post Accelerate: Why are we still failing at adopting DevOps in the Enterprise?",
+      "id": "ignites/iris-hunkeler",
+      "title": "Speak Up: Your Story Matters",
       "type": "ignite",
       "day": "2026-05-07",
       "time": "14:10 - 14:15",
       "speakers": [
-        "rasmus-lystrom"
+        "iris-hunkeler"
       ]
     },
     {
-      "id": "ignites/antonio-alvino",
-      "title": "The perfect match: How Extreme Programming enables Team Topologies concepts",
+      "id": "ignites/peter-zylka-greger",
+      "title": "Planning Theater: The Play That’s Killing Your Delivery",
       "type": "ignite",
       "day": "2026-05-07",
       "time": "14:15 - 14:20",
       "speakers": [
-        "antonio-alvino"
+        "peter-zylka-greger",
+        "benjamin-huser-berta"
       ]
     },
     {
-      "id": "ignites/daiany-palacios",
-      "title": "Tomorrow's DevOps Engineers, Today!",
+      "id": "ignites/marcelo-ancelmo",
+      "title": "AI Made Us Faster at Solving the Wrong Problems",
       "type": "ignite",
       "day": "2026-05-07",
       "time": "14:20 - 14:25",
       "speakers": [
-        "daiany-palacios"
+        "marcelo-ancelmo"
       ]
     },
     {
-      "id": "ignites/jonas-alder",
-      "title": "Software at Tesla - A peek from the outside",
+      "id": "ignites/pallavi-agrawal",
+      "title": "“How to design Observability before you buy it”",
       "type": "ignite",
       "day": "2026-05-07",
       "time": "14:25 - 14:30",
       "speakers": [
-        "jonas-alder"
+        "pallavi-agrawal"
       ]
     },
     {
-      "id": "ignites/marcel-britsch",
-      "title": "How I Started Worrying and Stopped Loving DevOps",
+      "id": "ignites/martin-fischer",
+      "title": "Why your CI/CD processes should include your ERP systems",
       "type": "ignite",
       "day": "2026-05-07",
       "time": "14:30 - 14:35",
       "speakers": [
-        "marcel-britsch"
+        "martin-fischer"
       ]
     },
     {
-      "id": "ignites/kamali-wickramage",
-      "title": "No estimates? Try Flow Metrics.",
+      "id": "ignites/lena-fuhrimann",
+      "title": "Pragmatic AI Adopton is Hard!",
       "type": "ignite",
       "day": "2026-05-07",
       "time": "14:35 - 14:40",
       "speakers": [
-        "kamali-wickramage"
+        "lena-fuhrimann"
       ]
     },
     {
-      "id": "ignites/adam-zieba",
-      "title": "Code & risk",
+      "id": "ignites/sandro-meier",
+      "title": "DevOps on 36 Ton Machines: Shipping Software to Autonomous Excavators in the Desert",
       "type": "ignite",
       "day": "2026-05-07",
       "time": "14:40 - 14:45",
       "speakers": [
-        "adam-zieba"
+        "sandro-meier"
+      ]
+    },
+    {
+      "id": "ignites/timo-bohm",
+      "title": "Kill the Project. Build a Team.",
+      "type": "ignite",
+      "day": "2026-05-07",
+      "time": "14:45 - 14:50",
+      "speakers": [
+        "timo-bohm"
       ]
     },
     {
@@ -398,33 +411,12 @@
       "title": "Open Spaces",
       "type": "openspace",
       "day": "2026-05-07",
-      "time": "15:15 - 17:2",
+      "time": "15:15 - 17:25",
       "speakers": []
     },
     {
-      "id": "workshops/rabieh-fashwall",
-      "title": "Building Infrastructure Tools with Kubernetes Operators and Go",
-      "type": "workshop",
-      "day": "2026-05-07",
-      "time": "15:15 - 17:25",
-      "speakers": [
-        "rabieh-fashwall"
-      ]
-    },
-    {
-      "id": "workshops/stefan-pezzei",
-      "title": "From Blind Spots to Total Transparency: Building Your Observability Solution with OpenTelemetry",
-      "type": "workshop",
-      "day": "2026-05-07",
-      "time": "15:15 - 17:25",
-      "speakers": [
-        "stefan-pezzei",
-        "philipp-moser"
-      ]
-    },
-    {
       "id": "workshops/marc-herren",
-      "title": "Streamlining DevSecOps with Purposeful AI Integration",
+      "title": "Beyond the Scan: Professional SBOM Management and Risk Mitigation with Dependency-Track and VEX",
       "type": "workshop",
       "day": "2026-05-07",
       "time": "15:15 - 17:25",
@@ -433,11 +425,31 @@
       ]
     },
     {
+      "id": "workshops/betta-lyon-delsordo",
+      "title": "It’s Giving Insecure Vibes: Secure Coding Literacy for Vibe Coders",
+      "type": "workshop",
+      "day": "2026-05-07",
+      "time": "15:15 - 17:25",
+      "speakers": [
+        "betta-lyon-delsordo"
+      ]
+    },
+    {
+      "id": "workshops/luc-juggery",
+      "title": "Challenge your Kubernetes skills in a time-constrained capture the flag session",
+      "type": "workshop",
+      "day": "2026-05-07",
+      "time": "15:15 - 17:25",
+      "speakers": [
+        "luc-juggery"
+      ]
+    },
+    {
       "id": "closing-day2",
       "title": "Raffle & Closing Day 2",
       "type": "other",
       "day": "2026-05-07",
-      "time": "17:30 - 17:40",
+      "time": "17:30 - 17:45",
       "speakers": []
     }
   ]

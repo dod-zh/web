@@ -1,16 +1,13 @@
 ---
 title: "Marc Herren"
-description: "Speaker at DevOpsDays Zurich 2025"
+description: "Speaker at DevOpsDays Zurich 2026"
 type: "speaker"
 speakerId: "marc-herren"
 image: "/images/speakers/marc-herren.webp"
 ---
 
-### Founder @ remmen.io
-Marc Herren is the founder of remmen.io GmbH, a company whose purpose is to share IT knowledge to empower the next generation in the area of automation/DevSecOps.
+### Principal DevOps Consultant @ Zühlke | AI coach @ remmen.io | Speaker
 
-He combines 25 years of experience in the field of datacenters, networking, firewalls, virtualization and service automation tools.
-Since the early days of his linux journey in 1995, he has a strong bond to the open-source community and loves to share his knowledge.
-He possesses a perpetual fascination with emerging technologies, especially the unlimited potential of AI. This fascination isn't just theoretical; it directly inspires his work in integrating AI with automation, DevSecOps, and beyond.
-
-In his spare time, he enjoys to explore life with his family, loves to play boardgames, to perform as a DJ or to read fantasy or sci-fi books.
+Making complex DevSecOps challenges disappear through platform engineering magic! I work as a platform engineer with Kubernetes, cloud-native technologies, and AI-enhanced automation. As such, I do a lot of development using infrastructure as code and CI/CD pipelines. I'm also the founder of remmen.io GmbH, where I focus on digital education and knowledge sharing around AI.
+With 25 years of experience in datacenters, networking, and automation, I've helped numerous teams master platform engineering challenges. Digital sovereignty is close to my heart and increasingly becomes a central focus in my work - empowering organizations to maintain control over their digital infrastructure and data while leveraging modern cloud-native technologies.
+Outside of work, you'll find me spending time with family, strategizing over board games, mixing tracks as a DJ, or diving into sci-fi literature.
