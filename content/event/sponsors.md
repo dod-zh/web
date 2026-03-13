@@ -51,7 +51,7 @@ Sponsors are encouraged to represent themselves by actively participating and en
 
 ## Get Started
 
-Interested in sponsoring DevOpsDays Zurich 2025?
+Interested in sponsoring DevOpsDays Zurich 2026?
 
 **Contact us:** [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch)
 
