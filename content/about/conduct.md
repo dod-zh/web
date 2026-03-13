@@ -3,7 +3,7 @@ title: "Code of Conduct"
 description: "DevOpsDays Zurich Code of Conduct"
 ---
 
-All attendees, speakers, sponsors, and volunteers at DevopsDays Zürich 2025 are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
+All attendees, speakers, sponsors, and volunteers at DevopsDays Zürich 2026 are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
 
 ## The Quick Version
 
@@ -23,4 +23,4 @@ Conference staff can be identified by distinct staff t-shirts. Conference staff 
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
-The DevopsDays Zürich 2025 Code of Conduct is based on [confcodeofconduct.com](https://confcodeofconduct.com).
+The DevopsDays Zürich 2026 Code of Conduct is based on [confcodeofconduct.com](https://confcodeofconduct.com).

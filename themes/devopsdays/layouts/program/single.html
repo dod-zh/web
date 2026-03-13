@@ -17,12 +17,12 @@
                             <h3 class="text-2xl font-bold text-center">
                                 Day 1
                                 <br>
-                                <span class="text-lg font-medium opacity-80">March 12, 2025</span>
+                                <span class="text-lg font-medium opacity-80">May 6, 2026</span>
                             </h3>
                         </div>
                     </div>
                     <div class="grid gap-3">
-                        {{ range where .Site.Data.sessions.sessions "day" "2025-03-12" }}
+                        {{ range where .Site.Data.sessions.sessions "day" "2026-05-06" }}
                         {{ partial "session-card.html" (dict "session" . "context" $) }}
                         {{ end }}
                     </div>
@@ -35,12 +35,12 @@
                             <h3 class="text-2xl font-bold text-center">
                                 Day 2
                                 <br>
-                                <span class="text-lg font-medium opacity-80">March 13, 2025</span>
+                                <span class="text-lg font-medium opacity-80">May 7, 2026</span>
                             </h3>
                         </div>
                     </div>
                     <div class="grid gap-3">
-                        {{ range where .Site.Data.sessions.sessions "day" "2025-03-13" }}
+                        {{ range where .Site.Data.sessions.sessions "day" "2026-05-07" }}
                         {{ partial "session-card.html" (dict "session" . "context" $) }}
                         {{ end }}
                     </div>
