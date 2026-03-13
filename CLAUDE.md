@@ -44,6 +44,13 @@ npm run validate   # HTML validation
 Controlled in `config.yaml` under `params.features`:
 `show_program`, `show_tickets`, `show_cfp`, `show_speakers`
 
+## Current Event
+
+- **DevOpsDays Zurich 2026**: May 6-7, 2026
+- **Venue**: Alte Kaserne, Winterthur
+- Event dates are hardcoded in templates (`baseof.html`, `program/single.html`) and content files. Use `2026-05-06` (Day 1) and `2026-05-07` (Day 2).
+- Sessions in `data/sessions.json` use the `day` field with these dates.
+
 ## References
 
 See README.md, CONTRIBUTOR.md, and DEVELOPER.md for full documentation.
