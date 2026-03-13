@@ -97,6 +97,12 @@
       "website": "https://www.hslu.ch/"
     },
     {
+      "name": "Infiniroot",
+      "level": "bronze",
+      "logo": "/images/sponsors/infiniroot.webp",
+      "website": "https://www.infiniroot.com/"
+    },
+    {
       "name": "DevOpsMeetupBern",
       "level": "community",
       "logo": "/images/sponsors/dom_bern.webp",
