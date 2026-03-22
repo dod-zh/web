@@ -133,6 +133,12 @@
       "website": "https://www.girlscodetoo.ch/"
     },
     {
+      "name": "Guild42",
+      "level": "community",
+      "logo": "/images/sponsors/guild42.svg",
+      "website": "https://guild42.ch/"
+    },
+    {
       "name": "businessmap",
       "level": "partner",
       "logo": "/images/sponsors/businessmap.webp",
