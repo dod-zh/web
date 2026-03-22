@@ -6,8 +6,4 @@ speakerId: "bertrand-delacretaz"
 image: "/images/speakers/bertrand-delacretaz.webp"
 ---
 
-### Retired software engineer, ex Adobe (Principal Scientist), ex ASF Board of Directors (apache.org)
-
-After an initial career as an independent consultant, Bertrand Delacrétaz spent 19 years at Adobe in the field of large-scale content management, including 14 years as Principal Scientist, and 14 years on the board of the Apache Software Foundation (apache.org) for open-source software in parallel.
-
-Bertrand retired in early 2026, but remains passionate about technology and its evolution, regularly sharing his experience at conferences across Europe on technical and community-related topics.
+Bertrand Delacrétaz has spent more than 40 years building software that matters, notably for the Swiss Federal Parliament, the Swiss Television (RTS), and for Adobe, where he served as Principal Scientist before retiring in early 2026. A 14-year Apache Software Foundation Board member and open-source champion, he's been a regular conference speaker for over two decades. His motto: technology should serve people, not the other way around.
