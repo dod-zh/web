@@ -185,6 +185,7 @@
       "type": "workshop",
       "day": "2026-05-06",
       "time": "15:15 - 17:25",
+      "room": "1. OG – Seminar",
       "speakers": [
         "oliver-zihler",
         "alina-liburkina"
@@ -196,6 +197,7 @@
       "type": "workshop",
       "day": "2026-05-06",
       "time": "15:15 - 17:25",
+      "room": "1. OG – Malen",
       "speakers": [
         "cristian-schuszter"
       ]
@@ -206,6 +208,7 @@
       "type": "workshop",
       "day": "2026-05-06",
       "time": "15:15 - 17:25",
+      "room": "2. OG – Gesang",
       "speakers": [
         "manuel-schindler"
       ]
@@ -420,6 +423,7 @@
       "type": "workshop",
       "day": "2026-05-07",
       "time": "15:15 - 17:25",
+      "room": "1. OG – Seminar",
       "speakers": [
         "marc-herren"
       ]
@@ -430,6 +434,7 @@
       "type": "workshop",
       "day": "2026-05-07",
       "time": "15:15 - 17:25",
+      "room": "1. OG – Malen",
       "speakers": [
         "betta-lyon-delsordo"
       ]
@@ -440,6 +445,7 @@
       "type": "workshop",
       "day": "2026-05-07",
       "time": "15:15 - 17:25",
+      "room": "2. OG – Gesang",
       "speakers": [
         "luc-juggery"
       ]

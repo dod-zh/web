@@ -45,10 +45,9 @@
         {
             "name": "Bronze",
             "level": "bronze",
-            "max_available": -1,
+            "max_available": 6,
             "price": 750,
             "currency": "CHF",
-            "note": "unlimited",
             "group": "bronze"
         },
         {
