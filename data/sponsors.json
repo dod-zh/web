@@ -61,6 +61,12 @@
       "website": "https://www.exoscale.com/"
     },
     {
+      "name": "HCL Software",
+      "level": "meal",
+      "logo": "/images/sponsors/hcl-software.svg",
+      "website": "https://www.hcl-software.com/"
+    },
+    {
       "name": "Cyberlink",
       "level": "evening",
       "logo": "/images/sponsors/cyberlink.webp",
