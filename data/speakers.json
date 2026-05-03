@@ -39,15 +39,6 @@
       }
     },
     {
-      "id": "maarten-vandeperre",
-      "name": "Maarten Vandeperre",
-      "image": "/images/speakers/maarten-vandeperre.webp",
-      "social": {
-        "linkedin": "https://www.linkedin.com/in/maarten-vandeperre/",
-        "web": "https://developers.redhat.com/author/maarten-vandeperre"
-      }
-    },
-    {
       "id": "mohammad-ali-arabi",
       "name": "Mohammad-Ali A'râbi",
       "image": "/images/speakers/mohammad-ali-arabi.webp",
