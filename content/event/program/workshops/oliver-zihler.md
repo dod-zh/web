@@ -23,7 +23,7 @@ Basic knowledge of Kotlin or Java and Spring Boot.
 We’ll introduce the core DDD concepts along the way.
 Bring your laptop for hands-on coding!
 
-## Workshop Setup & Technical Requirements
+### Workshop Setup & Technical Requirements
 
 To participate in the workshop, please ensure your local environment is prepared with the following technologies:
 
