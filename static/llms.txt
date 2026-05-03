@@ -1,0 +1,42 @@
+# DevOpsDays Zurich
+
+> DevOpsDays Zurich is the annual Swiss community conference for DevOps practitioners — covering culture, automation, lean, measurement, sharing, platform engineering, and AI-augmented delivery. Organized by volunteers, hosted in Winterthur.
+
+The next edition is **DevOpsDays Zurich 2026**, taking place **6–7 May 2026** at **Alte Kaserne, Winterthur, Switzerland**. The two-day program features ~48 sessions including keynotes, talks, workshops, ignites, and Open Space, with ~250 attendees expected.
+
+## Event 2026
+
+- [Event overview](https://devopsdays.ch/event/): Dates, venue, format, what to expect
+- [Program](https://devopsdays.ch/event/program/): Full two-day schedule with sessions, workshops, Open Space
+- [Speakers](https://devopsdays.ch/event/speakers/): All speakers with bios and session links
+- [Tickets](https://devopsdays.ch/event/tickets/): Ticket types and registration
+- [Location](https://devopsdays.ch/event/location/): Alte Kaserne Winterthur — directions, accessibility, accommodation
+- [Sponsors](https://devopsdays.ch/event/sponsors/): All sponsors across Gold, Silver, Bronze, Partner, Community, and category tiers
+
+## About
+
+- [About DevOpsDays Zurich](https://devopsdays.ch/about/): Mission and history
+- [Team](https://devopsdays.ch/about/team/): Volunteer organizing team
+- [Code of Conduct](https://devopsdays.ch/about/conduct/): Required reading for all attendees, speakers, sponsors
+- [Diversity](https://devopsdays.ch/about/diversity/): Diversity and inclusion commitment
+- [Sustainability](https://devopsdays.ch/about/sustainability/): Sustainability practices for the event
+- [FAQ](https://devopsdays.ch/about/faq/): Common questions about the event
+
+## Past Events
+
+- [Past Events](https://devopsdays.ch/event/past-events/): Archive of editions since 2017 with video recordings and photo galleries on Vimeo and Flickr
+
+## Community & Social
+
+- [LinkedIn](https://www.linkedin.com/company/devopsdays-zurich): Announcements and updates
+- [Vimeo](https://vimeo.com/devopsdayszh): Session recordings from past editions
+- [Flickr](https://www.flickr.com/photos/150616602@N02/albums/with/72157680463366208): Event photos
+
+## Data
+
+- [Sitemap](https://devopsdays.ch/sitemap.xml): Full list of pages
+- [RSS feed](https://devopsdays.ch/feed.xml): Site updates
+
+## Optional
+
+- [GitHub repository](https://github.com/dod-zh/dod-zh-web): Open-source Hugo site (issues and contributions welcome)
