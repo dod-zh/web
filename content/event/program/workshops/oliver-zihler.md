@@ -22,3 +22,19 @@ Prerequisites:
 Basic knowledge of Kotlin or Java and Spring Boot.
 We’ll introduce the core DDD concepts along the way.
 Bring your laptop for hands-on coding!
+
+## Workshop Setup & Technical Requirements
+
+To participate in the workshop, please ensure your local environment is prepared with the following technologies:
+
+* Maven 3.9+
+* Java 25
+* Docker / Docker Compose
+
+Docker is important, as it will be used to run supporting infrastructure (e.g. PostgreSQL).
+
+The workshop code is available on GitHub: <https://github.com/codeartify/devopsdays2026>
+
+Please note that the repository is still being finalized. Updates may be pushed up until the day of the event.
+
+If you are able to clone and run the project successfully ahead of time (see the `README.md` of the repository), you are well prepared.
