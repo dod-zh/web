@@ -33,8 +33,7 @@
       "day": "2026-05-06",
       "time": "10:00 - 10:30",
       "speakers": [
-        "maria-hendrike-peetz",
-        "ramon-medrano-llamas"
+        "maria-hendrike-peetz"
       ]
     },
     {
@@ -341,16 +340,6 @@
       "speakers": [
         "peter-zylka-greger",
         "benjamin-huser-berta"
-      ]
-    },
-    {
-      "id": "ignites/marcelo-ancelmo",
-      "title": "AI Made Us Faster at Solving the Wrong Problems",
-      "type": "ignite",
-      "day": "2026-05-07",
-      "time": "14:20 - 14:25",
-      "speakers": [
-        "marcelo-ancelmo"
       ]
     },
     {
