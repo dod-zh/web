@@ -12,7 +12,10 @@
     {
       "id": "maria-hendrike-peetz",
       "name": "Maria-Hendrike Peetz",
-      "image": "/images/speakers/maria-hendrike-peetz.webp"
+      "image": "/images/speakers/maria-hendrike-peetz.webp",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/peetz/"
+      }
     },
     {
       "id": "ramon-medrano-llamas",
@@ -50,7 +53,10 @@
     {
       "id": "michele-brambilla",
       "name": "Michele Brambilla",
-      "image": "/images/speakers/michele-brambilla.webp"
+      "image": "/images/speakers/michele-brambilla.webp",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/michelebrambilla/"
+      }
     },
     {
       "id": "vera-herzmann",
