@@ -13,6 +13,7 @@ params:
     show_tickets: true      # Show/hide Tickets page, menu item, and "Get Tickets" button
     show_cfp: false         # Show/hide "Submit Your Talk" button (Call for Proposals)
     show_speakers: true     # Show/hide Speakers page and menu item
+    show_past_events: false # Show/hide Past Events menu item and landing-page button
     cfp_url: 'https://sessionize.com/devopsdays-zurich-2025/'  # CFP platform URL
 ```
 
@@ -56,6 +57,14 @@ params:
   - "Speakers" menu item in navigation
   - Access to `/speakers/` page
 - **Use case:** Set to `false` before speakers are announced
+
+### `show_past_events`
+
+- **Default:** `false`
+- **Controls:**
+  - "Past Events" menu item in navigation
+  - "View Past Events" button on landing page
+- **Use case:** Set to `true` once you want to surface previous editions (e.g. after a recent event wraps, or when the upcoming event hasn't been announced yet)
 
 ## Typical Timeline
 

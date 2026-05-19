@@ -19,6 +19,8 @@
                 {{ $showItem = $.Site.Params.features.show_program }}
                 {{ else if (in .URL "/event/speakers/") }}
                 {{ $showItem = $.Site.Params.features.show_speakers }}
+                {{ else if (in .URL "/event/past-events/") }}
+                {{ $showItem = $.Site.Params.features.show_past_events }}
                 {{ end }}
                 {{ if $showItem }}
                 {{ if .HasChildren }}
@@ -42,6 +44,8 @@
                             {{ $showChild = $.Site.Params.features.show_program }}
                             {{ else if (in .URL "/event/speakers/") }}
                             {{ $showChild = $.Site.Params.features.show_speakers }}
+                            {{ else if (in .URL "/event/past-events/") }}
+                            {{ $showChild = $.Site.Params.features.show_past_events }}
                             {{ end }}
                             {{ if $showChild }}
                             <a href="{{ .URL }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">{{
@@ -103,6 +107,8 @@
             {{ $showItem = $.Site.Params.features.show_program }}
             {{ else if (in .URL "/event/speakers/") }}
             {{ $showItem = $.Site.Params.features.show_speakers }}
+            {{ else if (in .URL "/event/past-events/") }}
+            {{ $showItem = $.Site.Params.features.show_past_events }}
             {{ end }}
             {{ if $showItem }}
             {{ if .HasChildren }}
@@ -116,6 +122,8 @@
                 {{ $showChild = $.Site.Params.features.show_program }}
                 {{ else if (in .URL "/event/speakers/") }}
                 {{ $showChild = $.Site.Params.features.show_speakers }}
+                {{ else if (in .URL "/event/past-events/") }}
+                {{ $showChild = $.Site.Params.features.show_past_events }}
                 {{ end }}
                 {{ if $showChild }}
                 <a href="{{ .URL }}" class="block text-gray-600 px-6 py-2 hover:bg-gray-100">{{ .Name }}</a>

@@ -11,6 +11,7 @@ params:
     show_tickets: true      # Tickets page, menu & "Get Tickets" button
     show_cfp: false         # "Submit Your Talk" button (currently disabled)
     show_speakers: true     # Speakers page & menu
+    show_past_events: false # Past Events menu item & "View Past Events" button
     cfp_url: 'https://sessionize.com/devopsdays-zurich-2025/'
 ```
 
@@ -22,6 +23,7 @@ params:
 | `show_tickets` | ✅ Tickets | ✅ Get Tickets | ✅ Get Your Tickets | ✅ Tickets | /event/tickets/ |
 | `show_cfp` | - | ✅ Submit Your Talk | ✅ Submit your Proposal | - | External CFP URL |
 | `show_speakers` | ✅ Speakers | - | - | - | /speakers/ |
+| `show_past_events` | ✅ Past Events | - | ✅ View Past Events | - | /event/past-events/ |
 
 ## Quick Actions
 
