@@ -79,7 +79,9 @@
         {{ block "main" . }}{{ end }}
     </main>
 
+    {{ if .Site.Params.features.show_sponsors }}
     {{ partial "sponsors.html" . }}
+    {{ end }}
     {{ partial "footer.html" . }}
 
     <!-- Cookie Consent Configuration -->

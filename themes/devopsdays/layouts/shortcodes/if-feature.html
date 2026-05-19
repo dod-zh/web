@@ -9,6 +9,8 @@
 {{- $enabled = $.Site.Params.features.show_cfp -}}
 {{- else if eq $feature "speakers" -}}
 {{- $enabled = $.Site.Params.features.show_speakers -}}
+{{- else if eq $feature "sponsors" -}}
+{{- $enabled = $.Site.Params.features.show_sponsors -}}
 {{- end -}}
 
 {{- if $enabled -}}

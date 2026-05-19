@@ -8,6 +8,8 @@ DevOpsDays is a self-organizing conference for DevOps practitioners and enthusia
 
 We do not have vendor booths, sell product presentations, or distribute attendee contact lists. Sponsors will get recognition on the website and social media before, during and after the event. Sponsors are encouraged to represent themselves by actively participating and engaging with the attendees as peers. Any attendee also has the opportunity to demo products/projects as part of an open space session.
 
+{{< if-feature flag="sponsors" >}}
+
 ## Sponsorship Packages 2026
 
 <div style="overflow-x: auto;">
@@ -37,6 +39,8 @@ We do not have vendor booths, sell product presentations, or distribute attendee
 ⁴ Requires timely delivery of artwork.  
 ⁵ Snack selection coordinated with catering partner.
 
+{{< /if-feature >}}
+
 ### NO Speaker Spots
 
 **We do not sell or bundle speaker spots as part of any Sponsoring activities with our conference. Do not ask for it. We don't do it. No DevOpsDays conference does it. Never. Period.**
@@ -55,11 +59,15 @@ Interested in sponsoring DevOpsDays Zurich 2026?
 
 **Contact us:** [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch)
 
+{{< if-feature flag="sponsors" >}}
+
 **Download documents:**
 
 - [Sponsorship Prospectus (PDF)](/sponsor_prospectus.pdf)
 - [Sponsorship Rules (PDF)](/sponsor_rules.pdf)
 - [Sponsor Banner (JPG)](/images/banner/sponsor-banner.jpg)
+
+{{< /if-feature >}}
 
 ## Stay informed
 
