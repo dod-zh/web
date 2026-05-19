@@ -1,4 +1,4 @@
 ---
-title: "DevOpsDays Zurich 2026"
+title: "DevOpsDays Zurich"
 description: "Join the Swiss DevOps community for two days of learning, networking, and collaboration"
 ---
