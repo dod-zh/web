@@ -3,7 +3,15 @@
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
-const { createCanvas } = require('canvas');
+const { createCanvas, registerFont } = require('canvas');
+
+// Register bundled font so banner generation works without system fonts installed.
+// Without this, canvas falls back via fontconfig and renders "tofu" squares on
+// hosts that don't have DejaVu/Liberation installed (e.g. plain devcontainers).
+registerFont(path.join(__dirname, 'fonts', 'DejaVuSans-Bold.ttf'), {
+    family: 'DejaVu Sans',
+    weight: 'bold'
+});
 
 const CONFIG = {
     outputPath: path.join(__dirname, '../static/images/banner/sponsor-banner.jpg'),
