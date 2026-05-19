@@ -1,9 +1,9 @@
 ---
 title: "Location"
-description: "DevOpsDays Zurich 2026 venue and travel information"
+description: "DevOpsDays Zurich venue and travel information"
 ---
 
-DevOpsDays Zurich 2026 will be held at the Alte Kaserne in Winterthur.
+DevOpsDays Zurich will be held at the Alte Kaserne in Winterthur.
 
 ## Venue
 

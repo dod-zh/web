@@ -10,7 +10,7 @@ We do not have vendor booths, sell product presentations, or distribute attendee
 
 {{< if-feature flag="sponsors" >}}
 
-## Sponsorship Packages 2026
+## Sponsorship Packages {{< event-year >}}
 
 <div style="overflow-x: auto;">
 
@@ -55,7 +55,7 @@ Sponsors are encouraged to represent themselves by actively participating and en
 
 ## Get Started
 
-Interested in sponsoring DevOpsDays Zurich 2026?
+Interested in sponsoring DevOpsDays Zurich {{< event-year >}}?
 
 **Contact us:** [organizer@devopsdays.ch](mailto:organizer@devopsdays.ch)
 
