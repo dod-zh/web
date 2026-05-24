@@ -80,9 +80,9 @@
 <section class="py-2">
     <div class="container mx-auto px-4">
         <div class="prose prose-lg max-w-4xl mx-auto">
-            {{ if .Site.Data.sessions }}
-            <!-- Stats Container - Generated from Data -->
             {{ $currentEvent := index (where .Site.Data.events.events "status" "upcoming") 0 }}
+            {{ if and .Site.Data.sessions $currentEvent }}
+            <!-- Stats Container - Generated from Data -->
             <div class="stats-container">
                 <div class="stat-item">
                     <div class="stat-number">{{ $currentEvent.attendees }}</div>
