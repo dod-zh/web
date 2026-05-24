@@ -33,6 +33,15 @@
                     View Program
                 </a>
                 {{ end }}
+                {{ if .Site.Params.features.show_past_events }}
+                <a href="/event/past-events/"
+                    class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                    style="white-space: nowrap;"
+                    onmouseover="this.style.backgroundColor='white'; this.style.color='var(--indigo-dye)'"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                    View Past Events
+                </a>
+                {{ end }}
             </div>
         </div>
     </div>

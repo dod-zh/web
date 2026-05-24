@@ -1,5 +1,5 @@
 ---
 title: "Program"
-description: "DevOpsDays Zurich 2026 program and schedule"
+description: "DevOpsDays Zurich {YEAR} program and schedule"
 type: "program"
 ---

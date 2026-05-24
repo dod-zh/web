@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{{- $upcoming := index (where .Site.Data.events.events "status" "upcoming") 0 -}}
+{{- $upcomingYear := printf "%.0f" $upcoming.year -}}
+{{- $description := cond (ne .Description "") (replace .Description "{YEAR}" $upcomingYear) .Site.Params.description -}}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="description" content="{{ $description }}">
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
     <meta name="author" content="{{ .Site.Params.author }}">
 
@@ -16,16 +19,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}">
-    <meta property="og:description"
-        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:description" content="{{ $description }}">
     <meta property="og:image" content="{{ .Site.BaseURL }}/images/devopsdays-ch-og.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ .Permalink }}">
     <meta property="twitter:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}">
-    <meta property="twitter:description"
-        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="twitter:description" content="{{ $description }}">
     <meta property="twitter:image" content="{{ .Site.BaseURL }}/images/devopsdays-ch-og.jpg">
 
     <!-- Favicon -->
@@ -48,9 +49,9 @@
     {
         "@context": "https://schema.org",
         "@type": "Event",
-        "name": "DevOpsDays Zurich 2027",
-        "startDate": "2027-04-14",
-        "endDate": "2027-04-15",
+        "name": "DevOpsDays Zurich {{ $upcomingYear }}",
+        "startDate": "{{ $upcoming.date }}",
+        "endDate": "{{ $upcoming.endDate }}",
         "location": {
             "@type": "Place",
             "name": "Alte Kaserne Winterthur",
@@ -79,7 +80,9 @@
         {{ block "main" . }}{{ end }}
     </main>
 
+    {{ if .Site.Params.features.show_sponsors }}
     {{ partial "sponsors.html" . }}
+    {{ end }}
     {{ partial "footer.html" . }}
 
     <!-- Cookie Consent Configuration -->

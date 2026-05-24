@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ partial "page-header.html" . }}
 
+{{- $upcomingYear := (index (where .Site.Data.events.events "status" "upcoming") 0).year -}}
+
 <section class="py-2">
     <div class="container mx-auto px-4">
         {{ .Content }}
@@ -93,7 +95,7 @@
             {{ if .Site.Params.features.show_tickets }}
             <div class="mt-12 rounded-lg p-8 text-center"
                 style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
-                <h2 class="text-2xl font-bold mb-4 text-white">Join Us in 2026!</h2>
+                <h2 class="text-2xl font-bold mb-4 text-white">Join Us in {{ $upcomingYear }}!</h2>
                 <p class="text-gray-100 mb-6">
                     Be part of Switzerland's premier DevOps conference and connect with the community.
                 </p>
@@ -101,7 +103,7 @@
                     class="bg-white text-cerulean px-8 py-3 rounded-lg font-semibold transition-colors"
                     style="color: var(--cerulean); white-space: nowrap;"
                     onmouseover="this.style.backgroundColor='#f3f4f6'" onmouseout="this.style.backgroundColor='white'">
-                    Get Your 2026 Tickets
+                    Get Your {{ $upcomingYear }} Tickets
                 </a>
             </div>
             {{ end }}

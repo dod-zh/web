@@ -1,0 +1,2 @@
+{{- $upcoming := index (where .Site.Data.events.events "status" "upcoming") 0 -}}
+{{- printf "%.0f" $upcoming.year -}}
