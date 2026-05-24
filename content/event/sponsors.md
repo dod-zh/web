@@ -10,7 +10,7 @@ We do not have vendor booths, sell product presentations, or distribute attendee
 
 {{< if-feature flag="sponsors" >}}
 
-## Sponsorship Packages
+## Sponsorship Packages 2026
 
 <div style="overflow-x: auto;">
 
