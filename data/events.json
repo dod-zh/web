@@ -4,10 +4,11 @@
       "year": 2026,
       "date": "2026-05-06",
       "endDate": "2026-05-07",
-      "status": "upcoming",
+      "status": "past",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
-      "attendees": 250
+      "attendees": 250,
+      "videoUrl": "https://vimeo.com/showcase/12258234"
     },
     {
       "year": 2025,
