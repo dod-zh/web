@@ -1,6 +1,15 @@
 {
   "events": [
     {
+      "year": 2027,
+      "date": "2027-04-14",
+      "endDate": "2027-04-15",
+      "status": "upcoming",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250
+    },
+    {
       "year": 2026,
       "date": "2026-05-06",
       "endDate": "2026-05-07",
