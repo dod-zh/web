@@ -1,13 +1,24 @@
 {
   "events": [
     {
-      "year": 2026,
-      "date": "2026-05-06",
-      "endDate": "2026-05-07",
+      "year": 2027,
+      "date": "2027-04-14",
+      "endDate": "2027-04-15",
       "status": "upcoming",
       "venue": "Alte Kaserne",
       "city": "Winterthur",
       "attendees": 250
+    },
+    {
+      "year": 2026,
+      "date": "2026-05-06",
+      "endDate": "2026-05-07",
+      "status": "past",
+      "venue": "Alte Kaserne",
+      "city": "Winterthur",
+      "attendees": 250,
+      "videoUrl": "https://vimeo.com/showcase/12258234",
+      "imagesUrl": "https://www.flickr.com/photos/150616602@N02/albums/72177720333629994"
     },
     {
       "year": 2025,
