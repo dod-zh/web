@@ -36,7 +36,7 @@ const CONFIG = {
     logoSizes: {
         gold: { width: 300, height: 120 },
         silver: { width: 250, height: 100 },
-        evening: { width: 250, height: 100 },
+        birthday: { width: 250, height: 100 },
         coffee: { width: 250, height: 100 },
         meal: { width: 250, height: 100 },
         snack: { width: 250, height: 100 },
