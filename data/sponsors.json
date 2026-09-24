@@ -1,12 +1,6 @@
 {
   "sponsors": [
     {
-      "name": "BIT",
-      "level": "partner",
-      "logo": "/images/sponsors/bit.webp",
-      "website": "https://www.bit.admin.ch/"
-    },
-    {
       "name": "DevOpsMeetupBern",
       "level": "community",
       "logo": "/images/sponsors/dom_bern.webp",
@@ -59,15 +53,21 @@
       "level": "partner",
       "logo": "/images/sponsors/digicomp.webp",
       "website": "https://www.digicomp.ch/weiterbildung-digital-transformation-technologies/devops"
+    }
+  ],
+  "disabled_sponsors": [
+    {
+      "name": "BIT",
+      "level": "partner",
+      "logo": "/images/sponsors/bit.webp",
+      "website": "https://www.bit.admin.ch/"
     },
     {
       "name": "Lukas Schubnell",
       "level": "partner",
       "logo": "/images/sponsors/lukasschubnell.png",
       "website": "https://www.lukasschubnell.ch/"
-    }
-  ],
-  "disabled_sponsors": [
+    },
     {
       "name": "VSHN AG",
       "level": "gold",
