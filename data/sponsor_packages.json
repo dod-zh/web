@@ -10,7 +10,7 @@
         },
         {
             "id": "event",
-            "name": "Evening Event, Coffee, Meals, Snacks"
+            "name": "Birthday Party, Coffee, Meals, Snacks"
         },
         {
             "id": "bronze",
@@ -29,8 +29,8 @@
         {
             "name": "Gold",
             "level": "gold",
-            "max_available": 4,
-            "price": 8000,
+            "max_available": 5,
+            "price": 8500,
             "currency": "CHF",
             "group": "gold"
         },
@@ -38,23 +38,24 @@
             "name": "Silver",
             "level": "silver",
             "max_available": 3,
-            "price": 5000,
+            "price": 5500,
             "currency": "CHF",
             "group": "silver"
         },
         {
             "name": "Bronze",
             "level": "bronze",
-            "max_available": 6,
+            "max_available": -1,
             "price": 750,
             "currency": "CHF",
-            "group": "bronze"
+            "group": "bronze",
+            "note": "unlimited"
         },
         {
-            "name": "Evening Event",
-            "level": "evening",
+            "name": "Birthday Party",
+            "level": "birthday",
             "max_available": 1,
-            "price": 4000,
+            "price": 8000,
             "currency": "CHF",
             "group": "event"
         },
@@ -62,7 +63,7 @@
             "name": "Coffee",
             "level": "coffee",
             "max_available": 1,
-            "price": 4000,
+            "price": 3500,
             "currency": "CHF",
             "group": "event"
         },
@@ -70,7 +71,7 @@
             "name": "Meals",
             "level": "meal",
             "max_available": 1,
-            "price": 4000,
+            "price": 3500,
             "currency": "CHF",
             "group": "event"
         },
@@ -78,7 +79,7 @@
             "name": "Snacks",
             "level": "snack",
             "max_available": 1,
-            "price": 4000,
+            "price": 3500,
             "currency": "CHF",
             "group": "event"
         },

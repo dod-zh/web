@@ -1,6 +1,74 @@
 {
   "sponsors": [
     {
+      "name": "BIT",
+      "level": "partner",
+      "logo": "/images/sponsors/bit.webp",
+      "website": "https://www.bit.admin.ch/"
+    },
+    {
+      "name": "DevOpsMeetupBern",
+      "level": "community",
+      "logo": "/images/sponsors/dom_bern.webp",
+      "website": "https://www.meetup.com/de-de/devops-bern/"
+    },
+    {
+      "name": "DevOpsMeetupZurich",
+      "level": "community",
+      "logo": "/images/sponsors/dom_zurich.webp",
+      "website": "https://www.meetup.com/de-de/devops-meetup-zurich/"
+    },
+    {
+      "name": "Powercoders",
+      "level": "community",
+      "logo": "/images/sponsors/powercoders.webp",
+      "website": "https://powercoders.org/"
+    },
+    {
+      "name": "belikegrace",
+      "level": "community",
+      "logo": "/images/sponsors/belikegrace.webp",
+      "website": "https://www.belikegrace.ch/"
+    },
+    {
+      "name": "girlscodetoo",
+      "level": "community",
+      "logo": "/images/sponsors/girlscodetoo.webp",
+      "website": "https://www.girlscodetoo.ch/"
+    },
+    {
+      "name": "Guild42",
+      "level": "community",
+      "logo": "/images/sponsors/guild42.svg",
+      "website": "https://guild42.ch/"
+    },
+    {
+      "name": "businessmap",
+      "level": "partner",
+      "logo": "/images/sponsors/businessmap.webp",
+      "website": "https://businessmap.io/"
+    },
+    {
+      "name": "Hostpoint",
+      "level": "partner",
+      "logo": "/images/sponsors/hostpoint.webp",
+      "website": "https://www.hostpoint.ch/"
+    },
+    {
+      "name": "Digicomp",
+      "level": "partner",
+      "logo": "/images/sponsors/digicomp.webp",
+      "website": "https://www.digicomp.ch/weiterbildung-digital-transformation-technologies/devops"
+    },
+    {
+      "name": "Lukas Schubnell",
+      "level": "partner",
+      "logo": "/images/sponsors/lukasschubnell.png",
+      "website": "https://www.lukasschubnell.ch/"
+    }
+  ],
+  "disabled_sponsors": [
+    {
       "name": "VSHN AG",
       "level": "gold",
       "logo": "/images/sponsors/vshn.webp",
@@ -23,12 +91,6 @@
       "level": "gold",
       "logo": "/images/sponsors/dash0.png",
       "website": "https://www.dash0.com/"
-    },
-    {
-      "name": "BIT",
-      "level": "partner",
-      "logo": "/images/sponsors/bit.webp",
-      "website": "https://www.bit.admin.ch/"
     },
     {
       "name": "Infometis",
@@ -107,66 +169,6 @@
       "level": "bronze",
       "logo": "/images/sponsors/infiniroot.webp",
       "website": "https://www.infiniroot.com/"
-    },
-    {
-      "name": "DevOpsMeetupBern",
-      "level": "community",
-      "logo": "/images/sponsors/dom_bern.webp",
-      "website": "https://www.meetup.com/de-de/devops-bern/"
-    },
-    {
-      "name": "DevOpsMeetupZurich",
-      "level": "community",
-      "logo": "/images/sponsors/dom_zurich.webp",
-      "website": "https://www.meetup.com/de-de/devops-meetup-zurich/"
-    },
-    {
-      "name": "Powercoders",
-      "level": "community",
-      "logo": "/images/sponsors/powercoders.webp",
-      "website": "https://powercoders.org/"
-    },
-    {
-      "name": "belikegrace",
-      "level": "community",
-      "logo": "/images/sponsors/belikegrace.webp",
-      "website": "https://www.belikegrace.ch/"
-    },
-    {
-      "name": "girlscodetoo",
-      "level": "community",
-      "logo": "/images/sponsors/girlscodetoo.webp",
-      "website": "https://www.girlscodetoo.ch/"
-    },
-    {
-      "name": "Guild42",
-      "level": "community",
-      "logo": "/images/sponsors/guild42.svg",
-      "website": "https://guild42.ch/"
-    },
-    {
-      "name": "businessmap",
-      "level": "partner",
-      "logo": "/images/sponsors/businessmap.webp",
-      "website": "https://businessmap.io/"
-    },
-    {
-      "name": "Hostpoint",
-      "level": "partner",
-      "logo": "/images/sponsors/hostpoint.webp",
-      "website": "https://www.hostpoint.ch/"
-    },
-    {
-      "name": "Digicomp",
-      "level": "partner",
-      "logo": "/images/sponsors/digicomp.webp",
-      "website": "https://www.digicomp.ch/weiterbildung-digital-transformation-technologies/devops"
-    },
-    {
-      "name": "Lukas Schubnell",
-      "level": "partner",
-      "logo": "/images/sponsors/lukasschubnell.png",
-      "website": "https://www.lukasschubnell.ch/"
     }
   ]
 }
