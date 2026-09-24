@@ -93,12 +93,30 @@
         {{- end -}}
         {{- end -}}
 
+        {{- /* Promote sponsoring prominently while no paid sponsors (other than partners/community) are listed */ -}}
+        {{- $paidSponsors := where .Site.Data.sponsors.sponsors "level" "not in" (slice "partner" "community") -}}
+        {{ if $paidSponsors }}
         <div class="text-center mt-8">
             <a href="/event/sponsors/" class="text-base font-semibold" style="color: var(--cerulean);"
                 onmouseover="this.style.color='var(--indigo-dye)'" onmouseout="this.style.color='var(--cerulean)'">
                 Learn more about sponsoring this event →
             </a>
         </div>
+        {{ else }}
+        <div class="mt-8 mx-auto max-w-2xl text-center rounded-xl border-2 border-gray-200 bg-gray-50 px-6 py-8">
+            <h4 class="text-xl font-bold mb-3" style="color: var(--indigo-dye);">Become a Sponsor</h4>
+            <p class="text-gray-700 mb-6">
+                Sponsorship packages are now available. Support the DevOps community and get your company in
+                front of practitioners from across Switzerland and beyond.
+            </p>
+            <a href="/event/sponsors/" class="inline-block text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                style="background-color: var(--indigo-dye); color: white; white-space: nowrap;"
+                onmouseover="this.style.backgroundColor='var(--rich-black)'"
+                onmouseout="this.style.backgroundColor='var(--indigo-dye)'">
+                Learn more about sponsoring this event →
+            </a>
+        </div>
+        {{ end }}
     </div>
 </section>
 

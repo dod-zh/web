@@ -10,34 +10,40 @@ We do not have vendor booths, sell product presentations, or distribute attendee
 
 {{< if-feature flag="sponsors" >}}
 
-## Sponsorship Packages 2026
+## Sponsorship Packages 2027
 
 <div style="overflow-x: auto;">
 
-| Benefits | Gold | Silver | Bronze | Evening Event | Coffee | Meals | Snacks |
+| Benefits | Gold | Silver | Bronze | Birthday Party | Coffee | Meals | Snacks |
 |:---------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Social Media & Web Sites | x | x | x | x | x | x | x |
 | Logo in emails | x | x | x | x | x | x | x |
 | Logo shown during event¹ | x | x | x | x | x | x | x |
 | Booth (9sqm) main room² | x | — | — | — | — | — | — |
 | Booth (9sqm) foyer/1st floor² | — | x | — | — | — | — | — |
-| Sponsoring Pitches (1min)³ | x | — | — | x | x | x | x |
+| Sponsor Pitches (1min)³ | x | — | — | x | x | x | x |
 | Sponsoring Bingo | x | x | — | — | — | — | — |
-| Logo shown at Evening Event | — | — | — | x | — | — | — |
-| Logo on A4 table displays @ lunch | — | — | — | — | — | x | — |
-| Logo on Coffee Cups⁴ | — | — | — | — | x | — | — |
-| Logo on Snacks⁴⁵ | — | — | — | — | — | — | x |
-| # Tickets included | 4 | 4 | 1 | 2 | 2 | 2 | 2 |
-| # Available Packages | {{< sponsor_availability "Gold" >}} | {{< sponsor_availability "Silver" >}} | {{< sponsor_availability "Bronze" >}} | {{< sponsor_availability "Evening Event" >}} | {{< sponsor_availability "Coffee" >}} | {{< sponsor_availability "Meals" >}} | {{< sponsor_availability "Snacks" >}} |
-| Price (CHF excl. 8.1% VAT) | 8'000.- | 5'000.- | 750.- | 4'000.- | 4'000.- | 4'000.- | 4'000.- |
+| Roll-up displays & Giveaways⁴ @ Birthday Party | — | — | — | x | — | — | — |
+| 2 Drinks @ Birthday Party branded following your proposal | — | — | — | x | — | — | — |
+| Logo/advertisement on A4 table displays @ Lunch | — | — | — | — | — | x | — |
+| 2 Roll-up displays @ Lunch | — | — | — | — | — | x | — |
+| Logo on Coffee Cups⁵ | — | — | — | — | x | — | — |
+| Logo on Snacks⁵⁶ | — | — | — | — | — | — | x |
+| # Birthday Party tickets included⁷ | 3 | 2 | 1 | 5 | 3 | 3 | 3 |
+| # Event Tickets included⁸ | 4 | 4 | 1 | 3 | 2 | 2 | 2 |
+| # Available Packages | {{< sponsor_availability "Gold" >}} | {{< sponsor_availability "Silver" >}} | {{< sponsor_availability "Bronze" >}} | {{< sponsor_availability "Birthday Party" >}} | {{< sponsor_availability "Coffee" >}} | {{< sponsor_availability "Meals" >}} | {{< sponsor_availability "Snacks" >}} |
+| Price (CHF excl. 8.1% VAT) | 8'500.- | 5'500.- | 750.- | 8'000.- | 3'500.- | 3'500.- | 3'500.- |
 
 </div>
 
-¹ Includes stage, slides, and streaming overlays.  
-² Booth placement subject to venue layout.  
-³ Pitch slot scheduled by organizers and limited to 60 seconds.  
-⁴ Requires timely delivery of artwork.  
-⁵ Snack selection coordinated with catering partner.
+¹ Company logo will be in slide rotation on video projectors during breaks.  
+² Gold/Silver sponsors may choose their preferred booth location on a first come, first serve basis.  
+³ Sponsor pitches take place on day 1 or 2 on the main stage in front of the full conference audience (exception "Birthday Party": pitch takes place at the Birthday Party venue on day 1 evening).  
+⁴ Roll-up displays to be provided by the sponsor. Giveaways can be distributed by the sponsor during the Birthday Party (e.g. when people enter the party, on tables, …).  
+⁵ Snacks and coffee are served during breaks on day 1 & 2 of the conference.  
+⁶ Snacks are provided by organizers/venue. Sponsor needs to send 800 stickers (max. 5cm x 10cm) with company logo to the organizers (costs are not included in the package).  
+⁷ Birthday Party tickets are provided on top of Event Tickets and allow participation (only) in the Birthday Party. Tickets can be distributed as desired (e.g. among the sponsor's employees, customers, raffles, …).  
+⁸ Event Tickets allow participation in the conference (day 1 & day 2) and the Birthday Party.
 
 {{< /if-feature >}}
 
@@ -64,8 +70,9 @@ Interested in sponsoring DevOpsDays Zurich {{< event-year >}}?
 **Download documents:**
 
 - [Sponsorship Prospectus (PDF)](/sponsor_prospectus.pdf)
-- [Sponsorship Rules (PDF)](/sponsor_rules.pdf)
 - [Sponsor Banner (JPG)](/images/banner/sponsor-banner.jpg)
+
+<!-- - [Sponsorship Rules (PDF)](/sponsor_rules.pdf) -->
 
 {{< /if-feature >}}
 
