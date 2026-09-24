@@ -70,8 +70,9 @@ Interested in sponsoring DevOpsDays Zurich {{< event-year >}}?
 **Download documents:**
 
 - [Sponsorship Prospectus (PDF)](/sponsor_prospectus.pdf)
-- [Sponsorship Rules (PDF)](/sponsor_rules.pdf)
 - [Sponsor Banner (JPG)](/images/banner/sponsor-banner.jpg)
+
+<!-- - [Sponsorship Rules (PDF)](/sponsor_rules.pdf) -->
 
 {{< /if-feature >}}
 
