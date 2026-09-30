@@ -15,7 +15,7 @@ We do not have vendor booths, sell product presentations, or distribute attendee
 <div style="overflow-x: auto;">
 
 | Benefits | Gold | Silver | Bronze | Birthday Party | Coffee | Meals | Snacks |
-|:---------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| :--------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Social Media & Web Sites | x | x | x | x | x | x | x |
 | Logo in emails | x | x | x | x | x | x | x |
 | Logo shown during event¹ | x | x | x | x | x | x | x |
@@ -70,7 +70,6 @@ Interested in sponsoring DevOpsDays Zurich {{< event-year >}}?
 **Download documents:**
 
 - [Sponsorship Prospectus (PDF)](/sponsor_prospectus.pdf)
-- [Sponsor Banner (JPG)](/images/banner/sponsor-banner.jpg)
 
 <!-- - [Sponsorship Rules (PDF)](/sponsor_rules.pdf) -->
 
