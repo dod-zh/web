@@ -53,6 +53,12 @@
       "level": "partner",
       "logo": "/images/sponsors/digicomp.webp",
       "website": "https://www.digicomp.ch/weiterbildung-digital-transformation-technologies/devops"
+    },
+    {
+      "name": "Lukas Schubnell",
+      "level": "partner",
+      "logo": "/images/sponsors/lukasschubnell.png",
+      "website": "https://www.lukasschubnell.ch/"
     }
   ],
   "disabled_sponsors": [
@@ -61,12 +67,6 @@
       "level": "partner",
       "logo": "/images/sponsors/bit.webp",
       "website": "https://www.bit.admin.ch/"
-    },
-    {
-      "name": "Lukas Schubnell",
-      "level": "partner",
-      "logo": "/images/sponsors/lukasschubnell.png",
-      "website": "https://www.lukasschubnell.ch/"
     },
     {
       "name": "VSHN AG",
