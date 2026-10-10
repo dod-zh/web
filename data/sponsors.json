@@ -59,6 +59,12 @@
       "level": "partner",
       "logo": "/images/sponsors/lukasschubnell.png",
       "website": "https://www.lukasschubnell.ch/"
+    },
+    {
+      "name": "Cloudscale.ch",
+      "level": "gold",
+      "logo": "/images/sponsors/cloudscalech.webp",
+      "website": "https://www.cloudscale.ch/"
     }
   ],
   "disabled_sponsors": [
@@ -73,12 +79,6 @@
       "level": "gold",
       "logo": "/images/sponsors/vshn.webp",
       "website": "https://vshn.ch/"
-    },
-    {
-      "name": "Cloudscale.ch",
-      "level": "gold",
-      "logo": "/images/sponsors/cloudscalech.webp",
-      "website": "https://www.cloudscale.ch/"
     },
     {
       "name": "Redgate",
