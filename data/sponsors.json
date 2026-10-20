@@ -65,6 +65,12 @@
       "level": "gold",
       "logo": "/images/sponsors/cloudscalech.webp",
       "website": "https://www.cloudscale.ch/"
+    },
+    {
+      "name": "Zuehlke",
+      "level": "bronze",
+      "logo": "/images/sponsors/zuehlke.webp",
+      "website": "https://www.zuehlke.com/"
     }
   ],
   "disabled_sponsors": [
@@ -133,12 +139,6 @@
       "level": "evening",
       "logo": "/images/sponsors/cyberlink.webp",
       "website": "https://www.cyberlink.ch/"
-    },
-    {
-      "name": "Zuehlke",
-      "level": "bronze",
-      "logo": "/images/sponsors/zuehlke.webp",
-      "website": "https://www.zuehlke.com/"
     },
     {
       "name": "KPMG",
