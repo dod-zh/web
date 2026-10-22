@@ -18,7 +18,7 @@ jobs:
       pull-requests: write
     
     env:
-      HUGO_VERSION: 0.150.0
+      HUGO_VERSION: 0.168.0
       NODE_VERSION: 18
     
     steps:
