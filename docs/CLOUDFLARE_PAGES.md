@@ -49,7 +49,7 @@ This project is deployed using Cloudflare Pages with Wrangler for both productio
 #### Production Deployment (`.github/workflows/cloudflare-pages.yml`)
 
 - **Triggers**: Push to `main` branch, manual dispatch
-- **Hugo Version**: 0.150.0
+- **Hugo Version**: 0.168.0
 - **Node Version**: 18
 - **Deployment**: Uses `wrangler-action@v3` with `pages deploy` command
 - **Build Process**:
@@ -82,7 +82,7 @@ If you want to use Cloudflare's native builds instead:
 - **Build output directory**: `public`
 - **Root directory**: `/`
 - **Environment variables**:
-  - `HUGO_VERSION`: `0.150.0`
+  - `HUGO_VERSION`: `0.168.0`
   - `NODE_VERSION`: `18`
   - `HUGO_ENV`: `production`
 
@@ -90,7 +90,7 @@ If you want to use Cloudflare's native builds instead:
 
 ### Build Failures
 
-1. Check Hugo version matches (`0.150.0`)
+1. Check Hugo version matches (`0.168.0`)
 2. Verify all npm dependencies install correctly
 3. Ensure system fonts are available for banner generation
 
@@ -117,7 +117,7 @@ The migration removes:
 Key changes:
 
 - Uses `wrangler-action@v3` instead of deprecated `pages-action@v1`
-- Hugo version updated to 0.150.0 (was 0.128.0 in GitHub Pages)
+- Hugo version updated to 0.168.0 (was 0.150.0; originally 0.128.0 in GitHub Pages)
 - Build process now consistent between production and previews
 - PR previews include automatic comment updates
 - Project auto-creation on first deployment

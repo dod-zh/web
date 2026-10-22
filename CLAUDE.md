@@ -10,7 +10,7 @@
 
 ## Tech Stack
 
-- **Hugo** (Extended 0.150.0+) static site generator
+- **Hugo** (Extended 0.168.0+) static site generator
 - **Tailwind CSS** for styling
 - **Node.js 18+** for build tools
 - **Cloudflare Pages** for hosting

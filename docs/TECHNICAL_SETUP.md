@@ -6,7 +6,7 @@ This guide covers the technical setup, development environment, and deployment c
 
 ### Prerequisites
 
-- [Hugo](https://gohugo.io/installation/) (extended version 0.150.0 or later)
+- [Hugo](https://gohugo.io/installation/) (extended version 0.168.0 or later)
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/) v18 or later (for build tools)
 
@@ -153,7 +153,7 @@ The `main` branch is protected:
 
 - Build command: `npm run build` (defined in `netlify.toml`)
 - Publish directory: `public`
-- Hugo version: 0.150.0
+- Hugo version: 0.168.0
 - Node version: 18
 - Environment: Preview mode with custom baseURL
 
@@ -165,7 +165,7 @@ command = "npm run build"
 publish = "public"
 
 [build.environment]
-HUGO_VERSION = "0.150.0"
+HUGO_VERSION = "0.168.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_VERSION = "18"
@@ -310,7 +310,7 @@ For production deployment:
 
 ```bash
 HUGO_ENV=production          # Enables production optimizations
-HUGO_VERSION=0.150.0        # Hugo version
+HUGO_VERSION=0.168.0        # Hugo version
 HUGO_ENABLEGITINFO=true     # Enable Git info in templates
 NODE_VERSION=18             # Node.js version
 ```
@@ -480,7 +480,7 @@ npm run build
 # Check Hugo version
 hugo version
 
-# Should be 0.150.0 or later with extended features
+# Should be 0.168.0 or later with extended features
 ```
 
 **Node.js dependency issues**

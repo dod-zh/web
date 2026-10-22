@@ -19,7 +19,7 @@ Visit <http://localhost:1313>
 
 ### Prerequisites
 
-- Hugo Extended 0.150.0+
+- Hugo Extended 0.168.0+
 - Node.js 18+
 - Git
 
@@ -363,7 +363,7 @@ npm run build
 # Check Hugo version
 hugo version
 
-# Should be 0.150.0+ with extended
+# Should be 0.168.0+ with extended
 ```
 
 **Node.js issues:**
