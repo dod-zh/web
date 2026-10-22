@@ -20,7 +20,7 @@ Visit <http://localhost:1313>
 
 ## 🛠️ Tech Stack
 
-- **Hugo** 0.150.0+ (Extended) - Static site generator
+- **Hugo** 0.168.0+ (Extended) - Static site generator
 - **Tailwind CSS** - Styling framework
 - **Node.js** 18+ - Build tools
 - **Cloudflare Pages** - Hosting and preview deployments
