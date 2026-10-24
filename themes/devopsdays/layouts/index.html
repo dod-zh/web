@@ -48,8 +48,8 @@
 </div>
 
 <!-- Event Details -->
-{{ if .Site.Data.events }}
-{{ $currentEvent := index (where .Site.Data.events.events "status" "upcoming") 0 }}
+{{ if hugo.Data.events }}
+{{ $currentEvent := index (where hugo.Data.events.events "status" "upcoming") 0 }}
 {{ if $currentEvent }}
 <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
@@ -80,8 +80,8 @@
 <section class="py-2">
     <div class="container mx-auto px-4">
         <div class="prose prose-lg max-w-4xl mx-auto">
-            {{ $currentEvent := index (where .Site.Data.events.events "status" "upcoming") 0 }}
-            {{ if and .Site.Data.sessions $currentEvent }}
+            {{ $currentEvent := index (where hugo.Data.events.events "status" "upcoming") 0 }}
+            {{ if and hugo.Data.sessions $currentEvent }}
             <!-- Stats Container - Generated from Data -->
             <div class="stats-container">
                 <div class="stat-item">
@@ -89,19 +89,19 @@
                     <div class="stat-label">up to Attendees</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">{{ len (where .Site.Data.sessions.sessions "type" "keynote") }}</div>
+                    <div class="stat-number">{{ len (where hugo.Data.sessions.sessions "type" "keynote") }}</div>
                     <div class="stat-label">Keynote-Speakers</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">{{ len (where .Site.Data.sessions.sessions "type" "talk") }}</div>
+                    <div class="stat-number">{{ len (where hugo.Data.sessions.sessions "type" "talk") }}</div>
                     <div class="stat-label">Talks</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">{{ len (where .Site.Data.sessions.sessions "type" "ignite") }}</div>
+                    <div class="stat-number">{{ len (where hugo.Data.sessions.sessions "type" "ignite") }}</div>
                     <div class="stat-label">Ignites</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">{{ len (where .Site.Data.sessions.sessions "type" "workshop") }}</div>
+                    <div class="stat-number">{{ len (where hugo.Data.sessions.sessions "type" "workshop") }}</div>
                     <div class="stat-label">Workshops</div>
                 </div>
             </div>

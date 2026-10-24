@@ -1,16 +1,16 @@
 {{ define "main" }}
 {{ partial "page-header.html" . }}
 
-{{- $upcomingYear := (index (where .Site.Data.events.events "status" "upcoming") 0).year -}}
+{{- $upcomingYear := (index (where hugo.Data.events.events "status" "upcoming") 0).year -}}
 
 <section class="py-2">
     <div class="container mx-auto px-4">
         {{ .Content }}
 
-        {{ if .Site.Data.events }}
+        {{ if hugo.Data.events }}
         <div class="mt-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {{ range where .Site.Data.events.events "status" "past" }}
+                {{ range where hugo.Data.events.events "status" "past" }}
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <div class="flex items-start justify-between mb-4">
                         <div>

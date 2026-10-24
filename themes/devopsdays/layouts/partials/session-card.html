@@ -50,7 +50,7 @@ Usage: {{ partial "session-card.html" (dict "session" . "context" $) }}
                 {{ if $session.speakers }}
                 <div class="flex flex-wrap items-center gap-2 mt-2">
                     {{ range $session.speakers }}
-                    {{ $speaker := index (where $ctx.Site.Data.speakers.speakers "id" .) 0 }}
+                    {{ $speaker := index (where hugo.Data.speakers.speakers "id" .) 0 }}
                     {{ if $speaker }}
                     <div class="flex items-center rounded-lg p-2 hover:bg-black/5 transition-colors">
                         <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"

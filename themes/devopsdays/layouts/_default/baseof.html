@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{- $upcoming := index (where .Site.Data.events.events "status" "upcoming") 0 -}}
+{{- $upcoming := index (where hugo.Data.events.events "status" "upcoming") 0 -}}
 {{- $upcomingYear := printf "%.0f" $upcoming.year -}}
 {{- $description := cond (ne .Description "") (replace .Description "{YEAR}" $upcomingYear) .Site.Params.description -}}
 

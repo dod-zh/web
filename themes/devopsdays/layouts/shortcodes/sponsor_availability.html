@@ -1,6 +1,6 @@
 {{- $packageName := .Get 0 -}}
-{{- $packages := .Site.Data.sponsor_packages.packages -}}
-{{- $sponsors := .Site.Data.sponsors.sponsors -}}
+{{- $packages := hugo.Data.sponsor_packages.packages -}}
+{{- $sponsors := hugo.Data.sponsors.sponsors -}}
 
 {{- $sponsorCounts := dict -}}
 {{- range $sponsors -}}
