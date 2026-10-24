@@ -22,7 +22,7 @@ jobs:
     
     env:
       HUGO_VERSION: 0.168.0
-      NODE_VERSION: 18
+      NODE_VERSION: '22'
     
     steps:
       - name: Checkout
