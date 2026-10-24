@@ -1,0 +1,11 @@
+# Cloudflare Pages custom headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+# Security headers (shared standard across all sites; CSP in report-only mode)
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://js.tito.io; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://js.tito.io; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://*.tito.io; frame-src https://www.google.com https://player.vimeo.com https://*.tito.io; form-action 'self' https://devopsdays.us12.list-manage.com

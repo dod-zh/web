@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "page-header.html" . }}
 
-{{- $upcoming := index (where .Site.Data.events.events "status" "upcoming") 0 -}}
+{{- $upcoming := index (where hugo.Data.events.events "status" "upcoming") 0 -}}
 {{- $day1 := $upcoming.date -}}
 {{- $day2 := $upcoming.endDate -}}
 {{- $day1Label := (time $day1).Format "January 2, 2006" -}}
@@ -11,7 +11,7 @@
     <div class="container mx-auto px-4">
         {{ .Content }}
         <!-- Program Schedule -->
-        {{ if .Site.Data.sessions }}
+        {{ if hugo.Data.sessions }}
         <div class="mt-12">
 
             <!-- Two Column Layout for Days -->
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="grid gap-3">
-                        {{ range where .Site.Data.sessions.sessions "day" $day1 }}
+                        {{ range where hugo.Data.sessions.sessions "day" $day1 }}
                         {{ partial "session-card.html" (dict "session" . "context" $) }}
                         {{ end }}
                     </div>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="grid gap-3">
-                        {{ range where .Site.Data.sessions.sessions "day" $day2 }}
+                        {{ range where hugo.Data.sessions.sessions "day" $day2 }}
                         {{ partial "session-card.html" (dict "session" . "context" $) }}
                         {{ end }}
                     </div>

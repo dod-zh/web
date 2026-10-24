@@ -1,4 +1,4 @@
-{{ if .Site.Data.sponsors }}
+{{ if hugo.Data.sponsors }}
 {{- /* Build a map of level to package name and group levels by group ID */ -}}
 {{- $levelToName := dict -}}
 {{- $groupedLevels := dict -}}
@@ -6,12 +6,12 @@
 {{- $levelToGroup := dict -}}
 
 {{- /* Build group ID to name mapping */ -}}
-{{- range .Site.Data.sponsor_packages.groups -}}
+{{- range hugo.Data.sponsor_packages.groups -}}
 {{- $groupIdToName = merge $groupIdToName (dict .id .name) -}}
 {{- end -}}
 
 {{- /* Build level mappings and group levels */ -}}
-{{- range .Site.Data.sponsor_packages.packages -}}
+{{- range hugo.Data.sponsor_packages.packages -}}
 {{- $levelToName = merge $levelToName (dict .level .name) -}}
 {{- if .group -}}
 {{- $existingLevels := index $groupedLevels .group | default slice -}}
@@ -29,7 +29,7 @@
         {{- $displayedLevels := slice -}}
 
         {{- /* Iterate through groups array in order */ -}}
-        {{- range .Site.Data.sponsor_packages.groups -}}
+        {{- range hugo.Data.sponsor_packages.groups -}}
         {{- $groupId := .id -}}
         {{- $groupName := .name -}}
 
@@ -41,7 +41,7 @@
         {{- $displayedGroups = $displayedGroups | append $groupId -}}
         {{- $hasSponsors := false -}}
         {{- range $isGroup -}}
-        {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" . -}}
+        {{- $levelSponsors := where hugo.Data.sponsors.sponsors "level" . -}}
         {{- if $levelSponsors -}}
         {{- $hasSponsors = true -}}
         {{- end -}}
@@ -53,7 +53,7 @@
             </h4>
             <div class="flex flex-wrap justify-center items-center gap-6" data-sponsor-tier="{{ index $isGroup 0 }}">
                 {{- /* Iterate through all sponsors and display those matching any level in this group */ -}}
-                {{- range $.Site.Data.sponsors.sponsors -}}
+                {{- range hugo.Data.sponsors.sponsors -}}
                 {{- if in $isGroup .level -}}
                 {{- $displayedLevels = $displayedLevels | append .level -}}
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="block sponsor-logo-container">
@@ -68,12 +68,12 @@
         {{- end -}}
         {{- else -}}
         {{- /* It's an individual level ID - find the level */ -}}
-        {{- range $.Site.Data.sponsor_packages.packages -}}
+        {{- range hugo.Data.sponsor_packages.packages -}}
         {{- if eq .level $groupId -}}
         {{- $level := .level -}}
         {{- if not (in $displayedLevels $level) -}}
         {{- $displayedLevels = $displayedLevels | append $level -}}
-        {{- $levelSponsors := where $.Site.Data.sponsors.sponsors "level" $level -}}
+        {{- $levelSponsors := where hugo.Data.sponsors.sponsors "level" $level -}}
         {{ if $levelSponsors }}
         <div class="mb-8">
             <h4 class="text-lg font-semibold text-center mb-6" style="color: var(--indigo-dye);">{{ $groupName }}</h4>
@@ -94,7 +94,7 @@
         {{- end -}}
 
         {{- /* Promote sponsoring prominently while no paid sponsors (other than partners/community) are listed */ -}}
-        {{- $paidSponsors := where .Site.Data.sponsors.sponsors "level" "not in" (slice "partner" "community") -}}
+        {{- $paidSponsors := where hugo.Data.sponsors.sponsors "level" "not in" (slice "partner" "community") -}}
         {{ if $paidSponsors }}
         <div class="text-center mt-8">
             <a href="/event/sponsors/" class="text-base font-semibold" style="color: var(--cerulean);"

@@ -5,11 +5,11 @@
     <div class="container mx-auto px-4">
         {{ .Content }}
         <!-- Program Schedule -->
-        {{ if .Site.Data.sessions }}
+        {{ if hugo.Data.sessions }}
         <div class="mt-12">
 
             <!-- Dynamic Column Layout for Days -->
-            {{ $sessions := .Site.Data.sessions.sessions }}
+            {{ $sessions := hugo.Data.sessions.sessions }}
             {{ $dayMap := dict }}
             {{ range $sessions }}
             {{ $dayMap = merge $dayMap (dict .day (slice)) }}

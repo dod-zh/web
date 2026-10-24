@@ -4,7 +4,7 @@ Renders a consistent page header with gradient background, breadcrumbs, title an
 Usage: {{ partial "page-header.html" . }}
 */}}
 
-{{- $upcomingYear := printf "%.0f" (index (where .Site.Data.events.events "status" "upcoming") 0).year -}}
+{{- $upcomingYear := printf "%.0f" (index (where hugo.Data.events.events "status" "upcoming") 0).year -}}
 <div class="py-8" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
     <div class="container mx-auto px-4">
         {{ partial "breadcrumbs.html" . }}

@@ -7,9 +7,9 @@
             {{ .Content }}
         </div>
 
-        {{ if .Site.Data.speakers }}
+        {{ if hugo.Data.speakers }}
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-            {{ range .Site.Data.speakers.speakers }}
+            {{ range hugo.Data.speakers.speakers }}
             <a href="/event/speakers/{{ .id }}/" class="group">
                 <div
                     class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
