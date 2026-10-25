@@ -221,7 +221,7 @@ npm run generate:banner
   "build": "hugo --minify",
   "build:preview": "npm run prebuild && hugo --minify --baseURL=/preview/",
   "validate": "html-validate public/**/*.html",
-  "lighthouse": "lhci autorun",
+  "lighthouse": "npx -y @lhci/cli@0.15.1 autorun",
   "clean": "rm -rf public resources",
   "generate:banner": "node scripts/generate-sponsor-banner.js"
 }
