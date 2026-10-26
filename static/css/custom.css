@@ -668,6 +668,8 @@ nav[class*="breadcrumb"] span {
     clear: left !important;
     font: 14px Helvetica, Arial, sans-serif !important;
     width: 600px !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
 }
 
 #mc-embedded-subscribe-form input[type=checkbox] {
