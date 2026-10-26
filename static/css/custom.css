@@ -153,8 +153,10 @@ header.scrolled {
 }
 
 /* Fix spacing between sections */
-article>div>div>div {
-    margin-bottom: 2rem;
+@layer base {
+    article>div>div>div {
+        margin-bottom: 2rem;
+    }
 }
 
 /* Ensure consistent spacing before sponsor sections */
@@ -480,14 +482,18 @@ a.bg-white {
     border-color: var(--cerulean) !important;
 }
 
-/* Ensure all heading colors are consistent */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--indigo-dye);
+/* Ensure all heading colors are consistent.
+   In @layer base so Tailwind v4 utilities (e.g. text-white, which live in
+   @layer utilities) still win, as they did in v3 via class specificity. */
+@layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--indigo-dye);
+    }
 }
 
 .prose h1,
@@ -662,6 +668,8 @@ nav[class*="breadcrumb"] span {
     clear: left !important;
     font: 14px Helvetica, Arial, sans-serif !important;
     width: 600px !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
 }
 
 #mc-embedded-subscribe-form input[type=checkbox] {
@@ -682,4 +690,21 @@ nav[class*="breadcrumb"] span {
     border: none !important;
     min-height: 0px !important;
     padding-bottom: 0px !important;
+}
+/* Keep embeds (e.g. Google Maps) inside the viewport on mobile */
+.prose iframe {
+    max-width: 100%;
+}
+
+/* Long URLs in content must wrap on small screens */
+.prose a {
+    overflow-wrap: anywhere;
+}
+
+/* Wide content tables scroll horizontally on small screens instead of widening the page */
+@media (max-width: 768px) {
+    .prose table {
+        display: block;
+        overflow-x: auto;
+    }
 }

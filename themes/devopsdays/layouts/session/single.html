@@ -78,7 +78,7 @@
 
                 <!-- Sidebar - Speaker Profiles -->
                 {{ if $session.speakers }}
-                <div class="lg:w-96 flex-shrink-0">
+                <div class="lg:w-96 shrink-0">
                     <div class="sticky top-8 space-y-6">
                         {{ range $session.speakers }}
                         {{ $speaker := index (where hugo.Data.speakers.speakers "id" .) 0 }}
@@ -89,7 +89,7 @@
                             <h3 class="text-xl font-bold mb-4" style="color: var(--indigo-dye);">Speaker</h3>
                             <div class="flex items-center gap-4 mb-4">
                                 <a href="{{ $speakerPage.RelPermalink }}"
-                                    class="flex-shrink-0 hover:opacity-80 transition-opacity">
+                                    class="shrink-0 hover:opacity-80 transition-opacity">
                                     <img src="{{ $speaker.image }}" alt="{{ $speaker.name }}"
                                         class="w-24 h-24 rounded-full object-cover border-2 border-gray-200">
                                 </a>
