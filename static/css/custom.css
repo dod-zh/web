@@ -698,3 +698,11 @@ nav[class*="breadcrumb"] span {
 .prose a {
     overflow-wrap: anywhere;
 }
+
+/* Wide content tables scroll horizontally on small screens instead of widening the page */
+@media (max-width: 768px) {
+    .prose table {
+        display: block;
+        overflow-x: auto;
+    }
+}
