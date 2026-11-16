@@ -19,7 +19,7 @@ Visit <http://localhost:1313>
 
 ### Prerequisites
 
-- Hugo Extended 0.168.0+
+- Hugo 0.170.0+
 - Node.js 18+
 - Git
 
@@ -56,7 +56,7 @@ Uses VS Code Dev Containers with pre-configured environment.
 3. Wait for container build
 4. Run `hugo server -D --bind 0.0.0.0`
 
-**Included tools:** Hugo Extended, Go, Node.js, Git, GitHub CLI
+**Included tools:** Hugo, Go, Node.js, Git, GitHub CLI
 
 ## 📁 Project Structure
 
@@ -363,7 +363,7 @@ npm run build
 # Check Hugo version
 hugo version
 
-# Should be 0.168.0+ with extended
+# Should be 0.170.0+
 ```
 
 **Node.js issues:**
