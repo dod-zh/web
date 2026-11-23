@@ -1,0 +1,4 @@
+# Legacy leftover URL still indexed by Google (old site /copy-of-home-1).
+# Cover both slash variants. Redirects run before headers.
+/copy-of-home-1    /    301
+/copy-of-home-1/   /    301
