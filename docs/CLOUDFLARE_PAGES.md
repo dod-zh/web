@@ -86,6 +86,14 @@ If you want to use Cloudflare's native builds instead:
   - `NODE_VERSION`: `18`
   - `HUGO_ENV`: `production`
 
+## Custom 404 page and redirects
+
+Cloudflare Pages treats a project without a top-level `404.html` as a single-page application and serves the homepage (`/`) with HTTP 200 for any unknown path. That is a soft 404: Google can index the same homepage under many URLs ("Duplicate without user-selected canonical").
+
+Hugo renders `themes/devopsdays/layouts/404.html` to `public/404.html`. With that file at the output root, Pages returns a real HTTP 404 and the custom page. The 404 template sets `noindex` and omits the canonical tag so it cannot point at the homepage.
+
+Path redirects live in `static/_redirects` and are copied to the output root. Do not add a catch-all `/* /index.html 200` (or similar) rule; that would restore the SPA fallback. Keep both slash variants for legacy paths, and point targets at current trailing-slash URLs to avoid redirect chains. `www.devopsdays.ch` is redirected to the apex at the hostname level, not in `_redirects`.
+
 ## Troubleshooting
 
 ### Build Failures

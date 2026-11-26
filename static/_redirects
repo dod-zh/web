@@ -1,4 +1,82 @@
-# Legacy leftover URL still indexed by Google (old site /copy-of-home-1).
+# Cloudflare Pages redirects (static rules, first match wins).
 # Cover both slash variants. Redirects run before headers.
+# Do not add a catch-all /* /index.html 200 rule: that would restore
+# the SPA fallback / soft-404 behaviour.
+
+# Legacy leftover URL still indexed by Google (old Wix site /copy-of-home-1).
 /copy-of-home-1    /    301
 /copy-of-home-1/   /    301
+
+# Other Wix "copy of home" / home leftovers (Wayback Machine CDX, historical 200s).
+/copy-of-home            /    301
+/copy-of-home/           /    301
+/copy-of-home-2          /    301
+/copy-of-home-2/         /    301
+/copy-of-home-phase-1    /    301
+/copy-of-home-phase-1/   /    301
+/kopie-von-home          /    301
+/kopie-von-home/         /    301
+/home                    /    301
+/home/                   /    301
+/home-1                  /    301
+/home-1/                 /    301
+/home-2                  /    301
+/home-2/                 /    301
+/home-4                  /    301
+/home-4/                 /    301
+
+# Former Wix section URLs (Wayback Machine). Targets use current Hugo paths
+# with trailing slash, so Cloudflare Pages does not add a second 308.
+/tickets                 /event/tickets/        301
+/tickets/                /event/tickets/        301
+/registration            /event/tickets/        301
+/registration/           /event/tickets/        301
+/sponsor                 /event/sponsors/       301
+/sponsor/                /event/sponsors/       301
+/sponsor-new             /event/sponsors/       301
+/sponsor-new/            /event/sponsors/       301
+/sponsor-old             /event/sponsors/       301
+/sponsor-old/            /event/sponsors/       301
+/sponsor3                /event/sponsors/       301
+/sponsor3/               /event/sponsors/       301
+/sponsor-after-event     /event/sponsors/       301
+/sponsor-after-event/    /event/sponsors/       301
+/copy-of-sponsor         /event/sponsors/       301
+/copy-of-sponsor/        /event/sponsors/       301
+/program                 /event/program/        301
+/program/                /event/program/        301
+/location                /event/location/       301
+/location/               /event/location/       301
+/copy-of-location        /event/location/       301
+/copy-of-location/       /event/location/       301
+/past-events             /event/past-events/    301
+/past-events/            /event/past-events/    301
+/copy-of-event           /event/                301
+/copy-of-event/          /event/                301
+/conduct                 /about/conduct/        301
+/conduct/                /about/conduct/        301
+/faq                     /about/faq/            301
+/faq/                    /about/faq/            301
+/copy-of-faq             /about/faq/            301
+/copy-of-faq/            /about/faq/            301
+/diversity               /about/diversity/      301
+/diversity/              /about/diversity/      301
+/sustainability          /about/sustainability/ 301
+/sustainability/         /about/sustainability/ 301
+/contact                 /imprint/              301
+/contact/                /imprint/              301
+
+# Root speaker slugs from the former Wix site (Wayback Machine) for people
+# who also have a current speaker page.
+/antonio-alvino          /event/speakers/antonio-alvino/        301
+/antonio-alvino/         /event/speakers/antonio-alvino/        301
+/bertrand-delacretaz     /event/speakers/bertrand-delacretaz/   301
+/bertrand-delacretaz/    /event/speakers/bertrand-delacretaz/   301
+/iris-hunkeler           /event/speakers/iris-hunkeler/         301
+/iris-hunkeler/          /event/speakers/iris-hunkeler/         301
+/lena-fuhrimann          /event/speakers/lena-fuhrimann/        301
+/lena-fuhrimann/         /event/speakers/lena-fuhrimann/        301
+/marc-herren             /event/speakers/marc-herren/           301
+/marc-herren/            /event/speakers/marc-herren/           301
+/marcelo-ancelmo         /event/speakers/marcelo-ancelmo/       301
+/marcelo-ancelmo/        /event/speakers/marcelo-ancelmo/       301
