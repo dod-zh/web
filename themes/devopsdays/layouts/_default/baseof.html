@@ -6,6 +6,10 @@
 {{- $description := cond (ne .Description "") (replace .Description "{YEAR}" $upcomingYear) .Site.Params.description -}}
 {{- /* Always point at the production host, even when preview CI builds with --baseURL "/" */ -}}
 {{- $canonical := printf "https://devopsdays.ch%s" .RelPermalink -}}
+{{- $is404 := or (eq .Kind "404") (eq .RelPermalink "/404.html") -}}
+{{- if $is404 -}}
+{{- $description = "This page does not exist or has been moved. Find DevOpsDays Zurich tickets, program, speakers, and more." -}}
+{{- end -}}
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +20,11 @@
     <meta name="description" content="{{ $description }}">
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
     <meta name="author" content="{{ .Site.Params.author }}">
+    {{ if $is404 }}
+    <meta name="robots" content="noindex, follow">
+    {{ else }}
     <link rel="canonical" href="{{ $canonical }}">
+    {{ end }}
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -47,7 +55,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
     <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js"></script>
 
-    <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD Structured Data (omitted on the 404 page) -->
+    {{ if not $is404 }}
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -74,6 +83,7 @@
         "url": "https://devopsdays.ch"
     }
     </script>
+    {{ end }}
 </head>
 
 <body class="bg-gray-50">

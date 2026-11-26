@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div class="text-white" style="background: linear-gradient(135deg, var(--cerulean), var(--indigo-dye));">
+    <div class="container mx-auto px-4 py-16">
+        <div class="text-center max-w-3xl mx-auto">
+            <p class="text-xl uppercase tracking-wide mb-4 text-gray-100">404</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white"
+                style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Page not found</h1>
+            <p class="text-xl md:text-2xl mb-8">
+                This page does not exist or has been moved. Head back to the homepage, or pick a section below.
+            </p>
+            <a href="/" class="bg-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
+                style="color: var(--indigo-dye); white-space: nowrap;"
+                onmouseover="this.style.backgroundColor='#f3f4f6'" onmouseout="this.style.backgroundColor='white'">
+                Back to Home
+            </a>
+        </div>
+    </div>
+</div>
+
+<article class="py-12">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Popular pages</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a href="/event/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Event</h3>
+                    <p class="text-gray-600">Overview of this year’s DevOpsDays Zurich.</p>
+                </a>
+                <a href="/event/program/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Program</h3>
+                    <p class="text-gray-600">Talks, workshops, ignites, and keynotes.</p>
+                </a>
+                <a href="/event/speakers/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Speakers</h3>
+                    <p class="text-gray-600">Meet the people on stage.</p>
+                </a>
+                <a href="/event/sponsors/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Sponsors</h3>
+                    <p class="text-gray-600">The organisations that make the event possible.</p>
+                </a>
+                <a href="/event/location/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Location</h3>
+                    <p class="text-gray-600">Alte Kaserne Winterthur and how to get there.</p>
+                </a>
+                <a href="/event/tickets/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Tickets</h3>
+                    <p class="text-gray-600">Registration and ticket information.</p>
+                </a>
+                <a href="/about/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">About</h3>
+                    <p class="text-gray-600">What DevOpsDays Zurich is about.</p>
+                </a>
+                <a href="/about/team/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Team</h3>
+                    <p class="text-gray-600">The organisers behind the event.</p>
+                </a>
+                <a href="/about/conduct/" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Code of Conduct</h3>
+                    <p class="text-gray-600">How we keep the event welcoming and safe.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+{{ end }}
